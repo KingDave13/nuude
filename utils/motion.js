@@ -15,8 +15,9 @@ export const textVariant = (delay) => {
       },
     };
   };
-  
 
+
+  
   
   export const fadeIn = (direction, type, delay, duration) => {
     return {
