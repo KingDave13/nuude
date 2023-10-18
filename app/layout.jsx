@@ -1,4 +1,5 @@
 import '@styles/globals.css';
+import Navbar from '@components/Navbar';
 
 export const metadata = {
     title: "Nuude",
@@ -10,7 +11,7 @@ const RootLayout = ({ children }) => {
     <html lang='en'>
         <body>
             <main className='app'>
-                <Nav />
+                <Navbar />
                 {children}
             </main>
         </body>
