@@ -14,8 +14,7 @@ module.exports = {
         mainRed: "#E30613",
       },
       fontFamily: {
-        poppins: ["Poppins", "sans-serif"],
-        'instrument-sans': ["Instrument Sans", "sans-serif"],
+        manier: ["Manier", "sans-serif"],
       },
     },
     screens: {
