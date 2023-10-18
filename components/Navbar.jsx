@@ -5,6 +5,7 @@ import styles from '@styles/styles';
 import { navLinks } from '@constants';
 import { logoalt } from '@public/assets';
 import { BsX, BsList } from 'react-icons/bs';
+import Image from "next/image";
 import Link from 'next/link';
 
 const Navbar = () => {
@@ -93,7 +94,7 @@ const Navbar = () => {
                                 active === link.title
                                 ? 'text-secondary'
                                 : 'text-primary'
-                            } font-poppins font-medium cursor-pointer 
+                            } font-medium cursor-pointer 
                             text-[16px] ss:text-[20px] w-full 
                             hover:bg-dimWhite`}
                             onClick={() => {

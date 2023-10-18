@@ -10,7 +10,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
-            <main className='app'>
+            <main className=''>
                 <Navbar />
                 {children}
             </main>
