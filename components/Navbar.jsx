@@ -2,8 +2,8 @@
 
 import { useState, useEffect, useRef } from 'react';
 import styles from '@styles/styles';
-import { navLinks } from '../constants';
-import { logoalt } from 'public/assets';
+import { navLinks } from '@constants';
+import { logoalt } from '@public/assets';
 import { BsX, BsList } from 'react-icons/bs';
 import Link from 'next/link';
 
@@ -37,7 +37,7 @@ const Navbar = () => {
                     window.scrollTo(0, 0);
                     }}>
                     <img src={logoalt} alt='logo'
-                    className='w-[130px] h-auto'/>
+                    className='w-auto h-auto'/>
                 </Link>
                 
                 <div className='flex justify-between gap-40'>
