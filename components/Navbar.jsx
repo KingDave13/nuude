@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react';
 import styles from '@styles/styles';
 import { navLinks } from '../constants';
-import { logoalt } from '@public/assets';
+import { logoalt } from 'public/assets';
 import { BsX, BsList } from 'react-icons/bs';
 import Link from 'next/link';
 
