@@ -1,11 +1,13 @@
+'use client';
 
+import SectionWrapper from "@hoc/SectionWrapper";
 
 const Hero = () => {
   return (
-    <section className="w-full flex-center flex-col">
+    <section className="relative w-full flex flex-center flex-col bg-heroImg">
       Hello
     </section>
   )
 };
 
-export default Hero;
+export default SectionWrapper(Hero, '');
