@@ -32,7 +32,23 @@ const Navbar = () => {
         py-5 md:px-16 ss:px-16 px-6 top-0 z-20 bg-primary'>
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
-                <div className=''>
+                <div className='flex items-center'>
+                    <ul className='list-none flex flex-row gap-24'>
+                        {navLinks.slice(0, 2).map((link) => (
+                            <li key={link.id}
+                            className={`${
+                                active === link.title
+                                ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
+                                : 'text-white'
+                            } hover:text-secondary grow3 text-[16px] text-decoration-none
+                                cursor-pointer py-2 font-medium`}
+                                onClick={() => setActive(link.title)}
+                            >
+                                <a href={`#${link.id}`}>{link.title}</a>
+                            </li>
+                        ))}
+                    </ul>
+
                     <Link href='/'
                         onClick={() => {
                         setActive('');
@@ -46,12 +62,9 @@ const Navbar = () => {
                             className='object-contain'
                         />
                     </Link>
-                </div>
-                
-                <div className='flex justify-between gap-40'>
-                    <ul className='list-none hidden md:flex flex-row 
-                    gap-24'>
-                        {navLinks.map((link) => (
+
+                    <ul className='list-none flex flex-row gap-24'>
+                        {navLinks.slice(2, 4).map((link) => (
                             <li key={link.id}
                             className={`${
                                 active === link.title
