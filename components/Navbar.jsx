@@ -33,14 +33,15 @@ const Navbar = () => {
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
                 <div className='flex items-center justify-center w-full'>
-                    <ul className='list-none flex flex-row gap-16'>
+                    <ul className='list-none flex flex-row gap-16 hidden 
+                    md:flex'>
                         {navLinks.slice(0, 2).map((link) => (
                             <li key={link.id}
                             className={`${
                                 active === link.title
                                 ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
                                 : 'text-white'
-                            } hover:text-secondary grow3 text-[18px] text-decoration-none
+                            } hover:text-secondary grow3 text-[20px] text-decoration-none
                                 cursor-pointer`}
                                 onClick={() => setActive(link.title)}
                             >
@@ -54,24 +55,25 @@ const Navbar = () => {
                         setActive('');
                         window.scrollTo(0, 0);
                         }}
-                        className='ml-40 mr-40'>
+                        className='ml-44 mr-44'>
                         <Image 
                             src={logoalt}
                             alt='logo'
-                            width={150}
+                            width={170}
                             height={'auto'}
                             className='object-contain'
                         />
                     </Link>
 
-                    <ul className='list-none flex flex-row gap-16'>
+                    <ul className='list-none flex flex-row gap-16
+                    hidden md:flex'>
                         {navLinks.slice(2, 4).map((link) => (
                             <li key={link.id}
                             className={`${
                                 active === link.title
                                 ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white'
                                 : 'text-white'
-                            } hover:text-secondary grow3 text-[18px] text-decoration-none
+                            } hover:text-secondary grow3 text-[20px] text-decoration-none
                                 cursor-pointer`}
                                 onClick={() => setActive(link.title)}
                             >
