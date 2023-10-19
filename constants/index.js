@@ -13,11 +13,6 @@ export const navLinks = [
       route: "/membership",
     },
     {
-      id: "home",
-      title: "Events",
-      route: "/events",
-    },
-    {
       id: "events",
       title: "Events",
       route: "/events",
