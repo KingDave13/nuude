@@ -3,16 +3,15 @@
 const Hero = () => {
   return (
     <section className="relative w-full flex hero">
-      <div className='items-center justify-center w-full
+      <div className='items-center justify-center w-full mx-auto
         max-w-[95rem] flex flex-col gap-5' 
         >
-          <h1 className='text-secondary font-bold md:text-[65px]
-          ss:text-[50px] text-[40px] md:leading-[78px] 
-          ss:leading-[55px] leading-[45px]
-          tracking-tight'>
-              No. 1 <span className='text-primary'>
-              foam accessories and general </span> 
-              industrial materials supplier.
+          <h1 className='text-white font-bold md:text-[90px]
+          ss:text-[50px] text-[40px] md:leading-[105px] 
+          ss:leading-[55px] leading-[45px] text-center'>
+              The world's <span className="text-mainRed">
+                most exclusive </span> <br></br>
+              members-only <br></br>club!
           </h1>
 
           <p className='md:mt-8 ss:mt-8 mt-5 text-primary md:text-[19px]
