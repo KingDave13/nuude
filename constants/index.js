@@ -1,3 +1,6 @@
+import { logoalt } from "@public/assets";
+import { logo } from "@public/assets";
+
 export const navLinks = [
     {
       id: "about",
@@ -8,6 +11,11 @@ export const navLinks = [
       id: "membership",
       title: "Membership",
       route: "/membership",
+    },
+    {
+      id: "home",
+      title: "Events",
+      route: "/events",
     },
     {
       id: "events",
