@@ -32,19 +32,21 @@ const Navbar = () => {
         py-5 md:px-16 ss:px-16 px-6 top-0 z-20 bg-primary'>
             <div className='w-full flex justify-between items-center
             max-w-[95rem] mx-auto'>
-                <Link href='/'
-                    onClick={() => {
-                    setActive('');
-                    window.scrollTo(0, 0);
-                    }}>
-                    <Image 
-                        src={logoalt}
-                        alt='logo'
-                        width={80}
-                        height={'auto'}
-                        className='object-contain'
-                    />
-                </Link>
+                <div className='md:hidden flex'>
+                    <Link href='/'
+                        onClick={() => {
+                        setActive('');
+                        window.scrollTo(0, 0);
+                        }}>
+                        <Image 
+                            src={logoalt}
+                            alt='logo'
+                            width={80}
+                            height={'auto'}
+                            className='object-contain'
+                        />
+                    </Link>
+                </div>
                 
                 <div className='flex justify-between gap-40'>
                     <ul className='list-none hidden md:flex flex-row 
