@@ -37,8 +37,13 @@ const Navbar = () => {
                     setActive('');
                     window.scrollTo(0, 0);
                     }}>
-                    <img src={logoalt} alt='logo'
-                    className='w-auto h-auto'/>
+                    <Image 
+                        src={logoalt}
+                        alt='logo'
+                        width={80}
+                        height={'auto'}
+                        className='object-contain'
+                    />
                 </Link>
                 
                 <div className='flex justify-between gap-40'>
