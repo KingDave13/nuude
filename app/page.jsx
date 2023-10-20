@@ -38,8 +38,8 @@ const Hero = () => {
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5 
               ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
               rounded-[6px] font-medium hover:text-mainRed'
-              >
-                Contact Us
+            >
+              Contact Us
             </a>
           </div>
       </div>
