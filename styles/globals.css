@@ -55,6 +55,7 @@ a {
 
 .hero {
   background-image: url('/assets/heroImg.png');
+  object-fit: cover;
   width: auto;
   height: 100vh;
 }
