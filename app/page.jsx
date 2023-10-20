@@ -25,22 +25,24 @@ const Hero = () => {
           </p>
 
           <div className='flex mt-8 md:gap-8 ss:gap-5 gap-2 items-center'>
-            <Link href=''
+            <button
               className='grow4 bg-secondary
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5
               ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
-              rounded-[6px] font-medium'
+              rounded-[6px] font-medium font-manier cursor-pointer'
             >
               Become a Member
-            </Link>
+            </button>
 
-            <a href='' className='border-[3px] grow2 border-secondary 
+            <button
+              className='border-[1px] grow2 border-secondary 
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5 
               ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-              rounded-[6px] font-medium'
+              rounded-[6px] font-medium bg-transparent font-manier
+              cursor-pointer'
             >
               Contact Us
-            </a>
+            </button>
           </div>
       </div>
     </section>
