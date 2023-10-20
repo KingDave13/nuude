@@ -29,7 +29,7 @@ const Hero = () => {
               className='grow2 bg-secondary
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5
               ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
-              rounded-[6px] font-medium hover:text-mainRed'
+              rounded-[6px] font-medium'
             >
               Become a Member
             </Link>
@@ -37,7 +37,7 @@ const Hero = () => {
             <a href='' className='border-[3px] grow2 border-secondary 
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5 
               ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-              rounded-[6px] font-medium hover:text-mainRed'
+              rounded-[6px] font-medium'
             >
               Contact Us
             </a>
