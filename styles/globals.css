@@ -120,6 +120,7 @@ a {
 }
 .grow2:hover {
   transform: scale(1.02);
+  background-color: #D5B265;
 }
 
 .grow3 {
@@ -127,4 +128,12 @@ a {
 }
 .grow3:hover {
   transform: scale(1.01);
+}
+
+.grow4 {
+  transition: all .2s ease-in-out;
+}
+.grow4:hover {
+  transform: scale(1.02);
+  background-color: #D5B265;
 }
