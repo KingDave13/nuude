@@ -26,7 +26,7 @@ const Hero = () => {
 
           <div className='flex mt-8 md:gap-8 ss:gap-5 gap-2 items-center'>
             <Link href=''
-              className='grow2 bg-secondary
+              className='grow4 bg-secondary
               md:text-[17px] ss:text-[17px] text-[14px] md:py-5
               ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
               rounded-[6px] font-medium'
