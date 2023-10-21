@@ -6,19 +6,19 @@ const About = () => {
   return (
     <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center justify-between w-full mx-auto flex 
+        <div className='items-center w-full mx-auto flex 
         md:flex-row ss:flex-row flex-col items-start md:gap-5 ss:gap-5 
         gap-10'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row">
-                <h1 className="text-primary font-bold md:text-[55px]
+            className="flex flex-row items-center justify-center w-full">
+                <h1 className="text-secondary font-bold md:text-[55px]
                 ss:text-[47px] text-[35px]">
-                    What is Nuude?
+                    What is Nuude!?
                 </h1>
                 <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
-                className="flex relative">
-                    <div className='bg-secondary md:w-[400px] ss:w-[300px]
-                        w-[80px] md:h-[2px] ss:h-[2px] h-[2px]' />
+                className="flex relative items-center justify-center">
+                    <div className='bg-secondary md:w-[800px] ss:w-[300px]
+                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
                 </motion.div>
             </motion.div>
             
