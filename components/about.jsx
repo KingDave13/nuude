@@ -11,9 +11,13 @@ const About = () => {
         gap-10'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row">
-                <h1>
+                <h1 className="text-primary font-bold md:text-[55px]
+                ss:text-[47px] text-[35px]">
                     What is Nuude?
                 </h1>
+                <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}>
+                    
+                </motion.div>
             </motion.div>
             
             <div>
