@@ -4,7 +4,21 @@ const About = () => {
   return (
     <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        Hello
+        <div>
+            <div>
+
+            </div>
+            
+            <div>
+                <div>
+
+                </div>
+
+                <div>
+                    
+                </div>
+            </div>
+        </div>
     </section>
   )
 };
