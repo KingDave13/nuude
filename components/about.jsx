@@ -1,9 +1,9 @@
 import SectionWrapper from "@hoc/SectionWrapper";
 
-const about = () => {
+const About = () => {
   return (
     <div>about</div>
   )
 };
 
-export default SectionWrapper(about, '');
+export default SectionWrapper(About, '');
