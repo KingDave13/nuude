@@ -2,9 +2,12 @@
 
 import Link from "next/link";
 
-const Hero = () => {
+const Home = () => {
   return (
-    <section className="relative w-full flex hero">
+    <section className="relative w-full">
+      <div className="flex hero">
+
+      </div>
       <div className='items-center justify-center w-full mx-auto
         max-w-[95rem] flex flex-col' 
         >
@@ -49,4 +52,4 @@ const Hero = () => {
   )
 };
 
-export default Hero;
+export default Home;
