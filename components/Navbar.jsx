@@ -52,7 +52,11 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <Link href="/" onClick={() => setActive('')}
+          <Link href="/" 
+            onClick={() => {
+            setActive('');
+            window.scrollTo(0, 0);
+            }}
             className='ml-44 mr-44'
             >
             <Image
