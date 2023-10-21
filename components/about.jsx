@@ -15,8 +15,10 @@ const About = () => {
                 ss:text-[47px] text-[35px]">
                     What is Nuude?
                 </h1>
-                <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}>
-                    
+                <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
+                className="flex relative">
+                    <div className='bg-secondary md:w-[400px] ss:w-[300px]
+                        w-[80px] md:h-[2px] ss:h-[2px] h-[2px]' />
                 </motion.div>
             </motion.div>
             
