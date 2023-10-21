@@ -49,7 +49,10 @@ const Home = () => {
         </div>
       </div>
       
-      <About />
+      <div className="bg-primary">
+        <About />
+      </div>
+      
     </section>
   )
 };

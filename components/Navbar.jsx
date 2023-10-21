@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center fixed md:py-8 ss:py-6 
+      className={`w-full flex items-center fixed md:py-6 ss:py-6 
       py-5 md:px-16 ss:px-16 px-6 top-0 z-20 ${
         isScrolled ? 'bg-white shadow-md' : '' }`}
     >
