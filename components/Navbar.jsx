@@ -42,8 +42,9 @@ const Navbar = () => {
                 className={`${
                   active === link.title
                     ? 'text-secondary' // Change text color to black when active
-                    : 'text-black'
-                } grow3 text-[20px] text-decoration-none cursor-pointer`}
+                    : 'text-white'
+                } hover:text-secondary grow3 text-[20px] text-decoration-none 
+                cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -51,7 +52,12 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <Link href="/" onClick={() => setActive('')}>
+          <Link href="/" onClick={() =>  {
+                setActive('');
+                window.scrollTo(0, 0);
+                }}
+                className='ml-44 mr-44'
+            >
             <Image
               src={isScrolled ? logo : logoalt}
               alt="logo"
