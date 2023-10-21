@@ -52,11 +52,8 @@ const Navbar = () => {
             ))}
           </ul>
 
-          <Link href="/" onClick={() =>  {
-                setActive('');
-                window.scrollTo(0, 0);
-                }}
-                className='ml-44 mr-44'
+          <Link href="/" onClick={() => setActive('')}
+            className='ml-44 mr-44'
             >
             <Image
               src={isScrolled ? logo : logoalt}
