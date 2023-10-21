@@ -89,7 +89,7 @@ const Navbar = () => {
             <BsX
               size={40}
               className="object-contain cursor-pointer"
-              style={{ color: '#000' }} // Change icon color when open
+              style={{ isScrolled ? color: '#000' : color: '#fff' }} // Change icon color when open
               onClick={() => setToggle(!toggle)}
             />
           ) : (
@@ -103,9 +103,10 @@ const Navbar = () => {
 
           <div
             ref={menuRef}
-            className={`p-6 bg-white absolute top-5 right-0 mx-6 my-14
-             min-w-[140px] z-10 rounded-xl shadow-xl slide-down-menu ${
-              toggle ? 'opacity-100 visible' : 'opacity-0 invisible' // Add opacity and visibility for the toggle effect
+            className={`p-6 bg-white absolute ss:top-8 top-5 right-0 mx-6 
+            my-14 min-w-[140px] z-10 rounded-xl flex-col ss:mx-16 
+            ss:my-14 ss:min-w-[220px] shadow-xl slide-down-menu 
+            ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible' // Add opacity and visibility for the toggle effect
             }`}
             style={{
               height: toggle ? 'auto' : 0,
@@ -121,7 +122,7 @@ const Navbar = () => {
                     active === link.title
                       ? 'text-secondary'
                       : 'text-primary'
-                  } font-medium cursor-pointer text-[16px] w-full hover:bg-dimWhite`}
+                  } font-medium cursor-pointer text-[16px] w-full`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
