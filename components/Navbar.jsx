@@ -42,7 +42,7 @@ const Navbar = () => {
                 className={`${
                   active === link.title
                     ? 'text-secondary' // Change text color to black when active
-                    : 'text-white'
+                    : isScrolled ? 'text-primary' : 'text-white'
                 } hover:text-secondary grow3 text-[20px] text-decoration-none 
                 cursor-pointer`}
                 onClick={() => setActive(link.title)}
@@ -71,7 +71,7 @@ const Navbar = () => {
                 className={`${
                   active === link.title
                     ? 'text-secondary' // Change text color to black when active
-                    : 'text-white'
+                    : isScrolled ? 'text-primary' : 'text-white'
                 } hover:text-secondary grow3 text-[20px] text-decoration-none 
                 cursor-pointer`}
                 onClick={() => setActive(link.title)}
@@ -89,7 +89,7 @@ const Navbar = () => {
             <BsX
               size={40}
               className="object-contain cursor-pointer"
-              style={{ isScrolled ? color: '#000' : color: '#fff' }} // Change icon color when open
+              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when open
               onClick={() => setToggle(!toggle)}
             />
           ) : (
