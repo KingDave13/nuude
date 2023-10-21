@@ -70,9 +70,10 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'border-b-[4px] rounded-[1px] border-b-secondary text-black' // Change text color to black when active
-                    : 'text-black'
-                } grow3 text-[20px] text-decoration-none cursor-pointer`}
+                    ? 'text-secondary' // Change text color to black when active
+                    : 'text-white'
+                } hover:text-secondary grow3 text-[20px] text-decoration-none 
+                cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
@@ -80,6 +81,8 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+
+        {/* FOR MOBILE */}
 
         <div className="md:hidden flex flex-1 justify-end items-center">
           {toggle ? (
