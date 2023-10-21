@@ -2,7 +2,10 @@ import SectionWrapper from "@hoc/SectionWrapper";
 
 const About = () => {
   return (
-    <div>about</div>
+    <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
+    mx-auto flex items-center about">
+        Hello
+    </section>
   )
 };
 

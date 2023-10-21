@@ -1,5 +1,6 @@
 'use client';
 
+import About from "@components/about";
 import Link from "next/link";
 
 const Home = () => {
@@ -48,6 +49,7 @@ const Home = () => {
         </div>
       </div>
       
+      <About />
     </section>
   )
 };
