@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center fixed md:py-8 ss:py-8 
+      className={`w-full flex items-center fixed md:py-8 ss:py-6 
       py-5 md:px-16 ss:px-16 px-6 top-0 z-20 ${
         isScrolled ? 'bg-white shadow-md' : '' }`}
     >
@@ -41,7 +41,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'border-b-[4px] rounded-[1px] border-b-secondary text-black' // Change text color to black when active
+                    ? 'border-b-[4px] rounded-[1px] border-b-secondary text-white' // Change text color to black when active
                     : 'text-black'
                 } grow3 text-[20px] text-decoration-none cursor-pointer`}
                 onClick={() => setActive(link.title)}
