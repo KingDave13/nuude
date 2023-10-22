@@ -1,6 +1,6 @@
 'use client';
 
-import About from "@components/about";
+import About from "@components/About";
 import Link from "next/link";
 
 const Home = () => {
