@@ -3,6 +3,8 @@
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
+import { aboutimg } from "@public/assets";
+import { layout } from "@styles/styles";
 
 const About = () => {
   return (
@@ -24,9 +26,10 @@ const About = () => {
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col gap-10">
-                <motion.div variants={textVariant()}>
-                    <p className='text-white 
-                    md:text-[18px] ss:text-[18px] text-[14px] max-w-[700px]'>
+                <motion.div variants={textVariant()}
+                className={`${layout.sectionInfo}`}>
+                    <p className='text-white md:text-[18px] ss:text-[18px] 
+                    text-[14px] max-w-[700px]'>
                     Nuude! is an exclusively private club standing to 
                     serve the social and entertainment needs of its 
                     members and guests by maintaining the highest 
@@ -34,7 +37,10 @@ const About = () => {
                     creative and culturally rich programs, and by 
                     providing a safe and comfortable environment for 
                     personal exploration.
-                    <br></br>
+                    </p>
+
+                    <p className='text-white md:text-[18px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:mt-5'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
                     open-minded individuals are granted membership. By 
@@ -42,9 +48,9 @@ const About = () => {
                     foster a community of like-minded individuals who can 
                     share in the exploration of their desires, passions 
                     and interests.
-                    </p>
+                    </p>    
 
-                    <div className='md:mt-12 ss:mt-8 mt-4'>
+                    <div className='md:mt-12 ss:mt-8 mt-4 flex md:gap-5'>
                         <button
                             className='grow4 bg-secondary
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
@@ -65,7 +71,13 @@ const About = () => {
                         </button>
                     </div>
                 </motion.div>
-        
+
+                <motion.div 
+                    variants={slideIn('right', 'tween', 0.2, 0.5)}>
+                    <img src={aboutimg} alt='about'
+                    className='md:h-[400px] ss:h-[300px] w-auto'
+                />
+            </motion.div>
             </motion.div>
         </div>
     </section>

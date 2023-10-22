@@ -7,5 +7,5 @@ export {
     logo,
     logoalt,
     heroImg,
-    aboutimg
+    aboutimg,
 }
