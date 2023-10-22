@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { aboutimg } from "@public/assets";
 import { layout } from "@styles/styles";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -74,7 +75,7 @@ const About = () => {
 
                 <motion.div 
                     variants={slideIn('right', 'tween', 0.2, 0.5)}>
-                    <img src={aboutimg} alt='about'
+                    <Image src={aboutimg} alt='about'
                     className='md:h-[400px] ss:h-[300px] w-auto'
                 />
             </motion.div>
