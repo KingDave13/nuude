@@ -12,7 +12,7 @@ const About = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-10">
+            className="flex flex-row items-center w-full md:mb-20">
                 <h1 className="text-secondary font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-10">
                     What is Nuude!?
@@ -25,11 +25,11 @@ const About = () => {
             </motion.div>
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
-            className="flex md:flex-row ss:flex-row flex-col gap-10">
+            className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
                 <motion.div variants={textVariant()}
                 className={`${layout.sectionInfo}`}>
-                    <p className='text-white md:text-[18px] ss:text-[18px] 
-                    text-[14px] max-w-[700px]'>
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:leading-[22px]'>
                     Nuude! is an exclusively private club standing to 
                     serve the social and entertainment needs of its 
                     members and guests by maintaining the highest 
@@ -39,8 +39,8 @@ const About = () => {
                     personal exploration.
                     </p>
 
-                    <p className='text-white md:text-[18px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:mt-5'>
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
                     open-minded individuals are granted membership. By 
