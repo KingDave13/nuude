@@ -1,4 +1,4 @@
-
+'use client';
 
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
@@ -26,11 +26,11 @@ const About = () => {
             
             <div>
                 <div>
-                    
+
                 </div>
-                    
+
                 <div>
-                    
+
                 </div>
             </div>
         </div>
