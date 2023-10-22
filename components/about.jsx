@@ -23,7 +23,7 @@ const About = () => {
                 </motion.div>
             </motion.div>
             
-            <div>
+            <motion.div variants={textVariant()}>
                 <div>
 
                 </div>
@@ -31,7 +31,7 @@ const About = () => {
                 <div>
 
                 </div>
-            </div>
+            </motion.div>
         </div>
     </section>
   )
