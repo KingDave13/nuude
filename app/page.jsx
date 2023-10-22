@@ -1,6 +1,7 @@
 'use client';
 
 import About from "@components/About";
+import Luxury from "@components/Luxury";
 import Link from "next/link";
 
 const Home = () => {
@@ -51,6 +52,10 @@ const Home = () => {
       
       <div className="bg-primary">
         <About />
+      </div>
+
+      <div className="luxury">
+        <Luxury />
       </div>
       
     </section>
