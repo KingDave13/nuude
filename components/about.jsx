@@ -28,7 +28,7 @@ const About = () => {
                 <div>
                     e
                 </div>
-                    f
+                    
                 <div>
                     
                 </div>
