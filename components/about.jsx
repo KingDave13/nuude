@@ -51,7 +51,7 @@ const About = () => {
                     and interests.
                     </p>    
 
-                    <div className='md:mt-12 ss:mt-8 mt-4 flex md:gap-5'>
+                    <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
                         <button
                             className='grow4 bg-secondary
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
