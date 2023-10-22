@@ -11,7 +11,7 @@ const About = () => {
         <div className='items-center w-full mx-auto flex md:flex-row 
         ss:flex-row flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full">
+            className="flex flex-row items-center w-full md:mb-10">
                 <h1 className="text-secondary font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-10">
                     What is Nuude!?
