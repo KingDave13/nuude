@@ -9,18 +9,18 @@ import Image from "next/image";
 
 const Luxury = () => {
   return (
-    <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-12">
+            className="flex flex-row items-center w-full md:mb-20">
                 <h1 className="text-white font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-10">
-                    Unparalled Luxury for the Select
+                    Unparalled Luxury <br></br>for the Select
                 </h1>
                 <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-secondary md:w-full ss:w-[300px]
+                    <div className='bg-white md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
                 </motion.div>
             </motion.div>
@@ -31,24 +31,26 @@ const Luxury = () => {
                 className={`${layout.sectionInfo}`}>
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:leading-[22px]'>
-                    Nuude! is an exclusively private club standing to 
-                    serve the social and entertainment needs of its 
-                    members and guests by maintaining the highest 
-                    standards of excellence in all endeavours, providing 
-                    creative and culturally rich programs, and by 
-                    providing a safe and comfortable environment for 
-                    personal exploration.
+                    The black-tie luxury dinner series is characterized by
+                    its attention to detail, featuring gourmet cuisine, 
+                    fine wines, and elegant décor that create an 
+                    atmosphere of refinement and indulgence. The intimate
+                    setting encourages conversation and connection 
+                    among attendees amidst the classes, fostering a 
+                    sense of community among those who share an interest
+                    in fetish and erotic arts.
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
-                    The club's exclusivity adds to its allure, ensuring 
-                    that only those who are genuinely curious and 
-                    open-minded individuals are granted membership. By 
-                    carefully curating its members, Nuude! strives to 
-                    foster a community of like-minded individuals who can 
-                    share in the exploration of their desires, passions 
-                    and interests.
+                    In addition, the pool parties add an exciting and 
+                    playful dimension to the luxury erotic experience. 
+                    These poolside events offer a relaxed yet sensuous 
+                    atmosphere, where guests can enjoy the company of 
+                    like-minded individuals in a more casual setting. 
+                    The Pool Party series often features entertainment, 
+                    music, and activities that embrace the spirit of 
+                    sensuality and freedom.
                     </p>    
 
                     <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
