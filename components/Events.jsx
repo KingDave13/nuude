@@ -8,13 +8,13 @@ import Image from "next/image";
 
 const Events = () => {
   return (
-    <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[900px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-12">
-                <h1 className="text-secondary font-bold md:text-[50px]
-                ss:text-[47px] text-[35px] md:mr-10">
+            className="flex flex-row items-center w-full md:mb-20">
+                <h1 className="text-secondary font-bold md:text-[55px]
+                ss:text-[47px] text-[35px] md:mr-14">
                     Upcoming Events
                 </h1>
                 <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
