@@ -48,6 +48,11 @@ const Events = () => {
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:leading-[22px] mb-5'>
+                    Featuring: Connect, pool party, fine dining.
+                    </p>
+
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
