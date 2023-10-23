@@ -27,8 +27,15 @@ const Events = () => {
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
-                <motion.div variants={textVariant()}
-                className={`${layout.sectionInfo}`}>
+                <motion.div 
+                    variants={slideIn('left', 'tween', 0.2, 0.5)}
+                    className='flex-1 justify-center items-start'>
+                    <Image src={aboutimg} alt='about'
+                    className='md:h-[400px] ss:h-[300px] w-auto'
+                    />
+                </motion.div>
+
+                <motion.div variants={textVariant()}>
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:leading-[22px]'>
                     Nuude! is an exclusively private club standing to 
@@ -73,12 +80,7 @@ const Events = () => {
                     </div>
                 </motion.div>
 
-                <motion.div 
-                    variants={slideIn('left', 'tween', 0.2, 0.5)}>
-                    <Image src={aboutimg} alt='about'
-                    className='md:h-[400px] ss:h-[300px] w-auto'
-                    />
-                </motion.div>
+                
             </motion.div>
         </div>
     </section>
