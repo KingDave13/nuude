@@ -2,18 +2,18 @@
 
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
+import { fadeIn, slideIn, textVariant } from '@utils/motion';
 
 const Membership = () => {
   return (
-    <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
-            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-20">
+            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            className="flex flex-row items-center w-full md:mb-14">
                 <h1 className="text-white font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
-                    Unparalled Luxury <br></br>for the Select
+                    Membership
                 </h1>
                 <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
@@ -23,53 +23,53 @@ const Membership = () => {
             </motion.div>
             
             <motion.div variants={fadeIn('left', 'spring', 0.3)}
-            className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
-                <motion.div variants={textVariant()}
-                className={`${layout.sectionInfo}`}>
+            className="flex flex-col w-full">
+                <motion.div variants={textVariant()}>
                     <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:leading-[22px]'>
-                    The black-tie luxury dinner series is characterized by
-                    its attention to detail, featuring gourmet cuisine, 
-                    fine wines, and elegant décor that create an 
-                    atmosphere of refinement and indulgence. The intimate
-                    setting encourages conversation and connection 
-                    among attendees amidst the classes, fostering a 
-                    sense of community among those who share an interest
-                    in fetish and erotic arts.
+                    text-[14px]'>
+                        Important Information Before Applying
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
-                    In addition, the pool parties add an exciting and 
-                    playful dimension to the luxury erotic experience. 
-                    These poolside events offer a relaxed yet sensuous 
-                    atmosphere, where guests can enjoy the company of 
-                    like-minded individuals in a more casual setting. 
-                    The Pool Party series often features entertainment, 
-                    music, and activities that embrace the spirit of 
-                    sensuality and freedom.
+                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]
+                    text-center'>
+                    To gain entry into Nuude!, one must apply. An 
+                    Aurum-level annual membership, at minimum, 
+                    is required for any single gentleman to attend a 
+                    Nuude! event. Approved non-member couples or singles 
+                    who have never attended will have the opportunity to 
+                    join us for dinner.
+                    </p>
+
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]
+                    text-center'>
+                    This is a way for us to get to know our guests, and 
+                    also to ensure every Nuude! event is a singular 
+                    evening with a carefully curated crowd. We screen 
+                    for aesthetic appeal, professional status and what 
+                    one will contribute to the Nuude! community.
+                    </p>
+
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]
+                    text-center'>
+                    All submissions are confidential and reviewed solely 
+                    by our Council for the purpose of maintaining the 
+                    highest calibre of guests at our events. If an 
+                    applicant meets Nuude!'s professional, reputational, 
+                    and aesthetic criteria the applicant will be granted 
+                    the status of Approved Non-Member and contacted 
+                    directly.
+                    </p>
+
+                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]
+                    text-center'>
+                    Applicant's requiring the greatest level of discretion 
+                    may forego our application and be interviewed directly 
+                    by Nuude!.
                     </p>    
-
-                    <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
-                        <button
-                            className='grow4 bg-secondary
-                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4
-                            ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
-                            rounded-[6px] font-medium font-manier cursor-pointer'
-                        >
-                            Become a Member
-                        </button>
-
-                        <button
-                            className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
-                            ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-                            rounded-[6px] font-medium bg-transparent font-manier
-                            cursor-pointer'
-                        >
-                            View Events
-                        </button>
-                    </div>
                 </motion.div>
             </motion.div>
         </div>
