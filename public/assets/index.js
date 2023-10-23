@@ -3,11 +3,13 @@ import logoalt from './logoalt.png';
 import heroImg from './heroImg.png';
 import aboutimg from './aboutimg.png';
 import luxury from './luxury.png';
+import event from './event.png';
 
 export {
     logo,
     logoalt,
     heroImg,
     aboutimg,
-    luxury
+    luxury,
+    event
 }
