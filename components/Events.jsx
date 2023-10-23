@@ -63,7 +63,7 @@ const Events = () => {
                         24th November, 2023
                     </h1>
 
-                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    <p className='text-white md:text-[16px] ss:text-[16px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
