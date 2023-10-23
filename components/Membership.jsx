@@ -10,16 +10,21 @@ const Membership = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col md:pb-10'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-col items-center w-full md:mb-10">
+            className="flex justify-between items-center w-full md:mb-10">
+                <div className="flex">
+                    <div className='bg-white md:w-full ss:w-[300px]
+                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+                </div>
+
                 <h1 className="text-white font-bold md:text-[55px]
                 ss:text-[47px] text-[35px]">
                     Membership
                 </h1>
-                <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
-                className="flex-wrap relative w-full bottom-[30px]">
+
+                <div className="flex">
                     <div className='bg-white md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
-                </motion.div>
+                </div>
             </motion.div>
 
             <motion.div variants={textVariant()}
