@@ -3,6 +3,7 @@
 import About from "@components/About";
 import Luxury from "@components/Luxury";
 import Events from "@components/Events";
+import Membership from "@components/Membership";
 import Link from "next/link";
 
 const Home = () => {
@@ -61,6 +62,10 @@ const Home = () => {
       
       <div className="bg-primary">
         <Events />
+      </div>
+
+      <div className="membership">
+        <Membership />
       </div>
 
     </section>
