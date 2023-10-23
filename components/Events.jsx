@@ -41,7 +41,7 @@ const Events = () => {
                         Nuude
                     </h1>
 
-                    <p className='text-white md:text-[17px] ss:text-[18px] 
+                    <p className='text-white md:text-[18px] ss:text-[18px] 
                     text-[14px] md:max-w-[700px] md:leading-[22px] mb-5'>
                     Step into a world of fine dining, intrigue and 
                     sensuality where we hand you the key to your dreams.
@@ -52,9 +52,10 @@ const Events = () => {
                     Featuring: Connect, pool party, fine dining.
                     </p>
 
-                    <div className="relative items-center justify-center">
+                    <div className="relative items-center justify-center
+                    md:mb-5">
                         <div className='bg-secondary md:w-full ss:w-[300px]
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+                        w-[80px] md:h-[1px] ss:h-[1px] h-[1px]' />
                     </div>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
