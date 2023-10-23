@@ -10,7 +10,7 @@ const Home = () => {
     <section className="relative w-full">
       <div className="flex hero">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col' 
+          max-w-[95rem] flex flex-col md:mt-20' 
           >
             <h1 className='text-white font-bold md:text-[80px]
             ss:text-[50px] text-[40px] md:leading-[90px] 
@@ -62,7 +62,7 @@ const Home = () => {
       <div className="bg-primary">
         <Events />
       </div>
-      
+
     </section>
   )
 };
