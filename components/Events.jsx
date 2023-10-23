@@ -30,7 +30,7 @@ const Events = () => {
                     variants={slideIn('left', 'tween', 0.2, 0.5)}
                     className='flex-1 justify-center items-start'>
                     <Image src={event} alt='event'
-                    className='md:h-[400px] ss:h-[300px] w-auto'
+                    className='md:w-[400px] ss:w-[300px] h-auto'
                     />
                 </motion.div>
 
