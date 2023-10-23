@@ -3,8 +3,7 @@
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
-import { aboutimg } from "@public/assets";
-import { layout } from "@styles/styles";
+import { event } from "@public/assets";
 import Image from "next/image";
 
 const Events = () => {
@@ -30,7 +29,7 @@ const Events = () => {
                 <motion.div 
                     variants={slideIn('left', 'tween', 0.2, 0.5)}
                     className='flex-1 justify-center items-start'>
-                    <Image src={aboutimg} alt='about'
+                    <Image src={aboutimg} alt='event'
                     className='md:h-[400px] ss:h-[300px] w-auto'
                     />
                 </motion.div>
