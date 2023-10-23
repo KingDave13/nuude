@@ -76,7 +76,7 @@ const Membership = () => {
             </motion.div>
         </div>
     </section>
-  )
+  );
 };
 
 export default SectionWrapper(Membership, 'membership');
