@@ -66,6 +66,7 @@ a {
 
 .luxury {
   background-image: url('/assets/luxury.png');
+  background-size: cover;
 }
 
 .membership {
