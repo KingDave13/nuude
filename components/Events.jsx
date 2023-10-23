@@ -65,13 +65,9 @@ const Events = () => {
 
                     <p className='text-white md:text-[16px] ss:text-[16px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
-                    The club's exclusivity adds to its allure, ensuring 
-                    that only those who are genuinely curious and 
-                    open-minded individuals are granted membership. By 
-                    carefully curating its members, Nuude! strives to 
-                    foster a community of like-minded individuals who can 
-                    share in the exploration of their desires, passions 
-                    and interests.
+                    Other details including time and venue will be 
+                    communicated privately via email after successful 
+                    screening and approval.
                     </p>    
 
                     <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
