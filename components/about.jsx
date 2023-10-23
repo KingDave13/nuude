@@ -30,7 +30,7 @@ const About = () => {
                 <motion.div variants={textVariant()}
                 className={`${layout.sectionInfo}`}>
                     <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:leading-[22px]'>
+                    text-[14px] md:max-w-[700px] md:leading-[22px]'>
                     Nuude! is an exclusively private club standing to 
                     serve the social and entertainment needs of its 
                     members and guests by maintaining the highest 
@@ -41,7 +41,7 @@ const About = () => {
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
+                    text-[14px] md:max-w-[700px] md:mt-5 md:leading-[22px]'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
                     open-minded individuals are granted membership. By 
