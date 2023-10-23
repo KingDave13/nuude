@@ -78,6 +78,6 @@ const Events = () => {
         </div>
     </section>
   )
-}
+};
 
 export default SectionWrapper(Events, 'events');
