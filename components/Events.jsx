@@ -60,7 +60,7 @@ const Events = () => {
 
                     <h1 className='text-white md:text-[45px] ss:text-[35px] 
                     text-[20px] mb-5'>
-                        Nuude
+                        24th November, 2023
                     </h1>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
