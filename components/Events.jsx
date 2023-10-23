@@ -38,7 +38,7 @@ const Events = () => {
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[45px] ss:text-[35px] 
                     text-[20px] mb-5'>
-                        Nuude
+                        Nuude!
                     </h1>
 
                     <p className='text-white md:text-[18px] ss:text-[18px] 
@@ -57,6 +57,11 @@ const Events = () => {
                         <div className='bg-secondary md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[1px]' />
                     </div>
+
+                    <h1 className='text-white md:text-[45px] ss:text-[35px] 
+                    text-[20px] mb-5'>
+                        Nuude
+                    </h1>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
