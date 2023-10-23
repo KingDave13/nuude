@@ -52,11 +52,10 @@ const Events = () => {
                     Featuring: Connect, pool party, fine dining.
                     </p>
 
-                    <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
-                    className="relative items-center justify-center">
+                    <div className="relative items-center justify-center">
                         <div className='bg-secondary md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
-                    </motion.div>
+                    </div>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
