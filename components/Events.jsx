@@ -74,11 +74,11 @@ const Events = () => {
                 </motion.div>
 
                 <motion.div 
-                    variants={slideIn('right', 'tween', 0.2, 0.5)}>
+                    variants={slideIn('left', 'tween', 0.2, 0.5)}>
                     <Image src={aboutimg} alt='about'
                     className='md:h-[400px] ss:h-[300px] w-auto'
-                />
-            </motion.div>
+                    />
+                </motion.div>
             </motion.div>
         </div>
     </section>
