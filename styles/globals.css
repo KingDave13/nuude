@@ -70,6 +70,7 @@ a {
 
 .membership {
   background-image: url('/assets/membership.png');
+  background-size: contain;
 }
 
 .gradient-overlay {
