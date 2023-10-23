@@ -37,19 +37,14 @@ const Events = () => {
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[45px] ss:text-[35px] 
-                    text-[20px]'>
+                    text-[20px] mb-5'>
                         Nuude
                     </h1>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:leading-[22px]'>
-                    Nuude! is an exclusively private club standing to 
-                    serve the social and entertainment needs of its 
-                    members and guests by maintaining the highest 
-                    standards of excellence in all endeavours, providing 
-                    creative and culturally rich programs, and by 
-                    providing a safe and comfortable environment for 
-                    personal exploration.
+                    text-[14px] max-w-[700px] md:leading-[22px] mb-5'>
+                    Step into a world of fine dining, intrigue and 
+                    sensuality where we hand you the key to your dreams.
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
