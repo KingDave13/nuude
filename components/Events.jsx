@@ -1,5 +1,6 @@
+'use client';
+
 import SectionWrapper from '@hoc/SectionWrapper'
-import React from 'react'
 
 const Events = () => {
   return (
