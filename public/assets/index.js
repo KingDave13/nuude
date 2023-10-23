@@ -4,6 +4,7 @@ import heroImg from './heroImg.png';
 import aboutimg from './aboutimg.png';
 import luxury from './luxury.png';
 import event from './event.png';
+import membership from './membership.png';
 
 export {
     logo,
@@ -11,5 +12,6 @@ export {
     heroImg,
     aboutimg,
     luxury,
-    event
+    event,
+    membership
 }
