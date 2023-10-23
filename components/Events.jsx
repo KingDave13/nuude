@@ -36,7 +36,8 @@ const Events = () => {
                 </motion.div>
 
                 <motion.div variants={textVariant()}>
-                    <h1>
+                    <h1 className='text-white md:text-[45px] ss:text-[35px] 
+                    text-[20px]'>
                         Nuude
                     </h1>
 
