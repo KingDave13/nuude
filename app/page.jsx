@@ -62,6 +62,7 @@ const Home = () => {
       <div className="bg-primary">
         <Events />
       </div>
+      
     </section>
   )
 };
