@@ -26,7 +26,7 @@ const Events = () => {
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col w-full 
-            md:gap-28">
+            items-center md:gap-28">
                 <motion.div 
                     variants={slideIn('left', 'tween', 0.2, 0.5)}
                     className='justify-center items-start'>
@@ -36,7 +36,7 @@ const Events = () => {
                 </motion.div>
 
                 <motion.div variants={textVariant()}>
-                    <h1 className='text-white md:text-[45px] ss:text-[35px] 
+                    <h1 className='text-white md:text-[40px] ss:text-[35px] 
                     text-[20px] mb-5'>
                         Nuude!
                     </h1>
@@ -58,13 +58,13 @@ const Events = () => {
                         w-[80px] md:h-[1px] ss:h-[1px] h-[1px]' />
                     </div>
 
-                    <h1 className='text-white md:text-[45px] ss:text-[35px] 
+                    <h1 className='text-white md:text-[40px] ss:text-[35px] 
                     text-[20px] mb-5'>
                         24th November, 2023
                     </h1>
 
                     <p className='text-white md:text-[16px] ss:text-[16px] 
-                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
+                    text-[14px] max-w-[750px] md:mt-5 md:leading-[22px]'>
                     Other details including time and venue will be 
                     communicated privately via email after successful 
                     screening and approval.
