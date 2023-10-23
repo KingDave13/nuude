@@ -1,5 +1,6 @@
-import SectionWrapper from '@hoc/SectionWrapper'
-import React from 'react'
+'use client';
+
+import SectionWrapper from '@hoc/SectionWrapper';
 
 const Membership = () => {
   return (
