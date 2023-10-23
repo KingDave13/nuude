@@ -10,10 +10,10 @@ const Membership = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col md:pb-10'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex justify-between items-center w-full md:mb-10">
-                <div className="flex">
-                    <div className='bg-white md:w-full ss:w-[300px]
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+            className="flex justify-between items-center w-full gap-12
+            md:mb-10">
+                <div className="flex-grow">
+                    <div className='bg-white w-full md:h-[1px] ss:h-[1px] h-[2px]' />
                 </div>
 
                 <h1 className="text-white font-bold md:text-[55px]
@@ -21,9 +21,8 @@ const Membership = () => {
                     Membership
                 </h1>
 
-                <div className="flex">
-                    <div className='bg-white md:w-full ss:w-[300px]
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+                <div className="flex-grow">
+                    <div className='bg-white w-full md:h-[1px] ss:h-[1px] h-[2px]' />
                 </div>
             </motion.div>
 
