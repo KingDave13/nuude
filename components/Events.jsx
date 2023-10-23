@@ -13,7 +13,7 @@ const Events = () => {
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12">
-                <h1 className="text-secondary font-bold md:text-[55px]
+                <h1 className="text-secondary font-bold md:text-[50px]
                 ss:text-[47px] text-[35px] md:mr-10">
                     Upcoming Events
                 </h1>
@@ -25,10 +25,11 @@ const Events = () => {
             </motion.div>
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
-            className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
+            className="flex md:flex-row ss:flex-row flex-col w-full 
+            md:gap-20">
                 <motion.div 
                     variants={slideIn('left', 'tween', 0.2, 0.5)}
-                    className='flex-1 justify-center items-start'>
+                    className='justify-center items-start'>
                     <Image src={event} alt='event'
                     className='md:w-[400px] ss:w-[300px] h-auto'
                     />
