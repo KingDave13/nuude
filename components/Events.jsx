@@ -65,7 +65,7 @@ const Events = () => {
                             ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
                             rounded-[6px] font-medium font-manier cursor-pointer'
                         >
-                            Become a Member
+                            Apply for Event
                         </button>
 
                         <button
