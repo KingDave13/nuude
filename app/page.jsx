@@ -2,6 +2,7 @@
 
 import About from "@components/About";
 import Luxury from "@components/Luxury";
+import Events from "@components/Events";
 import Link from "next/link";
 
 const Home = () => {
@@ -58,6 +59,9 @@ const Home = () => {
         <Luxury />
       </div>
       
+      <div className="bg-primary">
+        <Events />
+      </div>
     </section>
   )
 };
