@@ -76,7 +76,7 @@ const Contact = () => {
                     </div>
 
                     <div className="flex flex-col">
-                        <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
                         md:text-[20px] ss:text-[18px] text-[14px]">
                         Email Address
                         </label>
@@ -87,14 +87,14 @@ const Contact = () => {
                         // onChange={handleChange}
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-black rounded-lg placeholder:text-black-100 
+                        outline-none text-white rounded-lg placeholder:text-black-100 
                         md:placeholder:text-[15px] ss:placeholder:text-[14px] 
                         placeholder:text-[12px]"
                         />
                     </div>
 
                     <div className="flex flex-col">
-                        <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
                         md:text-[20px] ss:text-[18px] text-[14px]">
                         Subject
                         </label>
@@ -105,14 +105,14 @@ const Contact = () => {
                         // onChange={handleChange}
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-black rounded-lg placeholder:text-black-100 
+                        outline-none text-white rounded-lg placeholder:text-black-100 
                         md:placeholder:text-[15px] ss:placeholder:text-[14px] 
                         placeholder:text-[12px]"
                         />
                     </div>
 
                     <div className="col-span-2 flex flex-col">
-                        <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
                         md:text-[20px] ss:text-[18px] text-[14px]">
                         Message
                         </label>
