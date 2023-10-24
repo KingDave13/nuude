@@ -13,6 +13,8 @@ module.exports = {
         primary: "#1A1A1A",
         secondary: "#EDD574",
         mainRed: "#E30613",
+        primaryalt: "#434343",
+        textalt: "#898989",
       },
       fontFamily: {
         manier: ["Manier", "sans-serif"],
