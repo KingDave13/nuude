@@ -14,5 +14,6 @@ export {
     aboutimg,
     luxury,
     event,
-    membership
+    membership,
+    contact
 }
