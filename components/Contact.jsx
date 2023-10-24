@@ -24,9 +24,9 @@ const Contact = () => {
             </motion.div>
         
             <motion.div variants={textVariant()}
-            className={`${layout.sectionInfo}`}>
+            className='flex items-start w-full'>
                 <p className='text-white md:text-[17px] ss:text-[18px] 
-                text-[14px] max-w-[700px] md:leading-[22px]'>
+                text-[14px] md:max-w-[700px] md:leading-[22px]'>
                 Got any more inquiries, complaints, sponsorship 
                 proposals, payment disputes and any other general 
                 info? Contact us today and we'll get back to you 
