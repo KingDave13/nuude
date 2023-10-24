@@ -34,9 +34,8 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-                className='bg-primary p-12 md:mt-0 ss:mt-5
-                mt-0 items-start w-full'>
-                <div className="w-1/2 mx-auto">
+            className='bg-primary p-12 md:mt-0 ss:mt-5 mt-0
+            w-1/2'>
                 <form 
                 className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col">
@@ -50,10 +49,10 @@ const Contact = () => {
                         // value={form.name}
                         // onChange={handleChange}
                         placeholder="Enter your first name"
-                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
                         placeholder:text-white-4 font-manier
-                        md:placeholder:text-[15px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -70,10 +69,10 @@ const Contact = () => {
                         // value={form.name}
                         // onChange={handleChange}
                         placeholder="Enter your last name"
-                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
                         placeholder:text-white-4 font-manier
-                        md:placeholder:text-[15px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -90,10 +89,10 @@ const Contact = () => {
                         // value={form.email}
                         // onChange={handleChange}
                         placeholder="Enter your email address"
-                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
                         placeholder:text-white-4 font-manier
-                        md:placeholder:text-[15px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -110,10 +109,10 @@ const Contact = () => {
                         // value={form.subject}
                         // onChange={handleChange}
                         placeholder="Enter a subject"
-                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
                         placeholder:text-white-4 font-manier
-                        md:placeholder:text-[15px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -130,10 +129,10 @@ const Contact = () => {
                         // value={form.message}
                         // onChange={handleChange}
                         placeholder="You can be brief or very expressive. No pressure!"
-                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
                         placeholder:text-white-4 font-manier
-                        md:placeholder:text-[15px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -145,13 +144,12 @@ const Contact = () => {
                         className="bg-secondary grow2 w-fit shadow-md 
                         md:text-[16px] ss:text-[16px] text-[13px] py-4 px-20
                         text-primary md:rounded-[3px] border-none
-                        font-manier"
+                        font-manier cursor-pointer"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
                     </div>
                 </form>
-                </div>   
             </motion.div>
         </div>
     </section>
