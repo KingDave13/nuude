@@ -37,7 +37,7 @@ const Contact = () => {
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
                 className='flex-1 bg-primary bg-opacity-40 p-8 md:mt-0 ss:mt-5
                 mt-0 items-start'>
-                <form ref={formRef} onSubmit={handleSubmit}
+                <form 
                 className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col">
                         <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
@@ -47,8 +47,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="name"
-                        value={form.name}
-                        onChange={handleChange}
+                        // value={form.name}
+                        // onChange={handleChange}
                         placeholder="Enter your name"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-black rounded-lg placeholder:text-black-100 
@@ -65,8 +65,8 @@ const Contact = () => {
                         <input
                         type="email"
                         name="email"
-                        value={form.email}
-                        onChange={handleChange}
+                        // value={form.email}
+                        // onChange={handleChange}
                         placeholder="Enter your email"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-black rounded-lg placeholder:text-black-100 
@@ -83,8 +83,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="phone"
-                        value={form.phone}
-                        onChange={handleChange}
+                        // value={form.phone}
+                        // onChange={handleChange}
                         placeholder="Enter your phone(WhatsApp) number"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-black rounded-lg placeholder:text-black-100 
@@ -101,8 +101,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="subject"
-                        value={form.subject}
-                        onChange={handleChange}
+                        // value={form.subject}
+                        // onChange={handleChange}
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-black rounded-lg placeholder:text-black-100 
@@ -119,8 +119,8 @@ const Contact = () => {
                         <textarea
                         rows="5"
                         name="message"
-                        value={form.message}
-                        onChange={handleChange}
+                        // value={form.message}
+                        // onChange={handleChange}
                         placeholder="Your message"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-black rounded-lg placeholder:text-black-100 
@@ -136,7 +136,7 @@ const Contact = () => {
                         md:text-[16px] ss:text-[16px] text-[13px] py-2 px-12 
                         text-white rounded-lg font-medium border-none hover:text-white"
                         >
-                        {Loading ? 'Sending...' : 'Send'}
+                        {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
                     </div>
                 </form>
