@@ -68,7 +68,7 @@ const Home = () => {
       </div>
 
       <div className="contact">
-
+        <Contact />
       </div>
 
     </section>
