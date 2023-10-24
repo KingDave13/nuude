@@ -10,10 +10,10 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className='relative w-full min-h-[360px] mx-auto flex 
-    items-center flex-col md:mb-0 ss:mb-0 mb-6'>
+    <section className=' w-full min-h-[500px] flex items-center 
+    md:px-16 ss:px-16 px-6'>
       <div className='flex max-w-[95rem] mx-auto items-center w-full 
-      relative'>
+      relative flex-col'>
         <motion.div variants={textVariant()} className='flex md:flex-row 
         ss:flex-row flex-col relative w-full'>
           <div className='flex flex-col flex-start relative w-full'>
@@ -29,10 +29,10 @@ const Footer = () => {
             </p>
           </div>
         </motion.div>
-      </div>
 
-      <motion.div variants={textVariant()} className='md:absolute ss:absolute 
-      flex flex-col w-full md:bottom-10 ss:bottom-14 md:max-w-[600px] left-0'>
+        <motion.div variants={textVariant()} 
+      className='flex flex-col w-full md:bottom-10 ss:bottom-14 
+      md:max-w-[600px] left-0'>
         <div className='flex md:mt-3 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
         items-center'>
           <BiCopyright className='sm:mr-2 mr-1 md:text-[20px] 
@@ -49,7 +49,7 @@ const Footer = () => {
       </motion.div>
 
       <motion.div variants={fadeIn('down', 'spring', 0.3)}
-      className='absolute bottom-0 w-full border-t-[1px] md:pt-2 ss:pt-2
+      className='w-full border-t-[1px] md:pt-2 ss:pt-2
       pt-1'>
         <p className='md:text-[15px] ss:text-[14px] text-[12px]'>
           Designed and developed by
@@ -59,6 +59,7 @@ const Footer = () => {
             </span>
         </p>
       </motion.div>
+      </div>
     </section>
   )
 };
