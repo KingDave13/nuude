@@ -29,14 +29,10 @@ const Contact = () => {
                 className={`${layout.sectionInfo}`}>
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:leading-[22px]'>
-                    The black-tie luxury dinner series is characterized by
-                    its attention to detail, featuring gourmet cuisine, 
-                    fine wines, and elegant décor that create an 
-                    atmosphere of refinement and indulgence. The intimate
-                    setting encourages conversation and connection 
-                    among attendees amidst the classes, fostering a 
-                    sense of community among those who share an interest
-                    in fetish and erotic arts.
+                    Got any more inquiries, complaints, sponsorship 
+                    proposals, payment disputes and any other general 
+                    info? Contact us today and we'll get back to you 
+                    very, very swiftly.
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
