@@ -27,13 +27,13 @@ export const navLinks = [
   export const socialMedia = [
     {
       id: "social-media-1",
-      Icon: BsWhatsapp,
-      link: "https://wa.me/2348037002296"
+      Icon: '',
+      link: ""
     },
     {
       id: "social-media-2",
-      Icon: GrMail,
-      link: "mailto:Anasconigltd@yahoo.com"
+      Icon: '',
+      link: ""
     }
   ];
 
