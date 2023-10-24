@@ -76,6 +76,7 @@ a {
 
 .contact {
   background-image: url('/assets/contact.png');
+  background-size: cover;
 }
 
 .gradient-overlay {
