@@ -67,6 +67,10 @@ const Home = () => {
         <Membership />
       </div>
 
+      <div className="contact">
+
+      </div>
+
     </section>
   )
 };
