@@ -5,6 +5,7 @@ import aboutimg from './aboutimg.png';
 import luxury from './luxury.png';
 import event from './event.png';
 import membership from './membership.png';
+import contact from './contact.png';
 
 export {
     logo,
