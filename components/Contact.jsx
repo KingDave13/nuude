@@ -34,8 +34,9 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-            className='bg-primary p-12 md:mt-0 ss:mt-5 mt-0
-            w-1/2'>
+            className='w-full'>
+                <div className='bg-primary p-12 md:mt-0 ss:mt-5 mt-0
+                w-1/2'>
                 <form 
                 className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col">
@@ -150,6 +151,7 @@ const Contact = () => {
                         </button>
                     </div>
                 </form>
+                </div>
             </motion.div>
         </div>
     </section>
