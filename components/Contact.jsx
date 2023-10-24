@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { layout } from "@styles/styles";
 
-const Luxury = () => {
+const Contact = () => {
   return (
     <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
@@ -78,4 +78,4 @@ const Luxury = () => {
   )
 };
 
-export default SectionWrapper(Luxury, '');
+export default SectionWrapper(Contact, '');
