@@ -121,9 +121,9 @@ const Contact = () => {
                         name="message"
                         // value={form.message}
                         // onChange={handleChange}
-                        placeholder="Your message"
+                        placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-black rounded-lg placeholder:text-black-100 
+                        outline-none text-white rounded-lg placeholder:text-black-100 
                         md:placeholder:text-[15px] ss:placeholder:text-[14px] 
                         placeholder:text-[12px]"
                         />
@@ -132,9 +132,9 @@ const Contact = () => {
                     <div className="col-span-2">
                         <button
                         type="submit"
-                        className="bg-primary grow2 mr-5 w-fit shadow-md 
+                        className="bg-secondary grow2 mr-5 w-fit shadow-md 
                         md:text-[16px] ss:text-[16px] text-[13px] py-2 px-12 
-                        text-white rounded-lg font-medium border-none hover:text-white"
+                        text-white rounded-lg  border-none"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
