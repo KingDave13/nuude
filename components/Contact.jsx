@@ -40,18 +40,36 @@ const Contact = () => {
                 <form 
                 className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col">
-                        <label className="text-primary font-bold md:mb-4 ss:mb-2 mb-2 
+                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
                         md:text-[20px] ss:text-[18px] text-[14px]">
-                        Name
+                        First Name
                         </label>
                         <input
                         type="text"
-                        name="name"
+                        name="firstname"
                         // value={form.name}
                         // onChange={handleChange}
-                        placeholder="Enter your name"
+                        placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-black rounded-lg placeholder:text-black-100 
+                        outline-none text-white rounded-lg placeholder:text-black-100 
+                        md:placeholder:text-[15px] ss:placeholder:text-[14px] 
+                        placeholder:text-[12px]"
+                        />
+                    </div>
+
+                    <div className="flex flex-col">
+                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
+                        md:text-[20px] ss:text-[18px] text-[14px]">
+                        Last Name
+                        </label>
+                        <input
+                        type="text"
+                        name="lastname"
+                        // value={form.name}
+                        // onChange={handleChange}
+                        placeholder="Enter your first name"
+                        className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
+                        outline-none text-white rounded-lg placeholder:text-black-100 
                         md:placeholder:text-[15px] ss:placeholder:text-[14px] 
                         placeholder:text-[12px]"
                         />
