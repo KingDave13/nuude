@@ -34,7 +34,7 @@ const Contact = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-                className='bg-primary p-10 md:mt-0 ss:mt-5
+                className='bg-primary p-12 md:mt-0 ss:mt-5
                 mt-0 items-start w-full'>
                 <form 
                 className="grid grid-cols-2 gap-8">
