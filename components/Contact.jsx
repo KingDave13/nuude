@@ -11,7 +11,7 @@ const Contact = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-20">
+            className="flex flex-row items-center w-full md:mb-10">
                 <h1 className="text-white font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
                     Contact Us
@@ -26,7 +26,7 @@ const Contact = () => {
             <motion.div variants={textVariant()}
             className='flex items-start w-full'>
                 <p className='text-white md:text-[17px] ss:text-[18px] 
-                text-[14px] md:max-w-[700px] md:leading-[22px]'>
+                text-[14px] md:max-w-[600px] md:leading-[22px]'>
                 Got any more inquiries, complaints, sponsorship 
                 proposals, payment disputes and any other general 
                 info? Contact us today and we'll get back to you 
