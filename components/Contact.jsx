@@ -141,9 +141,10 @@ const Contact = () => {
                     <div className="col-span-2">
                         <button
                         type="submit"
-                        className="bg-secondary grow2 mr-5 w-fit shadow-md 
-                        md:text-[16px] ss:text-[16px] text-[13px] py-2 px-12 
-                        text-white rounded-lg  border-none"
+                        className="bg-secondary grow2 w-fit shadow-md 
+                        md:text-[16px] ss:text-[16px] text-[13px] py-4 px-20
+                        text-primary md:rounded-[3px] border-none
+                        font-manier"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
