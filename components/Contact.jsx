@@ -14,7 +14,7 @@ const Contact = () => {
             className="flex flex-row items-center w-full md:mb-20">
                 <h1 className="text-white font-bold md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
-                    Unparalled Luxury <br></br>for the Select
+                    Contact Us
                 </h1>
                 <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
