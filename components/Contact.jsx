@@ -67,7 +67,7 @@ const Contact = () => {
                         name="lastname"
                         // value={form.name}
                         // onChange={handleChange}
-                        placeholder="Enter your first name"
+                        placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
                         outline-none text-white rounded-lg placeholder:text-black-100 
                         md:placeholder:text-[15px] ss:placeholder:text-[14px] 
