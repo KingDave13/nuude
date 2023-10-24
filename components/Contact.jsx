@@ -6,7 +6,7 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Contact = () => {
   return (
-    <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[1100px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
@@ -40,7 +40,7 @@ const Contact = () => {
                 className="grid grid-cols-2 gap-8">
                     <div className="flex flex-col">
                         <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                        md:text-[17px] ss:text-[18px] text-[14px]">
+                        md:text-[16px] ss:text-[18px] text-[14px]">
                         First Name
                         </label>
                         <input
@@ -60,7 +60,7 @@ const Contact = () => {
 
                     <div className="flex flex-col">
                         <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                        md:text-[17px] ss:text-[18px] text-[14px]">
+                        md:text-[16px] ss:text-[18px] text-[14px]">
                         Last Name
                         </label>
                         <input
@@ -79,8 +79,8 @@ const Contact = () => {
                     </div>
 
                     <div className="col-span-2 flex flex-col">
-                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
-                        md:text-[20px] ss:text-[18px] text-[14px]">
+                        <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                        md:text-[16px] ss:text-[18px] text-[14px]">
                         Email Address
                         </label>
                         <input
@@ -89,16 +89,18 @@ const Contact = () => {
                         // value={form.email}
                         // onChange={handleChange}
                         placeholder="Enter your email address"
-                        className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-white rounded-lg placeholder:text-black-100 
-                        md:placeholder:text-[15px] ss:placeholder:text-[14px] 
-                        placeholder:text-[12px]"
+                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        outline-none text-white md:rounded-[3px] 
+                        placeholder:text-white-4 font-manier
+                        md:placeholder:text-[15px] 
+                        ss:placeholder:text-[14px] 
+                        placeholder:text-[12px] bg-primaryalt"
                         />
                     </div>
 
                     <div className="col-span-2 flex flex-col">
-                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
-                        md:text-[20px] ss:text-[18px] text-[14px]">
+                        <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                        md:text-[16px] ss:text-[18px] text-[14px]">
                         Subject
                         </label>
                         <input
@@ -107,28 +109,32 @@ const Contact = () => {
                         // value={form.subject}
                         // onChange={handleChange}
                         placeholder="Enter a subject"
-                        className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-white rounded-lg placeholder:text-black-100 
-                        md:placeholder:text-[15px] ss:placeholder:text-[14px] 
-                        placeholder:text-[12px]"
+                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        outline-none text-white md:rounded-[3px] 
+                        placeholder:text-white-4 font-manier
+                        md:placeholder:text-[15px] 
+                        ss:placeholder:text-[14px] 
+                        placeholder:text-[12px] bg-primaryalt"
                         />
                     </div>
 
                     <div className="col-span-2 flex flex-col">
-                        <label className="text-white md:mb-4 ss:mb-2 mb-2 
-                        md:text-[20px] ss:text-[18px] text-[14px]">
+                        <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                        md:text-[16px] ss:text-[18px] text-[14px]">
                         Message
                         </label>
                         <textarea
-                        rows="5"
+                        rows="6"
                         name="message"
                         // value={form.message}
                         // onChange={handleChange}
                         placeholder="You can be brief or very expressive. No pressure!"
-                        className="md:py-3 ss:py-3 py-2 px-6 border-[1px] 
-                        outline-none text-white rounded-lg placeholder:text-black-100 
-                        md:placeholder:text-[15px] ss:placeholder:text-[14px] 
-                        placeholder:text-[12px]"
+                        className="md:py-4 ss:py-3 py-2 px-4 border-none 
+                        outline-none text-white md:rounded-[3px] 
+                        placeholder:text-white-4 font-manier
+                        md:placeholder:text-[15px] 
+                        ss:placeholder:text-[14px] 
+                        placeholder:text-[12px] bg-primaryalt"
                         />
                     </div>
 
