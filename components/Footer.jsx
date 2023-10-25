@@ -19,15 +19,13 @@ const Footer = () => {
                 <Image 
                     src={logo} 
                     alt='logo' 
-                    className='md:w-[200px] 
-                    ss:w-[180px] w-[150px] h-auto' 
+                    className='md:w-[300px] ss:w-[180px] w-[150px] h-auto' 
                 />
 
-                <p className='text-maintext md:text-[18px] ss:text-[16px] 
-                text-[14px] md:max-w-[550px] ss:max-w-[260px] max-w-[320px] 
-                md:mt-8 ss:mt-8 mt-5 md:leading-[25px] ss:leading-[23px] 
-                leading-[20px] text-center'>
-                    Nuude! is an exclusively private social and 
+                <p className='text-maintext md:text-[20px] ss:text-[16px] 
+                text-[14px] md:mt-8 ss:mt-8 mt-5 md:leading-[25px] 
+                ss:leading-[23px] leading-[20px] text-center'>
+                    Nuude! is an exclusively private social and <br></br>
                     entertainment club in Lagos, Nigeria.
                 </p>
             </motion.div>
