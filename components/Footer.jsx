@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center'>
             <motion.div variants={textVariant()} className='flex flex-col
-            items-center justify-center md:mt-20'>
+            items-center justify-center md:mt-14'>
                 <Image 
                     src={logo} 
                     alt='logo' 
