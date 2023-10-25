@@ -1,6 +1,6 @@
 'use client';
 
-import { SectionWrapper } from '@hoc/SectionWrapper';
+import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '@utils/motion';
 import { BiCopyright } from 'react-icons/bi';
@@ -10,8 +10,7 @@ import React from 'react';
 
 const Footer = () => {
   return (
-    <section className=' w-full min-h-[500px] flex items-center 
-    md:px-16 ss:px-16 px-6'>
+    <section className=' w-full min-h-[500px] flex items-center'>
       <div className='flex max-w-[95rem] mx-auto items-center w-full 
       relative flex-col'>
         <motion.div variants={textVariant()} className='flex md:flex-row 
@@ -64,4 +63,4 @@ const Footer = () => {
   )
 };
 
-export default Footer;
+export default SectionWrapper(Footer, '');
