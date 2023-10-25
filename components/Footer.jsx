@@ -95,7 +95,7 @@ const Footer = () => {
                 text-maintext w-full text-center'>
                 Website designed and developed with love by
                     <span className='text-[#069D6D] font-medium cursor-pointer grow3'>
-                    <a href='https://pluggresources.com/' target='blank'> Plugg Resources
+                    <a href='https://pluggresources.com/' target='blank'> Plugg Resources.
                     </a>
                     </span>
                 </p>
