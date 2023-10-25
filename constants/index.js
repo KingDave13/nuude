@@ -53,21 +53,21 @@ export const navLinks = [
     {
       id: 'link1',
       name: 'About Us',
-      route: '',
+      route: '/about',
     },
     {
       id: 'link2',
       name: 'Membership',
-      route: '',
+      route: '/membership',
     },
     {
       id: 'link3',
       name: 'Events',
-      route: '',
+      route: '/events',
     },
     {
       id: 'link4',
       name: 'Contact Us',
-      route: '',
+      route: '/contact',
     },
   ];

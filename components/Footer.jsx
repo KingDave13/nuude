@@ -72,7 +72,9 @@ const Footer = () => {
                </h1>
 
                {footerLinks.map((footer, index) => (
-                f
+                <div>
+                    
+                </div>
                ))}
             </motion.div>
 
