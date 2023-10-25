@@ -51,22 +51,22 @@ export const navLinks = [
 
   export const footerLinks =[
     {
-      id: 'link1',
+      id: 'about',
       name: 'About Us',
       route: '/about',
     },
     {
-      id: 'link2',
+      id: 'membership',
       name: 'Membership',
       route: '/membership',
     },
     {
-      id: 'link3',
+      id: 'events',
       name: 'Events',
       route: '/events',
     },
     {
-      id: 'link4',
+      id: 'contact',
       name: 'Contact Us',
       route: '/contact',
     },

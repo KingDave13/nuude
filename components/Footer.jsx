@@ -63,7 +63,7 @@ const Footer = () => {
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
             className='flex md:mt-8 ss:mt-2 mt-1 items-center flex-col'>
-                <h1 className='text-primary md:text-[20px] ss:text-[16px] 
+                <h1 className='text-primary md:text-[18px] ss:text-[16px] 
                     text-[14px] font-bold'>
                     Website Quick Links
                 </h1>
@@ -72,12 +72,12 @@ const Footer = () => {
                     {footerLinks.map((footer, index) => (
                         <ul className='list-none'>
                             <Link
-                            href={footer.route}
+                            href={`#${footer.id}`}
                             key={footer.name}>
-                                <li className={`md:text-[17px] ss:text-[16px] grow2
+                                <li className={`md:text-[18px] ss:text-[16px] grow2
                                 text-[14px] text-primary hover:text-secondary 
                                 cursor-pointer text-maintext
-                                ${index !== footerLinks.length - 1 ? 'md:mr-16 ss:mr-2 mr-2' : 'mr-0'}`}>
+                                ${index !== footerLinks.length - 1 ? 'md:mr-12 ss:mr-2 mr-2' : 'mr-0'}`}>
                                     {footer.name}
                                 </li>
                             </Link>
