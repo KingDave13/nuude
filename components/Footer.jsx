@@ -16,7 +16,7 @@ const Footer = () => {
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center'>
             <motion.div variants={textVariant()} className='flex flex-col
-            items-center justify-center'>
+            items-center justify-center md:mt-20'>
                 <Image 
                     src={logo} 
                     alt='logo' 
@@ -37,7 +37,7 @@ const Footer = () => {
                 ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
                 text-maintext' />
 
-                <p className='md:text-[18px] ss:text-[16px] text-[14px] 
+                <p className='md:text-[17px] ss:text-[16px] text-[14px] 
                 text-maintext mt-1'>
                     2023. All Rights Reserved.
                 </p>
@@ -75,7 +75,7 @@ const Footer = () => {
                             href={`#${footer.id}`}
                             key={footer.name}>
                                 <li className={`md:text-[18px] ss:text-[16px] grow2
-                                text-[14px] text-primary hover:text-secondary 
+                                text-[14px] text-maintext hover:text-secondary 
                                 cursor-pointer text-maintext
                                 ${index !== footerLinks.length - 1 ? 'md:mr-12 ss:mr-2 mr-2' : 'mr-0'}`}>
                                     {footer.name}
@@ -87,10 +87,10 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='border-t-[1px] md:pt-2 ss:pt-2 pt-1 md:mt-8 
-            ss:mt-2 mt-1'>
+            className='borderTop md:pt-8 ss:pt-2 pt-1 md:mt-10 
+            ss:mt-2 mt-1 w-full flex items-center'>
                 <p className='md:text-[15px] ss:text-[14px] text-[12px]
-                text-maintext'>
+                text-maintext w-full text-center'>
                 Website designed and developed with love by
                     <span className='text-[#069D6D] font-medium cursor-pointer grow3'>
                     <a href='https://pluggresources.com/' target='blank'> Plugg Resources
