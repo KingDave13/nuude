@@ -1,7 +1,4 @@
-import { RxTwitterLogo } from 'react-icons/rx';
-import { AiOutlineInstagram } from 'react-icons/ai';
-import { FiFacebook } from 'react-icons/fi';
-import { SlSocialLinkedin } from 'react-icons/sl';
+import { twitter, instagram, facebook, linkedin } from "@public/assets";
 
 export const navLinks = [
     {
