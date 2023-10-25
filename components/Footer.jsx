@@ -45,7 +45,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-6 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
+            className='flex md:mt-2 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
             items-center'>
                 {socialMedia.map((social, index) => (
                     <Link 
@@ -55,12 +55,25 @@ const Footer = () => {
                     key={index}
                     >
                         {React.createElement(social.Icon, {
-                            className: `md:w-[27px] ss:w-[24px] w-[20px] md:h-[22px] 
-                            ss:h-[20px] h-[30px] object-contain cursor-pointer grow2
+                            className: `md:w-[27px] ss:w-[24px] w-[20px] h-auto 
+                            object-contain cursor-pointer grow2
                             ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
                         })}
                     </Link>
                 ))}
+            </motion.div>
+
+            <motion.div variants={fadeIn('down', 'spring', 0.3)}
+            className='flex md:mt-2 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
+            items-center flex-col'>
+               <h1 className='text-primary md:text-[20px] ss:text-[16px] 
+                text-[14px] font-bold'>
+                Website Quick Links
+               </h1>
+
+               {footerLinks.map((footer, index) => (
+                f
+               ))}
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
