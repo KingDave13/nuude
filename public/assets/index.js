@@ -6,6 +6,10 @@ import luxury from './luxury.png';
 import event from './event.png';
 import membership from './membership.png';
 import contact from './contact.png';
+import twitter from './twitter.png';
+import instagram from './instagram.png';
+import facebook from './facebook.png';
+import linkedin from './linkedin.png';
 
 export {
     logo,
@@ -15,5 +19,9 @@ export {
     luxury,
     event,
     membership,
-    contact
+    contact,
+    twitter,
+    instagram,
+    facebook,
+    linkedin
 }
