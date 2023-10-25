@@ -52,7 +52,7 @@ const Footer = () => {
                     rel='noreferrer'
                     key={social.id}
                     >
-                        {React.createElement(social.Icon, {
+                        {React.createElement(social.image, {
                             className: `md:w-[27px] ss:w-[24px] w-[20px] h-auto
                             object-contain cursor-pointer grow2
                             ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
