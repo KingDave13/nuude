@@ -24,7 +24,7 @@ const Footer = () => {
                 />
 
                 <p className='text-maintext md:text-[22px] ss:text-[16px] 
-                text-[14px] md:mt-8 ss:mt-8 mt-5 md:leading-[25px] 
+                text-[14px] md:mt-10 ss:mt-8 mt-5 md:leading-[25px] 
                 ss:leading-[23px] leading-[20px] text-center'>
                     Nuude! is an exclusively private social and <br></br>
                     entertainment club in Lagos, Nigeria.
@@ -32,8 +32,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={textVariant()} 
-            className='flex md:mt-6 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
-            items-center'>
+            className='flex md:mt-6 ss:mt-2 mt-1 items-center'>
                 <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
                 ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
                 text-maintext' />
@@ -45,8 +44,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-2 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
-            items-center'>
+            className='flex md:mt-8 ss:mt-2 mt-1 items-center'>
                 {socialMedia.map((social, index) => (
                     <Link 
                     target='_blank'
@@ -64,22 +62,33 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-2 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
-            items-center flex-col'>
-               <h1 className='text-primary md:text-[20px] ss:text-[16px] 
-                text-[14px] font-bold'>
-                Website Quick Links
-               </h1>
-
-               {footerLinks.map((footer, index) => (
-                <div>
-                    
+            className='flex md:mt-8 ss:mt-2 mt-1 items-center flex-col'>
+                <h1 className='text-primary md:text-[20px] ss:text-[16px] 
+                    text-[14px] font-bold'>
+                    Website Quick Links
+                </h1>
+            
+                <div className='flex md:mt-5 ss:mt-2 mt-1 items-center'>
+                    {footerLinks.map((footer, index) => (
+                        <ul className='list-none'>
+                            <Link
+                            href={footer.route}
+                            key={footer.name}>
+                                <li className={`md:text-[17px] ss:text-[16px] grow2
+                                text-[14px] text-primary hover:text-secondary 
+                                cursor-pointer text-maintext
+                                ${index !== footerLinks.length - 1 ? 'md:mr-16 ss:mr-2 mr-2' : 'mr-0'}`}>
+                                    {footer.name}
+                                </li>
+                            </Link>
+                        </ul>
+                    ))}
                 </div>
-               ))}
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='border-t-[1px] md:pt-2 ss:pt-2 pt-1'>
+            className='border-t-[1px] md:pt-2 ss:pt-2 pt-1 md:mt-8 
+            ss:mt-2 mt-1'>
                 <p className='md:text-[15px] ss:text-[14px] text-[12px]
                 text-maintext'>
                 Website designed and developed with love by
