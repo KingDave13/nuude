@@ -53,7 +53,7 @@ const Footer = () => {
                     key={social.id}
                     >
                         {React.createElement(social.Icon, {
-                            className: `md:w-[27px] ss:w-[24px] w-[20px] h-auto 
+                            className: `md:w-[27px] ss:w-[24px] w-[20px] h-auto text-white
                             object-contain cursor-pointer grow2 bg-primary rounded-full
                             ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
                         })}
