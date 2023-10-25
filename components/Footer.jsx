@@ -50,7 +50,7 @@ const Footer = () => {
                     target='_blank'
                     href={social.link}
                     rel='noreferrer'
-                    key={index}
+                    key={social.id}
                     >
                         {React.createElement(social.Icon, {
                             className: `md:w-[27px] ss:w-[24px] w-[20px] h-auto 
@@ -70,10 +70,10 @@ const Footer = () => {
             
                 <div className='flex md:mt-5 ss:mt-2 mt-1 items-center'>
                     {footerLinks.map((footer, index) => (
-                        <ul className='list-none'>
+                        <ul className='list-none' key={footer.name}>
                             <Link
                             href={`#${footer.id}`}
-                            key={footer.name}>
+                            >
                                 <li className={`md:text-[18px] ss:text-[16px] grow2
                                 text-[14px] text-maintext hover:text-secondary 
                                 cursor-pointer text-maintext
