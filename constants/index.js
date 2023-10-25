@@ -1,7 +1,7 @@
-import { AiFillTwitterCircle } from 'react-icons/ai';
+import { RxTwitterLogo } from 'react-icons/rx';
 import { AiOutlineInstagram } from 'react-icons/ai';
-import { FaFacebook } from 'react-icons/fa';
-import { FaLinkedinIn } from 'react-icons/fa';
+import { FiFacebook } from 'react-icons/fi';
+import { SlSocialLinkedin } from 'react-icons/sl';
 
 export const navLinks = [
     {
@@ -29,7 +29,7 @@ export const navLinks = [
   export const socialMedia = [
     {
       id: "twitter",
-      Icon: AiFillTwitterCircle,
+      Icon: RxTwitterLogo,
       link: ""
     },
     {
@@ -39,12 +39,12 @@ export const navLinks = [
     },
     {
       id: "facebook",
-      Icon: FaFacebook,
+      Icon: FiFacebook,
       link: ""
     },
     {
       id: "linkedin",
-      Icon: FaLinkedinIn,
+      Icon: SlSocialLinkedin,
       link: ""
     }
   ];

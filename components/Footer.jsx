@@ -47,14 +47,19 @@ const Footer = () => {
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
             className='flex md:mt-6 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
             items-center'>
-                {socialMedia.map((social, Icon, index) => (
+                {socialMedia.map((social, index) => (
                     <Link 
-                        target='blank'
-                        href={social.link}
-                        rel='noreferrer'
-                        key={index}
-                        icon={Icon}
-                    />
+                    target='_blank'
+                    href={social.link}
+                    rel='noreferrer'
+                    key={index}
+                    >
+                        {React.createElement(social.Icon, {
+                            className: `md:w-[27px] ss:w-[24px] w-[20px] md:h-[22px] 
+                            ss:h-[20px] h-[30px] object-contain cursor-pointer grow2
+                            ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`,
+                        })}
+                    </Link>
                 ))}
             </motion.div>
 
