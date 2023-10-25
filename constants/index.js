@@ -26,12 +26,22 @@ export const navLinks = [
   
   export const socialMedia = [
     {
-      id: "social-media-1",
+      id: "twitter",
       Icon: '',
       link: ""
     },
     {
-      id: "social-media-2",
+      id: "instagram",
+      Icon: '',
+      link: ""
+    },
+    {
+      id: "facebook",
+      Icon: '',
+      link: ""
+    },
+    {
+      id: "linkedin",
       Icon: '',
       link: ""
     }

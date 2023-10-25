@@ -8,6 +8,7 @@ import { footerLinks, socialMedia } from '@constants';
 import { logo } from '@public/assets';
 import React from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -46,8 +47,14 @@ const Footer = () => {
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
             className='flex md:mt-6 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
             items-center'>
-                {socialMedia.map((social, index) => (
-                    
+                {socialMedia.map((social, Icon, index) => (
+                    <Link 
+                        target='blank'
+                        href={social.link}
+                        rel='noreferrer'
+                        key={index}
+                        icon={Icon}
+                    />
                 ))}
             </motion.div>
 
