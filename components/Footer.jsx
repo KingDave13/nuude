@@ -31,23 +31,20 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={textVariant()} 
-            className='flex'>
-                <div className='flex md:mt-3 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
-                items-center'>
-                    <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
-                    ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
-                    text-maintext' />
+            className='flex md:mt-3 ss:mt-2 mt-1 md:mb-8 ss:mb-0 mb-12 
+            items-center'>
+                <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
+                ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
+                text-maintext' />
 
-                    <p className='md:text-[16px] ss:text-[16px] text-[14px] 
-                    text-maintext mt-1'>
-                        2023. All Rights Reserved.
-                    </p>
-                </div>
+                <p className='md:text-[16px] ss:text-[16px] text-[14px] 
+                text-maintext mt-1'>
+                    2023. All Rights Reserved.
+                </p>
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='border-t-[1px] md:pt-2 ss:pt-2
-            pt-1'>
+            className='border-t-[1px] md:pt-2 ss:pt-2 pt-1'>
                 <p className='md:text-[15px] ss:text-[14px] text-[12px]
                 text-maintext'>
                 Website designed and developed with love by
