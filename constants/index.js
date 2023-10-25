@@ -45,7 +45,6 @@ export const navLinks = [
       link: ""
     }
   ];
-  
 
   export const footerLinks =[
     {
