@@ -1,5 +1,7 @@
-import { logoalt } from "@public/assets";
-import { logo } from "@public/assets";
+import { AiFillTwitterCircle } from 'react-icons/ai';
+import { AiOutlineInstagram } from 'react-icons/ai';
+import { FaFacebook } from 'react-icons/fa';
+import { FaLinkedinIn } from 'react-icons/fa';
 
 export const navLinks = [
     {
@@ -27,22 +29,22 @@ export const navLinks = [
   export const socialMedia = [
     {
       id: "twitter",
-      Icon: '',
+      Icon: AiFillTwitterCircle,
       link: ""
     },
     {
       id: "instagram",
-      Icon: '',
+      Icon: AiOutlineInstagram,
       link: ""
     },
     {
       id: "facebook",
-      Icon: '',
+      Icon: FaFacebook,
       link: ""
     },
     {
       id: "linkedin",
-      Icon: '',
+      Icon: FaLinkedinIn,
       link: ""
     }
   ];
