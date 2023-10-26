@@ -218,9 +218,29 @@ const Application = () => {
                         </li>
 
                         <li>
-Event Details: Nuude! reserves the right to modify or cancel events, change event locations, or adjust event details as needed. Members will be notified of any changes in advance whenever possible.
-Membership Fees: Membership fees are non-refundable and non-transferable. You are responsible for keeping your membership information up to date.
-Termination of Membership: Nuude! reserves the right to terminate or suspend a member's membership at its discretion for violations of these terms and conditions or for any other reason deemed necessary.
+                            Event Details: Nuude! reserves the right to 
+                            modify or cancel events, change event 
+                            locations, or adjust event details as needed.
+                            Members will be notified of any changes in 
+                            advance whenever possible.
+                        </li>
+
+                        <li>
+                            Membership Fees: Membership fees are 
+                            non-refundable and non-transferable. You are 
+                            responsible for keeping your membership 
+                            information up to date.
+                        </li>
+
+                        <li>
+                            Termination of Membership: Nuude! reserves the 
+                            right to terminate or suspend a member's 
+                            membership at its discretion for violations 
+                            of these terms and conditions or for any 
+                            other reason deemed necessary.
+                        </li>
+
+                        <li>
 Liability: You understand and acknowledge that participation in Nuude! events is at your own risk. Nuude! and its affiliates are not responsible for any injuries, damages, or losses that may occur during events.
 
 The privacy and safety of Nuude! and our guests is of paramount importance and confidentiality is required of all members, guests, performers, employees, and officers.
