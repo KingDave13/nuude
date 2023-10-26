@@ -53,7 +53,7 @@ const Luxury = () => {
 
                     <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
                         <button
-                            className='grow4 bg-secondary
+                            className='grow4 bg-secondary border-none
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
                             ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
                             rounded-[6px] font-medium font-manier cursor-pointer'
