@@ -1,5 +1,8 @@
+'use client';
+
 import SectionWrapper from '@hoc/SectionWrapper';
-import React from 'react'
+import { motion } from 'framer-motion';
+import { slideIn, textVariant } from '@utils/motion';
 
 const Application = () => {
   return (
