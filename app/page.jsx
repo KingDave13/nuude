@@ -5,6 +5,7 @@ import Luxury from "@components/Luxury";
 import Events from "@components/Events";
 import Membership from "@components/Membership";
 import Contact from "@components/Contact";
+import Application from "@components/Application";
 
 const Home = () => {
   return (
@@ -68,10 +69,13 @@ const Home = () => {
         <Membership />
       </div>
 
-      <div className="contact">
-        <Contact />
+      <div>
+        <Application />
       </div>
 
+      <div className="contact">
+        <Contact />
+      </div>   
     </section>
   )
 };
