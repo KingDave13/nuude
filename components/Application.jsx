@@ -247,22 +247,11 @@ const Application = () => {
                             your own risk. Nuude! and its affiliates are 
                             not responsible for any injuries, damages, or 
                             losses that may occur during events.
-                        </li>
-
-(i) You will not disclose identifying information of any Nuude! member, guest, participant, performer, employee, or officer to the media;
-(ii) You will not use or attempt to use photography or video recording at a Nuude! Event;
-(iii) You will treat everyone with respect;
-(iv) You will ask before you touch;
-(v) You will immediately notify Nuude! security or staff if at any time you are aware or have reasonable cause to suspect that anyone's safety or ability to consent is at risk;
-(vi) You acknowledge that any violation of this agreement will result in immediate removal from the event, without refund, and a permanent ban from all future events.
-(vil) There are no refunds.
-
-By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
-                        
+                        </li>           
                     </ol>
 
                     <p className='text-white md:text-[16px] text-justify
-                    md:leading-[22px]'>
+                    md:mt-4 md:leading-[22px]'>
                         The privacy and safety of Nuude! and our guests 
                         is of paramount importance and confidentiality is 
                         required of all members, guests, performers, 
@@ -270,6 +259,48 @@ By submitting an application, you affirm that you have read, understood, and agr
                         To participate in any Nuude! Event, you hereby 
                         also agree to the following instructions:
                     </p>
+                    
+                    <ol className='text-white md:text-[15px] text-justify
+                    md:mt-4 md:leading-[22px]'>
+                        <li>
+                            You will not disclose identifying information 
+                            of any Nuude! member, guest, participant, 
+                            performer, employee, or officer to the media;
+                        </li>
+
+                        <li>
+                            You will not use or attempt to use photography 
+                            or video recording at a Nuude! Event;
+                        </li>
+
+                        <li>
+                            You will treat everyone with respect;
+                        </li>
+
+                        <li>
+                            You will ask before you touch;
+                        </li>
+
+                        <li>
+                            You will immediately notify Nuude! security or 
+                            staff if at any time you are aware or have 
+                            reasonable cause to suspect that anyone's 
+                            safety or ability to consent is at risk;
+                        </li>
+
+                        <li>
+                            You acknowledge that any violation of this 
+                            agreement will result in immediate removal 
+                            from the event, without refund, and a 
+                            permanent ban from all future events.
+                        </li>
+
+                        <li>
+                            There are no refunds.
+                        </li>
+                    </ol>
+
+By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
                 </div>
             </motion.div>
         </div>
