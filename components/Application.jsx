@@ -155,8 +155,9 @@ const Application = () => {
                         event attendance with Nuude! (referred to as 
                         "Nuude" or "the club" herein), you acknowledge
                         and agree to the following terms and conditions:
+                    </p>
 
-                        <ol className='text-white md:text-[15px] text-justify
+                    <ol className='text-white md:text-[15px] text-justify
                     md:mt-4 md:leading-[22px]'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
@@ -248,9 +249,6 @@ const Application = () => {
                             losses that may occur during events.
                         </li>
 
-The privacy and safety of Nuude! and our guests is of paramount importance and confidentiality is required of all members, guests, performers, employees, and officers.
-To participate in any Nuude! Event, you hereby also agree to the following instructions:
-
 (i) You will not disclose identifying information of any Nuude! member, guest, participant, performer, employee, or officer to the media;
 (ii) You will not use or attempt to use photography or video recording at a Nuude! Event;
 (iii) You will treat everyone with respect;
@@ -262,6 +260,14 @@ To participate in any Nuude! Event, you hereby also agree to the following instr
 By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
                         
                     </ol>
+
+                    <p className='text-white md:text-[16px] text-justify
+                    md:leading-[22px]'>
+                        The privacy and safety of Nuude! and our guests 
+                        is of paramount importance and confidentiality is 
+                        required of all members, guests, performers, 
+                        employees, and officers.<br></br>
+To participate in any Nuude! Event, you hereby also agree to the following instructions:
                     </p>
                 </div>
             </motion.div>
