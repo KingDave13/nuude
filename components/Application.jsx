@@ -146,6 +146,10 @@ const Application = () => {
                         </div>
                     </form>
                 </div>
+
+                <div className='bg-primaryalt'>
+                    
+                </div>
             </motion.div>
         </div>
     </section>
