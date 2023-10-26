@@ -310,10 +310,36 @@ const Application = () => {
                         responsibility to review them periodically.
                     </p>
 
-                    <div className='text-white md:text-[16px] text-justify
+                    <form className='text-white md:text-[16px] text-justify
                     md:mt-4'>
-                        
-                    </div>
+                        <div className="flex md:gap-3">
+                            <input
+                            type="checkbox"
+                            name="age"
+                            // value={form.age}
+                            // onChange={handleChange}
+                            />
+                            <label className="text-white md:text-[15px] 
+                            ss:text-[18px] text-[14px]">
+                                I confirm and consent that I am over the 
+                                age of 18
+                            </label>
+                        </div>
+
+                        <div className="flex md:gap-3 md:mt-4">
+                            <input
+                            type="checkbox"
+                            name="age"
+                            // value={form.age}
+                            // onChange={handleChange}
+                            className='bg-transparent cursor-pointer'
+                            />
+                            <label className="text-white md:text-[15px] 
+                            ss:text-[18px] text-[14px]">
+                                I agree to the above terms and conditions
+                            </label>
+                        </div>
+                    </form>
                 </div>
             </motion.div>
         </div>
