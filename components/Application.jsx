@@ -6,7 +6,7 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Application = () => {
   return (
-    <section className="md:min-h-[1100px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[1900px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
@@ -318,6 +318,8 @@ const Application = () => {
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
+                            className='text-none border 
+                            border-textalt w-5 h-5 cursor-pointer rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
                             ss:text-[18px] text-[14px]">
@@ -326,13 +328,14 @@ const Application = () => {
                             </label>
                         </div>
 
-                        <div className="flex md:gap-3 md:mt-4">
+                        <div className="flex md:gap-3 md:mt-4 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='bg-transparent cursor-pointer'
+                            className='border 
+                            border-white w-5 h-5 cursor-pointer rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
                             ss:text-[18px] text-[14px]">

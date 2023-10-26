@@ -52,8 +52,7 @@ const Contact = () => {
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        placeholder:text-white-4 font-manier
-                        md:placeholder:text-[14px] 
+                        font-manier md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -72,8 +71,7 @@ const Contact = () => {
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        placeholder:text-white-4 font-manier
-                        md:placeholder:text-[14px] 
+                        font-manier md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -92,8 +90,7 @@ const Contact = () => {
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        placeholder:text-white-4 font-manier
-                        md:placeholder:text-[14px] 
+                        font-manier md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -112,8 +109,7 @@ const Contact = () => {
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        placeholder:text-white-4 font-manier
-                        md:placeholder:text-[14px] 
+                        font-manier md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -132,8 +128,7 @@ const Contact = () => {
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        placeholder:text-white-4 font-manier
-                        md:placeholder:text-[14px] 
+                        font-manier md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
