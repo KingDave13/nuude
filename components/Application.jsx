@@ -30,8 +30,8 @@ const Application = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-            className='flex md:flex-row w-full md:mt-12'>
-                <div className='md:mt-0 ss:mt-5 mt-0 w-1/2'>
+            className='flex md:flex-row w-full md:mt-12 gap-20'>
+                <div className='w-1/2'>
                     <form className="grid grid-cols-2 gap-8">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
@@ -147,8 +147,11 @@ const Application = () => {
                     </form>
                 </div>
 
-                <div className='bg-primaryalt'>
-                    
+                <div className='bg-primaryalt flex flex-col rounded-[3px]
+                md:p-10 w-1/2'>
+                    <div cl>
+                        By submitting...
+                    </div>
                 </div>
             </motion.div>
         </div>
