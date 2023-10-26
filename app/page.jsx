@@ -69,7 +69,7 @@ const Home = () => {
         <Membership />
       </div>
 
-      <div>
+      <div className="bg-primary">
         <Application />
       </div>
 
