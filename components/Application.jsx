@@ -147,11 +147,14 @@ const Application = () => {
                     </form>
                 </div>
 
-                <div className='bg-primaryalt flex flex-col rounded-[3px]
+                <div className='bg-primaryalt flex flex-col rounded-md
                 md:p-10 w-1/2'>
-                    <div cl>
-                        By submitting...
-                    </div>
+                    <p className=''>
+                        By submitting an application for membership or
+                        event attendance with Nuude! (referred to as 
+                        "Nuude" or "the club" herein), you acknowledge
+                        and agree to the following terms and conditions:
+                    </p>
                 </div>
             </motion.div>
         </div>
