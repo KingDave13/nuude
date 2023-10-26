@@ -149,21 +149,65 @@ const Application = () => {
 
                 <div className='bg-primaryalt flex flex-col rounded-md
                 md:p-10 w-1/2'>
-                    <p className='text-white md:text-[16px] text-justify'>
+                    <p className='text-white md:text-[16px] text-justify
+                    md:leading-[22px]'>
                         By submitting an application for membership or
                         event attendance with Nuude! (referred to as 
                         "Nuude" or "the club" herein), you acknowledge
                         and agree to the following terms and conditions:
-                    </p>
 
-                    <ol>
+                        <ol className='text-white md:text-[15px] text-justify
+                    md:mt-4 md:leading-[22px]'>
                         <li>
+                            Application Process: To gain entry into Nuude!, 
+                            all individuals must apply. An Aurum-level 
+                            annual membership, at a minimum, is required 
+                            for single gentlemen to attend any Nuude! 
+                            event. Approved non-member couples or singles 
+                            who have not previously attended may be 
+                            invited to join for Dinner to establish 
+                            familiarity.
+                        </li>
 
-Application Process: To gain entry into Nuude!, all individuals must apply. An Aurum-level annual membership, at a minimum, is required for single gentlemen to attend any Nuude! event. Approved non-member couples or singles who have not previously attended may be invited to join for Dinner to establish familiarity.
-Membership Screening: Nuude! values the quality of its community and carefully curates its guests. We screen applicants for aesthetic appeal, professional status, and their potential contribution to the Nuude! community. All applications are treated with the utmost confidentiality and reviewed exclusively by our Council to maintain the highest caliber of guests at our events.
-Approval Process: If an applicant meets Nuude!'s professional, reputational, and aesthetic criteria, they may be granted the status of an Approved Non-Member and will be contacted directly by our team.
-Discretion: For individuals requiring the highest level of discretion, Nuude! offers the option to forego the standard application process and be interviewed directly by our team. This ensures your privacy and confidentiality.
-Age and Consent: Applicants must be of legal age to participate in adult-themed events in their respective jurisdiction. By applying for membership or attending Nuude! events, you confirm your legal eligibility and consent to participate in such activities.
+                        <li>
+                            Membership Screening: Nuude! values the 
+                            quality of its community and carefully curates 
+                            its guests. We screen applicants for aesthetic 
+                            appeal, professional status, and their 
+                            potential contribution to the Nuude! community. 
+                            All applications are treated with the utmost 
+                            confidentiality and reviewed exclusively by our 
+                            Council to maintain the highest caliber of 
+                            guests at our events.
+                        </li>
+
+                        <li>
+                            Approval Process: If an applicant meets 
+                            Nuude!'s professional, reputational and 
+                            aesthetic criteria, they may be granted the 
+                            status of an Approved Non-Member and will be 
+                            contacted directly by our team.
+                        </li>
+
+                        <li>
+                            Discretion: For individuals requiring the 
+                            highest level of discretion, Nuude! offers 
+                            the option to forego the standard application 
+                            process and be interviewed directly by our 
+                            team. This ensures your privacy and 
+                            confidentiality.
+                        </li>
+
+                        <li>
+                            Age and Consent: Applicants must be of legal 
+                            age to participate in adult-themed events in 
+                            their respective jurisdiction. By applying 
+                            for membership or attending Nuude! events, 
+                            you confirm your legal eligibility and 
+                            consent to participate in such activities.
+                        </li>
+
+                        <li>
 Respect and Conduct: All members and guests are expected to treat each other with respect, dignity, and consent. Any form of harassment, discrimination, or non-consensual behavior will not be tolerated and may result in immediate removal from Nuude! events and potential membership revocation.
 Event Details: Nuude! reserves the right to modify or cancel events, change event locations, or adjust event details as needed. Members will be notified of any changes in advance whenever possible.
 Membership Fees: Membership fees are non-refundable and non-transferable. You are responsible for keeping your membership information up to date.
@@ -184,6 +228,7 @@ To participate in any Nuude! Event, you hereby also agree to the following instr
 By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
                         </li>
                     </ol>
+                    </p>
                 </div>
             </motion.div>
         </div>
