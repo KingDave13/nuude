@@ -241,7 +241,12 @@ const Application = () => {
                         </li>
 
                         <li>
-Liability: You understand and acknowledge that participation in Nuude! events is at your own risk. Nuude! and its affiliates are not responsible for any injuries, damages, or losses that may occur during events.
+                            Liability: You understand and acknowledge 
+                            that participation in Nuude! events is at 
+                            your own risk. Nuude! and its affiliates are 
+                            not responsible for any injuries, damages, or 
+                            losses that may occur during events.
+                        </li>
 
 The privacy and safety of Nuude! and our guests is of paramount importance and confidentiality is required of all members, guests, performers, employees, and officers.
 To participate in any Nuude! Event, you hereby also agree to the following instructions:
@@ -255,7 +260,7 @@ To participate in any Nuude! Event, you hereby also agree to the following instr
 (vil) There are no refunds.
 
 By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
-                        </li>
+                        
                     </ol>
                     </p>
                 </div>
