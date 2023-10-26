@@ -5,6 +5,6 @@ const Application = () => {
   return (
     <div>Application</div>
   )
-}
+};
 
 export default SectionWrapper(Application, '');
