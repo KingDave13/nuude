@@ -125,6 +125,10 @@ a {
   transition: transform 0.1s ease-in-out;
 }
 
+.navsmooth {
+  transition: all 0.3s ease-in-out;
+}
+
 .hash-span {
   display: block;
 }
