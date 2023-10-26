@@ -28,9 +28,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full flex items-center fixed md:py-6 ss:py-6 
+      className={`w-full flex items-center fixed md:py-5 ss:py-6 
       py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth ${
-        isScrolled ? 'bg-white shadow-md' : '' }`}
+        isScrolled ? 'bg-white shadow-lg' : '' }`}
     >
       <div className="w-full flex justify-between items-center 
       max-w-[95rem] mx-auto">
@@ -62,7 +62,7 @@ const Navbar = () => {
             <Image
               src={isScrolled ? logo : logoalt}
               alt="logo"
-              width={170}
+              width={150}
               height={'auto'}
               className="object-contain"
             />
