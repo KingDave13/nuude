@@ -208,7 +208,16 @@ const Application = () => {
                         </li>
 
                         <li>
-Respect and Conduct: All members and guests are expected to treat each other with respect, dignity, and consent. Any form of harassment, discrimination, or non-consensual behavior will not be tolerated and may result in immediate removal from Nuude! events and potential membership revocation.
+                            Respect and Conduct: All members and guests 
+                            are expected to treat each other with respect, 
+                            dignity, and consent. Any form of harassment, 
+                            discrimination, or non-consensual behavior 
+                            will not be tolerated and may result in 
+                            immediate removal from Nuude! events and 
+                            potential membership revocation.
+                        </li>
+
+                        <li>
 Event Details: Nuude! reserves the right to modify or cancel events, change event locations, or adjust event details as needed. Members will be notified of any changes in advance whenever possible.
 Membership Fees: Membership fees are non-refundable and non-transferable. You are responsible for keeping your membership information up to date.
 Termination of Membership: Nuude! reserves the right to terminate or suspend a member's membership at its discretion for violations of these terms and conditions or for any other reason deemed necessary.
