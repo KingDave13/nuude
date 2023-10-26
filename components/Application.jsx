@@ -28,6 +28,11 @@ const Application = () => {
                 of your membership.
                 </p>
             </motion.div>
+
+            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+            className='flex md:flex-row w-full'>
+
+            </motion.div>
         </div>
     </section>
   )
