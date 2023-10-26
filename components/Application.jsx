@@ -300,7 +300,20 @@ const Application = () => {
                         </li>
                     </ol>
 
-By submitting an application, you affirm that you have read, understood, and agree to abide by these terms and conditions. Nuude! reserves the right to update or modify these terms and conditions at any time, and it is your responsibility to review them periodically.
+                    <p className='text-white md:text-[16px] text-justify
+                    md:mt-4 md:leading-[22px]'>
+                        By submitting an application, you affirm that you 
+                        have read, understood, and agree to abide by 
+                        these terms and conditions. Nuude! reserves the 
+                        right to update or modify these terms and 
+                        conditions at any time, and it is your 
+                        responsibility to review them periodically.
+                    </p>
+
+                    <div className='text-white md:text-[16px] text-justify
+                    md:mt-4'>
+                        
+                    </div>
                 </div>
             </motion.div>
         </div>
