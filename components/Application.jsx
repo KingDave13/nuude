@@ -267,7 +267,8 @@ By submitting an application, you affirm that you have read, understood, and agr
                         is of paramount importance and confidentiality is 
                         required of all members, guests, performers, 
                         employees, and officers.<br></br>
-To participate in any Nuude! Event, you hereby also agree to the following instructions:
+                        To participate in any Nuude! Event, you hereby 
+                        also agree to the following instructions:
                     </p>
                 </div>
             </motion.div>
