@@ -261,7 +261,7 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside list-decimal-roman'>
+                    md:mt-4 md:leading-[22px] list-inside list-roman-brackets'>
                         <li>
                             You will not disclose identifying information 
                             of any Nuude! member, guest, participant, 
@@ -300,7 +300,7 @@ const Application = () => {
                         </li>
                     </ol>
 
-                    <p className='text-white md:text-[14px] text-justify
+                    <p className='text-white md:text-[15px] text-justify
                     md:mt-4 md:leading-[22px]'>
                         By submitting an application, you affirm that you 
                         have read, understood, and agree to abide by 
@@ -310,8 +310,7 @@ const Application = () => {
                         responsibility to review them periodically.
                     </p>
 
-                    <form className='text-white md:text-[16px] text-justify
-                    md:mt-8'>
+                    <form className='text-white text-justify md:mt-8'>
                         <div className="flex md:gap-3">
                             <input
                             type="checkbox"
@@ -321,7 +320,7 @@ const Application = () => {
                             className='border fill-none
                             border-textalt w-5 h-5 cursor-pointer rounded-md'
                             />
-                            <label className="text-white md:text-[14px] 
+                            <label className="text-white md:text-[15px] 
                             ss:text-[18px] text-[14px]">
                                 I confirm and consent that I am over the 
                                 age of 18
@@ -337,7 +336,7 @@ const Application = () => {
                             className='border 
                             border-white w-5 h-5 cursor-pointer rounded-md'
                             />
-                            <label className="text-white md:text-[14px] 
+                            <label className="text-white md:text-[15px] 
                             ss:text-[18px] text-[14px]">
                                 I agree to the above terms and conditions
                             </label>
