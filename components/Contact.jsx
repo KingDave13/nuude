@@ -16,7 +16,7 @@ const Contact = () => {
                 ss:text-[47px] text-[35px] md:mr-14">
                     Contact Us
                 </h1>
-                <motion.div variants={slideIn('right', 'tween', 0.2, 0.5)}
+                <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-white md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />

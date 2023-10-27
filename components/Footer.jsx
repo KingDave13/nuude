@@ -70,7 +70,7 @@ const Footer = () => {
                     Website Quick Links
                 </h1>
             
-                <div className='flex md:mt-5 ss:mt-2 mt-1 items-center'>
+                <div className='flex md:mt-2 ss:mt-2 mt-1 items-center'>
                     {footerLinks.map((footer, index) => (
                         <ul className='list-none' key={footer.name}>
                             <Link
