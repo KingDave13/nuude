@@ -19,6 +19,7 @@ module.exports = {
       },
       fontFamily: {
         manierRegular: "Manier-Regular",
+        manierRegularItalic: "Manier-RegularItalic",
       },
     },
     screens: {
