@@ -1,19 +1,11 @@
 @font-face {
   font-family: 'Manier';
-  src: url('../public/fonts/Manier-Regular.otf') format('opentype'),
-      url('../public/fonts/Manier-Medium.otf') format('opentype'),
-      url('../public/fonts/Manier-Bold.otf') format('opentype'),
-      url('../public/fonts/Manier-Heavy.otf') format('opentype'),
-      url('../public/fonts/Manier-HeavyItalic.otf') format('opentype'),
-      url('../public/fonts/Manier-Thin.otf') format('opentype'),
-      url('../public/fonts/Manier-ThinItalic.otf') format('opentype'),
-      url('../public/fonts/Manier-MediumItalic.otf') format('opentype'),
-      url('../public/fonts/Manier-BoldItalic.otf') format('opentype'),
-      url('../public/fonts/Manier-RegularItalic.otf') format('opentype'),
-      url('../public/fonts/Manier-Light.otf') format('opentype'),
-      url('../public/fonts/Manier-LightItalic.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
+  src: url('../public/fonts/manier-regular.otf') format('opentype'),
+      url('../public/fonts/manier-medium.otf') format('opentype'),
+      url('../public/fonts/manier-bold.otf') format('opentype'),
+      url('../public/fonts/manier-black.otf') format('opentype'),
+      url('../public/fonts/manier-heavy.otf') format('opentype'),
+      url('../public/fonts/manier-light.otf') format('opentype');
 };
 
 @tailwind base;
