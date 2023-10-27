@@ -53,6 +53,10 @@ a {
   scroll-behavior: smooth;
 }
 
+ol {
+  list-style: decimal;
+}
+
 @media screen and (max-width: 480px) {
   .mobile {
     height: 600px;

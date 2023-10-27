@@ -159,7 +159,7 @@ const Application = () => {
                     </p>
 
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside'>
+                    md:mt-4 md:leading-[22px] list-inside font-manierLight'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
                             all individuals must apply. An Aurum-level 
@@ -262,7 +262,8 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside list-roman-brackets'>
+                    md:mt-4 md:leading-[22px] list-inside 
+                    font-manierLight list-roman-brackets'>
                         <li>
                             You will not disclose identifying information 
                             of any Nuude! member, guest, participant, 
