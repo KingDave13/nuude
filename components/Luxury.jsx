@@ -9,10 +9,11 @@ const Luxury = () => {
   return (
     <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-20">
-                <h1 className="text-white font-bold md:text-[55px]
+                <h1 className="text-white font-manierMedium md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
                     Unparalled Luxury <br></br>for the Select
                 </h1>
@@ -56,7 +57,7 @@ const Luxury = () => {
                             className='grow4 bg-secondary border-none
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
                             ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
-                            rounded-[6px] font-medium font-manier cursor-pointer'
+                            rounded-[6px] cursor-pointer'
                         >
                             Become a Member
                         </button>
@@ -65,8 +66,7 @@ const Luxury = () => {
                             className='border-[1px] grow2 border-secondary 
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
                             ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-                            rounded-[6px] font-medium bg-transparent font-manier
-                            cursor-pointer'
+                            rounded-[6px] bg-transparent cursor-pointer'
                         >
                             View Events
                         </button>

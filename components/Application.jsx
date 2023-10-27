@@ -8,11 +8,12 @@ const Application = () => {
   return (
     <section className="md:min-h-[1900px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex items-center w-full md:mb-10">
-                <h1 className="text-secondary font-bold md:text-[50px]
-                ss:text-[47px] text-[35px] md:mr-14">
+                <h1 className="text-secondary font-manierMedium 
+                md:text-[50px] ss:text-[47px] text-[35px] md:mr-14">
                     Membership Application Form
                 </h1>
             </motion.div>
@@ -46,7 +47,7 @@ const Application = () => {
                             placeholder="Enter your first name"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4 font-manier
+                            placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -66,7 +67,7 @@ const Application = () => {
                             placeholder="Enter your last name"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4 font-manier
+                            placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -86,7 +87,7 @@ const Application = () => {
                             placeholder="Enter your email address"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4 font-manier
+                            placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -106,7 +107,7 @@ const Application = () => {
                             placeholder="Enter a subject"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4 font-manier
+                            placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -126,7 +127,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4 font-manier
+                            placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -139,7 +140,7 @@ const Application = () => {
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[16px] ss:text-[16px] text-[13px] py-4 px-20
                             text-primary md:rounded-[3px] border-none
-                            font-manier cursor-pointer"
+                            cursor-pointer"
                             >
                             {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                             </button>

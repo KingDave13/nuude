@@ -8,7 +8,8 @@ const Membership = () => {
   return (
     <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col md:pb-10'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular md:pb-10'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex justify-between items-center w-full gap-12
             md:mb-10">
@@ -16,7 +17,7 @@ const Membership = () => {
                     <div className='bg-white w-full md:h-[1px] ss:h-[1px] h-[2px]' />
                 </div>
 
-                <h1 className="text-white font-bold md:text-[55px]
+                <h1 className="text-white font-manierMedium md:text-[55px]
                 ss:text-[47px] text-[35px]">
                     Membership
                 </h1>

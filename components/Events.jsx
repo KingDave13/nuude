@@ -10,10 +10,11 @@ const Events = () => {
   return (
     <section className="md:min-h-[850px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-20">
-                <h1 className="text-secondary font-bold md:text-[55px]
+                <h1 className="text-secondary font-manierMedium md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
                     Upcoming Events
                 </h1>
@@ -37,7 +38,7 @@ const Events = () => {
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[40px] ss:text-[35px] 
-                    text-[20px] mb-5'>
+                    text-[20px] font-manierMedium mb-5'>
                         Nuude!
                     </h1>
 
@@ -59,7 +60,7 @@ const Events = () => {
                     </div>
 
                     <h1 className='text-white md:text-[40px] ss:text-[35px] 
-                    text-[20px] mb-5'>
+                    text-[20px] font-manierMedium mb-5'>
                         24th November, 2023
                     </h1>
 
@@ -75,7 +76,7 @@ const Events = () => {
                             className='grow4 bg-secondary border-none
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
                             ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
-                            rounded-[6px] font-medium font-manier cursor-pointer'
+                            rounded-[6px] cursor-pointer'
                         >
                             Apply for Event
                         </button>
@@ -84,8 +85,7 @@ const Events = () => {
                             className='border-[1px] grow2 border-secondary 
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
                             ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-                            rounded-[6px] font-medium bg-transparent font-manier
-                            cursor-pointer'
+                            rounded-[6px] bg-transparent cursor-pointer'
                         >
                             Contact Us
                         </button>
