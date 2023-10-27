@@ -11,7 +11,7 @@ const RootLayout = ({ children }) => {
   return (
     <html lang='en'>
         <body>
-            <main className='font-manierRegular'>
+            <main>
                 <Navbar />
                 {children}
                 <Footer />
