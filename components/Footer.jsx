@@ -89,10 +89,10 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='borderTop md:pt-8 ss:pt-2 pt-1 md:mt-10 
+            className='borderTop md:pt-6 md:pb-3 ss:pt-2 pt-1 md:mt-10 
             ss:mt-2 mt-1 w-full flex items-center'>
                 <p className='md:text-[15px] ss:text-[14px] text-[12px]
-                text-maintext w-full text-center'>
+                text-maintext w-full text-center font-manierLight'>
                 Website designed and developed with love by
                     <span className='text-[#069D6D] font-manierBold 
                     cursor-pointer grow3'>
