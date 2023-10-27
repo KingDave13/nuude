@@ -44,7 +44,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-8 ss:mt-2 mt-1 items-center'>
+            className='flex md:mt-5 ss:mt-2 mt-1 items-center'>
                 {socialMedia.map((social, index) => (
                     <Link 
                     target='_blank'
