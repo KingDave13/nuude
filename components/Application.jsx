@@ -149,7 +149,7 @@ const Application = () => {
 
                 <div className='bg-primaryalt flex flex-col rounded-md
                 md:p-10 w-1/2'>
-                    <p className='text-white md:text-[16px] text-justify
+                    <p className='text-white md:text-[15px] text-justify
                     md:leading-[22px]'>
                         By submitting an application for membership or
                         event attendance with Nuude! (referred to as 
@@ -250,7 +250,7 @@ const Application = () => {
                         </li>           
                     </ol>
 
-                    <p className='text-white md:text-[16px] text-justify
+                    <p className='text-white md:text-[15px] text-justify
                     md:mt-4 md:leading-[22px]'>
                         The privacy and safety of Nuude! and our guests 
                         is of paramount importance and confidentiality is 
@@ -300,7 +300,7 @@ const Application = () => {
                         </li>
                     </ol>
 
-                    <p className='text-white md:text-[16px] text-justify
+                    <p className='text-white md:text-[14px] text-justify
                     md:mt-4 md:leading-[22px]'>
                         By submitting an application, you affirm that you 
                         have read, understood, and agree to abide by 
@@ -311,7 +311,7 @@ const Application = () => {
                     </p>
 
                     <form className='text-white md:text-[16px] text-justify
-                    md:mt-4'>
+                    md:mt-8'>
                         <div className="flex md:gap-3">
                             <input
                             type="checkbox"
@@ -321,14 +321,14 @@ const Application = () => {
                             className='text-none border 
                             border-textalt w-5 h-5 cursor-pointer rounded-md'
                             />
-                            <label className="text-white md:text-[15px] 
+                            <label className="text-white md:text-[14px] 
                             ss:text-[18px] text-[14px]">
                                 I confirm and consent that I am over the 
                                 age of 18
                             </label>
                         </div>
 
-                        <div className="flex md:gap-3 md:mt-4 items-center">
+                        <div className="flex md:gap-3 md:mt-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
@@ -337,7 +337,7 @@ const Application = () => {
                             className='border 
                             border-white w-5 h-5 cursor-pointer rounded-md'
                             />
-                            <label className="text-white md:text-[15px] 
+                            <label className="text-white md:text-[14px] 
                             ss:text-[18px] text-[14px]">
                                 I agree to the above terms and conditions
                             </label>
