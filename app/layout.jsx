@@ -3,9 +3,10 @@ import Navbar from '@components/Navbar';
 import Footer from '@components/Footer';
 
 export const metadata = {
-    title: "Nuude",
+    title: "Nuude!",
     description: "The world's most exclusive members-only club!"
-}
+};
+
 
 const RootLayout = ({ children }) => {
   return (
