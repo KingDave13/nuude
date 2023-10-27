@@ -19,7 +19,7 @@ const About = () => {
                 ss:text-[47px] text-[35px] md:mr-14">
                     What is Nuude!?
                 </h1>
-                <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+                <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-secondary md:w-full ss:w-[300px]
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
@@ -74,7 +74,7 @@ const About = () => {
                 </motion.div>
 
                 <motion.div 
-                    variants={slideIn('right', 'tween', 0.2, 0.5)}>
+                    variants={slideIn('down', 'tween', 0.2, 0.5)}>
                     <Image src={aboutimg} alt='about'
                     className='md:h-[400px] ss:h-[300px] w-auto'
                     />
