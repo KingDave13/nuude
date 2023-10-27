@@ -29,8 +29,8 @@ const Events = () => {
             className="flex md:flex-row ss:flex-row flex-col w-full 
             items-center md:gap-28">
                 <motion.div 
-                    variants={slideIn('left', 'tween', 0.2, 0.5)}
-                    className='justify-center items-start'>
+                variants={slideIn('down', 'tween', 0.2, 0.5)}
+                className='justify-center items-start'>
                     <Image src={event} alt='event'
                     className='md:w-[420px] ss:w-[300px] h-auto'
                     />
