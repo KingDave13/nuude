@@ -43,7 +43,7 @@ const Navbar = () => {
                   active === link.title
                     ? 'text-secondary' // Change text color to black when active
                     : isScrolled ? 'text-primary' : 'text-white'
-                } hover:text-secondary grow3 text-[20px] text-decoration-none 
+                } hover:text-secondary grow3 text-[18px] text-decoration-none 
                 cursor-pointer`}
                 onClick={() => setActive(link.title)}
               >
