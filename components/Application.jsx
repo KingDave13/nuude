@@ -313,7 +313,7 @@ const Application = () => {
                     </p>
 
                     <form className='text-white text-justify md:mt-8'>
-                        <div className="flex md:gap-3">
+                        <div className="flex md:gap-3 items-center">
                             <input
                             type="checkbox"
                             name="age"

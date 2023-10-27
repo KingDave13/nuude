@@ -12,7 +12,7 @@ const Home = () => {
     <section className="relative w-full">
       <div className="flex hero">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col md:mt-10' 
+          max-w-[95rem] flex flex-col md:mt-16' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[50px] text-[40px] md:leading-[90px] 
