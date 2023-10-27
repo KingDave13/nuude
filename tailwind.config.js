@@ -18,7 +18,12 @@ module.exports = {
         maintext: "#575656"
       },
       fontFamily: {
-        manier: ["Manier", "sans-serif"],
+        manierRegular: "manier-regular",
+        manierBold: "manier-bold",
+        manierMedium: "manier-medium",
+        manierLight: "manier-light",
+        manierHeavy: "manier-heavy",
+        manierBlack: "manier-black",
       },
     },
     screens: {

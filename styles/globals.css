@@ -1,16 +1,37 @@
-@font-face {
-  font-family: 'Manier';
-  src: url('../public/fonts/manier-regular.otf') format('opentype'),
-      url('../public/fonts/manier-medium.otf') format('opentype'),
-      url('../public/fonts/manier-bold.otf') format('opentype'),
-      url('../public/fonts/manier-black.otf') format('opentype'),
-      url('../public/fonts/manier-heavy.otf') format('opentype'),
-      url('../public/fonts/manier-light.otf') format('opentype');
-};
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@font-face {
+  font-family: 'manier-regular';
+  src: url('../public/fonts/manier-regular.otf') format('opentype'),
+};
+
+@font-face {
+  font-family: 'manier-medium';
+  src: url('../public/fonts/manier-medium.otf') format('opentype'),
+};
+
+@font-face {
+  font-family: 'manier-bold';
+  src: url('../public/fonts/manier-bold.otf') format('opentype'),
+};
+
+@font-face {
+  font-family: 'manier-light';
+  src: url('../public/fonts/manier-light.otf') format('opentype'),
+};
+
+@font-face {
+  font-family: 'manier-heavy';
+  src: url('../public/fonts/manier-heavy.otf') format('opentype'),
+};
+
+@font-face {
+  font-family: 'manier-black';
+  src: url('../public/fonts/manier-black.otf') format('opentype'),
+};
 
 
 body, html {
@@ -18,7 +39,6 @@ body, html {
   padding: 0;
   width: 100%;
   height: 100%;
-  font-family: manier;
 }
 
 a {

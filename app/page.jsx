@@ -14,7 +14,7 @@ const Home = () => {
         <div className='items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:mt-20' 
           >
-            <h1 className='text-white font-bold md:text-[80px]
+            <h1 className='text-white md:text-[80px]
             ss:text-[50px] text-[40px] md:leading-[90px] 
             ss:leading-[55px] leading-[45px] text-center'>
                 The world's <span className="text-mainRed">
