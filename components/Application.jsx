@@ -261,7 +261,7 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside'>
+                    md:mt-4 md:leading-[22px] list-inside list-decimal-roman'>
                         <li>
                             You will not disclose identifying information 
                             of any Nuude! member, guest, participant, 
