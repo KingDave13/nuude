@@ -8,10 +8,11 @@ const Contact = () => {
   return (
     <section className="md:min-h-[1100px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-10">
-                <h1 className="text-white font-bold md:text-[55px]
+                <h1 className="text-white font-manierMedium md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
                     Contact Us
                 </h1>
@@ -52,7 +53,7 @@ const Contact = () => {
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        font-manier md:placeholder:text-[14px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -71,7 +72,7 @@ const Contact = () => {
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        font-manier md:placeholder:text-[14px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -90,7 +91,7 @@ const Contact = () => {
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        font-manier md:placeholder:text-[14px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -109,7 +110,7 @@ const Contact = () => {
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        font-manier md:placeholder:text-[14px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -128,7 +129,7 @@ const Contact = () => {
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px] 
-                        font-manier md:placeholder:text-[14px] 
+                        md:placeholder:text-[14px] 
                         ss:placeholder:text-[14px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
@@ -140,7 +141,7 @@ const Contact = () => {
                         className="bg-secondary grow2 w-fit shadow-md 
                         md:text-[16px] ss:text-[16px] text-[13px] py-4 px-20
                         text-primary md:rounded-[3px] border-none
-                        font-manier cursor-pointer"
+                        cursor-pointer"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>

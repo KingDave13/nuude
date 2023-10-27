@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <section className='min-h-[500px] flex items-center'>
         <div className='flex mx-auto items-center w-full relative 
-        flex-col justify-center'>
+        flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
             items-center justify-center md:mt-14'>
                 <Image 
@@ -66,7 +66,7 @@ const Footer = () => {
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
             className='flex md:mt-8 ss:mt-2 mt-1 items-center flex-col'>
                 <h1 className='text-primary md:text-[18px] ss:text-[16px] 
-                    text-[14px] font-bold'>
+                    text-[14px] font-manierBold'>
                     Website Quick Links
                 </h1>
             
@@ -94,9 +94,10 @@ const Footer = () => {
                 <p className='md:text-[15px] ss:text-[14px] text-[12px]
                 text-maintext w-full text-center'>
                 Website designed and developed with love by
-                    <span className='text-[#069D6D] font-medium cursor-pointer grow3'>
-                    <a href='https://pluggresources.com/' target='blank'> Plugg Resources.
-                    </a>
+                    <span className='text-[#069D6D] font-manierBold 
+                    cursor-pointer grow3'>
+                        <a href='https://pluggresources.com/' target='blank'> Plugg Resources.
+                        </a>
                     </span>
                 </p>
             </motion.div>
