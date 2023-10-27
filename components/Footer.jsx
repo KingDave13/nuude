@@ -32,7 +32,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={textVariant()} 
-            className='flex md:mt-6 ss:mt-2 mt-1 items-center'>
+            className='flex md:mt-3 ss:mt-2 mt-1 items-center'>
                 <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
                 ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
                 text-maintext' />
