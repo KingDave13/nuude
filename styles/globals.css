@@ -5,33 +5,33 @@
 
 @font-face {
   font-family: 'manier-regular';
-  src: url('../public/fonts/manier-regular.otf') format('opentype'),
-};
+  src: url('../public/manier-regular.otf');
+}
 
 @font-face {
   font-family: 'manier-medium';
-  src: url('../public/fonts/manier-medium.otf') format('opentype'),
-};
+  src: url('../public/manier-medium.otf');
+}
 
 @font-face {
   font-family: 'manier-bold';
-  src: url('../public/fonts/manier-bold.otf') format('opentype'),
-};
+  src: url('../public/manier-bold.otf');
+}
 
 @font-face {
   font-family: 'manier-light';
-  src: url('../public/fonts/manier-light.otf') format('opentype'),
-};
+  src: url('../public/manier-light.otf');
+}
 
 @font-face {
   font-family: 'manier-heavy';
-  src: url('../public/fonts/manier-heavy.otf') format('opentype'),
-};
+  src: url('../public/manier-heavy.otf');
+}
 
 @font-face {
   font-family: 'manier-black';
-  src: url('../public/fonts/manier-black.otf') format('opentype'),
-};
+  src: url('../public/manier-black.otf');
+}
 
 
 body, html {
