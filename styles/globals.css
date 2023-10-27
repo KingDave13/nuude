@@ -83,8 +83,14 @@ a {
   border-top: 1px solid #898989;
 }
 
-.list-decimal-roman {
-  list-style-type: lower-roman;
+.list-roman-brackets {
+  list-style-type: none;
+  counter-reset: roman-numeral;
+}
+
+.list-roman-brackets > li:before {
+  content: '(' counter(roman-numeral, lower-roman) ') ';
+  counter-increment: roman-numeral;
 }
 
 .gradient-overlay {
