@@ -261,7 +261,7 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px]'>
+                    md:mt-4 md:leading-[22px] list-inside'>
                         <li>
                             You will not disclose identifying information 
                             of any Nuude! member, guest, participant, 
@@ -318,7 +318,7 @@ const Application = () => {
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='text-none border 
+                            className='border fill-none
                             border-textalt w-5 h-5 cursor-pointer rounded-md'
                             />
                             <label className="text-white md:text-[14px] 
