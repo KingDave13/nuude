@@ -11,10 +11,11 @@ const About = () => {
   return (
     <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
-        <div className='items-center w-full mx-auto flex flex-col'>
+        <div className='items-center w-full mx-auto flex flex-col 
+        font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12">
-                <h1 className="text-secondary font-bold md:text-[55px]
+                <h1 className="text-secondary font-manierMedium md:text-[55px]
                 ss:text-[47px] text-[35px] md:mr-14">
                     What is Nuude!?
                 </h1>
