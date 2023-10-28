@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 
 const Application = () => {
-    
+
   return (
     <section className="md:min-h-[1900px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
@@ -118,7 +118,7 @@ const Application = () => {
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[18px] text-[14px]">
-                            Message
+                                Message
                             </label>
                             <textarea
                             rows="6"
