@@ -22,11 +22,11 @@ const Application = () => {
             className='flex items-start w-full md:mb-10'>
                 <p className='text-white md:text-[17px] ss:text-[18px] 
                 text-[14px] md:max-w-[750px] md:leading-[22px]'>
-                Please read the terms and conditions carefully before 
-                completing and submitting this membership application 
-                form. An email will be sent to you upon successful 
-                payment and completion of the form as well as on approval 
-                of your membership.
+                    Please read the terms and conditions carefully before 
+                    completing and submitting this membership application 
+                    form. An email will be sent to you upon successful 
+                    payment and completion of the form as well as on approval 
+                    of your membership.
                 </p>
             </motion.div>
 
