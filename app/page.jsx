@@ -18,7 +18,7 @@ const Home = () => {
             ss:text-[50px] text-[40px] md:leading-[90px] 
             ss:leading-[55px] leading-[45px] text-center'>
                 The world's <span className="text-mainRed">
-                  most exclusive </span> <br></br>
+                most exclusive </span> <br></br>
                 members-only <br></br>club!
             </h1>
 
