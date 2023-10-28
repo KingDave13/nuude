@@ -25,7 +25,8 @@ const Application = () => {
                     Please read the terms and conditions carefully before 
                     completing and submitting this membership application 
                     form. An email will be sent to you upon successful 
-                    payment and completion of the form as well as on approval 
+                    payment and completion of the form as well as on 
+                    approval 
                     of your membership.
                 </p>
             </motion.div>
