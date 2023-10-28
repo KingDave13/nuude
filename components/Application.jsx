@@ -27,7 +27,7 @@ const Application = () => {
                     form. An email will be sent to you upon successful 
                     payment and completion of the form as well as on 
                     approval 
-            of your membership.
+        of your membership.
                 </p>
             </motion.div>
 
