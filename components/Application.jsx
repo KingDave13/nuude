@@ -37,7 +37,7 @@ const Application = () => {
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[18px] text-[14px]">
-                            First Name
+                                First Name
                             </label>
                             <input
                             type="text"
