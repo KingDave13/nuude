@@ -350,7 +350,7 @@ const Application = () => {
             </motion.div>
         </div>
     </section>
-  )
+  );
 };
 
 export default SectionWrapper(Application, '');
