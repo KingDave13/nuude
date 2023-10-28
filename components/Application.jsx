@@ -143,7 +143,7 @@ const Application = () => {
                             text-primary md:rounded-[3px] border-none
                             cursor-pointer"
                             >
-                            {/* {Loading ? 'Sending...' : 'Send'} */} Submit
+                                {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                             </button>
                         </div>
                     </form>
