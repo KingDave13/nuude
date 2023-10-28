@@ -97,7 +97,7 @@ const Application = () => {
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[18px] text-[14px]">
-                            Phone
+                            Phone N
                             </label>
                             <input
                             type="text"
