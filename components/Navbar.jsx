@@ -58,7 +58,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
             }}
             className='ml-44 mr-44'
-            >
+          >
             <Image
               src={isScrolled ? logo : logoalt}
               alt="logo"
