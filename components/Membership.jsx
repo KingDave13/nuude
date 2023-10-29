@@ -70,9 +70,9 @@ const Membership = () => {
                 <p className='text-white md:text-[17px] ss:text-[18px] 
                 text-[14px] md:max-w-[850px] md:mt-5 md:leading-[22px]
                 text-center'>
-                Applicant's requiring the greatest level of discretion 
-                may forego our application and be interviewed directly 
-                by Nuude!.
+                    Applicant's requiring the greatest level of discretion 
+                    may forego our application and be interviewed directly 
+                    by Nuude!.
                 </p>    
             </motion.div>
         </div>
