@@ -66,7 +66,7 @@ const Footer = () => {
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
             className='flex md:mt-8 ss:mt-2 mt-1 items-center flex-col'>
                 <h1 className='text-primary md:text-[18px] ss:text-[16px] 
-                    text-[14px] font-manierBold'>
+                text-[14px] font-manierBold'>
                     Website Quick Links
                 </h1>
             
