@@ -73,8 +73,7 @@ const Footer = () => {
                 <div className='flex md:mt-2 ss:mt-2 mt-1 items-center'>
                     {footerLinks.map((footer, index) => (
                         <ul className='list-none' key={footer.name}>
-                            <Link
-                            href={`#${footer.id}`}
+                            <Link href={`#${footer.id}`}
                             >
                                 <li className={`md:text-[18px] ss:text-[16px] grow2
                                 text-[14px] text-maintext hover:text-secondary 
