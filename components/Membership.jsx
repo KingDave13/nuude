@@ -48,11 +48,11 @@ const Membership = () => {
                 <p className='text-white md:text-[17px] ss:text-[18px] 
                 text-[14px] md:max-w-[850px] md:mt-5 md:leading-[22px]
                 text-center'>
-                This is a way for us to get to know our guests, and 
-                also to ensure every Nuude! event is a singular 
-                evening with a carefully curated crowd. We screen 
-                for aesthetic appeal, professional status and what 
-                one will contribute to the Nuude! community.
+                    This is a way for us to get to know our guests, and 
+                    also to ensure every Nuude! event is a singular 
+                    evening with a carefully curated crowd. We screen 
+                    for aesthetic appeal, professional status and what 
+                    one will contribute to the Nuude! community.
                 </p>
 
                 <p className='text-white md:text-[17px] ss:text-[18px] 
