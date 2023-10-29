@@ -37,12 +37,12 @@ const Membership = () => {
                 <p className='text-white md:text-[17px] ss:text-[18px] 
                 text-[14px] md:max-w-[850px] md:mt-5 md:leading-[22px]
                 text-center'>
-                To gain entry into Nuude!, one must apply. An 
-                Aurum-level annual membership, at minimum, 
-                is required for any single gentleman to attend a 
-                Nuude! event. Approved non-member couples or singles 
-                who have never attended will have the opportunity to 
-                join us for dinner.
+                    To gain entry into Nuude!, one must apply. An 
+                    Aurum-level annual membership, at minimum, 
+                    is required for any single gentleman to attend a 
+                    Nuude! event. Approved non-member couples or singles 
+                    who have never attended will have the opportunity to 
+                    join us for dinner.
                 </p>
 
                 <p className='text-white md:text-[17px] ss:text-[18px] 
