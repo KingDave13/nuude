@@ -42,14 +42,14 @@ const Luxury = () => {
 
                     <p className='text-white md:text-[17px] ss:text-[18px] 
                     text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
-                    In addition, the pool parties add an exciting and 
-                    playful dimension to the luxury erotic experience. 
-                    These poolside events offer a relaxed yet sensuous 
-                    atmosphere, where guests can enjoy the company of 
-                    like-minded individuals in a more casual setting. 
-                    The Pool Party series often features entertainment, 
-                    music, and activities that embrace the spirit of 
-                    sensuality and freedom.
+                        In addition, the pool parties add an exciting and 
+                        playful dimension to the luxury erotic experience. 
+                        These poolside events offer a relaxed yet sensuous 
+                        atmosphere, where guests can enjoy the company of 
+                        like-minded individuals in a more casual setting. 
+                        The Pool Party series often features entertainment, 
+                        music, and activities that embrace the spirit of 
+                        sensuality and freedom.
                     </p>    
 
                     <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
