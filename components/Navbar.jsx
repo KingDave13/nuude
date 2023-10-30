@@ -100,7 +100,7 @@ const Navbar = () => {
             <BsList
               size={35}
               className="object-contain cursor-pointer"
-              style={{ color: '#000' }} // Change icon color when closed
+              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when closed
               onClick={() => setToggle(!toggle)}
             />
           )}
