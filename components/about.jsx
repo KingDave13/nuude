@@ -14,14 +14,14 @@ const About = () => {
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-12 ss:mb-10">
+            className="flex flex-row items-center w-full md:mb-12 ss:mb-8">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
                 ss:text-[45px] text-[35px] md:mr-14 ss:mr-6">
                     What is Nuude!?
                 </h1>
                 <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-secondary md:w-full ss:w-[300px]
+                    <div className='bg-secondary md:w-full ss:w-full
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
                 </motion.div>
             </motion.div>
@@ -31,7 +31,8 @@ const About = () => {
                 <motion.div variants={textVariant()}
                 className={`${layout.sectionInfo}`}>
                     <p className='text-white md:text-[17px] ss:text-[15px] 
-                    text-[14px] md:max-w-[700px] md:leading-[22px]'>
+                    text-[14px] md:max-w-[700px] ss:max-w-[400px]  
+                    md:leading-[22px]'>
                     Nuude! is an exclusively private club standing to 
                     serve the social and entertainment needs of its 
                     members and guests by maintaining the highest 
@@ -42,8 +43,8 @@ const About = () => {
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[15px] 
-                    text-[14px] md:max-w-[700px] md:mt-5 ss:mt-5 
-                    md:leading-[22px]'>
+                    text-[14px] md:max-w-[700px] ss:max-w-[400px] 
+                    md:mt-5 ss:mt-5 md:leading-[22px]'>
                     The club's exclusivity adds to its allure, ensuring 
                     that only those who are genuinely curious and 
                     open-minded individuals are granted membership. By 
@@ -53,7 +54,7 @@ const About = () => {
                     and interests.
                     </p>    
 
-                    <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5'>
+                    <div className='md:mt-16 ss:mt-10 mt-4 flex md:gap-5'>
                         <button
                             className='grow4 bg-secondary border-none
                             md:text-[17px] ss:text-[17px] text-[14px] md:py-4
