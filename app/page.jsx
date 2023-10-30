@@ -22,9 +22,9 @@ const Home = () => {
                 members-only <br></br>club!
             </h1>
 
-            <p className='md:mt-6 ss:mt-5 mt-3 md:text-[18px] ss:text-[20px]
+            <p className='md:mt-6 ss:mt-5 mt-3 md:text-[18px] ss:text-[18px]
             text-[14px] text-white text-center md:leading-[25px] 
-            ss:leading-[55px] leading-[45px] font-manierRegular'>
+            ss:leading-[25px] leading-[45px] font-manierRegular'>
               We are a society of like-minded libertines with the highest 
               standards of <br></br>taste and style. We embrace unrestrained 
               indulgence with <br></br>one golden rule - consent.
