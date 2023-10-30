@@ -16,7 +16,7 @@ const About = () => {
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
-                ss:text-[47px] text-[35px] md:mr-14">
+                ss:text-[45px] text-[35px] md:mr-14 ss:mr-6">
                     What is Nuude!?
                 </h1>
                 <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
