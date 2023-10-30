@@ -19,7 +19,7 @@ const Luxury = () => {
                 </h1>
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-white md:w-full ss:w-[300px]
+                    <div className='bg-white md:w-full ss:w-full
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
                 </motion.div>
             </motion.div>
@@ -28,8 +28,9 @@ const Luxury = () => {
             className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
                 <motion.div variants={textVariant()}
                 className={`${layout.sectionInfo}`}>
-                    <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:leading-[22px]'>
+                    <p className='text-white md:text-[17px] ss:text-[15px] 
+                    text-[14px] md:max-w-[700px] ss:max-w-[550px] 
+                    md:leading-[22px]'>
                         The black-tie luxury dinner series is characterized by
                         its attention to detail, featuring gourmet cuisine, 
                         fine wines, and elegant décor that create an 
@@ -40,8 +41,9 @@ const Luxury = () => {
                         in fetish and erotic arts.
                     </p>
 
-                    <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] max-w-[700px] md:mt-5 md:leading-[22px]'>
+                    <p className='text-white md:text-[17px] ss:text-[15px] 
+                    text-[14px] md:max-w-[700px] ss:max-w-[550px] md:mt-5 
+                    ss:mt-5 md:leading-[22px]'>
                         In addition, the pool parties add an exciting and 
                         playful dimension to the luxury erotic experience. 
                         These poolside events offer a relaxed yet sensuous 
