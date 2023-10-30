@@ -16,7 +16,7 @@ const Home = () => {
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[60px] text-[40px] md:leading-[90px] 
-            ss:leading-[75px] leading-[45px] text-center'>
+            ss:leading-[70px] leading-[45px] text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
                 members-only <br></br>club!
@@ -35,7 +35,7 @@ const Home = () => {
               <button
                 className='grow4 bg-secondary border-none
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4
-                ss:py-3 py-2 md:px-10 ss:px-14 px-6 text-primary 
+                ss:py-3 py-2 md:px-10 ss:px-7 px-6 text-primary 
                 rounded-[6px] font-medium font-manier cursor-pointer'
               >
                 Become a Member
