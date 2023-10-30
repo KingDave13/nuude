@@ -15,8 +15,8 @@ const Home = () => {
           max-w-[95rem] flex flex-col md:mt-16' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
-            ss:text-[50px] text-[40px] md:leading-[90px] 
-            ss:leading-[55px] leading-[45px] text-center'>
+            ss:text-[60px] text-[40px] md:leading-[90px] 
+            ss:leading-[75px] leading-[45px] text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
                 members-only <br></br>club!
