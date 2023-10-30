@@ -10,9 +10,9 @@ import Image from "next/image";
 const About = () => {
   return (
     <section className="md:min-h-[700px] ss:min-h-[700px] min-h-[700px] 
-    mx-auto flex items-center">
+    mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex flex-col 
-        font-manierRegular'>
+        font-manierRegular max-w-[95rem]'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12 ss:mb-8">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
