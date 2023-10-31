@@ -205,14 +205,14 @@ const Application = () => {
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[18px] text-[14px]">
-                                Instagram
+                                Instagram Handle
                             </label>
                             <input
                             type="email"
                             name="email"
                             // value={form.email}
                             // onChange={handleChange}
-                            placeholder="Enter your email address"
+                            placeholder="www.instagram.com/your username"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             placeholder:text-white-4
