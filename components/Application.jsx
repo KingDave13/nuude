@@ -7,7 +7,7 @@ import { slideIn, textVariant } from '@utils/motion';
 const Application = () => {
 
   return (
-    <section className="md:min-h-[1900px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[2100px] ss:min-h-[700px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -348,8 +348,9 @@ const Application = () => {
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[16px] ss:text-[16px] text-[13px] py-4 px-20
-                            text-primary md:rounded-[3px] border-none
+                            md:text-[16px] ss:text-[16px] text-[13px] 
+                            md:py-4 md:px-12 
+                            text-primary md:rounded-[6px] border-none
                             cursor-pointer"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
@@ -371,7 +372,7 @@ const Application = () => {
                     </p>
 
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside font-manierLight'>
+                    md:mt-6 md:leading-[22px] list-inside font-manierLight'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
                             all individuals must apply. An Aurum-level 
@@ -464,7 +465,7 @@ const Application = () => {
                     </ol>
 
                     <p className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px]'>
+                    md:mt-6 md:leading-[22px]'>
                         The privacy and safety of Nuude! and our guests 
                         is of paramount importance and confidentiality is 
                         required of all members, guests, performers, 
@@ -474,7 +475,7 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px] list-inside 
+                    md:mt-6 md:leading-[22px] list-inside 
                     font-manierLight list-roman-brackets'>
                         <li>
                             You will not disclose identifying information 
@@ -515,7 +516,7 @@ const Application = () => {
                     </ol>
 
                     <p className='text-white md:text-[15px] text-justify
-                    md:mt-4 md:leading-[22px]'>
+                    md:mt-6 md:leading-[22px]'>
                         By submitting an application, you affirm that you 
                         have read, understood, and agree to abide by 
                         these terms and conditions. Nuude! reserves the 
@@ -524,7 +525,7 @@ const Application = () => {
                         responsibility to review them periodically.
                     </p>
 
-                    <form className='text-white text-justify md:mt-10'>
+                    <form className='text-white text-justify md:mt-12'>
                         <div className="flex md:gap-3 items-center">
                             <input
                             type="checkbox"
