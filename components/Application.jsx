@@ -359,8 +359,9 @@ const Application = () => {
                     </form>
                 </div>
 
-                <div className='bg-primaryalt flex flex-col rounded-md
-                md:p-10 w-1/2'>
+                <div className='w-1/2 h-auto'>
+                    <div className='flex flex-col bg-primaryalt 
+                    rounded-md md:p-10'>
                     <p className='text-white md:text-[15px] text-justify
                     md:leading-[22px]'>
                         By submitting an application for membership or
@@ -555,6 +556,8 @@ const Application = () => {
                             </label>
                         </div>
                     </form>
+                    </div>
+                    
                 </div>
             </motion.div>
         </div>
