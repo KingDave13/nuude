@@ -172,7 +172,7 @@ const Application = () => {
                             name="employer"
                             // value={form.name}
                             // onChange={handleChange}
-                            placeholder="Employer"
+                            placeholder="Where do you work?"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             placeholder:text-white-4
@@ -192,7 +192,7 @@ const Application = () => {
                             name="occupation"
                             // value={form.name}
                             // onChange={handleChange}
-                            placeholder="Occupation"
+                            placeholder="What do you work as?"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             placeholder:text-white-4
