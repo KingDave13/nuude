@@ -100,7 +100,7 @@ const Application = () => {
                             md:text-[16px] ss:text-[18px] text-[14px]">
                                 Phone Number
                             </label>
-                            <input
+                            <select
                             type="text"
                             name="subject"
                             // value={form.subject}
@@ -112,7 +112,9 @@ const Application = () => {
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
-                            />
+                            >
+                                <option>Nigeria</option>
+                            </select>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
