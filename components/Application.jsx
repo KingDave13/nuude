@@ -302,6 +302,48 @@ const Application = () => {
                             />
                         </div>
 
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[18px] text-[14px]">
+                                What would you contribute to the Nuude! community?
+                            </label>
+                            <textarea
+                            rows="5"
+                            name="contributions"
+                            // value={form.message}
+                            // onChange={handleChange}
+                            placeholder="You can be brief or very expressive. No pressure!"
+                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            placeholder:text-white-4
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[14px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[18px] text-[14px]">
+                                And finally, how did you find us?
+                            </label>
+                            <select
+                            type="text"
+                            name="mode"
+                            // value={form.subject}
+                            // onChange={handleChange}
+                            placeholder="Please select an option"
+                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            placeholder:text-white-4
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[14px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            >
+                                <option></option>
+                            </select>
+                        </div>
+
                         <div className="col-span-2">
                             <button
                             type="submit"
@@ -311,7 +353,7 @@ const Application = () => {
                             cursor-pointer"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
-                                Submit
+                                Proceed to payment
                             </button>
                         </div>
                     </form>
