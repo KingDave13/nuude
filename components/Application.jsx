@@ -101,8 +101,8 @@ const Application = () => {
                                 Phone Number
                             </label>
                             <select
-                            type="text"
-                            name="subject"
+                            type="number"
+                            name="phone"
                             // value={form.subject}
                             // onChange={handleChange}
                             placeholder="Enter a subject"
@@ -115,6 +115,46 @@ const Application = () => {
                             >
                                 <option>Nigeria</option>
                             </select>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[18px] text-[14px]">
+                                Date of Birth
+                            </label>
+                            <input
+                            type="date"
+                            name="birthdate"
+                            // value={form.name}
+                            // onChange={handleChange}
+                            placeholder="Enter your first name"
+                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            placeholder:text-white-4
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[14px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[18px] text-[14px]">
+                                Last Name
+                            </label>
+                            <input
+                            type="text"
+                            name="lastname"
+                            // value={form.name}
+                            // onChange={handleChange}
+                            placeholder="Enter your last name"
+                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            placeholder:text-white-4
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[14px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
