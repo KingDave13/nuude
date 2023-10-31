@@ -268,7 +268,7 @@ const Application = () => {
                                 What turns you on the most?
                             </label>
                             <textarea
-                            rows="5"
+                            rows="4"
                             name="turnons"
                             // value={form.message}
                             // onChange={handleChange}
@@ -288,7 +288,7 @@ const Application = () => {
                                 If you could amplify an erotic trait within yourself, what would it be?
                             </label>
                             <textarea
-                            rows="5"
+                            rows="4"
                             name="erotictraits"
                             // value={form.message}
                             // onChange={handleChange}
@@ -308,7 +308,7 @@ const Application = () => {
                                 What would you contribute to the Nuude! community?
                             </label>
                             <textarea
-                            rows="5"
+                            rows="4"
                             name="contributions"
                             // value={form.message}
                             // onChange={handleChange}
@@ -524,7 +524,7 @@ const Application = () => {
                         responsibility to review them periodically.
                     </p>
 
-                    <form className='text-white text-justify md:mt-8'>
+                    <form className='text-white text-justify md:mt-10'>
                         <div className="flex md:gap-3 items-center">
                             <input
                             type="checkbox"
