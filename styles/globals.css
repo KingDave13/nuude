@@ -64,9 +64,9 @@ select {
   
   background-image: url('../public/assets/arrow.png');
   /* background-size: 16px 16px; */
-  background-position: right center;
+  background-position: right 20px center;
+  position: relative;
   background-repeat: no-repeat;
-  padding-right: 20px;
 }
 
 @media screen and (max-width: 480px) {
