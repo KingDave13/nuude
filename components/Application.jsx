@@ -3,6 +3,8 @@
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
+import PhoneInput from 'react-phone-number-input';
+import 'react-phone-number-input/style.css'
 
 const Application = () => {
 
