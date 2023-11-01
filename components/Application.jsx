@@ -102,21 +102,20 @@ const Application = () => {
                             md:text-[16px] ss:text-[18px] text-[14px]">
                                 Phone Number
                             </label>
-                            <select
+                            <PhoneInput
                             type="number"
                             name="phone"
+                            defaultCountry='NG'
                             // value={form.subject}
                             // onChange={handleChange}
-                            placeholder="Enter a subject"
+                            placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             placeholder:text-white-4
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
-                            >
-                                <option>Nigeria</option>
-                            </select>
+                            />
                         </div>
 
                         <div className="flex flex-col">
