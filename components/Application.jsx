@@ -110,7 +110,7 @@ const Application = () => {
                             // onChange={handleChange}
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-primary md:rounded-[3px] 
                             placeholder:text-white-4
                             md:placeholder:text-[14px]
                             ss:placeholder:text-[14px] 
