@@ -10,6 +10,7 @@ import twitter from './twitter.png';
 import instagram from './instagram.png';
 import facebook from './facebook.png';
 import linkedin from './linkedin.png';
+import arrow from './arrow.png';
 
 export {
     logo,
@@ -23,5 +24,6 @@ export {
     twitter,
     instagram,
     facebook,
-    linkedin
+    linkedin,
+    arrow
 }
