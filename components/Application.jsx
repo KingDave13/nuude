@@ -111,10 +111,7 @@ const Application = () => {
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px]
-                            ss:placeholder:text-[14px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            bg-primaryalt"
                             />
                         </div>
 
@@ -131,10 +128,7 @@ const Application = () => {
                             placeholder="DD/MM/YYYY"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
-                            placeholder:text-white-4 
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            bg-primaryalt"
                             />
                         </div>
 
@@ -176,7 +170,7 @@ const Application = () => {
                             placeholder="Where do you work?"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -196,7 +190,7 @@ const Application = () => {
                             placeholder="What do you work as?"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -216,7 +210,7 @@ const Application = () => {
                             placeholder="www.instagram.com/your username"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-400
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
