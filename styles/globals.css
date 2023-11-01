@@ -123,6 +123,7 @@ select {
 
 .PhoneInputInput {
   background: none;
+  font-size: 14px;
 }
 
 .PhoneInputCountryIcon {

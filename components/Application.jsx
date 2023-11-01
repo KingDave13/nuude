@@ -90,7 +90,7 @@ const Application = () => {
                             placeholder="Enter your email address"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -110,8 +110,8 @@ const Application = () => {
                             // onChange={handleChange}
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-primary md:rounded-[3px] 
-                            placeholder:text-white-4
+                            outline-none text-textalt md:rounded-[3px] 
+                            placeholder:text-textalt
                             md:placeholder:text-[14px]
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
