@@ -230,7 +230,7 @@ const Application = () => {
                             placeholder="www.twitter.com/your username"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -250,7 +250,7 @@ const Application = () => {
                             placeholder="www.facebook.com/your username"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -270,7 +270,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -290,7 +290,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
@@ -310,7 +310,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            placeholder:text-white-4
+                            placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
