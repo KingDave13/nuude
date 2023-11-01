@@ -148,7 +148,6 @@ const Application = () => {
                             name="gender"
                             // value={form.subject}
                             // onChange={handleChange}
-                            placeholder="select a gender"
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             placeholder:text-white-4
@@ -156,6 +155,7 @@ const Application = () => {
                             ss:placeholder:text-[14px] 
                             placeholder:text-[12px] bg-primaryalt"
                             >
+                                <option value="" disabled hidden>Select a gender</option>
                                 <option>Male</option>
                                 <option>Female</option>
                                 <option>I prefer not to say</option>
