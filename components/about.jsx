@@ -59,7 +59,7 @@ const About = () => {
                         <button
                             className='grow4 bg-secondary border-none
                             md:text-[17px] ss:text-[14px] text-[14px] md:py-4
-                            ss:py-4 py-2 md:px-10 ss:px-5 px-6 text-primary 
+                            ss:py-3 py-2 md:px-10 ss:px-5 px-6 text-primary 
                             rounded-[6px] cursor-pointer'
                         >
                             Become a Member
@@ -68,7 +68,7 @@ const About = () => {
                         <button
                             className='border-[1px] grow2 border-secondary 
                             md:text-[17px] ss:text-[14px] text-[14px] md:py-4 
-                            ss:py-4 py-2 md:px-16 ss:px-10 px-6 text-secondary 
+                            ss:py-3 py-2 md:px-16 ss:px-10 px-6 text-secondary 
                             rounded-[6px] bg-transparent cursor-pointer'
                         >
                             Contact Us
