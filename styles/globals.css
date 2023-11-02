@@ -109,7 +109,7 @@ input:focus {
     background-image: url('/assets/heroImg.png');
     object-fit: cover;
     width: auto;
-    height: 80vh;
+    max-height: 90vh;
   }
 }
 
