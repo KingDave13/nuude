@@ -69,6 +69,11 @@ select {
   background-repeat: no-repeat;
 }
 
+input:focus, select:focus {
+  outline: none;
+  background-color: transparent;
+}
+
 @media screen and (max-width: 480px) {
   .mobile {
     height: 600px;
