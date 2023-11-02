@@ -69,6 +69,16 @@ select {
   background-repeat: no-repeat;
 }
 
+select option {
+  /* background-color: #f0f0f0; */
+  color: white;
+  font-size: 14px;
+}
+
+select:focus option:checked {
+  color: #fff;
+}
+
 input:focus {
   border: 1px solid white;
   /* background-color: transparent; */
