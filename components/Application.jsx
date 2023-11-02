@@ -140,7 +140,6 @@ const Application = () => {
                             <select
                             type="text"
                             name="gender"
-                            placeholder="Select a gender"
                             // value={form.subject}
                             // onChange={handleChange}
                             className="md:py-3 ss:py-3 py-2 px-4 border-none 

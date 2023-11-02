@@ -103,6 +103,16 @@ input:focus {
   height: 100vh;
 }
 
+
+@media (max-width: 1060px) {
+  .hero {
+    background-image: url('/assets/heroImg.png');
+    object-fit: cover;
+    width: auto;
+    height: 80vh;
+  }
+}
+
 .about {
   background-color: #1A1A1A;
 }
