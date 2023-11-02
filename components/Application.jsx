@@ -35,12 +35,13 @@ const Application = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-            className='flex md:flex-row w-full md:mt-12 gap-20'>
+            className='flex md:flex-row w-full md:mt-12 md:gap-20
+            ss:gap-8'>
                 <div className='w-1/2'>
-                    <form className="grid grid-cols-2 gap-8">
+                    <form className="grid grid-cols-2 md:gap-8 ss:gap-4">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 First Name
                             </label>
                             <input
@@ -49,18 +50,19 @@ const Application = () => {
                             // value={form.name}
                             // onChange={handleChange}
                             placeholder="Enter your first name"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px]
                             placeholder:text-textalt focus:outline-none
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Last Name
                             </label>
                             <input
@@ -69,18 +71,19 @@ const Application = () => {
                             // value={form.name}
                             // onChange={handleChange}
                             placeholder="Enter your last name"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Email Address
                             </label>
                             <input
@@ -89,18 +92,19 @@ const Application = () => {
                             // value={form.email}
                             // onChange={handleChange}
                             placeholder="Enter your email address"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Phone Number
                             </label>
                             <PhoneInput
@@ -110,15 +114,16 @@ const Application = () => {
                             // value={form.subject}
                             // onChange={handleChange}
                             placeholder="Enter your phone number"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
+                            ss:rounded-[3px]
                             bg-primaryalt"
                             />
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Date of Birth
                             </label>
                             <input
@@ -127,15 +132,16 @@ const Application = () => {
                             // value={form.name}
                             // onChange={handleChange}
                             placeholder="DD/MM/YYYY"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
+                            ss:rounded-[3px]
                             bg-primaryalt"
                             />
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Gender
                             </label>
                             <select
@@ -143,11 +149,12 @@ const Application = () => {
                             name="gender"
                             // value={form.subject}
                             // onChange={handleChange}
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px]
                             placeholder:text-white-4 cursor-pointer
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             >
                                 <option value="" disabled hidden>Select a gender</option>
@@ -160,7 +167,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Employer
                             </label>
                             <input
@@ -169,18 +176,19 @@ const Application = () => {
                             // value={form.name}
                             // onChange={handleChange}
                             placeholder="Where do you work?"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Occupation
                             </label>
                             <input
@@ -189,18 +197,19 @@ const Application = () => {
                             // value={form.name}
                             // onChange={handleChange}
                             placeholder="What do you work as?"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] 
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Instagram Handle
                             </label>
                             <input
@@ -209,18 +218,19 @@ const Application = () => {
                             // value={form.email}
                             // onChange={handleChange}
                             placeholder="www.instagram.com/your username"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] 
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Twitter Handle
                             </label>
                             <input
@@ -229,18 +239,19 @@ const Application = () => {
                             // value={form.email}
                             // onChange={handleChange}
                             placeholder="www.twitter.com/your username"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 Facebook Username
                             </label>
                             <input
@@ -249,11 +260,12 @@ const Application = () => {
                             // value={form.email}
                             // onChange={handleChange}
                             placeholder="www.facebook.com/your username"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] 
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
