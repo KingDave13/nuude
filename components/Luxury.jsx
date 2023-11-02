@@ -7,7 +7,7 @@ import { layout } from "@styles/styles";
 
 const Luxury = () => {
   return (
-    <section className="md:min-h-[800px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
