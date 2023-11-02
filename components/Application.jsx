@@ -14,17 +14,18 @@ const Application = () => {
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex items-center w-full md:mb-10">
+            className="flex items-center w-full md:mb-10 ss:mb-8">
                 <h1 className="text-secondary font-manierMedium 
-                md:text-[50px] ss:text-[47px] text-[35px] md:mr-14">
+                md:text-[50px] ss:text-[40px] text-[35px] md:mr-14">
                     Membership Application Form
                 </h1>
             </motion.div>
         
             <motion.div variants={textVariant()}
-            className='flex items-start w-full md:mb-10'>
-                <p className='text-white md:text-[17px] ss:text-[18px] 
-                text-[14px] md:max-w-[750px] md:leading-[22px]'>
+            className='flex items-start w-full md:mb-10 ss:mb-8'>
+                <p className='text-white md:text-[17px] ss:text-[15px] 
+                text-[14px] md:max-w-[750px] ss:max-w-[600px] 
+                md:leading-[22px]'>
                     Please read the terms and conditions carefully before 
                     completing and submitting this membership application 
                     form. An email will be sent to you upon successful 
