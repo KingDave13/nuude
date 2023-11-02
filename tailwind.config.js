@@ -35,9 +35,5 @@ module.exports = {
       xl: "1700px",
     },
   },
-  plugins: [
-    require('@tailwindcss/forms')({
-      strategy: 'base', // only generate global styles
-    }),
-  ],
+  plugins: [],
 };

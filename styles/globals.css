@@ -69,8 +69,8 @@ select {
   background-repeat: no-repeat;
 }
 
-input:focus, select:focus {
-  outline: none;
+input:focus {
+  border: 1px solid white;
   /* background-color: transparent; */
 }
 
