@@ -15,41 +15,42 @@ const Events = () => {
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-20">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
-                ss:text-[47px] text-[35px] md:mr-14">
+                ss:text-[40px] text-[35px] md:mr-14 ss:mr-6">
                     Upcoming Events
                 </h1>
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-secondary md:w-full ss:w-[300px]
+                    <div className='bg-secondary md:w-full ss:w-full
                         w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
                 </motion.div>
             </motion.div>
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col w-full 
-            items-center md:gap-28">
+            items-center md:gap-28 ss:gap-12">
                 <motion.div 
                 variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className='justify-center items-start'>
                     <Image src={event} alt='event'
-                    className='md:w-[420px] ss:w-[300px] h-auto'
+                    className='md:w-[420px] ss:w-[700px] h-auto'
                     />
                 </motion.div>
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[40px] ss:text-[35px] 
-                    text-[20px] font-manierMedium mb-5'>
+                    text-[20px] font-manierMedium md:mb-5 ss:mb-3'>
                         Nuude!
                     </h1>
 
-                    <p className='text-white md:text-[18px] ss:text-[18px] 
-                    text-[14px] md:max-w-[700px] md:leading-[22px] mb-5'>
+                    <p className='text-white md:text-[18px] ss:text-[15px] 
+                    text-[14px] md:max-w-[700px] md:leading-[22px] 
+                    md:mb-5 ss:mb-3'>
                     Step into a world of fine dining, intrigue and 
                     sensuality where we hand you the key to your dreams.
                     </p>
 
-                    <p className='text-white md:text-[17px] ss:text-[18px] 
-                    text-[14px] md:mb-5'>
+                    <p className='text-white md:text-[17px] ss:text-[15px] 
+                    text-[14px] md:mb-5 ss:mb-3'>
                     Featuring: Connect, pool party, fine dining.
                     </p>
 
