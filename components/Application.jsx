@@ -272,7 +272,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 What turns you on the most?
                             </label>
                             <textarea
@@ -281,18 +281,19 @@ const Application = () => {
                             // value={form.message}
                             // onChange={handleChange}
                             placeholder="You can be brief or very expressive. No pressure!"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] 
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 If you could amplify an erotic trait within yourself, what would it be?
                             </label>
                             <textarea
@@ -301,18 +302,19 @@ const Application = () => {
                             // value={form.message}
                             // onChange={handleChange}
                             placeholder="You can be brief or very expressive. No pressure!"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 What would you contribute to the Nuude! community?
                             </label>
                             <textarea
@@ -321,18 +323,19 @@ const Application = () => {
                             // value={form.message}
                             // onChange={handleChange}
                             placeholder="You can be brief or very expressive. No pressure!"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] 
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
                         </div>
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[18px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[14px]">
                                 And finally, how did you find us?
                             </label>
                             <select
@@ -341,11 +344,12 @@ const Application = () => {
                             // value={form.subject}
                             // onChange={handleChange}
                             placeholder="Please select an option"
-                            className="md:py-3 ss:py-3 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px]
                             placeholder:text-white-4 cursor-pointer
                             md:placeholder:text-[14px] 
-                            ss:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             >
                                 <option></option>
@@ -356,9 +360,10 @@ const Application = () => {
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[16px] ss:text-[16px] text-[13px] 
-                            md:py-4 md:px-12 
-                            text-primary md:rounded-[6px] border-none
+                            md:text-[16px] ss:text-[14px] text-[13px] 
+                            md:py-4 ss:py-3 md:px-12 ss:px-8
+                            text-primary md:rounded-[6px] ss:rounded-[3px] 
+                            border-none ss:bottom-0 ss:absolute
                             cursor-pointer"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
@@ -370,8 +375,9 @@ const Application = () => {
 
                 <div className='w-1/2 h-auto'>
                     <div className='flex flex-col bg-primaryalt 
-                    rounded-md md:p-10'>
-                    <p className='text-white md:text-[15px] text-justify
+                    rounded-md md:p-10 ss:p-5'>
+                    <p className='text-white md:text-[15px] ss:text-[14px] 
+                    text-justify
                     md:leading-[22px]'>
                         By submitting an application for membership or
                         event attendance with Nuude! (referred to as 
@@ -379,8 +385,9 @@ const Application = () => {
                         and agree to the following terms and conditions:
                     </p>
 
-                    <ol className='text-white md:text-[15px] text-justify
-                    md:mt-6 md:leading-[22px] list-inside font-manierLight'>
+                    <ol className='text-white md:text-[15px] ss:text-[14px] 
+                    text-justify md:mt-6 ss:mt-4 md:leading-[22px] 
+                    list-inside font-manierLight'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
                             all individuals must apply. An Aurum-level 
@@ -472,8 +479,8 @@ const Application = () => {
                         </li>           
                     </ol>
 
-                    <p className='text-white md:text-[15px] text-justify
-                    md:mt-6 md:leading-[22px]'>
+                    <p className='text-white md:text-[15px] ss:text-[14px] 
+                    text-justify md:mt-6 ss:mt-4 md:leading-[22px]'>
                         The privacy and safety of Nuude! and our guests 
                         is of paramount importance and confidentiality is 
                         required of all members, guests, performers, 
@@ -482,8 +489,8 @@ const Application = () => {
                         also agree to the following instructions:
                     </p>
                     
-                    <ol className='text-white md:text-[15px] text-justify
-                    md:mt-6 md:leading-[22px] list-inside 
+                    <ol className='text-white md:text-[15px] ss:text-[14px] 
+                    text-justify md:mt-6 ss:mt-4 md:leading-[22px] list-inside 
                     font-manierLight list-roman-brackets'>
                         <li>
                             You will not disclose identifying information 
@@ -523,8 +530,8 @@ const Application = () => {
                         </li>
                     </ol>
 
-                    <p className='text-white md:text-[15px] text-justify
-                    md:mt-6 md:leading-[22px]'>
+                    <p className='text-white md:text-[15px] ss:text-[14px] 
+                    text-justify md:mt-6 ss:mt-4 md:leading-[22px]'>
                         By submitting an application, you affirm that you 
                         have read, understood, and agree to abide by 
                         these terms and conditions. Nuude! reserves the 
@@ -533,34 +540,36 @@ const Application = () => {
                         responsibility to review them periodically.
                     </p>
 
-                    <form className='text-white text-justify md:mt-12'>
-                        <div className="flex md:gap-3 items-center">
+                    <form className='text-white text-justify md:mt-12 
+                    ss:mt-6'>
+                        <div className="flex md:gap-3 ss:gap-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='border fill-none
-                            border-textalt w-5 h-5 cursor-pointer rounded-md'
+                            className='md:w-5 ss:w-10 h-5 cursor-pointer 
+                            rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
-                            ss:text-[18px] text-[14px]">
+                            ss:text-[14px] text-[14px]">
                                 I confirm and consent that I am over the 
                                 age of 18
                             </label>
                         </div>
 
-                        <div className="flex md:gap-3 md:mt-3 items-center">
+                        <div className="flex md:gap-3 ss:gap-2 md:mt-3 
+                        ss:mt-2 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='border 
-                            border-white w-5 h-5 cursor-pointer rounded-md'
+                            className='md:w-5 ss:w-10 h-5 cursor-pointer 
+                            rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
-                            ss:text-[18px] text-[14px]">
+                            ss:text-[14px] text-[14px]">
                                 I agree to the above terms and conditions
                             </label>
                         </div>
