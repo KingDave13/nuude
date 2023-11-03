@@ -9,7 +9,7 @@ import 'react-phone-number-input/style.css'
 const Application = () => {
 
   return (
-    <section className="md:min-h-[2100px] ss:min-h-[2800px] min-h-[700px] 
+    <section className="md:min-h-[2100px] ss:min-h-[2900px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
