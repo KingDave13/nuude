@@ -363,7 +363,7 @@ const Application = () => {
                             md:text-[16px] ss:text-[14px] text-[13px] 
                             md:py-4 ss:py-3 md:px-12 ss:px-8
                             text-primary md:rounded-[6px] ss:rounded-[3px] 
-                            border-none ss:bottom-0 ss:absolute
+                            border-none
                             cursor-pointer"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
