@@ -15,30 +15,30 @@ const Home = () => {
           max-w-[95rem] flex flex-col md:mt-16 ss:mt-20' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
-            ss:text-[70px] text-[50px] md:leading-[90px]
-            ss:leading-[70px] leading-[58px] md:text-center ss:text-center'>
+            ss:text-[70px] text-[52px] md:leading-[90px]
+            ss:leading-[70px] leading-[55px] md:text-center ss:text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
                 members-only <br className="ss:flex hidden"></br>club!
             </h1>
 
-            <p className='md:mt-6 ss:mt-5 mt-8 md:text-[18px] ss:text-[18px]
-            text-[14px] text-white md:text-center ss:text-center 
-            md:leading-[25px] ss:leading-[25px] leading-[20px] 
+            <p className='md:mt-6 ss:mt-5 mt-6 md:text-[18px] ss:text-[18px]
+            text-[16px] text-white md:text-center ss:text-center 
+            md:leading-[25px] ss:leading-[25px] leading-[22px] 
             font-manierRegular'>
               We are a society of like-minded libertines with the highest 
               standards of <br className="ss:flex hidden"></br>taste and style. We embrace unrestrained 
               indulgence with <br className="ss:flex hidden"></br>one golden rule - consent.
             </p>
 
-            <div className='flex md:mt-8 ss:mt-8 mt-5 md:gap-8 ss:gap-5 
-            gap-2 items-center font-manierRegular buttonfull'>
+            <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+            gap-3 items-center font-manierRegular buttonfull'>
               <button
-                className='grow4 bg-secondary border-none
+                className='grow4 bg-secondary border-none buttonhalf
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4
-                ss:py-3 py-2 md:px-10 ss:px-7 px-6 text-primary 
-                md:rounded-[6px] ss:rounded-[3px] font-medium font-manier 
-                cursor-pointer'
+                ss:py-3 py-3 md:px-10 ss:px-7 px-3 text-primary 
+                md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                font-medium font-manier cursor-pointer'
               >
                 Become a Member
               </button>
@@ -46,9 +46,10 @@ const Home = () => {
               <button
                 className='border-[1px] grow2 border-secondary 
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
-                ss:py-3 py-2 md:px-16 ss:px-14 px-6 text-secondary 
-                md:rounded-[6px] ss:rounded-[3px] font-medium 
-                bg-transparent font-manier cursor-pointer'
+                ss:py-3 py-3 md:px-16 ss:px-14 px-6 text-secondary 
+                md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                font-medium bg-transparent font-manier cursor-pointer
+                buttonhalf'
               >
                 Contact Us
               </button>
