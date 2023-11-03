@@ -90,21 +90,20 @@ const Navbar = () => {
 
         <div className="md:hidden flex flex-1 justify-end items-center">
           {toggle ? (
-            <Image
-              style={{ color: isScrolled ? '#000' : '#fff' }}
-              src={menu}
-              alt="menu"
-              width={40}
-              height={'auto'}
+            <BsX
+              size={40}
               className="object-contain cursor-pointer"
+              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when open
               onClick={() => setToggle(!toggle)}
             />
           ) : (
-            <BsList
-              size={35}
+            <Image
+              src={menu}
+              alt="menu"
+              width={100}
+              height={'auto'}
               className="object-contain cursor-pointer"
-              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when closed
-              onClick={() => setToggle(!toggle)}
+              // onClick={() => setToggle(!toggle)}
             />
           )}
 
