@@ -143,9 +143,8 @@ const Navbar = () => {
                     active === link.title
                       ? 'text-secondary'
                       : 'text-primary'
-                  } font-medium cursor-pointer ss:text-[16px] text-[15px] 
-                  w-full
-                  ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1 pt-1' : 'pt-1'}`}
+                  } font-medium cursor-pointer text-[16px] w-full
+                  ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
                   onClick={() => {
                     setToggle(!toggle);
                     setActive(link.title);
