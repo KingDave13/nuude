@@ -118,12 +118,13 @@ const Navbar = () => {
             />
           </Link>
 
-          <div className="flex items-center">
+          <div className="flex items-center z-20">
             {toggle ? (
               <BsX
-                size={50}
-                className="object-contain cursor-pointer"
-                style={{ color: isScrolled ? '#000' : '#fff' }}
+                size={65}
+                className="object-contain cursor-pointer bg-white ss:pb-3
+                pb-3"
+                style={{ color: isScrolled ? '#575656' : '#575656' }}
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
@@ -139,8 +140,8 @@ const Navbar = () => {
           <div
             ref={menuRef}
             className={`p-6 bg-white absolute top-0 right-0
-            z-10 flex-col w-full shadow-xl slide-down-menu 
-            ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible' // Add opacity and visibility for the toggle effect
+            z-10 flex-col w-full shadow-xl
+            ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible'
             }`}
             style={{
               height: toggle ? 'auto' : 0,
