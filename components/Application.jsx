@@ -543,13 +543,13 @@ const Application = () => {
 
                     <form className='text-white text-justify md:mt-12 
                     ss:mt-6'>
-                        <div className="flex md:gap-3 ss:gap-2 items-center">
+                        <div className="flex md:gap-3 ss:gap-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='md:w-5 ss:w-10 h-5 cursor-pointer 
+                            className='md:w-5 ss:w-5 h-5 cursor-pointer 
                             rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
@@ -559,14 +559,14 @@ const Application = () => {
                             </label>
                         </div>
 
-                        <div className="flex md:gap-3 ss:gap-2 md:mt-3 
-                        ss:mt-2 items-center">
+                        <div className="flex md:gap-3 ss:gap-3 md:mt-3 
+                        ss:mt-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='md:w-5 ss:w-10 h-5 cursor-pointer 
+                            className='md:w-5 ss:w-5 h-5 cursor-pointer 
                             rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
