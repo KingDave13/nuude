@@ -97,7 +97,7 @@ const Navbar = () => {
             <Image
               src={isScrolled ? logo : logoalt}
               alt="logo"
-              width={100}
+              width={130}
               height="auto"
               className="object-contain"
             />
@@ -106,7 +106,7 @@ const Navbar = () => {
           <div className="flex items-center">
             {toggle ? (
               <BsX
-                size={40}
+                size={50}
                 className="object-contain cursor-pointer"
                 style={{ color: isScrolled ? '#000' : '#fff' }}
                 onClick={() => setToggle(!toggle)}
