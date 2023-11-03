@@ -2,10 +2,11 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { BsX, BsList } from 'react-icons/bs';
+import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@constants';
-import { logoalt, logo, menu } from '@public/assets';
+import { logoalt, logo } from '@public/assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('Home');
@@ -97,13 +98,11 @@ const Navbar = () => {
               onClick={() => setToggle(!toggle)}
             />
           ) : (
-            <Image
-              src={menu}
-              alt="menu"
-              width={100}
-              height={'auto'}
+            <HiOutlineMenuAlt3
+              size={35}
               className="object-contain cursor-pointer"
-              // onClick={() => setToggle(!toggle)}
+              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when closed
+              onClick={() => setToggle(!toggle)}
             />
           )}
 
