@@ -9,13 +9,13 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="md:min-h-[700px] ss:min-h-[600px] min-h-[750px] 
+    <section className="md:min-h-[700px] ss:min-h-[600px] min-h-[850px] 
     mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular max-w-[95rem]'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12 ss:mb-8 
-            mb-10">
+            mb-8">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
                 ss:text-[45px] text-[33px] md:mr-14 ss:mr-6 mr-5">
                     What is Nuude!?
@@ -28,7 +28,9 @@ const About = () => {
             </motion.div>
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
-            className="flex md:flex-row ss:flex-row flex-col gap-10 w-full">
+            className="flex md:flex-row ss:flex-row flex-col md:gap-10 
+            ss:gap-10 gap-12 w-full
+            aboutimage">
                 <motion.div variants={textVariant()}
                 className={`${layout.sectionInfo}`}>
                     <p className='text-white md:text-[17px] ss:text-[14px] 
