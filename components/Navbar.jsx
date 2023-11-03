@@ -87,27 +87,41 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-      </div>
 
-      {/* FOR MOBILE */}
+        {/* FOR MOBILE */}
 
-      <div className="md:hidden flex justify-end items-center">
-          {toggle ? (
-            <BsX
-              size={40}
-              className="object-contain cursor-pointer"
-              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when open
-              onClick={() => setToggle(!toggle)}
-            />
-          ) : (
-            <HiOutlineMenuAlt3
-              size={40}
+        <div className="md:hidden flex flex-1 items-center">
+          <Link href="/" 
+            onClick={() => { setActive(''); 
+            window.scrollTo(0, 0); }}
+          >
+            <Image
+              src={isScrolled ? logo : logoalt}
+              alt="logo"
+              width={100}
+              height="auto"
               className="object-contain"
-              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when closed
-              onClick={() => setToggle(!toggle)}
             />
-          )}
+          </Link>
 
+          <div className="flex items-center">
+            {toggle ? (
+              <BsX
+                size={40}
+                className="object-contain cursor-pointer"
+                style={{ color: isScrolled ? '#000' : '#fff' }}
+                onClick={() => setToggle(!toggle)}
+              />
+            ) : (
+              <HiOutlineMenuAlt3
+                size={40}
+                className="object-contain cursor-pointer"
+                style={{ color: isScrolled ? '#000' : '#fff' }}
+                onClick={() => setToggle(!toggle)}
+              />
+            )}
+          </div>
+          
           <div
             ref={menuRef}
             className={`p-6 bg-white absolute ss:top-8 top-5 right-0 mx-6 
@@ -141,6 +155,7 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+      </div>
     </nav>
   );
 };
