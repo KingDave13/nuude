@@ -139,10 +139,10 @@ const Navbar = () => {
           
           <div
             ref={menuRef}
-            className={`p-6 bg-white absolute top-0 right-0
-            z-10 flex-col w-full shadow-xl
-            ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible'
-            }`}
+            className={`p-6 bg-white absolute top-0 right-0 z-10 flex-col
+             w-full shadow-xl
+            ${toggle ? 'menu-slide-enter menu-slide-enter-active' 
+            : 'menu-slide-exit menu-slide-exit-active'}`}
             style={{
               height: toggle ? 'auto' : 0,
               transition: 'height 0.3s, opacity 0.3s, visibility 0.3s',
