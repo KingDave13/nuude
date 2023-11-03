@@ -6,7 +6,7 @@ import { fadeIn, slideIn, textVariant } from '@utils/motion';
 
 const Membership = () => {
   return (
-    <section className="md:min-h-[700px] ss:min-h-[600px] min-h-[700px] 
+    <section className="md:min-h-[750px] ss:min-h-[600px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular md:pb-10'>

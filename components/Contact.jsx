@@ -6,7 +6,7 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Contact = () => {
   return (
-    <section className="md:min-h-[1100px] ss:min-h-[900px] min-h-[700px] 
+    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[700px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>

@@ -12,11 +12,11 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <section className='md:min-h-[500px] ss:min-h-[350px] flex items-center'>
+    <section className='md:min-h-[600px] ss:min-h-[420px] flex items-center'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
-            items-center justify-center md:mt-14 ss:mt-8'>
+            items-center justify-center md:mt-24 ss:mt-10'>
                 <Image 
                     src={logo} 
                     alt='logo' 
