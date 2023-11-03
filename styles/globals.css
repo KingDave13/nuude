@@ -228,7 +228,7 @@ input:focus {
 }
 
 .hash-span {
-  display: none;
+  display: flex;
 }
 
 .menu-slide-enter {
