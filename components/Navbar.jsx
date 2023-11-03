@@ -5,7 +5,7 @@ import { BsX, BsList } from 'react-icons/bs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@constants';
-import { logoalt, logo } from '@public/assets';
+import { logoalt, logo, menu } from '@public/assets';
 
 const Navbar = () => {
   const [active, setActive] = useState('Home');
@@ -90,10 +90,13 @@ const Navbar = () => {
 
         <div className="md:hidden flex flex-1 justify-end items-center">
           {toggle ? (
-            <BsX
-              size={40}
+            <Image
+              style={{ color: isScrolled ? '#000' : '#fff' }}
+              src={menu}
+              alt="menu"
+              width={40}
+              height={'auto'}
               className="object-contain cursor-pointer"
-              style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when open
               onClick={() => setToggle(!toggle)}
             />
           ) : (
