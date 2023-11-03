@@ -373,7 +373,7 @@ const Application = () => {
                     </form>
                 </div>
 
-                <div className='w-1/2 h-auto'>
+                <div className='md:w-1/2 w-full h-auto'>
                     <div className='flex flex-col bg-primaryalt 
                     rounded-md md:p-10 ss:p-5'>
                     <p className='text-white md:text-[15px] ss:text-[14px] 
