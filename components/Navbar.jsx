@@ -68,9 +68,12 @@ const Navbar = () => {
           </ul>
 
           <Link href="/" 
-            onClick={() => {
-            setActive('');
-            window.scrollTo(0, 0);
+            onClick={(e) => {
+              e.preventDefault();
+              setActive('');
+              window.scrollTo({ 
+                top: 0, left: 0, 
+                behavior: 'smooth' });
             }}
             className='ml-44 mr-44'
           >
