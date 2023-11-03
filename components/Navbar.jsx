@@ -89,7 +89,7 @@ const Navbar = () => {
                 key={link.id}
                 className={`${
                   active === link.title
-                    ? 'text-secondary' // Change text color to black when active
+                    ? 'text-secondary'
                     : isScrolled ? 'text-primary' : 'text-white'
                 } hover:text-secondary grow3 text-[19px] text-decoration-none 
                 cursor-pointer`}

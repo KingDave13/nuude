@@ -9,7 +9,7 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[850px] 
+    <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[950px] 
     mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular max-w-[95rem]'>
