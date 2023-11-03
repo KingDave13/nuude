@@ -29,15 +29,14 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav
-      className={`${styles.paddingX} w-full flex items-center fixed md:py-6 ss:py-6 
-      py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth font-manierRegular 
-      ${ isScrolled ? 'bg-white shadow-lg' : '' }`}
+    <nav className={`${styles.paddingX} w-full flex items-center fixed 
+      md:py-6 ss:py-6 py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth 
+      font-manierRegular ${ isScrolled ? 'bg-white shadow-lg' : '' }`}
     >
       <div className="w-full flex justify-between items-center 
       max-w-[95rem] mx-auto">
-        <div className="flex items-center justify-center w-full">
-          <ul className="list-none flex flex-row gap-16 hidden md:flex">
+        <div className="flex items-center justify-center w-full hidden md:flex">
+          <ul className="list-none flex flex-row gap-16">
             {navLinks.slice(0, 2).map((link) => (
               <li
                 key={link.id}
@@ -90,7 +89,7 @@ const Navbar = () => {
 
         {/* FOR MOBILE */}
 
-        <div className="md:hidden flex flex-1 items-center">
+        <div className="md:hidden flex justify-between flex-1 items-center">
           <Link href="/" 
             onClick={() => { setActive(''); 
             window.scrollTo(0, 0); }}
