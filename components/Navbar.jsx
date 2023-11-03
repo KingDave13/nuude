@@ -139,8 +139,7 @@ const Navbar = () => {
           <div
             ref={menuRef}
             className={`p-6 bg-white absolute top-0 right-0
-            z-10 flex-col 
-            w-full shadow-xl slide-down-menu 
+            z-10 flex-col w-full shadow-xl slide-down-menu 
             ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible' // Add opacity and visibility for the toggle effect
             }`}
             style={{
@@ -148,7 +147,7 @@ const Navbar = () => {
               transition: 'height 0.3s, opacity 0.3s, visibility 0.3s',
             }}
           >
-            <ul className="list-none flex justify-end items-start 
+            <ul className="list-none flex justify-end 
             flex-col">
               {navLinks.map((link, index) => (
                 <li
