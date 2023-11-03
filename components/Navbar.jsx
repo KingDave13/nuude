@@ -121,9 +121,9 @@ const Navbar = () => {
           <div className="flex items-center z-20">
             {toggle ? (
               <BsX
-                size={65}
+                size={63}
                 className="object-contain cursor-pointer bg-white ss:pb-3
-                pb-3"
+                ss:pt-1 pb-5 pt-3"
                 style={{ color: isScrolled ? '#575656' : '#575656' }}
                 onClick={() => setToggle(!toggle)}
               />
