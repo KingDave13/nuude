@@ -15,11 +15,11 @@ const Home = () => {
           max-w-[95rem] flex flex-col md:mt-16 ss:mt-20' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
-            ss:text-[55px] text-[40px] md:leading-[90px]
-            ss:leading-[65px] leading-[45px] text-center'>
+            ss:text-[70px] text-[50px] md:leading-[90px]
+            ss:leading-[70px] leading-[45px] md:text-center ss:text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
-                members-only <br></br>club!
+                members-only <br className="ss:flex hidden"></br>club!
             </h1>
 
             <p className='md:mt-6 ss:mt-5 mt-3 md:text-[18px] ss:text-[18px]
