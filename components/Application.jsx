@@ -356,7 +356,8 @@ const Application = () => {
                             </select>
                         </div>
 
-                        <div className="col-span-2 md:mt-5 ss:mt-3">
+                        <div className="col-span-2 md:mt-5 ss:mt-3 
+                        md:flex hidden">
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
@@ -373,7 +374,7 @@ const Application = () => {
                     </form>
                 </div>
 
-                <div className='md:w-1/2 w-full h-auto'>
+                <div className='md:w-1/2 w-full h-auto ss:mt-5'>
                     <div className='flex flex-col bg-primaryalt 
                     rounded-md md:p-10 ss:p-5'>
                     <p className='text-white md:text-[15px] ss:text-[14px] 
