@@ -12,7 +12,7 @@ const Home = () => {
     <section className="relative w-full">
       <div className="flex hero sm:px-12 px-6">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col md:mt-16 ss:mt-20' 
+          max-w-[95rem] flex flex-col md:mt-16 ss:mt-20 mt-10' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[70px] text-[52px] md:leading-[90px]
@@ -24,8 +24,8 @@ const Home = () => {
 
             <p className='md:mt-6 ss:mt-5 mt-6 md:text-[18px] ss:text-[18px]
             text-[16px] text-white md:text-center ss:text-center 
-            md:leading-[25px] ss:leading-[25px] leading-[22px] 
-            font-manierRegular'>
+            md:leading-[25px] ss:leading-[25px] leading-[20px] 
+            md:font-manierRegular ss:font-manierRegular font-manierLight'>
               We are a society of like-minded libertines with the highest 
               standards of <br className="ss:flex hidden"></br>taste and style. We embrace unrestrained 
               indulgence with <br className="ss:flex hidden"></br>one golden rule - consent.
