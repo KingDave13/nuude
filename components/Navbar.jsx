@@ -28,6 +28,20 @@ const Navbar = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+        if (menuRef.current && !menuRef.current.contains(event.target)) {
+            setToggle(false);
+        }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+        document.removeEventListener('mousedown', handleClickOutside);
+    };
+}, []);
+
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed 
       md:py-6 ss:py-6 py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth 
@@ -143,7 +157,8 @@ const Navbar = () => {
                     active === link.title
                       ? 'text-secondary'
                       : 'text-primary'
-                  } font-medium cursor-pointer text-[16px] w-full
+                  } font-medium cursor-pointer ss:text-[20px] text-[16px] 
+                  w-full
                   ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
                   onClick={() => {
                     setToggle(!toggle);
