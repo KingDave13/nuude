@@ -99,8 +99,8 @@ const Navbar = () => {
             />
           ) : (
             <HiOutlineMenuAlt3
-              size={35}
-              className="object-contain cursor-pointer"
+              size={40}
+              className="object-contain"
               style={{ color: isScrolled ? '#000' : '#fff' }} // Change icon color when closed
               onClick={() => setToggle(!toggle)}
             />
