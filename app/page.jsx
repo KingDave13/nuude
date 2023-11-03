@@ -10,7 +10,7 @@ import Application from "@components/Application";
 const Home = () => {
   return (
     <section className="relative w-full">
-      <div className="flex hero sm:px-12 px-6">
+      <div className="flex hero sm:px-16 px-6">
         <div className='items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:mt-16 ss:mt-20 mt-10' 
           >
