@@ -577,21 +577,18 @@ const Application = () => {
                     </form>
                     </div>
                     
-                    <div className="col-span-2 md:mt-5 ss:mt-3 
-                        md:hidden flex">
+                    <div className="md:hidden flex col-span-2 ss:mt-8">
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[16px] ss:text-[14px] text-[13px] 
-                            md:py-4 ss:py-3 md:px-12 ss:px-8
-                            text-primary md:rounded-[6px] ss:rounded-[3px] 
-                            border-none
+                            ss:text-[14px] text-[13px] ss:py-3 ss:px-8
+                            text-primary ss:rounded-[3px] border-none
                             cursor-pointer"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
                                 Proceed to payment
                             </button>
-                        </div>
+                    </div>
                 </div>
             </motion.div>
         </div>
