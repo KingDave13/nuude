@@ -37,7 +37,7 @@ const Application = () => {
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
             ss:gap-8'>
-                <div className='w-1/2'>
+                <div className='md:w-1/2 w-full'>
                     <form className="grid grid-cols-2 md:gap-8 ss:gap-4">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
@@ -356,7 +356,7 @@ const Application = () => {
                             </select>
                         </div>
 
-                        <div className="col-span-2">
+                        <div className="col-span-2 md:mt-5 ss:mt-3">
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
