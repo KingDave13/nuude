@@ -16,22 +16,23 @@ const Home = () => {
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[70px] text-[50px] md:leading-[90px]
-            ss:leading-[70px] leading-[45px] md:text-center ss:text-center'>
+            ss:leading-[70px] leading-[58px] md:text-center ss:text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
                 members-only <br className="ss:flex hidden"></br>club!
             </h1>
 
-            <p className='md:mt-6 ss:mt-5 mt-3 md:text-[18px] ss:text-[18px]
-            text-[14px] text-white text-center md:leading-[25px] 
-            ss:leading-[25px] leading-[45px] font-manierRegular'>
+            <p className='md:mt-6 ss:mt-5 mt-8 md:text-[18px] ss:text-[18px]
+            text-[14px] text-white md:text-center ss:text-center 
+            md:leading-[25px] ss:leading-[25px] leading-[20px] 
+            font-manierRegular'>
               We are a society of like-minded libertines with the highest 
-              standards of <br></br>taste and style. We embrace unrestrained 
-              indulgence with <br></br>one golden rule - consent.
+              standards of <br className="ss:flex hidden"></br>taste and style. We embrace unrestrained 
+              indulgence with <br className="ss:flex hidden"></br>one golden rule - consent.
             </p>
 
-            <div className='flex mt-8 md:gap-8 ss:gap-5 gap-2 items-center
-            font-manierRegular'>
+            <div className='flex md:mt-8 ss:mt-8 mt-5 md:gap-8 ss:gap-5 
+            gap-2 items-center font-manierRegular buttonfull'>
               <button
                 className='grow4 bg-secondary border-none
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4

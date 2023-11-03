@@ -207,6 +207,13 @@ input:focus {
   transition: all 0.2s ease-in-out;
 }
 
+@media (max-width: 480px) {
+  .buttonfull {
+    width: 100%;
+    justify-content: space-between;
+  }  
+}
+
 .hash-span {
   display: block;
 }
