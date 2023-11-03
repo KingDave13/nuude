@@ -124,9 +124,9 @@ const Navbar = () => {
           
           <div
             ref={menuRef}
-            className={`p-6 bg-white absolute ss:top-8 top-5 right-0 mx-6 
-            my-14 min-w-[140px] z-10 rounded-xl flex-col ss:mx-16 
-            ss:my-14 ss:min-w-[220px] shadow-xl slide-down-menu 
+            className={`p-6 bg-white absolute top-0 right-0
+            z-10 flex-col 
+            w-full shadow-xl slide-down-menu 
             ${ toggle ? 'opacity-100 visible' : 'opacity-0 invisible' // Add opacity and visibility for the toggle effect
             }`}
             style={{
