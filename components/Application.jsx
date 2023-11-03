@@ -35,7 +35,7 @@ const Application = () => {
             </motion.div>
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
-            className='flex md:flex-row w-full md:mt-12 md:gap-20
+            className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
             ss:gap-8'>
                 <div className='w-1/2'>
                     <form className="grid grid-cols-2 md:gap-8 ss:gap-4">
