@@ -231,6 +231,24 @@ input:focus {
   display: none;
 }
 
+.menu-slide-enter {
+  transform: translateX(100%); /* Start off-screen to the right */
+}
+
+.menu-slide-enter-active {
+  transform: translateX(0); /* Slide in to the center */
+  transition: transform 0.3s ease-in-out;
+}
+
+.menu-slide-exit {
+  transform: translateX(0); /* Stay centered while exiting */
+}
+
+.menu-slide-exit-active {
+  transform: translateX(100%); /* Slide out to the right */
+  transition: transform 0.3s ease-in-out;
+}
+
 .grow {
   transition: all .2s ease-in-out;
 }
