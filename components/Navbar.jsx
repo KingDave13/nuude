@@ -143,10 +143,6 @@ const Navbar = () => {
              w-full shadow-xl
             ${toggle ? 'menu-slide-enter menu-slide-enter-active' 
             : 'menu-slide-exit menu-slide-exit-active'}`}
-            style={{
-              height: toggle ? 'auto' : 0,
-              transition: 'height 0.3s, opacity 0.3s, visibility 0.3s',
-            }}
           >
             <ul className="list-none flex justify-end 
             flex-col">
