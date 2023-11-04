@@ -6,6 +6,7 @@ import Events from "@components/Events";
 import Membership from "@components/Membership";
 import Contact from "@components/Contact";
 import Application from "@components/Application";
+import scrollToSection from "@constants/scrollToSection";
 
 const Home = () => {
   return (
@@ -33,6 +34,9 @@ const Home = () => {
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
             gap-3 items-center font-manierRegular buttonfull'>
+              <a href="">
+
+              </a>
               <button
                 className='grow4 bg-secondary border-none buttonhalf
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4
