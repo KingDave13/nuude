@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { layout } from "@styles/styles";
 
+import scrollToSection from "@constants/scrollToSection";
+
 const Luxury = () => {
   return (
     <section className="md:min-h-[800px] ss:min-h-[620px] min-h-[700px] 
@@ -66,6 +68,7 @@ const Luxury = () => {
                             ss:py-3 py-3 md:px-10 ss:px-7 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
+                            onClick={() => scrollToSection('membership')}
                         >
                             Become a Member
                         </button>
@@ -77,6 +80,7 @@ const Luxury = () => {
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
                             buttonhalf'
+                            onClick={() => scrollToSection('contact')}
                         >
                             Contact Us
                         </button>

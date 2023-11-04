@@ -53,6 +53,7 @@ const Home = () => {
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 font-medium bg-transparent font-manier cursor-pointer
                 buttonhalf'
+                onClick={() => scrollToSection('contact')}
               >
                 Contact Us
               </button>
