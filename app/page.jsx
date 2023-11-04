@@ -6,6 +6,7 @@ import Events from "@components/Events";
 import Membership from "@components/Membership";
 import Contact from "@components/Contact";
 import Application from "@components/Application";
+
 import scrollToSection from "@constants/scrollToSection";
 
 const Home = () => {
