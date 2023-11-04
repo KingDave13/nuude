@@ -41,6 +41,7 @@ const Home = () => {
                 ss:py-3 py-3 md:px-10 ss:px-7 px-3 text-primary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 font-medium font-manier cursor-pointer'
+                onClick={() => scrollToSection('membership')}
               >
                 Become a Member
               </button>
