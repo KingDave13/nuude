@@ -6,6 +6,8 @@ import { slideIn, textVariant } from '@utils/motion';
 import { event } from "@public/assets";
 import Image from "next/image";
 
+import scrollToSection from '@constants/scrollToSection';
+
 const Events = () => {
   return (
     <section className="md:min-h-[900px] ss:min-h-[700px] min-h-[700px] 
@@ -82,6 +84,7 @@ const Events = () => {
                             md:text-[17px] ss:text-[14px] text-[14px] md:py-4
                             ss:py-3 py-2 md:px-10 ss:px-5 px-6 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] cursor-pointer'
+                            onClick={() => scrollToSection('application')}
                         >
                             Apply for Event
                         </button>
@@ -92,6 +95,7 @@ const Events = () => {
                             ss:py-3 py-2 md:px-16 ss:px-10 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] bg-transparent 
                             cursor-pointer'
+                            onClick={() => scrollToSection('contact')}
                         >
                             Contact Us
                         </button>
