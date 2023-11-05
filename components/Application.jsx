@@ -9,7 +9,7 @@ import 'react-phone-number-input/style.css';
 const Application = () => {
 
   return (
-    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[4100px] 
+    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[4200px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -36,12 +36,12 @@ const Application = () => {
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
-            ss:gap-8'>
+            ss:gap-8 gap-6'>
                 <div className='md:w-1/2 w-full'>
-                    <form className="grid grid-cols-2 md:gap-8 ss:gap-4">
+                    <form className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 First Name
                             </label>
                             <input
@@ -62,7 +62,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Last Name
                             </label>
                             <input
@@ -83,7 +83,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Email Address
                             </label>
                             <input
@@ -104,7 +104,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Phone Number
                             </label>
                             <PhoneInput
@@ -123,7 +123,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Date of Birth
                             </label>
                             <input
@@ -141,7 +141,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Gender
                             </label>
                             <select
@@ -167,7 +167,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Employer
                             </label>
                             <input
@@ -188,7 +188,7 @@ const Application = () => {
 
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Occupation
                             </label>
                             <input
@@ -209,7 +209,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Instagram Handle
                             </label>
                             <input
@@ -230,7 +230,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Twitter Handle
                             </label>
                             <input
@@ -251,7 +251,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 Facebook Username
                             </label>
                             <input
@@ -272,7 +272,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 What turns you on the most?
                             </label>
                             <textarea
@@ -293,7 +293,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 If you could amplify an erotic trait within yourself, what would it be?
                             </label>
                             <textarea
@@ -314,7 +314,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 What would you contribute to the Nuude! community?
                             </label>
                             <textarea
@@ -335,7 +335,7 @@ const Application = () => {
 
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                            md:text-[16px] ss:text-[15px] text-[14px]">
+                            md:text-[16px] ss:text-[15px] text-[13px]">
                                 And finally, how did you find us?
                             </label>
                             <select
