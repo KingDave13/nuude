@@ -40,7 +40,7 @@ const Events = () => {
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
-                    text-[20px] font-manierMedium md:mb-5 ss:mb-3 mb-3'>
+                    text-[23px] font-manierMedium md:mb-5 ss:mb-3 mb-3'>
                         Nuude!
                     </h1>
 
@@ -62,7 +62,7 @@ const Events = () => {
                     </div>
 
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
-                    text-[20px] font-manierMedium'>
+                    text-[23px] font-manierMedium'>
                         24th November, 2023
                     </h1>
 
