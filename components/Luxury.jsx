@@ -9,7 +9,7 @@ import scrollToSection from "@constants/scrollToSection";
 
 const Luxury = () => {
   return (
-    <section className="md:min-h-[800px] ss:min-h-[620px] min-h-[700px] 
+    <section className="md:min-h-[800px] ss:min-h-[620px] min-h-[650px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -25,7 +25,7 @@ const Luxury = () => {
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-white md:w-full ss:w-full
-                        w-[90px] md:h-[1px] ss:h-[1px] h-[1px]' />
+                        w-[95px] md:h-[1px] ss:h-[1px] h-[1px]' />
                 </motion.div>
             </motion.div>
             
