@@ -46,7 +46,7 @@ const Membership = () => {
                 </p>
 
                 <p className='text-white md:text-[17px] ss:text-[15px] 
-                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-3 mt-3
+                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-4 mt-4
                 md:leading-[22px] text-center'>
                     This is a way for us to get to know our guests, and 
                     also to ensure every Nuude! event is a singular 
@@ -56,7 +56,7 @@ const Membership = () => {
                 </p>
 
                 <p className='text-white md:text-[17px] ss:text-[15px] 
-                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-3 mt-3
+                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-4 mt-4
                 md:leading-[22px] text-center'>
                     All submissions are confidential and reviewed solely 
                     by our Council for the purpose of maintaining the 
@@ -68,7 +68,7 @@ const Membership = () => {
                 </p>
 
                 <p className='text-white md:text-[17px] ss:text-[15px] 
-                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-3 mt-3
+                text-[14px] md:max-w-[850px] md:mt-5 ss:mt-4 mt-4
                 md:leading-[22px] text-center'>
                     Applicant's requiring the greatest level of discretion 
                     may forego our application and be interviewed directly 
