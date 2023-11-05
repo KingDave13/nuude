@@ -30,7 +30,7 @@ const Events = () => {
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col w-full 
-            items-center md:gap-28 ss:gap-12 gap-10">
+            items-center md:gap-28 ss:gap-12 gap-8">
                 <motion.div 
                 variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className='justify-center items-start'>
@@ -41,7 +41,7 @@ const Events = () => {
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
-                    text-[23px] font-manierMedium md:mb-5 ss:mb-3 mb-3'>
+                    text-[20px] font-manierMedium md:mb-5 ss:mb-3 mb-3'>
                         Nuude!
                     </h1>
 
@@ -69,7 +69,7 @@ const Events = () => {
 
                     <p className='text-white md:text-[16px] ss:text-[14px] 
                     text-[14px] max-w-[750px] md:mt-5 md:leading-[22px]
-                    ss:leading-[20px] ss:mt-3'>
+                    ss:leading-[20px] ss:mt-3 mt-3'>
                     Other details including time and venue will be 
                     communicated privately via email after successful 
                     screening and approval.
