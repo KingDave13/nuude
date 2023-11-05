@@ -10,21 +10,21 @@ import scrollToSection from '@constants/scrollToSection';
 
 const Events = () => {
   return (
-    <section className="md:min-h-[900px] ss:min-h-[700px] min-h-[700px] 
+    <section className="md:min-h-[900px] ss:min-h-[700px] min-h-[920px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-20 
-            ss:mb-10">
+            ss:mb-10 mb-8">
                 <h1 className="text-secondary font-manierMedium md:text-[55px]
-                ss:text-[40px] text-[35px] md:mr-14 ss:mr-6">
+                ss:text-[40px] text-[33px] md:mr-14 ss:mr-6 mr-5">
                     Upcoming Events
                 </h1>
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-secondary md:w-full ss:w-full
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+                    <div className='bg-secondary w-full md:h-[1px] 
+                    ss:h-[1px] h-[1px]' />
                 </motion.div>
             </motion.div>
             
