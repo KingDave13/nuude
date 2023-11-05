@@ -30,7 +30,7 @@ const Membership = () => {
             <motion.div variants={textVariant()}
             className='flex-col justify-center items-center'>
                 <p className='text-white md:text-[17px] ss:text-[16px] 
-                text-[14px] text-center'>
+                text-[14px] text-center font-manierBold'>
                     Important Information Before Applying
                 </p>
 
