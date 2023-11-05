@@ -386,7 +386,7 @@ const Application = () => {
                     </p>
 
                     <ol className='text-white md:text-[15px] ss:text-[14px] 
-                    text-[14px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] 
+                    text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] 
                     list-inside font-manierLight'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
@@ -480,7 +480,7 @@ const Application = () => {
                     </ol>
 
                     <p className='text-white md:text-[15px] ss:text-[14px] 
-                    text-justify md:mt-6 ss:mt-4 md:leading-[22px]'>
+                    text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px]'>
                         The privacy and safety of Nuude! and our guests 
                         is of paramount importance and confidentiality is 
                         required of all members, guests, performers, 
@@ -490,7 +490,7 @@ const Application = () => {
                     </p>
                     
                     <ol className='text-white md:text-[15px] ss:text-[14px] 
-                    text-justify md:mt-6 ss:mt-4 md:leading-[22px] list-inside 
+                    text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] list-inside 
                     font-manierLight list-roman-brackets'>
                         <li>
                             You will not disclose identifying information 
@@ -531,7 +531,7 @@ const Application = () => {
                     </ol>
 
                     <p className='text-white md:text-[15px] ss:text-[14px] 
-                    text-justify md:mt-6 ss:mt-4 md:leading-[22px]'>
+                    text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px]'>
                         By submitting an application, you affirm that you 
                         have read, understood, and agree to abide by 
                         these terms and conditions. Nuude! reserves the 
@@ -541,48 +541,48 @@ const Application = () => {
                     </p>
 
                     <form className='text-white text-justify md:mt-12 
-                    ss:mt-6'>
-                        <div className="flex md:gap-3 ss:gap-3 items-center">
+                    ss:mt-6 mt-5'>
+                        <div className="flex md:gap-3 ss:gap-3 gap-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='md:w-5 ss:w-5 h-5 cursor-pointer 
+                            className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                             rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
-                            ss:text-[14px] text-[14px]">
+                            ss:text-[14px] text-[12px]">
                                 I confirm and consent that I am over the 
                                 age of 18
                             </label>
                         </div>
 
-                        <div className="flex md:gap-3 ss:gap-3 md:mt-3 
-                        ss:mt-3 items-center">
+                        <div className="flex md:gap-3 ss:gap-3 gap-3 md:mt-3 
+                        ss:mt-3 mt-3 items-center">
                             <input
                             type="checkbox"
                             name="age"
                             // value={form.age}
                             // onChange={handleChange}
-                            className='md:w-5 ss:w-5 h-5 cursor-pointer 
+                            className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                             rounded-md'
                             />
                             <label className="text-white md:text-[15px] 
-                            ss:text-[14px] text-[14px]">
+                            ss:text-[14px] text-[12px]">
                                 I agree to the above terms and conditions
                             </label>
                         </div>
                     </form>
                     </div>
                     
-                    <div className="md:hidden flex col-span-2 ss:mt-8">
+                    <div className="md:hidden flex col-span-2 ss:mt-8 mt-8">
                             <button
                             type="submit"
                             className="bg-secondary grow2 w-fit shadow-md 
-                            ss:text-[14px] text-[13px] ss:py-3 ss:px-8
-                            text-primary ss:rounded-[3px] border-none
-                            cursor-pointer"
+                            ss:text-[14px] text-[13px] ss:py-3 py-3 ss:px-8
+                            px-6 text-primary ss:rounded-[3px] rounded-[3px]
+                            border-none"
                             >
                                 {/* {Loading ? 'Sending...' : 'Send'} */} 
                                 Proceed to payment
