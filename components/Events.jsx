@@ -47,13 +47,13 @@ const Events = () => {
 
                     <p className='text-white md:text-[18px] ss:text-[15px] 
                     text-[14px] md:max-w-[700px] md:leading-[22px] 
-                    ss:leading-[20px] md:mb-5 ss:mb-3'>
+                    ss:leading-[20px] md:mb-5 ss:mb-3 mb-3'>
                     Step into a world of fine dining, intrigue and 
                     sensuality where we hand you the key to your dreams.
                     </p>
 
                     <p className='text-white md:text-[17px] ss:text-[15px] 
-                    text-[14px] md:mb-5 ss:mb-5'>
+                    text-[14px] md:mb-5 ss:mb-5 mb-3'>
                     Featuring: Connect, pool party, fine dining.
                     </p>
 
