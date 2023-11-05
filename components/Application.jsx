@@ -36,7 +36,7 @@ const Application = () => {
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
-            ss:gap-8 gap-6'>
+            ss:gap-8 gap-12'>
                 <div className='md:w-1/2 w-full'>
                     <form className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
                         <div className="flex flex-col">
@@ -376,10 +376,9 @@ const Application = () => {
 
                 <div className='md:w-1/2 w-full h-auto ss:mt-5'>
                     <div className='flex flex-col bg-primaryalt 
-                    rounded-md md:p-10 ss:p-5'>
+                    rounded-md md:p-10 ss:p-5 p-5'>
                     <p className='text-white md:text-[15px] ss:text-[14px] 
-                    text-justify
-                    md:leading-[22px]'>
+                    text-[14px] text-justify md:leading-[22px]'>
                         By submitting an application for membership or
                         event attendance with Nuude! (referred to as 
                         "Nuude" or "the club" herein), you acknowledge
@@ -387,7 +386,7 @@ const Application = () => {
                     </p>
 
                     <ol className='text-white md:text-[15px] ss:text-[14px] 
-                    text-justify md:mt-6 ss:mt-4 md:leading-[22px] 
+                    text-[14px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] 
                     list-inside font-manierLight'>
                         <li>
                             Application Process: To gain entry into Nuude!, 
