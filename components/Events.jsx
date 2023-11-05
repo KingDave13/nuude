@@ -30,7 +30,7 @@ const Events = () => {
             
             <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col w-full 
-            items-center md:gap-28 ss:gap-12">
+            items-center md:gap-28 ss:gap-12 gap-10">
                 <motion.div 
                 variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className='justify-center items-start'>
@@ -41,7 +41,7 @@ const Events = () => {
 
                 <motion.div variants={textVariant()}>
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
-                    text-[20px] font-manierMedium md:mb-5 ss:mb-3'>
+                    text-[23px] font-manierMedium md:mb-5 ss:mb-3 mb-3'>
                         Nuude!
                     </h1>
 
