@@ -14,7 +14,7 @@ const About = () => {
     <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[850px] 
     mx-auto flex items-center relative">
         <div className='items-center w-full mx-auto flex flex-col 
-        font-manierRegular max-w-[95rem] md:mb-0 ss:mb-0 mb-3'>
+        font-manierRegular max-w-[95rem] md:mb-0 ss:mb-0'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-12 ss:mb-8 
             mb-8">
