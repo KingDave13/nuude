@@ -25,7 +25,7 @@ const Luxury = () => {
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-white md:w-full ss:w-full
-                        w-[95px] md:h-[1px] ss:h-[1px] h-[1px]' />
+                        w-[95px] h-[1px]' />
                 </motion.div>
             </motion.div>
             
