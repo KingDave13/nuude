@@ -12,13 +12,13 @@ const Membership = () => {
         font-manierRegular md:pb-10 md:mb-0 ss:mb-0 mb-8'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex justify-between items-center w-full md:gap-12
-            ss:gap-8 md:mb-10 ss:mb-8">
+            ss:gap-8 gap-5 md:mb-10 ss:mb-8 mb-6">
                 <div className="flex-grow">
                     <div className='bg-white w-full h-[1px]' />
                 </div>
 
                 <h1 className="text-white font-manierMedium md:text-[55px]
-                ss:text-[40px] text-[35px]">
+                ss:text-[40px] text-[33px]">
                     Membership
                 </h1>
 
