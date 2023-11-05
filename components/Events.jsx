@@ -58,9 +58,8 @@ const Events = () => {
                     </p>
 
                     <div className="relative items-center justify-center
-                    md:mb-5 ss:mb-5">
-                        <div className='bg-secondary md:w-full ss:w-full
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[1px]' />
+                    md:mb-5 ss:mb-5 mb-3">
+                        <div className='bg-secondary w-full h-[1px]' />
                     </div>
 
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
