@@ -77,13 +77,14 @@ const Events = () => {
                     screening and approval.
                     </p>    
 
-                    <div className='md:mt-16 ss:mt-8 mt-4 flex md:gap-5
-                    ss:gap-5'>
+                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+                    gap-3 items-center font-manierRegular buttonfull'>
                         <button
-                            className='grow4 bg-secondary border-none
-                            md:text-[17px] ss:text-[14px] text-[14px] md:py-4
-                            ss:py-3 py-2 md:px-10 ss:px-5 px-6 text-primary 
-                            md:rounded-[6px] ss:rounded-[3px] cursor-pointer'
+                            className='grow4 bg-secondary border-none buttonhalf
+                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                            ss:py-3 py-3 md:px-10 ss:px-7 px-3 text-primary 
+                            md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                            font-medium font-manier cursor-pointer'
                             onClick={() => scrollToSection('application')}
                         >
                             Apply for Event
@@ -91,10 +92,11 @@ const Events = () => {
 
                         <button
                             className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[14px] text-[14px] md:py-4 
-                            ss:py-3 py-2 md:px-16 ss:px-10 px-6 text-secondary 
-                            md:rounded-[6px] ss:rounded-[3px] bg-transparent 
-                            cursor-pointer'
+                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
+                            ss:py-3 py-3 md:px-16 ss:px-14 px-6 text-secondary 
+                            md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                            font-medium bg-transparent font-manier cursor-pointer
+                            buttonhalf'
                             onClick={() => scrollToSection('contact')}
                         >
                             Contact Us
