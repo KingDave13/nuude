@@ -24,8 +24,7 @@ const About = () => {
                 </h1>
                 <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-secondary w-full md:h-[1px] 
-                    ss:h-[1px] h-[1px]' />
+                    <div className='bg-secondary w-full h-[1px]' />
                 </motion.div>
             </motion.div>
             
