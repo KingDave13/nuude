@@ -14,15 +14,15 @@ const Application = () => {
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex items-center w-full md:mb-10 ss:mb-8">
+            className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
-                md:text-[50px] ss:text-[40px] text-[35px] md:mr-14">
+                md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
                     Membership Application Form
                 </h1>
             </motion.div>
         
             <motion.div variants={textVariant()}
-            className='flex items-start w-full md:mb-10 ss:mb-8'>
+            className='flex items-start w-full md:mb-10 ss:mb-8 mb-8'>
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
