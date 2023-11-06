@@ -9,7 +9,7 @@ import 'react-phone-number-input/style.css';
 const Application = () => {
 
   return (
-    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[3900px] 
+    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[3950px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -386,7 +386,7 @@ const Application = () => {
                                 and agree to the following terms and conditions:
                             </p>
                             
-                            <div className='md:pl-6 ss:pl-5 pl-5'>
+                            <div className='md:pl-6 ss:pl-6 pl-5'>
                                 <ol className='text-white md:text-[15px] ss:text-[14px] 
                                 text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] 
                                 font-manierLight'>
