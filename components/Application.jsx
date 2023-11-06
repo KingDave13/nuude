@@ -386,10 +386,10 @@ const Application = () => {
                                 and agree to the following terms and conditions:
                             </p>
                             
-                            <div>
+                            <div className='md:pl-6 ss:pl-5 pl-5'>
                                 <ol className='text-white md:text-[15px] ss:text-[14px] 
                                 text-[13px] text-justify md:mt-6 ss:mt-4 mt-4 md:leading-[22px] 
-                                list-inside font-manierLight'>
+                                font-manierLight'>
                                     <li>
                                         Application Process: To gain entry into Nuude!, 
                                         all individuals must apply. An Aurum-level 
