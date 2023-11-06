@@ -6,7 +6,7 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Contact = () => {
   return (
-    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[800px] 
+    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[900px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -54,7 +54,7 @@ const Contact = () => {
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] rounded-[4px]
+                        ss:rounded-[3px] rounded-[3px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -74,7 +74,7 @@ const Contact = () => {
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] rounded-[4px]
+                        ss:rounded-[3px] rounded-[3px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -94,7 +94,7 @@ const Contact = () => {
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] rounded-[4px]
+                        ss:rounded-[3px] rounded-[3px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -114,7 +114,7 @@ const Contact = () => {
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] rounded-[4px]
+                        ss:rounded-[3px] rounded-[3px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -134,7 +134,7 @@ const Contact = () => {
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] rounded-[4px]
+                        ss:rounded-[3px] rounded-[3px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -148,7 +148,7 @@ const Contact = () => {
                         md:text-[16px] ss:text-[14px] text-[13px] md:py-4 
                         ss:py-3 py-0 md:px-20 ss:px-16
                         text-primary md:rounded-[3px] ss:rounded-[3px] 
-                        rounded-[4px] border-none cursor-pointer"
+                        rounded-[3px] border-none cursor-pointer"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
