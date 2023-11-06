@@ -6,7 +6,7 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Contact = () => {
   return (
-    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[900px] 
+    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[910px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -24,7 +24,7 @@ const Contact = () => {
             </motion.div>
         
             <motion.div variants={textVariant()}
-            className='flex items-start w-full md:mb-10 ss:mb-5 mb-10'>
+            className='flex items-start w-full md:mb-10 ss:mb-5 mb-8'>
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[600px] ss:max-w-[600px] 
                 md:leading-[22px]'>
@@ -40,7 +40,7 @@ const Contact = () => {
                 <div className='md:bg-primary ss:bg-primary md:p-12 
                 ss:p-6 md:w-1/2'>
                 <form 
-                className="grid grid-cols-2 md:gap-8 ss:gap-6 gap-5">
+                className="grid grid-cols-2 md:gap-8 ss:gap-6 gap-4">
                     <div className="flex flex-col">
                         <label className="text-white md:mb-3 ss:mb-2 mb-2 
                         md:text-[16px] ss:text-[15px] text-[14px]">
@@ -141,12 +141,12 @@ const Contact = () => {
                         />
                     </div>
 
-                    <div className="col-span-2">
+                    <div className="col-span-2 md:mt-0 ss:mt-0 mt-5">
                         <button
                         type="submit"
                         className="bg-secondary grow2 w-fit shadow-md 
-                        md:text-[16px] ss:text-[14px] text-[13px] md:py-4 
-                        ss:py-3 py-0 md:px-20 ss:px-16
+                        md:text-[16px] ss:text-[14px] text-[14px] md:py-4 
+                        ss:py-3 py-3 md:px-20 ss:px-16 px-14
                         text-primary md:rounded-[3px] ss:rounded-[3px] 
                         rounded-[3px] border-none cursor-pointer"
                         >
