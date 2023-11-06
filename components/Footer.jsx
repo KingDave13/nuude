@@ -12,12 +12,12 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[400px] 
+    <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[370px] 
     flex items-center'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
-            items-center justify-center md:mt-24 ss:mt-10'>
+            items-center justify-center md:mt-24 ss:mt-10 mt-10'>
                 <Image 
                     src={logo} 
                     alt='logo' 
@@ -79,7 +79,7 @@ const Footer = () => {
                                 <li className={`md:text-[18px] ss:text-[16px] grow2
                                 text-[14px] text-maintext hover:text-secondary 
                                 cursor-pointer text-maintext
-                                ${index !== footerLinks.length - 1 ? 'md:mr-12 ss:mr-8 mr-2' : 'mr-0'}`}>
+                                ${index !== footerLinks.length - 1 ? 'md:mr-12 ss:mr-8 mr-5' : 'mr-0'}`}>
                                     {footer.name}
                                 </li>
                             </Link>
@@ -89,8 +89,8 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='borderTop md:pt-6 ss:pt-3 md:pb-3 ss:pt-2 pt-1 md:mt-10 
-            ss:mt-5 mt-1 w-full flex items-center'>
+            className='borderTop md:pt-6 ss:pt-3 pt-3 md:mt-10 ss:mt-5 mt-5 
+            w-full flex items-center'>
                 <p className='md:text-[15px] ss:text-[13px] text-[12px]
                 text-maintext w-full text-center font-manierLight'>
                 Website designed and developed with love by
