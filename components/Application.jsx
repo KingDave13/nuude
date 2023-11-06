@@ -52,7 +52,7 @@ const Application = () => {
                             placeholder="Enter your first name"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt focus:outline-none
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -73,7 +73,7 @@ const Application = () => {
                             placeholder="Enter your last name"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -94,7 +94,7 @@ const Application = () => {
                             placeholder="Enter your email address"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -116,7 +116,7 @@ const Application = () => {
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-3 px-4 border-none 
                             outline-none md:rounded-[3px] 
-                            ss:rounded-[3px] text-white
+                            ss:rounded-[3px] rounded-[3px] text-white
                             bg-primaryalt"
                             />
                         </div>
@@ -134,7 +134,7 @@ const Application = () => {
                             placeholder="DD/MM/YYYY"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             bg-primaryalt"
                             />
                         </div>
@@ -151,7 +151,7 @@ const Application = () => {
                             // onChange={handleChange}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-white-4 cursor-pointer
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -178,7 +178,7 @@ const Application = () => {
                             placeholder="Where do you work?"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -199,7 +199,7 @@ const Application = () => {
                             placeholder="What do you work as?"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -220,7 +220,7 @@ const Application = () => {
                             placeholder="www.instagram.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -241,7 +241,7 @@ const Application = () => {
                             placeholder="www.twitter.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -262,7 +262,7 @@ const Application = () => {
                             placeholder="www.facebook.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -283,7 +283,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -304,7 +304,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -325,7 +325,7 @@ const Application = () => {
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-textalt
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
@@ -346,7 +346,7 @@ const Application = () => {
                             placeholder="Please select an option"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
                             placeholder:text-white-4 cursor-pointer
                             md:placeholder:text-[14px] 
                             ss:placeholder:text-[12px] 
