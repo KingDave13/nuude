@@ -14,7 +14,7 @@ const Home = () => {
     <section className="relative w-full">
       <div className="flex hero sm:px-16 px-6">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col md:mt-16 ss:mt-20 mt-10' 
+          max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
             ss:text-[70px] text-[52px] md:leading-[90px]
