@@ -151,6 +151,18 @@ input:focus {
   font-size: 14px;
 }
 
+@media (max-width: 1060px) {
+  .PhoneInputInput {
+    font-size: 12px;
+  }  
+}
+
+@media (max-width: 480px) {
+  .PhoneInputInput {
+    font-size: 12px;
+  }  
+}
+
 .PhoneInputCountryIcon {
   margin-right: 5px;
 }

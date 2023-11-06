@@ -114,7 +114,7 @@ const Application = () => {
                             // value={form.subject}
                             // onChange={handleChange}
                             placeholder="Enter your phone number"
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            className="md:py-3 ss:py-3 py-3 px-4 border-none 
                             outline-none md:rounded-[3px] 
                             ss:rounded-[3px] text-white
                             bg-primaryalt"
