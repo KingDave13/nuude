@@ -12,7 +12,8 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <section className='md:min-h-[600px] ss:min-h-[420px] flex items-center'>
+    <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[400px] 
+    flex items-center'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
@@ -20,7 +21,7 @@ const Footer = () => {
                 <Image 
                     src={logo} 
                     alt='logo' 
-                    className='md:w-[300px] ss:w-[200px] w-[150px] h-auto' 
+                    className='md:w-[300px] ss:w-[200px] w-[170px] h-auto' 
                 />
 
                 <p className='text-maintext md:text-[22px] ss:text-[16px] 
@@ -32,9 +33,9 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={textVariant()} 
-            className='flex md:mt-5 ss:mt-2 mt-1 items-center'>
+            className='flex md:mt-5 ss:mt-2 mt-2 items-center'>
                 <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
-                ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[3px]
+                ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[5px]
                 text-maintext' />
 
                 <p className='md:text-[17px] ss:text-[16px] text-[14px] 
@@ -44,7 +45,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-5 ss:mt-4 mt-1 items-center'>
+            className='flex md:mt-5 ss:mt-4 mt-3 items-center'>
                 {socialMedia.map((social, index) => (
                     <Link 
                     target='_blank'
@@ -55,7 +56,7 @@ const Footer = () => {
                         <Image
                         src={social.Icon}
                         alt={social.id}
-                        className={`md:w-[30px] ss:w-[26px] w-[20px] 
+                        className={`md:w-[30px] ss:w-[26px] w-[25px] 
                         h-auto object-contain cursor-pointer grow2 
                         ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`}
                         />
@@ -64,7 +65,7 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='flex md:mt-8 ss:mt-4 mt-1 items-center flex-col'>
+            className='flex md:mt-8 ss:mt-4 mt-4 items-center flex-col'>
                 <h1 className='text-primary md:text-[18px] ss:text-[16px] 
                 text-[14px] font-manierBold'>
                     Website Quick Links
