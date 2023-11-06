@@ -70,12 +70,12 @@ select {
 }
 
 select option {
-  /* background-color: #f0f0f0; */
+  background-color: #898989;
   color: white;
   font-size: 14px;
 }
 
-select:focus option:checked {
+select option:checked {
   color: #fff;
 }
 

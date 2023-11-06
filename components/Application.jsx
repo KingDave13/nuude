@@ -9,7 +9,7 @@ import 'react-phone-number-input/style.css';
 const Application = () => {
 
   return (
-    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[3950px] 
+    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[4050px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -115,8 +115,8 @@ const Application = () => {
                             // onChange={handleChange}
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px]
+                            outline-none md:rounded-[3px] 
+                            ss:rounded-[3px] text-white
                             bg-primaryalt"
                             />
                         </div>
