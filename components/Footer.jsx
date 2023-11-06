@@ -12,12 +12,12 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[370px] 
+    <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[360px] 
     flex items-center'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
-            items-center justify-center md:mt-24 ss:mt-10 mt-10'>
+            items-center justify-center md:mt-24 ss:mt-10 mt-8'>
                 <Image 
                     src={logo} 
                     alt='logo' 
@@ -89,9 +89,9 @@ const Footer = () => {
             </motion.div>
 
             <motion.div variants={fadeIn('down', 'spring', 0.3)}
-            className='borderTop md:pt-6 ss:pt-3 pt-3 md:mt-10 ss:mt-5 mt-5 
+            className='borderTop md:pt-5 ss:pt-3 pt-3 md:mt-10 ss:mt-5 mt-5 
             w-full flex items-center'>
-                <p className='md:text-[15px] ss:text-[13px] text-[12px]
+                <p className='md:text-[15px] ss:text-[13px] text-[11px]
                 text-maintext w-full text-center font-manierLight'>
                 Website designed and developed with love by
                     <span className='text-[#069D6D] font-manierBold 
