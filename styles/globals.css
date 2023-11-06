@@ -75,6 +75,18 @@ select option {
   font-size: 14px;
 }
 
+@media (max-width: 1060px) {
+  .select option {
+    font-size: 12px;
+  }  
+}
+
+@media (max-width: 480px) {
+  .select option {
+    font-size: 12px;
+  }  
+}
+
 select option:checked {
   color: #fff;
 }
