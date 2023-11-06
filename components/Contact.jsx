@@ -6,25 +6,25 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const Contact = () => {
   return (
-    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[700px] 
+    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[800px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
-            className="flex flex-row items-center w-full md:mb-10 ss:mb-5">
+            className="flex flex-row items-center w-full md:mb-10 ss:mb-5
+            mb-4">
                 <h1 className="text-white font-manierMedium md:text-[55px]
-                ss:text-[45px] text-[35px] md:mr-14 ss:mr-6">
+                ss:text-[45px] text-[35px] md:mr-14 ss:mr-6 mr-6">
                     Contact Us
                 </h1>
                 <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
-                    <div className='bg-white md:w-full ss:w-full
-                        w-[80px] md:h-[1px] ss:h-[1px] h-[2px]' />
+                    <div className='bg-white w-full h-[1px]' />
                 </motion.div>
             </motion.div>
         
             <motion.div variants={textVariant()}
-            className='flex items-start w-full md:mb-10 ss:mb-5'>
+            className='flex items-start w-full md:mb-10 ss:mb-5 mb-10'>
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[600px] ss:max-w-[600px] 
                 md:leading-[22px]'>
@@ -37,10 +37,10 @@ const Contact = () => {
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className='w-full'>
-                <div className='bg-primary md:p-12 ss:p-6 md:mt-0 ss:mt-0 
-                mt-0 md:w-1/2'>
+                <div className='md:bg-primary ss:bg-primary md:p-12 
+                ss:p-6 md:w-1/2'>
                 <form 
-                className="grid grid-cols-2 md:gap-8 ss:gap-6">
+                className="grid grid-cols-2 md:gap-8 ss:gap-6 gap-5">
                     <div className="flex flex-col">
                         <label className="text-white md:mb-3 ss:mb-2 mb-2 
                         md:text-[16px] ss:text-[15px] text-[14px]">
@@ -54,7 +54,7 @@ const Contact = () => {
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px] 
+                        ss:rounded-[3px] rounded-[4px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -74,7 +74,7 @@ const Contact = () => {
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px]
+                        ss:rounded-[3px] rounded-[4px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -94,7 +94,7 @@ const Contact = () => {
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px]
+                        ss:rounded-[3px] rounded-[4px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -114,7 +114,7 @@ const Contact = () => {
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px]
+                        ss:rounded-[3px] rounded-[4px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -134,7 +134,7 @@ const Contact = () => {
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
-                        ss:rounded-[3px]
+                        ss:rounded-[3px] rounded-[4px]
                         md:placeholder:text-[14px] 
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
@@ -148,7 +148,7 @@ const Contact = () => {
                         md:text-[16px] ss:text-[14px] text-[13px] md:py-4 
                         ss:py-3 py-0 md:px-20 ss:px-16
                         text-primary md:rounded-[3px] ss:rounded-[3px] 
-                        border-none cursor-pointer"
+                        rounded-[4px] border-none cursor-pointer"
                         >
                         {/* {Loading ? 'Sending...' : 'Send'} */} Submit
                         </button>
