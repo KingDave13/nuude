@@ -69,9 +69,9 @@ const Events = () => {
                     <p className='text-white md:text-[16px] ss:text-[14px] 
                     text-[14px] max-w-[750px] md:mt-5 md:leading-[22px]
                     ss:leading-[20px] ss:mt-3 mt-3'>
-                    Other details including time and venue will be 
-                    communicated privately via email after successful 
-                    screening and approval.
+                        Other details including time and venue will be 
+                        communicated privately via email after successful 
+                        screening and approval.
                     </p>    
 
                     <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
