@@ -61,7 +61,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  
+
   background-image: url('../public/assets/arrow.png');
   background-size: 14px 10px;
   background-position: right 20px center;
