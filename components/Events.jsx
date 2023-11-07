@@ -105,7 +105,7 @@ const Events = () => {
             </motion.div>
         </div>
     </section>
-  )
+  );
 };
 
 export default SectionWrapper(Events, 'events');
