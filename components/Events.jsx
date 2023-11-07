@@ -53,7 +53,7 @@ const Events = () => {
 
                     <p className='text-white md:text-[17px] ss:text-[15px] 
                     text-[14px] md:mb-5 ss:mb-5 mb-3'>
-                    Featuring: Connect, pool party, fine dining.
+                        Featuring: Connect, pool party, fine dining.
                     </p>
 
                     <div className="relative items-center justify-center
