@@ -85,7 +85,7 @@ const Home = () => {
         <Contact />
       </div>   
     </section>
-  )
+  );
 };
 
 export default Home;
