@@ -93,7 +93,6 @@ select option:checked {
 
 input:focus {
   border: 1px solid white;
-  /* background-color: transparent; */
 }
 
 @media screen and (max-width: 480px) {
