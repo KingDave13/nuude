@@ -126,7 +126,7 @@ const Navbar = () => {
               <BsX
                 size={63}
                 className="object-contain cursor-pointer bg-white ss:pb-3
-                ss:pt-1 pb-3 pt-3"
+                ss:pt-1 pb-3 pt-1"
                 style={{ color: isScrolled ? '#575656' : '#575656' }}
                 onClick={() => setToggle(!toggle)}
               />
