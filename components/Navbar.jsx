@@ -127,7 +127,7 @@ const Navbar = () => {
                 size={63}
                 className="object-contain cursor-pointer ss:pb-3
                 ss:pt-1 pb-3 pt-1"
-                style={{ color: isScrolled ? '#575656' : '#575656' }}
+                style={{ color: isScrolled ? '#000' : '#fff' }}
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
@@ -142,7 +142,7 @@ const Navbar = () => {
           
           <div
             ref={menuRef}
-            className={`p-6 mt-28 bg-white absolute top-0 right-0 z-10 flex-col
+            className={`p-6 ss:mt-28 bg-white absolute top-0 right-0 z-10 flex-col
              w-full shadow-xl
             ${toggle ? 'menu-slide-enter menu-slide-enter-active' 
             : 'menu-slide-exit menu-slide-exit-active'}`}
