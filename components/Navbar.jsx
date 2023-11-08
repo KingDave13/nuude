@@ -141,8 +141,8 @@ const Navbar = () => {
           
           <div
             ref={menuRef}
-            className={`p-6 ss:mt-0 mt-24 bg-white absolute top-0 right-0 z-10 flex-col
-             ss:w-1/2 h-[100vh] w-full shadow-xl
+            className={`p-6 ss:mt-24 mt-24 bg-white absolute top-0 right-0 
+            z-10 flex-col ss:w-1/2 w-full shadow-xl
             ${toggle ? 'menu-slide-enter menu-slide-enter-active' 
             : 'menu-slide-exit menu-slide-exit-active'}`}
           >
