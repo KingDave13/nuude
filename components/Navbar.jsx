@@ -107,7 +107,7 @@ const Navbar = () => {
         {/* FOR MOBILE */}
 
         <div className="md:hidden flex justify-between flex-1 items-center
-            mt-3">
+              mt-3">
           <Link href="/" 
             onClick={() => { setActive(''); 
             window.scrollTo(0, 0); }}
