@@ -115,7 +115,7 @@ const Navbar = () => {
             <Image
               src={isScrolled ? logo : logoalt}
               alt="logo"
-              width={130}  
+              width={130}   
               height="auto"
               className="object-contain"
             />
