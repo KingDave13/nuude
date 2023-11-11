@@ -104,7 +104,7 @@ const Navbar = () => {
           </ul>
         </div>
 
-        {/* FOR MOBILEssssss */}
+        {/* FOR MOBILEsssss */}
 
         <div className="md:hidden flex justify-between flex-1 items-center
         mt-3">
