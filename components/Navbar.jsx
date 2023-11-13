@@ -120,6 +120,7 @@ const Navbar = () => {
               className="object-contain"
             />
           </Link>
+          
 
           <div className="flex items-center z-20">
             {toggle ? (
