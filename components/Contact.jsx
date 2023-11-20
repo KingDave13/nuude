@@ -103,6 +103,7 @@ const Contact = () => {
                         name="lastname"
                         value={formik.values.lastname}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -111,6 +112,11 @@ const Contact = () => {
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
+                        <p className="text-mainRed md:text-[12px] 
+                        ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                        >
+                            {formik.touched.lastname && formik.errors.lastname}
+                        </p>
                     </div>
 
                     <div className="col-span-2 flex flex-col">
@@ -123,6 +129,7 @@ const Contact = () => {
                         name="email"
                         value={formik.values.email}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -131,6 +138,11 @@ const Contact = () => {
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
+                        <p className="text-mainRed md:text-[12px] 
+                        ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                        >
+                            {formik.touched.email && formik.errors.email}
+                        </p>
                     </div>
 
                     <div className="col-span-2 flex flex-col">
@@ -143,6 +155,7 @@ const Contact = () => {
                         name="subject"
                         value={formik.values.subject}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -151,6 +164,11 @@ const Contact = () => {
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
+                        <p className="text-mainRed md:text-[12px] 
+                        ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                        >
+                            {formik.touched.subject && formik.errors.subject}
+                        </p>
                     </div>
 
                     <div className="col-span-2 flex flex-col">
@@ -163,6 +181,7 @@ const Contact = () => {
                         name="message"
                         value={formik.values.message}
                         onChange={formik.handleChange}
+                        onBlur={formik.handleBlur}
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -171,6 +190,11 @@ const Contact = () => {
                         ss:placeholder:text-[13px] 
                         placeholder:text-[12px] bg-primaryalt"
                         />
+                        <p className="text-mainRed md:text-[12px] 
+                        ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                        >
+                            {formik.touched.message ? formik.errors.message : ''}
+                        </p>
                     </div>
 
                     <div className="col-span-2 md:mt-0 ss:mt-0 mt-5">
