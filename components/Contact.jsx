@@ -18,11 +18,11 @@ const Contact = () => {
         },
 
         validationSchema: Yup.object({
-            firstname: Yup.string().required('First Name is Required.'),
-            lastname: Yup.string().required('Last Name is Required.'),
-            email: Yup.string().required('Email is Required.'),
-            subject: Yup.string().required('Subject is Required.'),
-            message: Yup.string().required('Message is Required.'),
+            firstname: Yup.string().required('First Name is required.'),
+            lastname: Yup.string().required('Last Name is required.'),
+            email: Yup.string().email('Invalid email address.').required('Email is required.'),
+            subject: Yup.string().required('Subject is required.'),
+            message: Yup.string().required('Message is required.'),
         }),
     });
 
