@@ -1,6 +1,7 @@
 'use client';
 
-import { useRef } from 'react';
+import { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
@@ -25,6 +26,20 @@ const Modal = () => {
 const Contact = () => {
 
     const formRef = useRef();
+    const [Loading, setLoading] = useState(false);
+    const [modalOpen, setModalOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const disableScroll = () => {
+        setScrollPosition(window.pageYOffset);
+        document.body.style.overflow = 'hidden';
+        document.body.style.top = `-${scrollPosition}px`;
+    };
+    
+    const enableScroll = () => {
+        document.body.style.overflow = 'auto';
+        document.body.style.top = '0';
+    };
 
     const formik = useFormik({
         initialValues: {
@@ -44,8 +59,40 @@ const Contact = () => {
         }),
 
         onSubmit: (values) => {
-            console.log("form submitted");
-            console.log(values);
+            setLoading(true);
+
+            emailjs.send(
+                'service_skvhseu',
+                'template_bu4q17u',
+                {
+                  from_name: values.firstname,
+                  to_name: 'Anayo Okpala Global Concept',
+                  from_email: values.email,
+                  to_email: 'contact@anayookpalaglobalconcept.com',
+                  subject: values.subject,
+                  message: values.message,
+                },
+                'u4mJjP_i8Ayoq1SU-'
+              )
+              .then(
+                () => {
+                  setLoading(false);
+                  setModalOpen(true);
+                  disableScroll();
+          
+                  setTimeout(() => {
+                    setModalOpen(false);
+                    enableScroll();
+                  }, 2000);
+          
+                  values = initialValues
+                },
+                
+                (error) => {
+                  setLoading(false);
+                  console.log(error);
+                }
+            );
         },
     });
 
@@ -54,6 +101,11 @@ const Contact = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
+
+            {modalOpen && (
+                <Modal />
+            )}
+
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-10 ss:mb-5
             mb-4">
@@ -224,7 +276,7 @@ const Contact = () => {
                         text-primary md:rounded-[3px] ss:rounded-[3px] 
                         rounded-[3px] border-none cursor-pointer"
                         >
-                        {/* {Loading ? 'Sending...' : 'Send'} */} Submit
+                            {Loading ? 'Submitting...' : 'Submit'}
                         </button>
                     </div>
                 </form>
