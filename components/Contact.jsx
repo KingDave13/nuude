@@ -61,8 +61,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="firstname"
-                        // value={form.name}
-                        // onChange={handleChange}
+                        value={formik.values.firstname}
+                        onChange={formik.handleChange}
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -81,8 +81,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="lastname"
-                        // value={form.name}
-                        // onChange={handleChange}
+                        value={formik.values.lastname}
+                        onChange={formik.handleChange}
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -101,8 +101,8 @@ const Contact = () => {
                         <input
                         type="email"
                         name="email"
-                        // value={form.email}
-                        // onChange={handleChange}
+                        value={formik.values.email}
+                        onChange={formik.handleChange}
                         placeholder="Enter your email address"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -121,8 +121,8 @@ const Contact = () => {
                         <input
                         type="text"
                         name="subject"
-                        // value={form.subject}
-                        // onChange={handleChange}
+                        value={formik.values.subject}
+                        onChange={formik.handleChange}
                         placeholder="Enter a subject"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -141,8 +141,8 @@ const Contact = () => {
                         <textarea
                         rows="6"
                         name="message"
-                        // value={form.message}
-                        // onChange={handleChange}
+                        value={formik.values.message}
+                        onChange={formik.handleChange}
                         placeholder="You can be brief or very expressive. No pressure!"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
