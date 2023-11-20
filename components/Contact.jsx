@@ -51,6 +51,7 @@ const Contact = () => {
                         name="firstname"
                         // value={form.name}
                         // onChange={handleChange}
+                        required
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -71,6 +72,7 @@ const Contact = () => {
                         name="lastname"
                         // value={form.name}
                         // onChange={handleChange}
+                        required
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
