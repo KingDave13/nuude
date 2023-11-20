@@ -1,12 +1,30 @@
 'use client';
 
+import { useRef } from 'react';
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
+const Modal = () => {
+    return (
+      <div className="fixed inset-0 flex items-center justify-center
+       bg-black bg-opacity-50 z-50">
+        <div className="bg-white p-6 rounded-md shadow-xl flex flex-col
+        items-center justify-center md:w-[400px] ss:w-[400px] w-[330px]
+        md:h-[150px] ss:h-[150px] h-[100px]">
+          <p className="text-center mb-4 font-medium text-primary">
+            Thanks for reaching out, we will be in touch.
+          </p>
+        </div>
+      </div>
+    );
+};
+
 const Contact = () => {
+
+    const formRef = useRef();
 
     const formik = useFormik({
         initialValues: {
