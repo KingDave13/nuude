@@ -63,7 +63,7 @@ const Events = () => {
 
                     <h1 className='text-white md:text-[40px] ss:text-[30px] 
                     text-[23px] font-manierMedium'>
-                        24th November, 2023
+                        16th December, 2023
                     </h1>
 
                     <p className='text-white md:text-[16px] ss:text-[14px] 
