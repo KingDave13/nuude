@@ -28,8 +28,8 @@ const Application = () => {
             trait: '',
             contribution: '',
             mode: '',
-            age: '',
-            terms: '',
+            age: false,
+            terms: false,
         },
 
         validationSchema: Yup.object({
@@ -48,8 +48,8 @@ const Application = () => {
             trait: Yup.string().required('This is required.'),
             contribution: Yup.string().required('This is required.'),
             mode: Yup.string().required('This is required.'),
-            age: Yup.array().required("Required."),
-            terms: Yup.array().required("Required."),
+            age: Yup.boolean().oneOf([true], 'Required.'),
+            terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
 
         onSubmit: (values) => {
@@ -88,13 +88,12 @@ const Application = () => {
                 </p>
             </motion.div>
 
-            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}>
+            <form onSubmit={formik.handleSubmit} 
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
             ss:gap-8 gap-12'>
-            <form onSubmit={formik.handleSubmit}>
                 <div className='md:w-1/2 w-full'>
-                    <div onSubmit={formik.handleSubmit}
-                    className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
+                    <div className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[15px] text-[13px]">
@@ -700,7 +699,7 @@ const Application = () => {
                                 <input
                                 type="checkbox"
                                 name="age"
-                                value='checked'
+                                value={formik.values.age}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
@@ -722,8 +721,8 @@ const Application = () => {
                             ss:mt-3 mt-3 items-center">
                                 <input
                                 type="checkbox"
-                                name="age"
-                                value='checked'
+                                name="terms"
+                                value={formik.values.terms}
                                 onChange={formik.handleChange}
                                 onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
