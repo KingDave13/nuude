@@ -4,6 +4,7 @@ import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { useFormik } from "formik";
+import * as Yup from 'yup';
 
 const Contact = () => {
 
@@ -14,7 +15,15 @@ const Contact = () => {
             email: '',
             subject: '',
             message: '',
-        }
+        },
+
+        validationSchema: Yup.object({
+            firstname: Yup.string().required('First Name is Required.'),
+            lastname: Yup.string().required('Last Name is Required.'),
+            email: Yup.string().required('Email is Required.'),
+            subject: Yup.string().required('Subject is Required.'),
+            message: Yup.string().required('Message is Required.'),
+        }),
     });
 
   return (
