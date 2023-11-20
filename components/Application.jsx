@@ -25,8 +25,11 @@ const Application = () => {
             twitter: '',
             facebook: '',
             turnons: '',
-            subject: '',
-            message: '',
+            trait: '',
+            contribution: '',
+            mode: '',
+            age: '',
+            terms: '',
         },
 
         validationSchema: Yup.object({
@@ -42,8 +45,11 @@ const Application = () => {
             twitter: Yup.string().required('Twitter is required.'),
             facebook: Yup.string().required('Facebook is required.'),
             turnons: Yup.string().required('This is required.'),
-            subject: Yup.string().required('Subject is required.'),
-            message: Yup.string().required('Message is required.'),
+            trait: Yup.string().required('This is required.'),
+            contribution: Yup.string().required('This is required.'),
+            mode: Yup.string().required('This is required.'),
+            age: Yup.array().required("Required."),
+            terms: Yup.array().required("Required."),
         }),
 
         onSubmit: (values) => {
@@ -85,8 +91,9 @@ const Application = () => {
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
             ss:gap-8 gap-12'>
+            <form onSubmit={formik.handleSubmit}>
                 <div className='md:w-1/2 w-full'>
-                    <form onSubmit={formik.handleSubmit}
+                    <div onSubmit={formik.handleSubmit}
                     className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
                         <div className="flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
@@ -419,9 +426,10 @@ const Application = () => {
                             </label>
                             <textarea
                             rows="4"
-                            name="erotictraits"
-                            // value={form.message}
-                            // onChange={handleChange}
+                            name="trait"
+                            value={formik.values.trait}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
@@ -431,6 +439,11 @@ const Application = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.trait && formik.errors.trait}
+                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -440,9 +453,10 @@ const Application = () => {
                             </label>
                             <textarea
                             rows="4"
-                            name="contributions"
-                            // value={form.message}
-                            // onChange={handleChange}
+                            name="contribution"
+                            value={formik.values.contribution}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -452,6 +466,11 @@ const Application = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.contribution && formik.errors.contribution}
+                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -462,8 +481,9 @@ const Application = () => {
                             <select
                             type="text"
                             name="mode"
-                            // value={form.subject}
-                            // onChange={handleChange}
+                            value={formik.values.mode}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
                             placeholder="Please select an option"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -473,8 +493,16 @@ const Application = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             >
-                                <option></option>
+                                <option value="" disabled hidden>Select an option</option>
+                                <option>Social Media</option>
+                                <option>From a friend</option>
+                                <option>Other</option>
                             </select>
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.mode && formik.errors.mode}
+                            </p>
                         </div>
 
                         <div className="col-span-2 md:mt-5 ss:mt-3 
@@ -491,7 +519,7 @@ const Application = () => {
                                 Proceed to payment
                             </button>
                         </div>
-                    </form>
+                    </div>
                 </div>
 
                 <div className='md:w-1/2 w-full h-auto ss:mt-5'>
@@ -666,14 +694,15 @@ const Application = () => {
                         </div>
                         
 
-                        <form className='text-white text-justify md:mt-12 
+                        <div className='text-white text-justify md:mt-12 
                         ss:mt-6 mt-5'>
                             <div className="flex md:gap-3 ss:gap-3 gap-3 items-center">
                                 <input
                                 type="checkbox"
                                 name="age"
-                                // value={form.age}
-                                // onChange={handleChange}
+                                value='checked'
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                                 rounded-md'
                                 />
@@ -682,6 +711,11 @@ const Application = () => {
                                     I confirm and consent that I am over the 
                                     age of 18
                                 </label>
+                                <p className="text-mainRed md:text-[12px] 
+                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                                >
+                                    {formik.touched.age && formik.errors.age}
+                                </p>
                             </div>
 
                             <div className="flex md:gap-3 ss:gap-3 gap-3 md:mt-3 
@@ -689,8 +723,9 @@ const Application = () => {
                                 <input
                                 type="checkbox"
                                 name="age"
-                                // value={form.age}
-                                // onChange={handleChange}
+                                value='checked'
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                                 rounded-md'
                                 />
@@ -698,8 +733,13 @@ const Application = () => {
                                 ss:text-[14px] text-[12px]">
                                     I agree to the above terms and conditions
                                 </label>
+                                <p className="text-mainRed md:text-[12px] 
+                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                                >
+                                    {formik.touched.terms && formik.errors.terms}
+                                </p>
                             </div>
-                        </form>
+                        </div>
                     </div>
                     
                     <div className="md:hidden flex col-span-2 ss:mt-8 mt-8">
@@ -710,11 +750,11 @@ const Application = () => {
                             px-6 text-primary ss:rounded-[3px] rounded-[3px]
                             border-none"
                             >
-                                {/* {Loading ? 'Sending...' : 'Send'} */} 
                                 Proceed to payment
                             </button>
                     </div>
                 </div>
+                </form>
             </motion.div>
         </div>
     </section>
