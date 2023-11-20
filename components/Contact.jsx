@@ -3,8 +3,20 @@
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
+import { useFormik } from "formik";
 
 const Contact = () => {
+
+    const formik = useFormik({
+        initialValues: {
+            firstname: '',
+            lastname: '',
+            email: '',
+            subject: '',
+            message: '',
+        }
+    });
+
   return (
     <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[910px] 
     mx-auto flex items-center">
@@ -51,7 +63,6 @@ const Contact = () => {
                         name="firstname"
                         // value={form.name}
                         // onChange={handleChange}
-                        required
                         placeholder="Enter your first name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
@@ -72,7 +83,6 @@ const Contact = () => {
                         name="lastname"
                         // value={form.name}
                         // onChange={handleChange}
-                        required
                         placeholder="Enter your last name"
                         className="md:py-3 ss:py-3 py-2 px-4 border-none 
                         outline-none text-white md:rounded-[3px]
