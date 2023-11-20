@@ -16,7 +16,7 @@ const Application = () => {
             firstname: '',
             lastname: '',
             email: '',
-            phone: 'NG',
+            phone: '',
             birthdate: '',
             gender: '',
             employer: '',
@@ -181,18 +181,35 @@ const Application = () => {
                                 Phone Number
                             </label>
                             <PhoneInput
-                            type="number"
-                            name="phone"
-                            defaultCountry='NG'
-                            value={formik.values.phone}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
-                            placeholder="Enter your phone number"
-                            className="md:py-3 ss:py-3 py-3 px-4 border-none 
-                            outline-none md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] text-white
-                            bg-primaryalt"
-                            />
+   type="text"
+   name="phone"
+   defaultCountry="NG"
+   value={formik.values.phone}
+   onChange={(value) => {
+      // Replace non-numeric characters
+      const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
+
+      // Limit the length of the numeric part
+      if (numericValue.length <= 15) {
+         formik.handleChange({
+            target: {
+               name: 'phone',
+               value: numericValue,
+            },
+         });
+      }
+   }}
+   onBlur={formik.handleBlur}
+   placeholder="Enter your phone number"
+   className="md:py-3 ss:py-3 py-3 px-4 border-none 
+      outline-none md:rounded-[3px] ss:rounded-[3px] rounded-[3px] text-white
+      bg-primaryalt"
+   intlTelInputProps={{
+      defaultCountry: 'NG',
+      preferredCountries: ['NG'],
+      separateDialCode: true,
+   }}
+/>
                             <p className="text-mainRed md:text-[12px] 
                             ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
                             >
