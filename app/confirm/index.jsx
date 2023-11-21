@@ -54,12 +54,12 @@ const Application = () => {
             terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
 
-        onSubmit: (values) => {
+        // onSubmit: (values) => {
 
-            router.push({ pathname: "/confirmdetails", query: values });
+        //     router.push({ pathname: "/confirm", query: values });
                 
-            console.log("Submitted successfully!");
-        },
+        //     console.log("Submitted successfully!");
+        // },
     });
 
   return (

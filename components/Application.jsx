@@ -53,9 +53,19 @@ const Application = () => {
             terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
 
-        onSubmit: () => {
-            router.push("/confirmdetails");        
-            console.log("Submitted successfully!");
+        onSubmit: async (values) => {
+            console.log('clicks');
+        
+            try {
+                await router.push({
+                    pathname: '/confirm',
+                    query: values,
+                });
+        
+                console.log('Submitted successfully!');
+            } catch (error) {
+                console.error('Error navigating:', error);
+            }
         },
     });
 
