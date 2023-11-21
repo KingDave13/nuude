@@ -10,6 +10,7 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 const Application = () => {
+
     const router = useRouter();
 
     const formik = useFormik({
@@ -53,8 +54,10 @@ const Application = () => {
             terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
 
-        onSubmit: () => {
-            router.push("/confirmdetails");        
+        onSubmit: (values) => {
+
+            router.push({ pathname: "/confirmdetails", query: values });
+                
             console.log("Submitted successfully!");
         },
     });
