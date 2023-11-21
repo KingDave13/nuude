@@ -64,7 +64,7 @@ const Application = () => {
 
   return (
     <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[4050px] 
-    mx-auto flex items-center">
+    mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}

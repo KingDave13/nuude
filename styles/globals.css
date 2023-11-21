@@ -143,6 +143,10 @@ input:focus {
   background-size: cover;
 }
 
+.footer {
+  background-color: white;
+}
+
 .borderTop {
   border-top: 1px solid #898989;
 }
