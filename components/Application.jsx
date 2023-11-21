@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef } from 'react';
+import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
@@ -10,6 +10,8 @@ import { useFormik } from "formik";
 import * as Yup from 'yup';
 
 const Application = () => {
+
+    const router = useRouter();
 
     const formik = useFormik({
         initialValues: {
@@ -53,12 +55,10 @@ const Application = () => {
         }),
 
         onSubmit: (values) => {
-            setLoading(true);
+
+            router.push({ pathname: "/confirmdetails", query: values });
                 
-                (error) => {
-                  setLoading(false);
-                  console.log(error);
-                }
+            console.log("Submitted successfully!");
         },
     });
 
@@ -188,7 +188,7 @@ const Application = () => {
                             onChange={(value) => {
                             const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
 
-                            if (numericValue.length <= 15) {
+                            if (numericValue.length <= 13) {
                                 formik.handleChange({
                                 target: {
                                     name: 'phone',
