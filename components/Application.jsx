@@ -63,7 +63,6 @@ const Application = () => {
                 });
         
 
-
                 console.log('Submitted successfully!');
             } catch (error) {
                 console.error('Error navigating:', error);
