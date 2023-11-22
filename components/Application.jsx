@@ -55,10 +55,10 @@ const Application = () => {
 
         onSubmit: async (values) => {
             console.log('clicks');
-        
+            console.log(values);
             try {
-                await router.push({
-                    pathname: '/confirm',
+                router.push({
+                    pathname: "/confirm",
                     query: values,
                 });
         
@@ -70,7 +70,7 @@ const Application = () => {
     });
 
   return (
-    <section className="md:min-h-[2200px] ss:min-h-[2900px] min-h-[4050px] 
+    <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
