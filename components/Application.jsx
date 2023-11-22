@@ -62,6 +62,7 @@ const Application = () => {
                     query: values,
                 });
         
+
                 
                 console.log('Submitted successfully!');
             } catch (error) {
