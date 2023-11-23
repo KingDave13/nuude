@@ -56,16 +56,8 @@ const Application = () => {
         onSubmit: async (values) => {
             console.log('clicks');
             console.log(values);
-            // try {
-            //     router.push({
-            //         pathname: "/confirm",
-            //         query: values,
-            //     });
-        
-            //     console.log('Submitted successfully!');
-            // } catch (error) {
-            //     console.error('Error navigating:', error);
-            // }
+            const queryString = Object.keys(values).map(key => key + '=' + values[key]).join('&');
+            router.push("/confirm?" + queryString);
         },
     });
 
