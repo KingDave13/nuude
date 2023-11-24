@@ -89,468 +89,468 @@ const Confirm = () => {
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className="w-full">
-                <form onSubmit={formik.handleSubmit} 
-                className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
-                ss:gap-8 gap-12'>
-                    <div className='md:w-1/2 w-full'>
-                        <div className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    First Name
-                                </label>
-                                <input
-                                type="text"
-                                name="firstname"
-                                value={formik.values.firstname}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="Enter your first name"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt focus:outline-none
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.firstname && formik.errors.firstname}
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Last Name
-                                </label>
-                                <input
-                                type="text"
-                                name="lastname"
-                                value={formik.values.lastname}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="Enter your last name"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.lastname && formik.errors.lastname}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Email Address
-                                </label>
-                                <input
-                                type="email"
-                                name="email"
-                                value={formik.values.email}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="Enter your email address"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.email && formik.errors.email}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Phone Number
-                                </label>
-                                <PhoneInput
-                                type="text"
-                                name="phone"
-                                defaultCountry="NG"
-                                value={formik.values.phone}
-                                onChange={(value) => {
-                                const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
-
-                                if (numericValue.length <= 13) {
-                                    formik.handleChange({
-                                    target: {
-                                        name: 'phone',
-                                        value: numericValue,
-                                    },
-                                    });
-                                }
-                                }}
-                                onBlur={formik.handleBlur}
-                                placeholder="Enter your phone number"
-                                className="md:py-3 ss:py-3 py-3 px-4 
-                                border-none outline-none md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px] text-white 
-                                bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.phone && formik.errors.phone}
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Date of Birth
-                                </label>
-                                <input
-                                type="date"
-                                name="birthdate"
-                                value={formik.values.birthdate}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="DD/MM/YYYY"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-textalt md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.birthdate && formik.errors.birthdate}
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Gender
-                                </label>
-                                <select
-                                type="text"
-                                name="gender"
-                                value={formik.values.gender}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-white-4 cursor-pointer
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                >
-                                    <option value="" disabled hidden>Select a gender</option>
-                                    <option>Male</option>
-                                    <option>Female</option>
-                                    <option>I prefer not to say</option>
-                                    <option>Other</option>
-                                </select>
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.gender && formik.errors.gender}
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Employer
-                                </label>
-                                <input
-                                type="text"
-                                name="employer"
-                                value={formik.values.employer}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="Where do you work?"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.employer && formik.errors.employer}
-                                </p>
-                            </div>
-
-                            <div className="flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Occupation
-                                </label>
-                                <input
-                                type="text"
-                                name="occupation"
-                                value={formik.values.occupation}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="What do you work as?"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.occupation && formik.errors.occupation}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Instagram Handle
-                                </label>
-                                <input
-                                type="text"
-                                name="instagram"
-                                value={formik.values.instagram}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="www.instagram.com/your username"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.instagram && formik.errors.instagram}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Twitter Handle
-                                </label>
-                                <input
-                                type="text"
-                                name="twitter"
-                                value={formik.values.twitter}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="www.twitter.com/your username"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.twitter && formik.errors.twitter}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    Facebook Username
-                                </label>
-                                <input
-                                type="text"
-                                name="facebook"
-                                value={formik.values.facebook}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="www.facebook.com/your username"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.facebook && formik.errors.facebook}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    What turns you on the most?
-                                </label>
-                                <textarea
-                                rows="4"
-                                name="turnons"
-                                value={formik.values.turnons}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="You can be brief or very expressive. No pressure!"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.turnons && formik.errors.turnons}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    If you could amplify an erotic trait within yourself, what would it be?
-                                </label>
-                                <textarea
-                                rows="4"
-                                name="trait"
-                                value={formik.values.trait}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="You can be brief or very expressive. No pressure!"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px] 
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.trait && formik.errors.trait}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    What would you contribute to the Nuude! community?
-                                </label>
-                                <textarea
-                                rows="4"
-                                name="contribution"
-                                value={formik.values.contribution}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="You can be brief or very expressive. No pressure!"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-textalt
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                />
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.contribution && formik.errors.contribution}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 flex flex-col">
-                                <label className="text-white md:mb-3 ss:mb-2 mb-2 
-                                md:text-[16px] ss:text-[15px] text-[13px]">
-                                    And finally, how did you find us?
-                                </label>
-                                <select
-                                type="text"
-                                name="mode"
-                                value={formik.values.mode}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
-                                placeholder="Please select an option"
-                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                                outline-none text-white md:rounded-[3px]
-                                ss:rounded-[3px] rounded-[3px]
-                                placeholder:text-white-4 cursor-pointer
-                                md:placeholder:text-[14px] 
-                                ss:placeholder:text-[12px] 
-                                placeholder:text-[12px] bg-primaryalt"
-                                >
-                                    <option value="" disabled hidden>Select an option</option>
-                                    <option>Social Media</option>
-                                    <option>From a friend</option>
-                                    <option>Other</option>
-                                </select>
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.mode && formik.errors.mode}
-                                </p>
-                            </div>
-
-                            <div className="col-span-2 md:mt-5 ss:mt-3 
-                            flex md:gap-8 ss:gap-5 gap-3 w-full">
-                                <button
-                                onClick={handleEdit}
-                                className="bg-secondary grow2 w-fit shadow-md 
-                                md:text-[20px] ss:text-[14px] text-[13px] 
-                                md:py-5 ss:py-3 md:px-24 ss:px-8
-                                text-secondary md:rounded-[6px] ss:rounded-[3px] 
-                                border-[1px] border-secondary
-                                cursor-pointer bg-transparent"
-                                > 
-                                    Edit Details
-                                </button>
-
-                                <button
-                                onClick={handlePayment}
-                                className="bg-secondary grow2 w-fit shadow-md 
-                                md:text-[20px] ss:text-[14px] text-[13px] 
-                                md:py-5 ss:py-3 md:px-12 ss:px-8
-                                text-primary md:rounded-[6px] ss:rounded-[3px] 
-                                border-none
-                                cursor-pointer"
-                                > 
-                                    Proceed to payment
-                                </button>
-                            </div>
+            <form onSubmit={formik.handleSubmit} 
+            className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
+            ss:gap-8 gap-12'>
+                <div className='md:w-1/2 w-full'>
+                    <div className="grid grid-cols-2 md:gap-8 ss:gap-4 gap-5">
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                First Name
+                            </label>
+                            <input
+                            type="text"
+                            name="firstname"
+                            value={formik.values.firstname}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="Enter your first name"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt focus:outline-none
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.firstname && formik.errors.firstname}
+                            </p>
                         </div>
 
-                        <div className='md:w-1/2 md:flex hidden items-center
-                        justify-center'>
-                            <h1 className='text-secondary text-[1500px]'>
-                                !
-                            </h1>
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Last Name
+                            </label>
+                            <input
+                            type="text"
+                            name="lastname"
+                            value={formik.values.lastname}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="Enter your last name"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.lastname && formik.errors.lastname}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Email Address
+                            </label>
+                            <input
+                            type="email"
+                            name="email"
+                            value={formik.values.email}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="Enter your email address"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.email && formik.errors.email}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Phone Number
+                            </label>
+                            <PhoneInput
+                            type="text"
+                            name="phone"
+                            defaultCountry="NG"
+                            value={formik.values.phone}
+                            onChange={(value) => {
+                            const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
+
+                            if (numericValue.length <= 13) {
+                                formik.handleChange({
+                                target: {
+                                    name: 'phone',
+                                    value: numericValue,
+                                },
+                                });
+                            }
+                            }}
+                            onBlur={formik.handleBlur}
+                            placeholder="Enter your phone number"
+                            className="md:py-3 ss:py-3 py-3 px-4 
+                            border-none outline-none md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px] text-white 
+                            bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.phone && formik.errors.phone}
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Date of Birth
+                            </label>
+                            <input
+                            type="date"
+                            name="birthdate"
+                            value={formik.values.birthdate}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="DD/MM/YYYY"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-textalt md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.birthdate && formik.errors.birthdate}
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Gender
+                            </label>
+                            <select
+                            type="text"
+                            name="gender"
+                            value={formik.values.gender}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-white-4 cursor-pointer
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            >
+                                <option value="" disabled hidden>Select a gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>I prefer not to say</option>
+                                <option>Other</option>
+                            </select>
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.gender && formik.errors.gender}
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Employer
+                            </label>
+                            <input
+                            type="text"
+                            name="employer"
+                            value={formik.values.employer}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="Where do you work?"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.employer && formik.errors.employer}
+                            </p>
+                        </div>
+
+                        <div className="flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Occupation
+                            </label>
+                            <input
+                            type="text"
+                            name="occupation"
+                            value={formik.values.occupation}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="What do you work as?"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.occupation && formik.errors.occupation}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Instagram Handle
+                            </label>
+                            <input
+                            type="text"
+                            name="instagram"
+                            value={formik.values.instagram}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="www.instagram.com/your username"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.instagram && formik.errors.instagram}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Twitter Handle
+                            </label>
+                            <input
+                            type="text"
+                            name="twitter"
+                            value={formik.values.twitter}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="www.twitter.com/your username"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.twitter && formik.errors.twitter}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                Facebook Username
+                            </label>
+                            <input
+                            type="text"
+                            name="facebook"
+                            value={formik.values.facebook}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="www.facebook.com/your username"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.facebook && formik.errors.facebook}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                What turns you on the most?
+                            </label>
+                            <textarea
+                            rows="4"
+                            name="turnons"
+                            value={formik.values.turnons}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="You can be brief or very expressive. No pressure!"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.turnons && formik.errors.turnons}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                If you could amplify an erotic trait within yourself, what would it be?
+                            </label>
+                            <textarea
+                            rows="4"
+                            name="trait"
+                            value={formik.values.trait}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="You can be brief or very expressive. No pressure!"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px] 
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.trait && formik.errors.trait}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                What would you contribute to the Nuude! community?
+                            </label>
+                            <textarea
+                            rows="4"
+                            name="contribution"
+                            value={formik.values.contribution}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="You can be brief or very expressive. No pressure!"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-textalt
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            />
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.contribution && formik.errors.contribution}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 flex flex-col">
+                            <label className="text-white md:mb-3 ss:mb-2 mb-2 
+                            md:text-[16px] ss:text-[15px] text-[13px]">
+                                And finally, how did you find us?
+                            </label>
+                            <select
+                            type="text"
+                            name="mode"
+                            value={formik.values.mode}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            placeholder="Please select an option"
+                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                            outline-none text-white md:rounded-[3px]
+                            ss:rounded-[3px] rounded-[3px]
+                            placeholder:text-white-4 cursor-pointer
+                            md:placeholder:text-[14px] 
+                            ss:placeholder:text-[12px] 
+                            placeholder:text-[12px] bg-primaryalt"
+                            >
+                                <option value="" disabled hidden>Select an option</option>
+                                <option>Social Media</option>
+                                <option>From a friend</option>
+                                <option>Other</option>
+                            </select>
+                            <p className="text-mainRed md:text-[12px] 
+                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                            >
+                                {formik.touched.mode && formik.errors.mode}
+                            </p>
+                        </div>
+
+                        <div className="col-span-2 md:mt-5 ss:mt-3 
+                        flex md:gap-8 ss:gap-5 gap-3 w-full">
+                            <button
+                            onClick={handleEdit}
+                            className="bg-secondary grow2 w-fit shadow-md 
+                            md:text-[20px] ss:text-[14px] text-[13px] 
+                            md:py-5 ss:py-3 md:px-24 ss:px-8
+                            text-secondary md:rounded-[6px] ss:rounded-[3px] 
+                            border-[1px] border-secondary
+                            cursor-pointer bg-transparent"
+                            > 
+                                Edit Details
+                            </button>
+
+                            <button
+                            onClick={handlePayment}
+                            className="bg-secondary grow2 w-fit shadow-md 
+                            md:text-[20px] ss:text-[14px] text-[13px] 
+                            md:py-5 ss:py-3 md:px-12 ss:px-8
+                            text-primary md:rounded-[6px] ss:rounded-[3px] 
+                            border-none
+                            cursor-pointer"
+                            > 
+                                Proceed to payment
+                            </button>
                         </div>
                     </div>
-                </form>
+                </div>
+
+                <div className='md:w-1/2 md:flex hidden items-center
+                justify-center mt-[-200px]'>
+                    <h1 className='text-secondary text-[1200px]'>
+                        !
+                    </h1>
+                </div>
+            </form>
             </motion.div>
         </div>
     </section>
