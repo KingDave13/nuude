@@ -515,13 +515,13 @@ const Confirm = () => {
                         </div>
 
                         <div className="col-span-2 md:mt-5 ss:mt-3 
-                        md:flex hidden">
+                        md:flex hidden md:gap-8 ss:gap-5 gap-3 buttonfull">
                             <button
                             onClick={handleEdit}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[16px] ss:text-[14px] text-[13px] 
                             md:py-4 ss:py-3 md:px-12 ss:px-8
-                            text-primary md:rounded-[6px] ss:rounded-[3px] 
+                            text-secondary md:rounded-[6px] ss:rounded-[3px] 
                             border-[1px] border-secondary
                             cursor-pointer bg-transparent"
                             > 
