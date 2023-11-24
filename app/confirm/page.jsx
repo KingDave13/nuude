@@ -17,7 +17,7 @@ const Confirm = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('I work');
-        router.push("/?edit=true");
+        router.replace("/?edit=true");
     };
 
     const handlePayment = () => {

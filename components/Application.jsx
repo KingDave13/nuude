@@ -12,7 +12,6 @@ import * as Yup from 'yup';
 
 const Application = () => {
     const router = useRouter();
-     const [shouldLoadFromStorage, setShouldLoadFromStorage] = useState(false);
 
     const formik = useFormik({
         initialValues: {
@@ -62,16 +61,13 @@ const Application = () => {
     });
 
     useEffect(() => {
-        if (shouldLoadFromStorage) {
+        if (router.query && router.query.edit) {
             const storedFormData = JSON.parse(localStorage.getItem('formData'));
-
             if (storedFormData) {
                 formik.setValues(storedFormData);
             }
-
-            setShouldLoadFromStorage(false);
         }
-    }, [shouldLoadFromStorage]);
+    }, [router.query]);
 
   return (
     <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 
