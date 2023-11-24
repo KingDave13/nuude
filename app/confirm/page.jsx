@@ -64,7 +64,7 @@ const Confirm = () => {
     });
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1900px] min-h-[4150px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1900px] min-h-[2050px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -515,8 +515,7 @@ const Confirm = () => {
                             </p>
                         </div>
 
-                        <div className='text-white text-justify md:mt-0 
-                        ss:mt-6 mt-5 col-span-2'>
+                        <div className='text-white text-justify col-span-2'>
                             <div className="flex md:gap-3 ss:gap-3 gap-3 items-center">
                                 <input
                                 type="checkbox"
@@ -562,16 +561,16 @@ const Confirm = () => {
                             </div>
                         </div>
 
-                        <div className="col-span-2 md:mt-5 ss:mt-5 
-                        flex md:gap-8 ss:gap-5 gap-3 w-full">
+                        <div className="col-span-2 md:mt-8 ss:mt-8 mt-5
+                        flex md:gap-8 ss:gap-5 gap-4 buttonfull">
                             <button
                             onClick={handleEdit}
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[17px] ss:text-[14px] text-[13px] 
-                            md:py-4 ss:py-4 md:px-20 ss:px-16
+                            md:text-[17px] ss:text-[14px] text-[12px] 
+                            md:py-4 ss:py-4 py-3 md:px-20 ss:px-16 px-10
                             text-secondary md:rounded-[6px] ss:rounded-[3px] 
-                            border-[1px] border-secondary
-                            cursor-pointer bg-transparent"
+                            rounded-[3px] border-[1px] border-secondary
+                            cursor-pointer bg-transparent buttonhalf"
                             > 
                                 Edit Details
                             </button>
@@ -579,10 +578,10 @@ const Confirm = () => {
                             <button
                             onClick={handlePayment}
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[17px] ss:text-[14px] text-[13px] 
-                            md:py-4 ss:py-4 md:px-12 ss:px-10
+                            md:text-[17px] ss:text-[14px] text-[12px] 
+                            md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5
                             text-primary md:rounded-[6px] ss:rounded-[3px] 
-                            border-none
+                            rounded-[3px] border-none buttonhalf
                             cursor-pointer"
                             > 
                                 Proceed to Payment
