@@ -22,7 +22,7 @@ const Confirm = () => {
     };
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1800px] min-h-[2050px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1700px] min-h-[2050px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -58,17 +58,14 @@ const Confirm = () => {
                                 First Name
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="firstname"
-                            // value={formik.values.firstname}
-                            placeholder="Enter your first name"
+                            value={formData.firstname}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt focus:outline-none
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            focus:outline-none bg-primaryalt"
                             />
                         </div>
 
@@ -78,16 +75,13 @@ const Confirm = () => {
                                 Last Name
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="lastname"
-                            placeholder="Enter your last name"
+                            value={formData.lastname}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -97,16 +91,13 @@ const Confirm = () => {
                                 Email Address
                             </label>
                             <input
+                            readOnly
                             type="email"
                             name="email"
-                            placeholder="Enter your email address"
+                            value={formData.email}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -116,9 +107,10 @@ const Confirm = () => {
                                 Phone Number
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="phone"
-                            placeholder="Enter your phone number"
+                            value={formData.phone}
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] text-white 
@@ -132,9 +124,10 @@ const Confirm = () => {
                                 Date of Birth
                             </label>
                             <input
+                            readOnly
                             type="date"
                             name="birthdate"
-                            placeholder="DD/MM/YYYY"
+                            value={formData.birthdate}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -148,21 +141,16 @@ const Confirm = () => {
                                 Gender
                             </label>
                             <select
+                            readOnly
                             type="text"
                             name="gender"
+                            value={formData.gender}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-white-4 cursor-pointer
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            cursor-pointer bg-primaryalt"
                             >
-                                <option value="" disabled hidden>Select a gender</option>
-                                <option>Male</option>
-                                <option>Female</option>
-                                <option>I prefer not to say</option>
-                                <option>Other</option>
+                               <option>{formData.gender}</option>
                             </select>
                         </div>
 
@@ -172,16 +160,13 @@ const Confirm = () => {
                                 Employer
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="employer"
-                            placeholder="Where do you work?"
+                            value={formData.employer}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -191,16 +176,13 @@ const Confirm = () => {
                                 Occupation
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="occupation"
-                            placeholder="What do you work as?"
+                            value={formData.occupation}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -210,16 +192,13 @@ const Confirm = () => {
                                 Instagram Handle
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="instagram"
-                            placeholder="www.instagram.com/your username"
+                            value={formData.instagram}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -229,16 +208,13 @@ const Confirm = () => {
                                 Twitter Handle
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="twitter"
-                            placeholder="www.twitter.com/your username"
+                            value={formData.twitter}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -248,16 +224,13 @@ const Confirm = () => {
                                 Facebook Username
                             </label>
                             <input
+                            readOnly
                             type="text"
                             name="facebook"
-                            placeholder="www.facebook.com/your username"
+                            value={formData.facebook}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -267,16 +240,13 @@ const Confirm = () => {
                                 What turns you on the most?
                             </label>
                             <textarea
+                            readOnly
                             rows="4"
                             name="turnons"
-                            placeholder="You can be brief or very expressive. No pressure!"
+                            value={formData.turnons}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -286,16 +256,13 @@ const Confirm = () => {
                                 If you could amplify an erotic trait within yourself, what would it be?
                             </label>
                             <textarea
+                            readOnly
                             rows="4"
                             name="trait"
-                            placeholder="You can be brief or very expressive. No pressure!"
+                            value={formData.trait}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -305,16 +272,13 @@ const Confirm = () => {
                                 What would you contribute to the Nuude! community?
                             </label>
                             <textarea
+                            readOnly
                             rows="4"
                             name="contribution"
-                            placeholder="You can be brief or very expressive. No pressure!"
+                            value={formData.contribution}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-textalt
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -324,52 +288,17 @@ const Confirm = () => {
                                 And finally, how did you find us?
                             </label>
                             <select
+                            readOnly
                             type="text"
                             name="mode"
-                            placeholder="Please select an option"
+                            value={formData.mode}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px]
-                            placeholder:text-white-4 cursor-pointer
-                            md:placeholder:text-[14px] 
-                            ss:placeholder:text-[12px] 
-                            placeholder:text-[12px] bg-primaryalt"
+                            ss:rounded-[3px] rounded-[3px] cursor-pointer 
+                            bg-primaryalt"
                             >
-                                <option value="" disabled hidden>Select an option</option>
-                                <option>Social Media</option>
-                                <option>From a friend</option>
-                                <option>Other</option>
+                                <option>{formData.mode}</option>
                             </select>
-                        </div>
-
-                        <div className='text-white text-justify col-span-2'>
-                            <div className="flex md:gap-3 ss:gap-3 gap-3 items-center">
-                                <input
-                                type="checkbox"
-                                name="age"
-                                className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
-                                rounded-md'
-                                />
-                                <label className="text-white md:text-[15px] 
-                                ss:text-[14px] text-[12px]">
-                                    I confirm and consent that I am over the 
-                                    age of 18
-                                </label>
-                            </div>
-
-                            <div className="flex md:gap-3 ss:gap-3 gap-3 md:mt-3 
-                            ss:mt-3 mt-3 items-center">
-                                <input
-                                type="checkbox"
-                                name="terms"
-                                className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
-                                rounded-md'
-                                />
-                                <label className="text-white md:text-[15px] 
-                                ss:text-[14px] text-[12px]">
-                                    I agree to the above terms and conditions
-                                </label>
-                            </div>
                         </div>
 
                         <div className="col-span-2 md:mt-8 ss:mt-8 mt-5
