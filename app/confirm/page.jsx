@@ -5,16 +5,21 @@ import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 
+import scrollToSection from '@constants/scrollToSection';
+
 const Confirm = () => {
 
     const router = useRouter();
     let formData;
     if (typeof window !== 'undefined') {
-        formData = JSON.parse(localStorage.getItem('formData'));
+        formData = JSON.parse(localStorage.getItem('formData')) || {};
     }
 
-    const handleEdit = () => {
+    const handleEdit = (e) => {
+        e.preventDefault();
+        console.log('I work');
         router.push("/");
+        scrollToSection('application');
     };
 
     const handlePayment = () => {
@@ -22,7 +27,7 @@ const Confirm = () => {
     };
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1700px] min-h-[2050px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1700px] min-h-[1950px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -63,7 +68,7 @@ const Confirm = () => {
                             name="firstname"
                             value={formData.firstname}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
                             focus:outline-none bg-primaryalt"
                             />
@@ -80,7 +85,7 @@ const Confirm = () => {
                             name="lastname"
                             value={formData.lastname}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -96,7 +101,7 @@ const Confirm = () => {
                             name="email"
                             value={formData.email}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -113,7 +118,7 @@ const Confirm = () => {
                             value={formData.phone}
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] text-white 
+                            ss:rounded-[3px] rounded-[3px] text-textalt 
                             bg-primaryalt"
                             />
                         </div>
@@ -146,7 +151,7 @@ const Confirm = () => {
                             name="gender"
                             value={formData.gender}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
                             cursor-pointer bg-primaryalt"
                             >
@@ -165,7 +170,7 @@ const Confirm = () => {
                             name="employer"
                             value={formData.employer}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -181,7 +186,7 @@ const Confirm = () => {
                             name="occupation"
                             value={formData.occupation}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -197,7 +202,7 @@ const Confirm = () => {
                             name="instagram"
                             value={formData.instagram}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -213,7 +218,7 @@ const Confirm = () => {
                             name="twitter"
                             value={formData.twitter}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -229,7 +234,7 @@ const Confirm = () => {
                             name="facebook"
                             value={formData.facebook}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -245,7 +250,7 @@ const Confirm = () => {
                             name="turnons"
                             value={formData.turnons}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -261,7 +266,7 @@ const Confirm = () => {
                             name="trait"
                             value={formData.trait}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px] 
+                            outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -277,7 +282,7 @@ const Confirm = () => {
                             name="contribution"
                             value={formData.contribution}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
@@ -293,7 +298,7 @@ const Confirm = () => {
                             name="mode"
                             value={formData.mode}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-white md:rounded-[3px]
+                            outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] cursor-pointer 
                             bg-primaryalt"
                             >
