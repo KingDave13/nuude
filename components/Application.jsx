@@ -1,6 +1,5 @@
 'use client';
 
-import { useState, useEffect } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
@@ -12,7 +11,6 @@ import * as Yup from 'yup';
 
 const Application = () => {
     const router = useRouter();
-    const [formData, setFormData] = useState({});
 
     const formik = useFormik({
         initialValues: {
@@ -56,15 +54,11 @@ const Application = () => {
         }),
 
         onSubmit: async (values) => {
-            setFormData(values);
+            localStorage.setItem('formData', JSON.stringify(values));
+            router.push("/confirm");
         },
     });
 
-    useEffect(() => {
-        if (Object.keys(formData).length > 0) {
-            router.push("/confirm");
-        }
-    }, [formData]);
 
   return (
     <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 

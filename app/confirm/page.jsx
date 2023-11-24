@@ -6,12 +6,11 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
-import { useFormik } from "formik";
-import * as Yup from 'yup';
 
-const Confirm = () => {
+const Confirm = ({ FormData }) => {
 
     const router = useRouter();
+    const { query } = router;
 
     const handleEdit = () => {
         router.push("/");
@@ -20,48 +19,6 @@ const Confirm = () => {
     const handlePayment = () => {
         router.push("/payment");
     };
-
-    const formik = useFormik({
-        initialValues: {
-            firstname: '',
-            lastname: '',
-            email: '',
-            phone: '',
-            birthdate: '',
-            gender: '',
-            employer: '',
-            occupation: '',
-            instagram: '',
-            twitter: '',
-            facebook: '',
-            turnons: '',
-            trait: '',
-            contribution: '',
-            mode: '',
-            age: false,
-            terms: false,
-        },
-
-        validationSchema: Yup.object({
-            firstname: Yup.string().required('First Name is required.'),
-            lastname: Yup.string().required('Last Name is required.'),
-            email: Yup.string().email('Invalid email address.').required('Email is required.'),
-            phone: Yup.string().required('Phone number is required.'),
-            birthdate: Yup.string().required('Birth date is required.'),
-            gender: Yup.string().required('Gender is required.'),
-            employer: Yup.string().required('Employer is required.'),
-            occupation: Yup.string().required('Occupation is required.'),
-            instagram: Yup.string().required('Instagram is required.'),
-            twitter: Yup.string().required('Twitter is required.'),
-            facebook: Yup.string().required('Facebook is required.'),
-            turnons: Yup.string().required('This is required.'),
-            trait: Yup.string().required('This is required.'),
-            contribution: Yup.string().required('This is required.'),
-            mode: Yup.string().required('This is required.'),
-            age: Yup.boolean().oneOf([true], 'Required.'),
-            terms: Yup.boolean().oneOf([true], 'Required.'),
-        }),
-    });
 
   return (
     <section className="md:min-h-[2300px] ss:min-h-[1900px] min-h-[2050px] 
@@ -89,7 +46,7 @@ const Confirm = () => {
 
             <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
             className="w-full">
-            <form onSubmit={formik.handleSubmit} 
+            <form
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
             ss:gap-8 gap-12'>
                 <div className='md:w-1/2 w-full'>
@@ -102,9 +59,7 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="firstname"
-                            value={formik.values.firstname}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
+                            // value={formik.values.firstname}
                             placeholder="Enter your first name"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
@@ -114,11 +69,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.firstname && formik.errors.firstname}
-                            </p>
                         </div>
 
                         <div className="flex flex-col">
@@ -129,9 +79,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="lastname"
-                            value={formik.values.lastname}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="Enter your last name"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
@@ -141,11 +88,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.lastname && formik.errors.lastname}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -156,9 +98,6 @@ const Confirm = () => {
                             <input
                             type="email"
                             name="email"
-                            value={formik.values.email}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="Enter your email address"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -168,11 +107,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.email && formik.errors.email}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -184,31 +118,12 @@ const Confirm = () => {
                             type="text"
                             name="phone"
                             defaultCountry="NG"
-                            value={formik.values.phone}
-                            onChange={(value) => {
-                            const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
-
-                            if (numericValue.length <= 13) {
-                                formik.handleChange({
-                                target: {
-                                    name: 'phone',
-                                    value: numericValue,
-                                },
-                                });
-                            }
-                            }}
-                            onBlur={formik.handleBlur}
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] text-white 
                             bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.phone && formik.errors.phone}
-                            </p>
                         </div>
 
                         <div className="flex flex-col">
@@ -219,20 +134,12 @@ const Confirm = () => {
                             <input
                             type="date"
                             name="birthdate"
-                            value={formik.values.birthdate}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="DD/MM/YYYY"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
                             bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.birthdate && formik.errors.birthdate}
-                            </p>
                         </div>
 
                         <div className="flex flex-col">
@@ -243,9 +150,6 @@ const Confirm = () => {
                             <select
                             type="text"
                             name="gender"
-                            value={formik.values.gender}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -260,11 +164,6 @@ const Confirm = () => {
                                 <option>I prefer not to say</option>
                                 <option>Other</option>
                             </select>
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.gender && formik.errors.gender}
-                            </p>
                         </div>
 
                         <div className="flex flex-col">
@@ -275,9 +174,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="employer"
-                            value={formik.values.employer}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="Where do you work?"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
@@ -287,11 +183,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.employer && formik.errors.employer}
-                            </p>
                         </div>
 
                         <div className="flex flex-col">
@@ -302,9 +193,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="occupation"
-                            value={formik.values.occupation}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="What do you work as?"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -314,11 +202,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.occupation && formik.errors.occupation}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -329,9 +212,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="instagram"
-                            value={formik.values.instagram}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="www.instagram.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -341,11 +221,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.instagram && formik.errors.instagram}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -356,9 +231,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="twitter"
-                            value={formik.values.twitter}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="www.twitter.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -368,11 +240,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.twitter && formik.errors.twitter}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -383,9 +250,6 @@ const Confirm = () => {
                             <input
                             type="text"
                             name="facebook"
-                            value={formik.values.facebook}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="www.facebook.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -395,11 +259,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.facebook && formik.errors.facebook}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -410,9 +269,6 @@ const Confirm = () => {
                             <textarea
                             rows="4"
                             name="turnons"
-                            value={formik.values.turnons}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -422,11 +278,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.turnons && formik.errors.turnons}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -437,9 +288,6 @@ const Confirm = () => {
                             <textarea
                             rows="4"
                             name="trait"
-                            value={formik.values.trait}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px] 
@@ -449,11 +297,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.trait && formik.errors.trait}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -464,9 +307,6 @@ const Confirm = () => {
                             <textarea
                             rows="4"
                             name="contribution"
-                            value={formik.values.contribution}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="You can be brief or very expressive. No pressure!"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -476,11 +316,6 @@ const Confirm = () => {
                             ss:placeholder:text-[12px] 
                             placeholder:text-[12px] bg-primaryalt"
                             />
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.contribution && formik.errors.contribution}
-                            </p>
                         </div>
 
                         <div className="col-span-2 flex flex-col">
@@ -491,9 +326,6 @@ const Confirm = () => {
                             <select
                             type="text"
                             name="mode"
-                            value={formik.values.mode}
-                            onChange={formik.handleChange}
-                            onBlur={formik.handleBlur}
                             placeholder="Please select an option"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
@@ -508,11 +340,6 @@ const Confirm = () => {
                                 <option>From a friend</option>
                                 <option>Other</option>
                             </select>
-                            <p className="text-mainRed md:text-[12px] 
-                            ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                            >
-                                {formik.touched.mode && formik.errors.mode}
-                            </p>
                         </div>
 
                         <div className='text-white text-justify col-span-2'>
@@ -520,9 +347,6 @@ const Confirm = () => {
                                 <input
                                 type="checkbox"
                                 name="age"
-                                value={formik.values.age}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                                 rounded-md'
                                 />
@@ -531,11 +355,6 @@ const Confirm = () => {
                                     I confirm and consent that I am over the 
                                     age of 18
                                 </label>
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.age && formik.errors.age}
-                                </p>
                             </div>
 
                             <div className="flex md:gap-3 ss:gap-3 gap-3 md:mt-3 
@@ -543,9 +362,6 @@ const Confirm = () => {
                                 <input
                                 type="checkbox"
                                 name="terms"
-                                value={formik.values.terms}
-                                onChange={formik.handleChange}
-                                onBlur={formik.handleBlur}
                                 className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
                                 rounded-md'
                                 />
@@ -553,11 +369,6 @@ const Confirm = () => {
                                 ss:text-[14px] text-[12px]">
                                     I agree to the above terms and conditions
                                 </label>
-                                <p className="text-mainRed md:text-[12px] 
-                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
-                                >
-                                    {formik.touched.terms && formik.errors.terms}
-                                </p>
                             </div>
                         </div>
 
@@ -576,7 +387,7 @@ const Confirm = () => {
                             </button>
 
                             <button
-                            onClick={handlePayment}
+                            onClick={() => console.log(FormData)}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[12px] 
                             md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5
