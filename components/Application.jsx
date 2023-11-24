@@ -61,6 +61,12 @@ const Application = () => {
         },
     });
 
+    useEffect(() => {
+        if (Object.keys(formData).length > 0) {
+            router.push("/confirm");
+        }
+    }, [formData]);
+
   return (
     <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 
     mx-auto flex items-center">
