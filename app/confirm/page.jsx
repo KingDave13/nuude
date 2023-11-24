@@ -520,8 +520,8 @@ const Confirm = () => {
                             <button
                             onClick={handleEdit}
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[20px] ss:text-[14px] text-[13px] 
-                            md:py-5 ss:py-3 md:px-24 ss:px-8
+                            md:text-[17px] ss:text-[14px] text-[13px] 
+                            md:py-5 ss:py-3 md:px-20 ss:px-8
                             text-secondary md:rounded-[6px] ss:rounded-[3px] 
                             border-[1px] border-secondary
                             cursor-pointer bg-transparent"
@@ -532,7 +532,7 @@ const Confirm = () => {
                             <button
                             onClick={handlePayment}
                             className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[20px] ss:text-[14px] text-[13px] 
+                            md:text-[17px] ss:text-[14px] text-[13px] 
                             md:py-5 ss:py-3 md:px-12 ss:px-8
                             text-primary md:rounded-[6px] ss:rounded-[3px] 
                             border-none
@@ -545,8 +545,9 @@ const Confirm = () => {
                 </div>
 
                 <div className='md:w-1/2 md:flex hidden items-center
-                justify-center mt-[-200px]'>
-                    <h1 className='text-secondary text-[1200px]'>
+                justify-center mt-[-300px]'>
+                    <h1 className='text-secondary text-[1000px]
+                    font-manierBold'>
                         !
                     </h1>
                 </div>
