@@ -5,11 +5,10 @@ import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 
-import scrollToSection from '@constants/scrollToSection';
 
 const Confirm = () => {
-
     const router = useRouter();
+
     let formData;
     if (typeof window !== 'undefined') {
         formData = JSON.parse(localStorage.getItem('formData')) || {};
@@ -18,8 +17,7 @@ const Confirm = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('I work');
-        router.push("/");
-        scrollToSection('application');
+        router.push("/?edit=true");
     };
 
     const handlePayment = () => {

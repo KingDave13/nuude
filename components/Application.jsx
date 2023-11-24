@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
@@ -11,6 +12,7 @@ import * as Yup from 'yup';
 
 const Application = () => {
     const router = useRouter();
+     const [shouldLoadFromStorage, setShouldLoadFromStorage] = useState(false);
 
     const formik = useFormik({
         initialValues: {
@@ -59,6 +61,17 @@ const Application = () => {
         },
     });
 
+    useEffect(() => {
+        if (shouldLoadFromStorage) {
+            const storedFormData = JSON.parse(localStorage.getItem('formData'));
+
+            if (storedFormData) {
+                formik.setValues(storedFormData);
+            }
+
+            setShouldLoadFromStorage(false);
+        }
+    }, [shouldLoadFromStorage]);
 
   return (
     <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 
