@@ -64,7 +64,7 @@ const Confirm = () => {
     });
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[3000px] min-h-[4150px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1900px] min-h-[4150px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -515,13 +515,60 @@ const Confirm = () => {
                             </p>
                         </div>
 
-                        <div className="col-span-2 md:mt-5 ss:mt-3 
+                        <div className='text-white text-justify md:mt-0 
+                        ss:mt-6 mt-5 col-span-2'>
+                            <div className="flex md:gap-3 ss:gap-3 gap-3 items-center">
+                                <input
+                                type="checkbox"
+                                name="age"
+                                value={formik.values.age}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
+                                rounded-md'
+                                />
+                                <label className="text-white md:text-[15px] 
+                                ss:text-[14px] text-[12px]">
+                                    I confirm and consent that I am over the 
+                                    age of 18
+                                </label>
+                                <p className="text-mainRed md:text-[12px] 
+                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                                >
+                                    {formik.touched.age && formik.errors.age}
+                                </p>
+                            </div>
+
+                            <div className="flex md:gap-3 ss:gap-3 gap-3 md:mt-3 
+                            ss:mt-3 mt-3 items-center">
+                                <input
+                                type="checkbox"
+                                name="terms"
+                                value={formik.values.terms}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                className='md:w-5 ss:w-5 w-5 h-5 cursor-pointer 
+                                rounded-md'
+                                />
+                                <label className="text-white md:text-[15px] 
+                                ss:text-[14px] text-[12px]">
+                                    I agree to the above terms and conditions
+                                </label>
+                                <p className="text-mainRed md:text-[12px] 
+                                ss:text-[12px] text-[11px] md:mt-2 ss:mt-2 mt-1"
+                                >
+                                    {formik.touched.terms && formik.errors.terms}
+                                </p>
+                            </div>
+                        </div>
+
+                        <div className="col-span-2 md:mt-5 ss:mt-5 
                         flex md:gap-8 ss:gap-5 gap-3 w-full">
                             <button
                             onClick={handleEdit}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[13px] 
-                            md:py-5 ss:py-3 md:px-20 ss:px-8
+                            md:py-4 ss:py-4 md:px-20 ss:px-16
                             text-secondary md:rounded-[6px] ss:rounded-[3px] 
                             border-[1px] border-secondary
                             cursor-pointer bg-transparent"
@@ -533,12 +580,12 @@ const Confirm = () => {
                             onClick={handlePayment}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[13px] 
-                            md:py-5 ss:py-3 md:px-12 ss:px-8
+                            md:py-4 ss:py-4 md:px-12 ss:px-10
                             text-primary md:rounded-[6px] ss:rounded-[3px] 
                             border-none
                             cursor-pointer"
                             > 
-                                Proceed to payment
+                                Proceed to Payment
                             </button>
                         </div>
                     </div>
