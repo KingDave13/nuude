@@ -56,7 +56,6 @@ const Application = () => {
         }),
 
         onSubmit: async (values) => {
-            console.log(values);
             setFormData(values);
         },
     });
