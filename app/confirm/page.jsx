@@ -4,13 +4,14 @@ import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
-import PhoneInput from 'react-phone-number-input';
-import 'react-phone-number-input/style.css';
 
-const Confirm = ({ FormData }) => {
+const Confirm = () => {
 
     const router = useRouter();
-    const { query } = router;
+    let formData;
+    if (typeof window !== 'undefined') {
+        formData = JSON.parse(localStorage.getItem('formData'));
+    }
 
     const handleEdit = () => {
         router.push("/");
@@ -21,7 +22,7 @@ const Confirm = ({ FormData }) => {
     };
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1900px] min-h-[2050px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1800px] min-h-[2050px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -114,10 +115,9 @@ const Confirm = ({ FormData }) => {
                             md:text-[16px] ss:text-[15px] text-[13px]">
                                 Phone Number
                             </label>
-                            <PhoneInput
+                            <input
                             type="text"
                             name="phone"
-                            defaultCountry="NG"
                             placeholder="Enter your phone number"
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
@@ -387,7 +387,7 @@ const Confirm = ({ FormData }) => {
                             </button>
 
                             <button
-                            onClick={() => console.log(FormData)}
+                            onClick={() => console.log(formData)}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[12px] 
                             md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5
