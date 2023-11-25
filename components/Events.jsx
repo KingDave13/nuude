@@ -61,7 +61,7 @@ const Events = () => {
                         <div className='bg-secondary w-full h-[1px]' />
                     </div>
 
-                    <h1 className='text-white md:text-[40px] ss:text-[30px] 
+                    <h1 className='text-white md:text-[40px] ss:text-[25px] 
                     text-[23px] font-manierMedium'>
                         Saturday, 16th December, 2023.
                     </h1>
@@ -74,12 +74,12 @@ const Events = () => {
                         screening and approval.
                     </p>    
 
-                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+                    <div className='flex md:mt-8 ss:mt-6 mt-6 md:gap-8 ss:gap-5 
                     gap-3 items-center font-manierRegular buttonfull'>
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
-                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4
-                            ss:py-3 py-3 md:px-10 ss:px-3 px-3 text-primary 
+                            md:text-[17px] ss:text-[15px] text-[14px] md:py-4
+                            ss:py-3 py-3 md:px-10 ss:px-5 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
                             onClick={() => scrollToSection('application')}
@@ -89,8 +89,8 @@ const Events = () => {
 
                         <button
                             className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4 
-                            ss:py-3 py-3 md:px-16 ss:px-7 px-6 text-secondary 
+                            md:text-[17px] ss:text-[15px] text-[14px] md:py-4 
+                            ss:py-3 py-3 md:px-16 ss:px-10 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
                             buttonhalf'

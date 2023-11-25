@@ -97,7 +97,7 @@ const Contact = () => {
     });
 
   return (
-    <section className="md:min-h-[1200px] ss:min-h-[900px] min-h-[910px] 
+    <section className="md:min-h-[1200px] ss:min-h-[950px] min-h-[910px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
