@@ -26,9 +26,9 @@ const Modal = ({ onClose }) => {
     };
 
     const handleClick = () => {
+        router.push('/membershipapplication');
         onClose();
         enableScroll();
-        scrollToSection('membership');
     };
 
     useEffect(() => {

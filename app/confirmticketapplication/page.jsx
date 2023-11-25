@@ -42,7 +42,7 @@ const ConfirmTicket = () => {
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
-                    Please confirm your submitted details for Event. 
+                    Please confirm your submitted details for this event. 
                     Make sure the provided information is correct before 
                     proceeding with payment for event.
                 </p>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 
 
-const Confirm = () => {
+const ConfirmMembership = () => {
     const router = useRouter();
 
     let formData;
@@ -17,7 +17,7 @@ const Confirm = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('I work');
-        router.replace("/?edit=true");
+        router.replace("/membershipapplication?edit=true");
     };
 
     const handlePayment = () => {
@@ -347,4 +347,4 @@ const Confirm = () => {
   );
 };
 
-export default SectionWrapper(Confirm, '');
+export default SectionWrapper(ConfirmMembership, '');
