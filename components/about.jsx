@@ -62,7 +62,7 @@ const About = () => {
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
                             md:text-[17px] ss:text-[16px] text-[14px] md:py-4
-                            ss:py-3 py-3 md:px-10 ss:px-3 px-3 text-primary 
+                            ss:py-3 py-3 md:px-12 ss:px-3 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
                             onClick={() => scrollToSection('membership')}
@@ -73,7 +73,7 @@ const About = () => {
                         <button
                             className='border-[1px] grow2 border-secondary 
                             md:text-[17px] ss:text-[16px] text-[14px] md:py-4 
-                            ss:py-3 py-3 md:px-16 ss:px-10 px-6 text-secondary 
+                            ss:py-3 py-3 md:px-20 ss:px-10 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
                             buttonhalf'
