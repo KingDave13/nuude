@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
@@ -12,6 +12,7 @@ import scrollToSection from '@constants/scrollToSection';
 
 const Modal = ({ onClose }) => {
     const router = useRouter();
+    const modalRef = useRef(null);
 
     const enableScroll = () => {
       document.body.style.overflow = 'auto';
@@ -28,23 +29,40 @@ const Modal = ({ onClose }) => {
         enableScroll();
         scrollToSection('membership');
     };
+
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (modalRef.current && !modalRef.current.contains(event.target)) {
+                onClose();
+                enableScroll();
+            }
+        };
+    
+        document.addEventListener('mousedown', handleClickOutside);
+    
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
   
     return (
       <div className="fixed inset-0 flex items-center justify-center
-       bg-black bg-opacity-50 z-50">
-        <div className="bg-primaryalt p-6 rounded-md shadow-xl flex flex-col
-        items-center justify-center md:w-[400px] ss:w-[400px] w-[330px]
-        md:h-[400px] ss:h-[300px] h-[200px]">
-            <div className='flex flex-row md:gap-5'>
-                <h1 className='text-white md:text-[20px]'>
+       bg-black bg-opacity-80 z-50">
+        <div ref={modalRef} 
+        className="bg-primary md:p-12 ss:p-10 p-5 rounded-md shadow-xl 
+        flex flex-col justify-center w-auto h-auto font-manierRegular">
+            <div className='flex flex-row w-full justify-between md:gap-10
+            ss:gap-10 gap-4 items-center'>
+                <h1 className='text-white md:text-[18px] ss:text-[16px]
+                text-[14px]'>
                     Apply for event through one-time ticket
                 </h1>
                 <button
                 onClick={handleEventClick}
-                className='grow4 bg-secondary border-none buttonhalf
-                md:text-[17px] ss:text-[15px] text-[14px] md:py-3
-                ss:py-3 py-3 md:px-5 ss:px-4 px-3 text-primary 
-                md:rounded-[5px] ss:rounded-[3px] rounded-[3px] 
+                className='grow4 bg-secondary border-none
+                md:text-[16px] ss:text-[15px] text-[13px] md:py-2
+                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-primary 
+                md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
                 font-medium font-manier cursor-pointer'
                 >
                     Here
@@ -52,20 +70,22 @@ const Modal = ({ onClose }) => {
             </div>
 
             <div className="flex relative items-center justify-center
-            md:mt-5">
+            md:mt-5 ss:mt-5 mt-3">
                 <div className='bg-secondary w-full h-[1px]' />
             </div>
 
-            <div className='flex flex-row md:gap-5 md:mt-5'>
-                <h1 className='text-white md:text-[20px]'>
+            <div className='flex flex-row w-full justify-between md:gap-10 
+            ss:gap-10 gap-4 md:mt-5 ss:mt-5 mt-3 items-center'>
+                <h1 className='text-white md:text-[18px] ss:text-[16px]
+                text-[14px]'>
                     Apply for event through membership
                 </h1>
                 <button
                 onClick={handleClick}
-                className='grow4 bg-secondary border-none buttonhalf
-                md:text-[17px] ss:text-[15px] text-[14px] md:py-3
-                ss:py-3 py-3 md:px-5 ss:px-4 px-3 text-primary 
-                md:rounded-[5px] ss:rounded-[3px] rounded-[3px] 
+                className='grow4 bg-secondary border-none
+                md:text-[16px] ss:text-[15px] text-[13px] md:py-2
+                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-primary 
+                md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
                 font-medium font-manier cursor-pointer'
                 >
                     Here
