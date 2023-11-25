@@ -21,7 +21,7 @@ const ConfirmMembership = () => {
     };
 
     const handlePayment = () => {
-        router.push("/payment");
+        router.push("/membershippayment");
     };
 
   return (
