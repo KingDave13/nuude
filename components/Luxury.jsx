@@ -80,9 +80,9 @@ const Luxury = () => {
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
                             buttonhalf'
-                            onClick={() => scrollToSection('contact')}
+                            onClick={() => scrollToSection('events')}
                         >
-                            Contact Us
+                            View Events
                         </button>
                     </div>
                 </motion.div>
