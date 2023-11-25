@@ -3,6 +3,7 @@
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '@utils/motion';
+import scrollToSection from '@constants/scrollToSection';
 
 const Membership = () => {
   return (
@@ -73,7 +74,33 @@ const Membership = () => {
                     Applicant's requiring the greatest level of discretion 
                     may forego our application and be interviewed directly 
                     by Nuude!.
-                </p>    
+                </p>
+
+                <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+                    gap-3 items-center font-manierRegular buttonfull'>
+                        <button
+                            className='grow4 bg-secondary border-none buttonhalf
+                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4
+                            ss:py-3 py-3 md:px-10 ss:px-3 px-3 text-primary 
+                            md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                            font-medium font-manier cursor-pointer'
+                            onClick={() => scrollToSection('application')}
+                        >
+                            Apply for Event
+                        </button>
+
+                        <button
+                            className='border-[1px] grow2 border-secondary 
+                            md:text-[17px] ss:text-[16px] text-[14px] md:py-4 
+                            ss:py-3 py-3 md:px-16 ss:px-7 px-6 text-secondary 
+                            md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                            font-medium bg-transparent font-manier cursor-pointer
+                            buttonhalf'
+                            onClick={() => scrollToSection('contact')}
+                        >
+                            Contact Us
+                        </button>
+                    </div>   
             </motion.div>
         </div>
     </section>
