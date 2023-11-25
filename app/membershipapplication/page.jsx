@@ -10,7 +10,7 @@ import 'react-phone-number-input/style.css';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
-const Application = () => {
+const MembershipApplication = () => {
     const router = useRouter();
 
     const formik = useFormik({
@@ -78,7 +78,7 @@ const Application = () => {
             className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
-                    Event Ticket Application Form
+                    Membership Application
                 </h1>
             </motion.div>
         
@@ -88,10 +88,10 @@ const Application = () => {
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
                     Please read the terms and conditions carefully before 
-                    completing and submitting this ticket application 
+                    completing and submitting this membership application 
                     form. An email will be sent to you upon successful 
                     payment and completion of the form as well as on 
-                    approval of your application.
+                    approval of your membership.
                 </p>
             </motion.div>
 
@@ -545,8 +545,8 @@ const Application = () => {
                         <div>
                             <p className='text-white md:text-[15px] ss:text-[14px] 
                             text-[14px] text-justify md:leading-[22px]'>
-                                By submitting an application for 
-                                event attendance with Nuude! (referred to as 
+                                By submitting an application for membership
+                                with Nuude! (referred to as 
                                 "Nuude" or "the club" herein), you acknowledge
                                 and agree to the following terms and conditions:
                             </p>
@@ -562,7 +562,7 @@ const Application = () => {
                                         for single gentlemen to attend any Nuude! 
                                         event. Approved non-member couples or singles 
                                         who have not previously attended may be 
-                                        invited to join for Dinner to establish 
+                                        invited to join for dinner to establish 
                                         familiarity.
                                     </li>
 
@@ -778,4 +778,4 @@ const Application = () => {
   );
 };
 
-export default SectionWrapper(Application, 'application');
+export default SectionWrapper(MembershipApplication, '');

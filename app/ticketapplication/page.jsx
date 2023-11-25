@@ -10,7 +10,7 @@ import 'react-phone-number-input/style.css';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
-const Application = () => {
+const TicketApplication = () => {
     const router = useRouter();
 
     const formik = useFormik({
@@ -56,7 +56,7 @@ const Application = () => {
 
         onSubmit: async (values) => {
             localStorage.setItem('formData', JSON.stringify(values));
-            router.push("/confirm");
+            router.push("/confirmticketapplication");
         },
     });
 
@@ -778,4 +778,4 @@ const Application = () => {
   );
 };
 
-export default SectionWrapper(Application, 'application');
+export default SectionWrapper(TicketApplication, '');

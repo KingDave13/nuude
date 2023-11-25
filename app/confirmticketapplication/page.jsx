@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 
 
-const Confirm = () => {
+const ConfirmTicket = () => {
     const router = useRouter();
 
     let formData;
@@ -17,7 +17,7 @@ const Confirm = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('I work');
-        router.replace("/?edit=true");
+        router.replace("/ticketapplication?edit=true");
     };
 
     const handlePayment = () => {
@@ -42,9 +42,9 @@ const Confirm = () => {
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
-                    Please confirm your submitted details for membership. 
+                    Please confirm your submitted details for Event. 
                     Make sure the provided information is correct before 
-                    proceeding with payment for membership.
+                    proceeding with payment for event.
                 </p>
             </motion.div>
 
@@ -347,4 +347,4 @@ const Confirm = () => {
   );
 };
 
-export default SectionWrapper(Confirm, '');
+export default SectionWrapper(ConfirmTicket, '');

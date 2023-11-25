@@ -4,8 +4,15 @@ import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { fadeIn, slideIn, textVariant } from '@utils/motion';
 import scrollToSection from '@constants/scrollToSection';
+import { useRouter } from 'next/navigation';
 
 const Membership = () => {
+    const router = useRouter();
+
+    const handleClick = () => {
+        router.push('/membershipapplication');
+      };
+
   return (
     <section className="md:min-h-[750px] ss:min-h-[700px] min-h-[800px] 
     mx-auto flex items-center">
@@ -85,7 +92,7 @@ const Membership = () => {
                             ss:py-3 py-3 md:px-10 ss:px-5 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
-                            onClick={() => scrollToSection('application')}
+                            onClick={handleClick}
                         >
                             Apply for Membership
                         </button>
