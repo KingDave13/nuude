@@ -1,22 +1,16 @@
 'use client';
 
-import Navbar from "@components/Navbar";
 import About from "@components/About";
 import Luxury from "@components/Luxury";
 import Events from "@components/Events";
 import Membership from "@components/Membership";
 import Contact from "@components/Contact";
-import Application from "@components/Application";
-import Footer from "@components/Footer";
 
 import scrollToSection from "@constants/scrollToSection";
 
 const Home = () => {
   return (
     <section className="relative w-full">
-
-      <Navbar /> 
-      
       <div className="flex hero sm:px-16 px-6">
         <div className='items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
@@ -82,16 +76,8 @@ const Home = () => {
         <Membership />
       </div>
 
-      <div className="bg-primary">
-        <Application />
-      </div>
-
       <div className="contact">
         <Contact />
-      </div>
-
-      <div className="footer">
-        <Footer />
       </div>
     </section>
   );

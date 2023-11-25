@@ -13,7 +13,7 @@ import Link from 'next/link';
 const Footer = () => {
   return (
     <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[360px] 
-    flex items-center'>
+    flex items-center bg-white'>
         <div className='flex mx-auto items-center w-full relative 
         flex-col justify-center font-manierRegular'>
             <motion.div variants={textVariant()} className='flex flex-col
