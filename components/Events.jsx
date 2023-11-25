@@ -1,17 +1,100 @@
 'use client';
 
+import { useState } from 'react';
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
 import { event } from "@public/assets";
 import Image from "next/image";
+import { useRouter } from 'next/navigation';
 
 import scrollToSection from '@constants/scrollToSection';
 
+const Modal = ({ onClose }) => {
+    const router = useRouter();
+
+    const enableScroll = () => {
+      document.body.style.overflow = 'auto';
+      document.body.style.top = '0';
+    };
+  
+    const handleEventClick = () => {
+      onClose();
+      enableScroll();
+    };
+
+    const handleClick = () => {
+        onClose();
+        enableScroll();
+        scrollToSection('membership');
+    };
+  
+    return (
+      <div className="fixed inset-0 flex items-center justify-center
+       bg-black bg-opacity-50 z-50">
+        <div className="bg-primaryalt p-6 rounded-md shadow-xl flex flex-col
+        items-center justify-center md:w-[400px] ss:w-[400px] w-[330px]
+        md:h-[400px] ss:h-[300px] h-[200px]">
+            <div className='flex flex-row md:gap-5'>
+                <h1 className='text-white md:text-[20px]'>
+                    Apply for event through one-time ticket
+                </h1>
+                <button
+                onClick={handleEventClick}
+                className='grow4 bg-secondary border-none buttonhalf
+                md:text-[17px] ss:text-[15px] text-[14px] md:py-3
+                ss:py-3 py-3 md:px-5 ss:px-4 px-3 text-primary 
+                md:rounded-[5px] ss:rounded-[3px] rounded-[3px] 
+                font-medium font-manier cursor-pointer'
+                >
+                    Here
+                </button>
+            </div>
+
+            <div className="flex relative items-center justify-center
+            md:mt-5">
+                <div className='bg-secondary w-full h-[1px]' />
+            </div>
+
+            <div className='flex flex-row md:gap-5 md:mt-5'>
+                <h1 className='text-white md:text-[20px]'>
+                    Apply for event through membership
+                </h1>
+                <button
+                onClick={handleClick}
+                className='grow4 bg-secondary border-none buttonhalf
+                md:text-[17px] ss:text-[15px] text-[14px] md:py-3
+                ss:py-3 py-3 md:px-5 ss:px-4 px-3 text-primary 
+                md:rounded-[5px] ss:rounded-[3px] rounded-[3px] 
+                font-medium font-manier cursor-pointer'
+                >
+                    Here
+                </button>
+            </div>
+        </div>
+      </div>
+    );
+  };
+
 const Events = () => {
+
+  const [modalOpen, setModalOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
+
+  const disableScroll = () => {
+    setScrollPosition(window.pageYOffset);
+    document.body.style.overflow = 'hidden';
+    document.body.style.top = `-${scrollPosition}px`;
+  };
+
   return (
     <section className="md:min-h-[900px] ss:min-h-[700px] min-h-[1030px] 
     mx-auto flex items-center">
+
+        {modalOpen && (
+            <Modal onClose={() => setModalOpen(false)} />
+        )}
+
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular md:mb-0 ss:mb-0 mb-8'>
             <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
@@ -82,7 +165,10 @@ const Events = () => {
                             ss:py-3 py-3 md:px-10 ss:px-5 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
-                            onClick={() => scrollToSection('application')}
+                            onClick={() => {
+                                setModalOpen(true);
+                                disableScroll();
+                            }}
                         >
                             Apply for Event
                         </button>
