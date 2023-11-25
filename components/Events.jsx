@@ -20,6 +20,7 @@ const Modal = ({ onClose }) => {
     };
   
     const handleEventClick = () => {
+      router.push('/ticketapplication');
       onClose();
       enableScroll();
     };

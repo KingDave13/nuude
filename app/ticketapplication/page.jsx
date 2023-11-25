@@ -70,7 +70,7 @@ const Application = () => {
     }, [router.query]);
 
   return (
-    <section className="md:min-h-[2250px] ss:min-h-[3050px] min-h-[4050px] 
+    <section className="md:min-h-[2450px] ss:min-h-[3050px] min-h-[4050px] 
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
