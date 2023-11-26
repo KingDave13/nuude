@@ -9,9 +9,9 @@ const MembershipPayment = () => {
 
   return (
     <section className="relative w-full">
-      <div className="flex hero">
+      <div className="flex hero1">
         <div className='items-center justify-center w-full mx-auto
-          max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
+          max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20 font-manierRegular' 
           >
             <h1 className='text-secondary md:text-[50px] font-manierBold
             ss:text-[40px] text-[35px] ss:leading-[70px] leading-[55px] 
@@ -22,7 +22,7 @@ const MembershipPayment = () => {
             <p className='md:mt-6 ss:mt-5 mt-6 md:text-[18px] ss:text-[18px]
             text-[16px] text-white md:text-center ss:text-center 
             md:leading-[25px] ss:leading-[25px] leading-[20px] 
-            md:font-manierRegular ss:font-manierRegular font-manierLight'>
+            md:max-w-[700px]'>
              When the "Pay Now" button is clicked, an authorized payment
              gateway will open with various online payment methods. Select
              the one you wish to use.

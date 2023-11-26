@@ -61,32 +61,32 @@ const MembershipApplication = () => {
         },
     });
 
-    useEffect(() => {
-        const fetchData = async () => {
-            console.log('Effect is running');
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         console.log('Effect is running');
         
-            if (!router.isReady) {
-                return;
-            }
+    //         if (!router.isReady) {
+    //             return;
+    //         }
         
-            console.log('router.isReady:', router.isReady);
-            console.log('router.query:', router.query);
+    //         console.log('router.isReady:', router.isReady);
+    //         console.log('router.query:', router.query);
         
-            if (router.query) {
-                console.log('Inside if condition');
+    //         if (router.query) {
+    //             console.log('Inside if condition');
         
-                const storedFormData = JSON.parse(localStorage.getItem('formData'));
-                console.log('Stored form data:', storedFormData);
+    //             const storedFormData = JSON.parse(localStorage.getItem('formData'));
+    //             console.log('Stored form data:', storedFormData);
         
-                if (router.query.edit && storedFormData) {
-                    console.log('Setting form values');
-                    formik.setValues(storedFormData);
-                }
-            }
-        };
+    //             if (router.query.edit && storedFormData) {
+    //                 console.log('Setting form values');
+    //                 formik.setValues(storedFormData);
+    //             }
+    //         }
+    //     };
         
-        fetchData();
-    }, [router.isReady, router.query]);
+    //     fetchData();
+    // }, [router.isReady, router.query]);
     
 
   return (

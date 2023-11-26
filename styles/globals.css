@@ -118,6 +118,12 @@ textarea:focus {
   height: 100vh;
 }
 
+.hero1 {
+  background-image: url('/assets/heroImg.png');
+  object-fit: cover;
+  width: auto;
+  height: 80vh;
+}
 
 @media (max-width: 1060px) {
   .hero {
