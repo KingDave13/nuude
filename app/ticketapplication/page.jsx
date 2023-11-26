@@ -78,7 +78,7 @@ const TicketApplication = () => {
             className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
-                    Event Ticket Application Form
+                    One-Time Event Registration
                 </h1>
             </motion.div>
         
@@ -88,10 +88,10 @@ const TicketApplication = () => {
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
                     Please read the terms and conditions carefully before 
-                    completing and submitting this ticket application 
+                    completing and submitting this event ticket registration 
                     form. An email will be sent to you upon successful 
                     payment and completion of the form as well as on 
-                    approval of your application.
+                    approval of your ticket.
                 </p>
             </motion.div>
 

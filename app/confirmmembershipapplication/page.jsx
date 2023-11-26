@@ -319,7 +319,7 @@ const ConfirmMembership = () => {
                             </button>
 
                             <button
-                            onClick={() => console.log(formData)}
+                            onClick={handlePayment}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[12px] 
                             md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5
