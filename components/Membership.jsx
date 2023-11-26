@@ -89,7 +89,7 @@ const Membership = () => {
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
                             md:text-[17px] ss:text-[15px] text-[14px] md:py-4
-                            ss:py-3 py-3 md:px-10 ss:px-5 px-3 text-primary 
+                            ss:py-3 py-3 md:px-10 ss:px-5 px-2 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
                             onClick={handleClick}

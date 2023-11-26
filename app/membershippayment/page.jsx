@@ -9,7 +9,7 @@ const MembershipPayment = () => {
 
   return (
     <section className="relative w-full">
-      <div className="flex hero1">
+      <div className="flex hero1 sm:px-16 px-6">
         <div className='items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20 font-manierRegular' 
           >
@@ -77,4 +77,4 @@ const MembershipPayment = () => {
   );
 };
 
-export default SectionWrapper(MembershipPayment, '');
+export default MembershipPayment;

@@ -16,9 +16,9 @@ const Footer = () => {
 
   return (
     <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[360px] 
-    flex items-center bg-white'>
+    flex items-center bg-white sm:px-16 px-6'>
         <div className='flex mx-auto items-center w-full relative 
-        flex-col justify-center font-manierRegular'>
+        flex-col justify-center font-manierRegular max-w-[95rem]'>
             <motion.div variants={textVariant()} className='flex flex-col
             items-center justify-center md:mt-24 ss:mt-10 mt-8'>
                 <Image 
@@ -109,4 +109,4 @@ const Footer = () => {
   )
 };
 
-export default SectionWrapper(Footer, '');
+export default Footer;
