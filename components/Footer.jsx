@@ -9,8 +9,11 @@ import { logo } from '@public/assets';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 
 const Footer = () => {
+    const router = useRouter();
+
   return (
     <section className='md:min-h-[600px] ss:min-h-[420px] min-h-[360px] 
     flex items-center bg-white'>
@@ -74,7 +77,7 @@ const Footer = () => {
                 <div className='flex md:mt-2 ss:mt-2 mt-1 items-center'>
                     {footerLinks.map((footer, index) => (
                         <ul className='list-none' key={footer.name}>
-                            <Link href={`#${footer.id}`}
+                            <Link href={router.pathname !== '/' ? `/#${footer.id}` : `#${footer.id}`}
                             >
                                 <li className={`md:text-[18px] ss:text-[16px] grow2
                                 text-[14px] text-maintext hover:text-secondary 
