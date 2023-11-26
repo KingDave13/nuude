@@ -56,18 +56,27 @@ const MembershipApplication = () => {
 
         onSubmit: async (values) => {
             localStorage.setItem('formData', JSON.stringify(values));
+            console.log('Form data stored:', values);
             router.push("/confirmmembershipapplication");
         },
     });
 
+    const [formData, setFormData] = useState(formik.values);
+
     useEffect(() => {
-        if (router.query && router.query.edit) {
+        if (router.isReady && router.query.edit) {
             const storedFormData = JSON.parse(localStorage.getItem('formData'));
+
             if (storedFormData) {
-                formik.setValues(storedFormData);
+                setFormData(storedFormData);
             }
         }
-    }, [router.query]);
+    }, [router.isReady, router.query]);
+
+    useEffect(() => {
+        formik.setValues(formData);
+    }, [formData]);
+    
 
   return (
     <section className="md:min-h-[2450px] ss:min-h-[3200px] min-h-[4200px] 

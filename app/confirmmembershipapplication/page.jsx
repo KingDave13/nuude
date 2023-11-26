@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
@@ -8,16 +9,17 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const ConfirmMembership = () => {
     const router = useRouter();
+    const [formData, setFormData] = useState({});
 
-    let formData;
-    if (typeof window !== 'undefined') {
-        formData = JSON.parse(localStorage.getItem('formData')) || {};
-    }
+    useEffect(() => {
+        const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+        setFormData(storedFormData);
+    }, []);
 
-    const handleEdit = (e) => {
-        e.preventDefault();
-        console.log('I work');
-        router.replace("/membershipapplication?edit=true");
+    const handleEdit = () => {
+        // const storedFormData = JSON.parse(localStorage.getItem('formData'));
+        console.log('Retrieved form data for edit:', formData);
+        // router.replace("/membershipapplication?edit=true");
     };
 
     const handlePayment = () => {
@@ -64,7 +66,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="firstname"
-                            value={formData.firstname}
+                            value={formData.firstname || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -81,7 +83,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="lastname"
-                            value={formData.lastname}
+                            value={formData.lastname || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -97,7 +99,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="email"
                             name="email"
-                            value={formData.email}
+                            value={formData.email || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -113,7 +115,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="phone"
-                            value={formData.phone}
+                            value={formData.phone || ''}
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] text-textalt 
@@ -130,7 +132,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="date"
                             name="birthdate"
-                            value={formData.birthdate}
+                            value={formData.birthdate || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -147,7 +149,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="gender"
-                            value={formData.gender}
+                            value={formData.gender || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -166,7 +168,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="employer"
-                            value={formData.employer}
+                            value={formData.employer || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -182,7 +184,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="occupation"
-                            value={formData.occupation}
+                            value={formData.occupation || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -198,7 +200,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="instagram"
-                            value={formData.instagram}
+                            value={formData.instagram || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -214,7 +216,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="twitter"
-                            value={formData.twitter}
+                            value={formData.twitter || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -230,7 +232,7 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="facebook"
-                            value={formData.facebook}
+                            value={formData.facebook || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -246,7 +248,7 @@ const ConfirmMembership = () => {
                             readOnly
                             rows="4"
                             name="turnons"
-                            value={formData.turnons}
+                            value={formData.turnons || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -262,7 +264,7 @@ const ConfirmMembership = () => {
                             readOnly
                             rows="4"
                             name="trait"
-                            value={formData.trait}
+                            value={formData.trait || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -278,7 +280,7 @@ const ConfirmMembership = () => {
                             readOnly
                             rows="4"
                             name="contribution"
-                            value={formData.contribution}
+                            value={formData.contribution || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -294,13 +296,13 @@ const ConfirmMembership = () => {
                             readOnly
                             type="text"
                             name="mode"
-                            value={formData.mode}
+                            value={formData.mode || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] cursor-pointer 
                             bg-primaryalt"
                             >
-                                <option>{formData.mode}</option>
+                                <option>{formData.mode || ''}</option>
                             </select>
                         </div>
 
