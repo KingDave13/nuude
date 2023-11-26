@@ -16,13 +16,15 @@ const ConfirmMembership = () => {
         setFormData(storedFormData);
     }, []);
 
-    const handleEdit = () => {
+    const handleEdit = (e) => {
+        e.preventDefault();
         // const storedFormData = JSON.parse(localStorage.getItem('formData'));
         console.log('Retrieved form data for edit:', formData);
         // router.replace("/membershipapplication?edit=true");
     };
 
-    const handlePayment = () => {
+    const handlePayment = (e) => {
+        e.preventDefault();
         router.push("/membershippayment");
     };
 
