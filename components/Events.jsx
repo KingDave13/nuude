@@ -51,28 +51,29 @@ const Modal = ({ onClose }) => {
       <div className="fixed inset-0 flex items-center justify-center
        bg-black bg-opacity-80 z-50">
         <div ref={modalRef} 
-        className="bg-primaryalt md:p-14 ss:p-10 p-5 rounded-md shadow-xl 
+        className="bg-primaryalt md:p-14 ss:p-10 p-6 rounded-md shadow-xl 
         flex flex-col justify-center w-auto h-auto font-manierRegular
         items-center">
             <Image 
                 src={warning}
                 alt='warning'
-                height={70}
-                width={70}
-                className='object-contain md:mb-6'
+                height={60}
+                width={60}
+                className='object-contain md:mb-6 ss:mb-6 mb-5'
             />
 
             <div className='flex flex-col w-full justify-center 
             items-center'>
-                <h1 className='text-white md:text-[42px] ss:text-[30px]
+                <h1 className='text-white md:text-[42px] ss:text-[35px]
                 text-[25px] text-center font-manierMedium md:leading-[55px]
-                ss:leading-[40px] leading-[30px] md:mb-6 ss:mb-6 mb-6'>
+                ss:leading-[47px] leading-[33px] md:mb-6 ss:mb-6 mb-5'>
                     How do you want to attend <br></br>this event?
                 </h1>
 
-                <p className='text-white md:text-[17px] ss:text-[15px]
-                text-[14px] text-center md:max-w-[520px] md:leading-[23px]
-                ss:leading-[40px] leading-[30px] md:mb-8 ss:mb-6 mb-6'>
+                <p className='text-white md:text-[17px] ss:text-[17px]
+                text-[14px] text-center md:max-w-[520px] ss:max-w-[520px] 
+                max-w-[320px] md:leading-[23px] ss:leading-[24px] 
+                leading-[20px] md:mb-8 ss:mb-6 mb-5'>
                     There are two ways you can attend the following Nuude!
                     event. As a registered Nuude! member, you are entitled
                     to various benefits and full access to all our events
@@ -83,10 +84,10 @@ const Modal = ({ onClose }) => {
                 onClick={handleClick}
                 className='grow4 bg-secondary border-none w-full
                 md:text-[16px] ss:text-[15px] text-[13px] md:py-4
-                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-primary 
+                ss:py-4 py-3 md:px-8 ss:px-7 px-5 text-primary 
                 md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
-                font-manierMedium cursor-pointer md:mb-3 ss:mb-6 
-                mb-6'
+                font-manierMedium cursor-pointer md:mb-3 ss:mb-3 
+                mb-2'
                 >
                     Apply for Nuude! Annual Membership
                 </button>
@@ -95,7 +96,7 @@ const Modal = ({ onClose }) => {
                 onClick={handleEventClick}
                 className='grow4 border-[1px] border-secondary w-full
                 md:text-[16px] ss:text-[15px] text-[13px] md:py-4
-                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-secondary 
+                ss:py-4 py-3 md:px-8 ss:px-7 px-5 text-secondary 
                 md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
                 font-manierMedium cursor-pointer'
                 >
