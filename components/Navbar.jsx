@@ -8,12 +8,15 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { navLinks } from '@constants';
 import { logoalt, logo } from '@public/assets';
+import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
   const [active, setActive] = useState('Home');
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
+
+  const router = useRouter();
 
   // Add an event listener to detect scrolling
   useEffect(() => {
@@ -42,6 +45,14 @@ const Navbar = () => {
     };
 }, []);
 
+const handleNavItemClick = (link) => {
+  if (router.pathname !== '/') {
+    router.push(`/#${link.id}`)
+  } else {
+    setActive(link.title);
+  }
+};
+
   return (
     <nav className={`${styles.paddingX} w-full flex items-center fixed 
       md:py-6 ss:py-6 py-5 md:px-16 ss:px-16 px-6 top-0 z-20 navsmooth 
@@ -60,7 +71,9 @@ const Navbar = () => {
                     : isScrolled ? 'text-primary' : 'text-white'
                 } hover:text-secondary grow3 text-[19px] text-decoration-none 
                 cursor-pointer`}
-                onClick={() => setActive(link.title)}
+                onClick={() => {
+                  handleNavItemClick(link);
+                }}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
@@ -96,7 +109,9 @@ const Navbar = () => {
                     : isScrolled ? 'text-primary' : 'text-white'
                 } hover:text-secondary grow3 text-[19px] text-decoration-none 
                 cursor-pointer`}
-                onClick={() => setActive(link.title)}
+                onClick={() => {
+                  handleNavItemClick(link);
+                }}
               >
                 <a href={`#${link.id}`}>{link.title}</a>
               </li>
@@ -160,7 +175,7 @@ const Navbar = () => {
                   ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
                   onClick={() => {
                     setToggle(!toggle);
-                    setActive(link.title);
+                    handleNavItemClick(link);
                   }}
                 >
                   <a href={`#${link.id}`}>{link.title}</a>
