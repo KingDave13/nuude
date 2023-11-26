@@ -56,7 +56,6 @@ const MembershipApplication = () => {
 
         onSubmit: async (values) => {
             localStorage.setItem('formData', JSON.stringify(values));
-            console.log('Form data stored:', values);
             router.push("/confirmmembershipapplication");
         },
     });

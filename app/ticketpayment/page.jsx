@@ -3,12 +3,12 @@
 import SectionWrapper from "@hoc/SectionWrapper";
 import { useRouter } from "next/navigation";
 
-const MembershipPayment = () => {
+const TicketPayment = () => {
 
     const router = useRouter();
 
     const handleClick = () => {
-      router.push('/membershipapplication');
+      router.push('/ticketapplication');
   };
 
   return (
@@ -20,7 +20,7 @@ const MembershipPayment = () => {
             <h1 className='text-secondary md:text-[52px] font-manierMedium
             ss:text-[47px] text-[35px] md:text-center ss:text-center
             md:leading-[20px] ss:leading-[20px] leading-[45px]'>
-                Membership Fee Payment
+                Event Registration Fee
             </h1>
 
             <p className='md:mt-12 ss:mt-12 mt-6 md:text-[18px] ss:text-[18px]
@@ -41,13 +41,13 @@ const MembershipPayment = () => {
             <h1 className='text-white md:text-[55px] font-manierBold
             ss:text-[50px] text-[45px] ss:leading-[70px] leading-[55px] 
             md:text-center ss:text-center'>
-                ₦1,000,000
+                ₦150,000
             </h1>
 
             <p className='md:mt-1 ss:mt-1 mt-1 md:text-[16px] ss:text-[16px]
             text-[14px] text-white md:text-center ss:text-center 
             font-manierLight'>
-             for the Nuude! annual membership
+             for ticket and registration for Nuude! event 01
             </p>
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
@@ -80,4 +80,4 @@ const MembershipPayment = () => {
   );
 };
 
-export default MembershipPayment;
+export default TicketPayment;

@@ -60,14 +60,32 @@ const TicketApplication = () => {
         },
     });
 
-    useEffect(() => {
-        if (router.query && router.query.edit) {
-            const storedFormData = JSON.parse(localStorage.getItem('formData'));
-            if (storedFormData) {
-                formik.setValues(storedFormData);
-            }
-        }
-    }, [router.query]);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         console.log('Effect is running');
+        
+    //         if (!router.isReady) {
+    //             return;
+    //         }
+        
+    //         console.log('router.isReady:', router.isReady);
+    //         console.log('router.query:', router.query);
+        
+    //         if (router.query) {
+    //             console.log('Inside if condition');
+        
+    //             const storedFormData = JSON.parse(localStorage.getItem('formData'));
+    //             console.log('Stored form data:', storedFormData);
+        
+    //             if (router.query.edit && storedFormData) {
+    //                 console.log('Setting form values');
+    //                 formik.setValues(storedFormData);
+    //             }
+    //         }
+    //     };
+        
+    //     fetchData();
+    // }, [router.isReady, router.query]);
 
   return (
     <section className="md:min-h-[2450px] ss:min-h-[3200px] min-h-[4200px] 

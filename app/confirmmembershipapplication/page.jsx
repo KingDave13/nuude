@@ -28,7 +28,7 @@ const ConfirmMembership = () => {
     };
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1700px] min-h-[1950px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1750px] min-h-[2000px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>

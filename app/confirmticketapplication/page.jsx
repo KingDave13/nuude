@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
@@ -8,24 +9,26 @@ import { slideIn, textVariant } from '@utils/motion';
 
 const ConfirmTicket = () => {
     const router = useRouter();
+    const [formData, setFormData] = useState({});
 
-    let formData;
-    if (typeof window !== 'undefined') {
-        formData = JSON.parse(localStorage.getItem('formData')) || {};
-    }
+    useEffect(() => {
+        const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+        setFormData(storedFormData);
+    }, []);
 
     const handleEdit = (e) => {
         e.preventDefault();
-        console.log('I work');
+        console.log('Retrieved form data for edit:', formData);
         router.replace("/ticketapplication?edit=true");
     };
 
-    const handlePayment = () => {
-        router.push("/payment");
+    const handlePayment = (e) => {
+        e.preventDefault();
+        router.push("/ticketpayment");
     };
 
   return (
-    <section className="md:min-h-[2300px] ss:min-h-[1700px] min-h-[1950px] 
+    <section className="md:min-h-[2300px] ss:min-h-[1750px] min-h-[2000px] 
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
@@ -64,7 +67,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="firstname"
-                            value={formData.firstname}
+                            value={formData.firstname || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -81,7 +84,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="lastname"
-                            value={formData.lastname}
+                            value={formData.lastname || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -97,7 +100,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="email"
                             name="email"
-                            value={formData.email}
+                            value={formData.email || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -113,7 +116,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="phone"
-                            value={formData.phone}
+                            value={formData.phone || ''}
                             className="md:py-3 ss:py-3 py-3 px-4 
                             border-none outline-none md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] text-textalt 
@@ -130,7 +133,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="date"
                             name="birthdate"
-                            value={formData.birthdate}
+                            value={formData.birthdate || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -147,7 +150,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="gender"
-                            value={formData.gender}
+                            value={formData.gender || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
@@ -166,7 +169,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="employer"
-                            value={formData.employer}
+                            value={formData.employer || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -182,7 +185,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="occupation"
-                            value={formData.occupation}
+                            value={formData.occupation || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -198,7 +201,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="instagram"
-                            value={formData.instagram}
+                            value={formData.instagram || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -214,7 +217,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="twitter"
-                            value={formData.twitter}
+                            value={formData.twitter || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -230,7 +233,7 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="facebook"
-                            value={formData.facebook}
+                            value={formData.facebook || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -246,7 +249,7 @@ const ConfirmTicket = () => {
                             readOnly
                             rows="4"
                             name="turnons"
-                            value={formData.turnons}
+                            value={formData.turnons || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -262,7 +265,7 @@ const ConfirmTicket = () => {
                             readOnly
                             rows="4"
                             name="trait"
-                            value={formData.trait}
+                            value={formData.trait || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -278,7 +281,7 @@ const ConfirmTicket = () => {
                             readOnly
                             rows="4"
                             name="contribution"
-                            value={formData.contribution}
+                            value={formData.contribution || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] bg-primaryalt"
@@ -294,13 +297,13 @@ const ConfirmTicket = () => {
                             readOnly
                             type="text"
                             name="mode"
-                            value={formData.mode}
+                            value={formData.mode || ''}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] cursor-pointer 
                             bg-primaryalt"
                             >
-                                <option>{formData.mode}</option>
+                                <option>{formData.mode || ''}</option>
                             </select>
                         </div>
 
@@ -319,7 +322,7 @@ const ConfirmTicket = () => {
                             </button>
 
                             <button
-                            onClick={() => console.log(formData)}
+                            onClick={handlePayment}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[12px] 
                             md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5
