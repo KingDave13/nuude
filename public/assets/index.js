@@ -12,6 +12,7 @@ import facebook from './facebook.png';
 import linkedin from './linkedin.png';
 import arrow from './arrow.png';
 import menu from './menu.png';
+import warning from './warning.png';
 
 export {
     logo,
@@ -27,5 +28,6 @@ export {
     facebook,
     linkedin,
     arrow,
-    menu
+    menu,
+    warning,
 }
