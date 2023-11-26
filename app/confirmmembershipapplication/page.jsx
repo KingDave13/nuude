@@ -18,9 +18,8 @@ const ConfirmMembership = () => {
 
     const handleEdit = (e) => {
         e.preventDefault();
-        // const storedFormData = JSON.parse(localStorage.getItem('formData'));
         console.log('Retrieved form data for edit:', formData);
-        // router.replace("/membershipapplication?edit=true");
+        router.replace("/membershipapplication?edit=true");
     };
 
     const handlePayment = (e) => {
