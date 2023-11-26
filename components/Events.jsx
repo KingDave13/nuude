@@ -7,6 +7,7 @@ import { slideIn, textVariant } from '@utils/motion';
 import { event } from "@public/assets";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
+import { warning } from '@public/assets';
 
 import scrollToSection from '@constants/scrollToSection';
 
@@ -50,46 +51,55 @@ const Modal = ({ onClose }) => {
       <div className="fixed inset-0 flex items-center justify-center
        bg-black bg-opacity-80 z-50">
         <div ref={modalRef} 
-        className="bg-primary md:p-12 ss:p-10 p-5 rounded-md shadow-xl 
-        flex flex-col justify-center w-auto h-auto font-manierRegular">
-            <div className='flex flex-row w-full justify-between md:gap-10
-            ss:gap-10 gap-4 items-center'>
-                <h1 className='text-white md:text-[18px] ss:text-[16px]
-                text-[14px]'>
-                    Apply for event through one-time ticket
-                </h1>
-                <button
-                onClick={handleEventClick}
-                className='grow4 bg-secondary border-none
-                md:text-[16px] ss:text-[15px] text-[13px] md:py-2
-                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-primary 
-                md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
-                font-medium font-manier cursor-pointer'
-                >
-                    Here
-                </button>
-            </div>
+        className="bg-primaryalt md:p-14 ss:p-10 p-5 rounded-md shadow-xl 
+        flex flex-col justify-center w-auto h-auto font-manierRegular
+        items-center">
+            <Image 
+                src={warning}
+                alt='warning'
+                height={70}
+                width={70}
+                className='object-contain md:mb-6'
+            />
 
-            <div className="flex relative items-center justify-center
-            md:mt-5 ss:mt-5 mt-3">
-                <div className='bg-secondary w-full h-[1px]' />
-            </div>
-
-            <div className='flex flex-row w-full justify-between md:gap-10 
-            ss:gap-10 gap-4 md:mt-5 ss:mt-5 mt-3 items-center'>
-                <h1 className='text-white md:text-[18px] ss:text-[16px]
-                text-[14px]'>
-                    Apply for event through membership
+            <div className='flex flex-col w-full justify-center 
+            items-center'>
+                <h1 className='text-white md:text-[42px] ss:text-[30px]
+                text-[25px] text-center font-manierMedium md:leading-[55px]
+                ss:leading-[40px] leading-[30px] md:mb-6 ss:mb-6 mb-6'>
+                    How do you want to attend <br></br>this event?
                 </h1>
+
+                <p className='text-white md:text-[17px] ss:text-[15px]
+                text-[14px] text-center md:max-w-[520px] md:leading-[23px]
+                ss:leading-[40px] leading-[30px] md:mb-8 ss:mb-6 mb-6'>
+                    There are two ways you can attend the following Nuude!
+                    event. As a registered Nuude! member, you are entitled
+                    to various benefits and full access to all our events
+                    across the year!
+                </p>
+
                 <button
                 onClick={handleClick}
-                className='grow4 bg-secondary border-none
-                md:text-[16px] ss:text-[15px] text-[13px] md:py-2
+                className='grow4 bg-secondary border-none w-full
+                md:text-[16px] ss:text-[15px] text-[13px] md:py-4
                 ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-primary 
                 md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
-                font-medium font-manier cursor-pointer'
+                font-manierMedium cursor-pointer md:mb-3 ss:mb-6 
+                mb-6'
                 >
-                    Here
+                    Apply for Nuude! Annual Membership
+                </button>
+
+                <button
+                onClick={handleEventClick}
+                className='grow4 border-[1px] border-secondary w-full
+                md:text-[16px] ss:text-[15px] text-[13px] md:py-4
+                ss:py-2 py-2 md:px-8 ss:px-7 px-5 text-secondary 
+                md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
+                font-manierMedium cursor-pointer'
+                >
+                    Purchase One-Time Event Ticket
                 </button>
             </div>
         </div>
