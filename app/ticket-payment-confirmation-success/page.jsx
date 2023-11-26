@@ -3,7 +3,7 @@
 import SectionWrapper from "@hoc/SectionWrapper";
 import { useRouter } from "next/navigation";
 
-const MembershipPaymentSuccess = () => {
+const TicketPaymentSuccess = () => {
 
     const router = useRouter();
 
@@ -34,7 +34,7 @@ const MembershipPaymentSuccess = () => {
              Your payment has been received successfully and thus, validated
              your application. A payment receipt will be sent to you via the
              provided email as well as other communications including your
-             membership number, concise details of events, marketing
+             ticket number, concise details of the event, marketing
              info, etc. upon approval.
             </p>
 
@@ -43,7 +43,7 @@ const MembershipPaymentSuccess = () => {
             md:leading-[25px] ss:leading-[25px] leading-[22px] 
             md:max-w-[700px] ss:max-w-[700px] max-w-[350px]'>
              Be sure to check your email regularly- including spam- for
-             information from us regarding your membership.
+             information from us regarding your registration for the event.
             </p>
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
@@ -76,4 +76,4 @@ const MembershipPaymentSuccess = () => {
   );
 };
 
-export default MembershipPaymentSuccess;
+export default TicketPaymentSuccess;

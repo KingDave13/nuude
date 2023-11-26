@@ -134,6 +134,13 @@ textarea:focus {
   height: 80vh;
 }
 
+.hero2 {
+  background-image: url('/assets/heroImg.png');
+  object-fit: cover;
+  width: auto;
+  height: 70vh;
+}
+
 .about {
   background-color: #1A1A1A;
 }
