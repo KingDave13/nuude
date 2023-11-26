@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const handleNavItemClick = (link) => {
   if (router.pathname !== '/') {
-    router.push(`//#${link.id}`)
+    router.push(`/#${link.id}`)
   } else {
     setActive(link.title);
   }
