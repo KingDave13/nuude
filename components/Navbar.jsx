@@ -47,7 +47,7 @@ const Navbar = () => {
 
 const handleNavItemClick = (link) => {
   if (router.pathname !== '/') {
-    router.push(`/#${link.id}`)
+    router.push(`//#${link.id}`)
   } else {
     setActive(link.title);
   }
@@ -125,7 +125,10 @@ const handleNavItemClick = (link) => {
         mt-3">
           <Link href="/" 
             onClick={() => { setActive(''); 
-            window.scrollTo(0, 0); }}
+            window.scrollTo({ 
+              top: 0, left: 0, 
+              behavior: 'smooth' }); 
+          }}
           >
             <Image
               src={isScrolled ? logo : logoalt}
