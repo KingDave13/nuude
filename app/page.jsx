@@ -16,7 +16,7 @@ const Home = () => {
           max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20' 
           >
             <h1 className='text-white md:text-[80px] font-manierBold
-            ss:text-[70px] text-[52px] md:leading-[90px]
+            ss:text-[70px] text-[52px] md:leading-[90px] fade-in-from-bottom
             ss:leading-[70px] leading-[55px] md:text-center ss:text-center'>
                 The world's <span className="text-mainRed">
                 most exclusive </span> <br></br>
