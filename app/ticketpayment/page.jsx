@@ -1,14 +1,61 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
+import { PaystackButton } from "react-paystack";
 
 const TicketPayment = () => {
-
     const router = useRouter();
+    const [formData, setFormData] = useState({});
+
+    useEffect(() => {
+        const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+        setFormData(storedFormData);
+    }, []);
+
+    const config = {
+      reference: new Date().getTime().toString(),
+      email: formData.email || 'user@example.com',
+      amount: 150000 * 100,
+      publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+    };
+    
+    const onSuccess = async (response) => {
+      try {
+        // Send payment data to your server
+        const apiResponse = await fetch('/api/payments/initiate', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            reference: response.reference,
+            email: formData.email,
+            amount: 150000 * 100, // Amount in kobo
+          }),
+        });
+  
+        if (apiResponse.ok) {
+          // Handle successful payment on the client side
+          console.log('Payment initiation successful');
+          router.push(`/ticket-payment-confirmation-success/${response.reference}`);
+        } else {
+          console.error('Payment initiation failed:', apiResponse.statusText);
+          router.push('/ticket-payment-unsuccessful');
+        }
+      } catch (error) {
+        console.error('Payment initiation error:', error.message);
+        router.push('/ticket-payment-unsuccessful');
+      }
+    };
+  
+    const onClose = () => {
+      router.push('/ticket-payment-unsuccessful');
+    };
 
     const handleClick = () => {
       router.push('/ticketapplication');
-  };
+    };
 
   return (
     <section className="relative w-full">
@@ -52,16 +99,17 @@ const TicketPayment = () => {
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
             gap-3 items-center font-manierRegular buttonfull'>
-              <button
+              <PaystackButton
                 className='grow4 bg-secondary border-none buttonhalf
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4
                 ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 cursor-pointer'
-                // onClick={() => scrollToSection('membership')}
-              >
-                Pay Now
-              </button>
+                text="Pay Now"
+                {...config}
+                onSuccess={onSuccess}
+                onClose={onClose}
+              />
 
               <button
                 className='border-[1px] grow2 border-secondary 
