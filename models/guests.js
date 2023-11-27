@@ -1,6 +1,6 @@
 import mongoose, { Schema, model, models } from 'mongoose';
 
-const RequestSchema = new Schema(
+const GuestSchema = new Schema(
     {
         userId: {
             type: mongoose.Schema.Types.ObjectId,
@@ -15,18 +15,10 @@ const RequestSchema = new Schema(
             type: String,
             required: true,
         },
-        status: {
-            type: String,
-            enum: ['Pending', 'Successful'],
-            default: 'Pending',
-        },
         paymentType: {
             type: String,
             enum: ['Annual Membership', 'Guest Ticket'],
             required: true,
-        },
-        paymentReference: {
-            type: String,
         },
         email: {
             type: String,
@@ -37,6 +29,6 @@ const RequestSchema = new Schema(
     { timestamps: true }
 );
 
-const Request = models.Request || model("Request", RequestSchema);
+const Guest = models.Guest || model("Guest", GuestSchema);
 
-export default Request;
+export default Guest;
