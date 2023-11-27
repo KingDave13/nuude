@@ -1,6 +1,6 @@
 'use client';
 
-import SectionWrapper from '@hoc/SectionWrapper';
+import SectionWrapperAlt from '@hoc/SectionWrapperAlt';
 import { motion } from 'framer-motion';
 import { textVariant, fadeIn } from '@utils/motion';
 import { BiCopyright } from 'react-icons/bi';
@@ -109,4 +109,4 @@ const Footer = () => {
   )
 };
 
-export default Footer;
+export default SectionWrapperAlt(Footer, '');
