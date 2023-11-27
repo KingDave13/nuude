@@ -1,6 +1,5 @@
 'use client';
 
-import SectionWrapper from "@hoc/SectionWrapper";
 import { useRouter } from "next/navigation";
 
 const TicketPayment = () => {
