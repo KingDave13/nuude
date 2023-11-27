@@ -9,7 +9,11 @@ const MembershipPayment = () => {
 
     const handleClick = () => {
       router.push('/membershipapplication');
-  };
+    };
+
+    const handlePayment = () => {
+
+    };
 
   return (
     <section className="relative w-full">
@@ -58,7 +62,7 @@ const MembershipPayment = () => {
                 ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 cursor-pointer'
-                // onClick={() => scrollToSection('membership')}
+                onClick={handlePayment}
               >
                 Pay Now
               </button>
