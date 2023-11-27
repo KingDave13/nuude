@@ -286,6 +286,21 @@ textarea:focus {
   animation: fadeInFromBottom 1s ease-out; /* Adjust the animation duration and timing function as needed */
 }
 
+@keyframes fadeInFromBottom2 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px); /* Adjust the distance as needed */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-from-bottom2 {
+  animation: fadeInFromBottom2 1s ease-out; /* Adjust the animation duration and timing function as needed */
+}
+
 .hash-span {
   display: flex;
 }

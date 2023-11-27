@@ -9,6 +9,7 @@ import Contact from "@components/Contact";
 import scrollToSection from "@constants/scrollToSection";
 
 const Home = () => {
+
   return (
     <section className="relative w-full">
       <div className="flex hero sm:px-16 px-6">
@@ -25,15 +26,17 @@ const Home = () => {
 
             <p className='md:mt-6 ss:mt-5 mt-6 md:text-[18px] ss:text-[18px]
             text-[16px] text-white md:text-center ss:text-center 
-            md:leading-[25px] ss:leading-[25px] leading-[20px] 
-            md:font-manierRegular ss:font-manierRegular font-manierLight'>
+            md:leading-[25px] ss:leading-[25px] leading-[20px] fade-in-from-bottom
+            md:font-manierRegular ss:font-manierRegular font-manierLight'
+            style={{ opacity: 0, animationDelay: '0.5s', animationFillMode: 'forwards' }}>
               We are a society of like-minded libertines with the highest 
               standards of <br className="ss:flex hidden"></br>taste and style. We embrace unrestrained 
               indulgence with <br className="ss:flex hidden"></br>one golden rule - consent.
             </p>
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
-            gap-3 items-center font-manierRegular buttonfull'>
+            gap-3 items-center font-manierRegular buttonfull fade-in-from-bottom2'
+            style={{ opacity: 0, animationDelay: '1s', animationFillMode: 'forwards' }}>
               <button
                 className='grow4 bg-secondary border-none buttonhalf
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4
