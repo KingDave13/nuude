@@ -274,22 +274,21 @@ textarea:focus {
 @keyframes fadeInFromBottom {
   0% {
     opacity: 0;
-    transform: translateY(50px); /* Adjust the distance as needed */
+    transform: translateY(50px);
   }
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
-
 .fade-in-from-bottom {
-  animation: fadeInFromBottom 1s ease-out; /* Adjust the animation duration and timing function as needed */
+  animation: fadeInFromBottom 1s ease-out;
 }
 
 @keyframes fadeInFromBottom2 {
   0% {
     opacity: 0;
-    transform: translateY(-20px); /* Adjust the distance as needed */
+    transform: translateY(-20px); 
   }
   100% {
     opacity: 1;
@@ -298,7 +297,7 @@ textarea:focus {
 }
 
 .fade-in-from-bottom2 {
-  animation: fadeInFromBottom2 1s ease-out; /* Adjust the animation duration and timing function as needed */
+  animation: fadeInFromBottom2 1s ease-out;
 }
 
 .hash-span {
