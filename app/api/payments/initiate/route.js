@@ -19,15 +19,12 @@ export default async function handler(req, res) {
         return res.status(400).json({ error: 'Invalid payment data' });
       }
 
-      // Perform additional validation and processing here
-      // For simplicity, let's assume the payment is successful
-
       const paymentData = {
         reference,
         status: 'success',
       };
 
-      // Send a response to the client
+      // Send response to client
       res.status(200).json(paymentData);
     } catch (error) {
       console.error('Payment initiation failed:', error.message);
