@@ -22,7 +22,7 @@ const TicketPayment = () => {
     
     const onSuccess = async (response) => {
       try {
-        // Send payment data to your server
+        // Send payment data to server
         const apiResponse = await fetch('/api/payments/initiate', {
           method: 'POST',
           headers: {
@@ -36,7 +36,7 @@ const TicketPayment = () => {
         });
   
         if (apiResponse.ok) {
-          // Handle successful payment on the client side
+          // Handle successful payment on client side
           console.log('Payment initiation successful');
           router.push(`/ticket-payment-confirmation-success/${response.reference}`);
         } else {
