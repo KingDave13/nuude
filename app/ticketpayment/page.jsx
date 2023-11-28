@@ -23,7 +23,7 @@ const TicketPayment = () => {
     const onSuccess = async (response) => {
       try {
         // Send payment data to server
-        const apiResponse = await fetch('/api/payments/initiate', {
+        const apiResponse = await fetch('api/payments/initiate', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
