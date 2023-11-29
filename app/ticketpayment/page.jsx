@@ -23,7 +23,7 @@ const TicketPayment = () => {
     const onSuccess = (reference) => {
       console.log('Payment successful:', reference);
 
-      router.push(`/ticket-payment-confirmation-success/${reference}`);
+      router.push(`/ticket-payment-confirmation-success/${reference.reference}`);
    };
 
     const onClose = () => {
