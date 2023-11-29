@@ -14,7 +14,7 @@ async function handlePost(req, res) {
 
   try {
     // Make a request to Paystack's verify endpoint
-    const response = await axios.post(`https://api.paystack.co/transaction/verify/${reference}`, {
+    const response = await axios.post(`https://api.paystack.co/transaction/verify/${reference}`, null, {
       headers: {
         Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`,
       },
@@ -30,13 +30,13 @@ async function handlePost(req, res) {
       // Example: await saveUserData(data.data.customer);
 
       // Respond with success to the client
-      res.status(200).json({ success: true });
+      res.json({ success: true });
     } else {
       // Respond with failure to the client
-      res.status(200).json({ success: false });
+      res.json({ success: false });
     }
   } catch (error) {
     console.error('Error during Paystack verification:', error);
-    res.status(500).json({ success: false, error: 'Internal Server Error' });
+    res.json({ success: false, error: 'Internal Server Error' });
   }
 }
