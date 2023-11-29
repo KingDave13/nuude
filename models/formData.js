@@ -4,8 +4,6 @@ const FormDataSchema = new Schema(
     {
         userId: {
             type: mongoose.Schema.Types.ObjectId,
-            required: true,
-            unique: true,
         },
         firstName: {
             type: String,

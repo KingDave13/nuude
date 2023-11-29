@@ -20,7 +20,41 @@ const TicketPayment = () => {
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
     };
     
-    const onSuccess = () => {
+    const onSuccess = async () => {
+      try {
+        const response = await fetch('/api/database/formdata', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            firstName: formData.firstname,
+            lastName: formData.lastname,
+            email: formData.email,
+            phone: formData.phone,
+            birthdate: formData.birthdate,
+            gender: formData.gender,
+            employer: formData.employer,
+            occupation: formData.occupation,
+            instagram: formData.instagram,
+            twitter: formData.twitter,
+            facebook: formData.facebook,
+            turnons: formData.turnons,
+            trait: formData.trait,
+            contribution: formData.contribution,
+            mode: formData.mode,
+          }),
+        });
+    
+        if (response.ok) {
+          console.log('Form data written successfully')
+          
+        } else {
+          console.error('Failed to write form data to the database');
+        }
+      } catch (error) {
+        console.error('Error during API call:', error);
+      }
       router.push('/ticket-payment-confirmation-success');
     };
     
