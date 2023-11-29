@@ -20,35 +20,12 @@ const TicketPayment = () => {
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
     };
     
-    const onSuccess = async (response) => {
-      try {
-        // Send payment data to server
-        const apiResponse = await fetch('api/payments/initiate', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            reference: response.reference,
-            email: formData.email,
-            amount: 150000 * 100, // Amount in kobo
-          }),
-        });
-  
-        if (apiResponse.ok) {
-          // Handle successful payment on client side
-          console.log('Payment initiation successful');
-          router.push(`/ticket-payment-confirmation-success/${response.reference}`);
-        } else {
-          console.error('Payment initiation failed:', apiResponse.statusText);
-          router.push('/ticket-payment-unsuccessful');
-        }
-      } catch (error) {
-        console.error('Payment initiation error:', error.message);
-        router.push('/ticket-payment-unsuccessful');
-      }
-    };
-  
+    const onSuccess = (reference) => {
+      console.log('Payment successful:', reference);
+
+      router.push(`/ticket-payment-confirmation-success/${reference}`);
+   };
+
     const onClose = () => {
       router.push('/ticket-payment-unsuccessful');
     };
