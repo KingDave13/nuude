@@ -1,36 +1,42 @@
-import Cors from 'cors';
-import initMiddleware from '@lib/init-middleware';
+import axios from 'axios';
 
-const cors = initMiddleware(
-  Cors({
-    methods: ['POST'],
-    origin: 'http://localhost:3000',
-  })
-);
-
-export default async function handler(req, res) {
-  await cors(req, res);
-
+export async function POST(req, res) {
+  console.log('Request Method:', req.method);
   if (req.method === 'POST') {
-    try {
-      // Validate the payment data
-      const { reference, email, amount } = req.body;
-      if (!reference || !email || !amount) {
-        return res.status(400).json({ error: 'Invalid payment data' });
-      }
-
-      const paymentData = {
-        reference,
-        status: 'success',
-      };
-
-      // Send response to client
-      res.status(200).json(paymentData);
-    } catch (error) {
-      console.error('Payment initiation failed:', error.message);
-      res.status(500).json({ error: 'Payment initiation failed' });
-    }
+    await handlePost(req, res);
   } else {
-    res.status(405).json({ error: 'Method Not Allowed' });
+    res.status(405).end(); // Method Not Allowed
+  }
+}
+
+async function handlePost(req, res) {
+  const { reference } = req.body;
+
+  try {
+    // Make a request to Paystack's verify endpoint
+    const response = await axios.post(`https://api.paystack.co/transaction/verify/${reference}`, {
+      headers: {
+        Authorization: `Bearer ${process.env.PAYSTACK_SECRET_KEY}`,
+      },
+    });
+
+    const data = response.data;
+
+    console.log('Paystack Response:', data);
+    // Check if payment was successful
+    if (data.data.status === 'success') {
+      // Save user information to the database
+      // (You need to implement this based on your database setup)
+      // Example: await saveUserData(data.data.customer);
+
+      // Respond with success to the client
+      res.status(200).json({ success: true });
+    } else {
+      // Respond with failure to the client
+      res.status(200).json({ success: false });
+    }
+  } catch (error) {
+    console.error('Error during Paystack verification:', error);
+    res.status(500).json({ success: false, error: 'Internal Server Error' });
   }
 }

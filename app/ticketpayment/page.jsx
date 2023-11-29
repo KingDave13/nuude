@@ -20,12 +20,34 @@ const TicketPayment = () => {
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
     };
     
-    const onSuccess = (reference) => {
-      console.log('Payment successful:', reference);
-
-      router.push(`/ticket-payment-confirmation-success/${reference.reference}`);
-   };
-
+    const onSuccess = () => {
+      // Make a request to your server to handle payment verification
+      fetch('/api/payments/confirmation', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ reference: config.reference }),
+      })
+        .then((response) => {
+          if (!response.ok) {
+            throw new Error('Network response was not ok');
+          }
+          return response.json();
+        })
+        .then((data) => {
+          if (data && data.success) {
+            router.push('/ticket-payment-confirmation-success');
+          } else {
+            router.push('/ticket-payment-unsuccessful');
+          }
+        })
+        .catch((error) => {
+          console.error('Payment verification failed:', error);
+          router.push('/ticket-payment-unsuccessful');
+        });
+    };
+    
     const onClose = () => {
       router.push('/ticket-payment-unsuccessful');
     };
