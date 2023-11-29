@@ -20,9 +20,9 @@ const TicketPayment = () => {
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
     };
     
-    const onSuccess = async () => {
+    const writeFormDataToDatabase = async () => {
       try {
-        const response = await fetch('/api/database/formdata', {
+        const response = await fetch('api/database/formdata', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
@@ -48,13 +48,18 @@ const TicketPayment = () => {
     
         if (response.ok) {
           console.log('Form data written successfully')
-          
+          localStorage.removeItem('formData');
+
         } else {
           console.error('Failed to write form data to the database');
         }
       } catch (error) {
         console.error('Error during API call:', error);
       }
+    };
+
+    const onSuccess = () => {
+      writeFormDataToDatabase();
       router.push('/ticket-payment-confirmation-success');
     };
     
