@@ -1,5 +1,3 @@
-// C:\Users\KING DAVE- UZUMAKI\Desktop\nuude\app\api\payments\confirmmembership\route.js
-
 import https from 'https';
 
 export default async function handler(req, res) {
