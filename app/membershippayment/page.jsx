@@ -1,19 +1,48 @@
 'use client';
 
-import SectionWrapper from "@hoc/SectionWrapper";
 import { useRouter } from "next/navigation";
+import { useEffect, useState } from 'react';
+import axios from "axios";
 
 const MembershipPayment = () => {
 
-    const router = useRouter();
+  const router = useRouter();
+  const [formData, setFormData] = useState({});
 
-    const handleClick = () => {
-      router.push('/membershipapplication');
-    };
+  useEffect(() => {
+      const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+      setFormData(storedFormData);
+  }, []);
 
-    const handlePayment = () => {
+  const handleClick = () => {
+    router.push('/membershipapplication');
+  };
 
-    };
+  const handlePayment = async () => {
+    try {
+      const response = await axios.post('api/payments/confirmmembership', {
+        reference: new Date().getTime().toString(),
+        email: formData.email || 'customer@email.com',
+        amount: 1000000 * 100,
+        paymentType: 'Membership',
+      });
+
+      if (response.ok) {
+        const responseData = await response.json();
+
+        if (responseData.status && responseData.data && responseData.data.authorization_url) {
+          // Redirect the user to the Paystack authorization URL
+          window.location.href = responseData.data.authorization_url;
+        } else {
+          console.error('Error: Unable to retrieve Paystack authorization URL');
+        }
+      } else {
+        console.error('Error: Paystack initialization failed');
+      }
+    } catch (error) {
+      console.error('Error during Paystack API call:', error);
+    }
+  };
 
   return (
     <section className="relative w-full">
