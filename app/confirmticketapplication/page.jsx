@@ -19,12 +19,20 @@ const ConfirmTicket = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('Retrieved form data for edit:', formData);
-        router.replace("/ticketapplication?edit=true");
+        if (Object.keys(formData).length > 0) {
+            router.replace("/ticketapplication?edit=true");
+        } else {
+            console.log('Cannot edit. Form data is empty.');
+        }
     };
 
     const handlePayment = (e) => {
         e.preventDefault();
-        router.push("/ticketpayment");
+        if (Object.keys(formData).length > 0) {
+            router.push("/ticketpayment");
+        } else {
+            console.log('Cannot proceed with payment. Form data is empty.');
+        }
     };
 
   return (
@@ -323,6 +331,7 @@ const ConfirmTicket = () => {
 
                             <button
                             onClick={handlePayment}
+                            disabled={Object.keys(formData).length === 0}
                             className="bg-secondary grow2 w-fit shadow-md 
                             md:text-[17px] ss:text-[14px] text-[12px] 
                             md:py-4 ss:py-4 py-3 md:px-12 ss:px-10 px-5

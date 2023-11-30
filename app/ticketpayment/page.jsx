@@ -7,10 +7,12 @@ import { PaystackButton } from "react-paystack";
 const TicketPayment = () => {
     const router = useRouter();
     const [formData, setFormData] = useState({});
+    const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
     useEffect(() => {
         const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
         setFormData(storedFormData);
+        setIsButtonDisabled(Object.keys(storedFormData).length === 0);
     }, []);
 
     const config = {
@@ -67,6 +69,7 @@ const TicketPayment = () => {
     };
     
     const onClose = () => {
+      localStorage.removeItem('formData');
       router.push('/ticket-payment-unsuccessful');
     };
 
@@ -126,6 +129,7 @@ const TicketPayment = () => {
                 {...config}
                 onSuccess={onSuccess}
                 onClose={onClose}
+                disabled={isButtonDisabled}
               />
 
               <button

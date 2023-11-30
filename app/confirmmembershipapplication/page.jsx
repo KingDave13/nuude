@@ -19,12 +19,20 @@ const ConfirmMembership = () => {
     const handleEdit = (e) => {
         e.preventDefault();
         console.log('Retrieved form data for edit:', formData);
-        router.replace("/membershipapplication?edit=true");
+        if (Object.keys(formData).length > 0) {
+            router.replace("/membershipapplication?edit=true");
+        } else {
+            console.log('Cannot edit. Form data is empty.');
+        }
     };
 
     const handlePayment = (e) => {
         e.preventDefault();
-        router.push("/membershippayment");
+        if (Object.keys(formData).length > 0) {
+            router.push("/membershippayment");
+        } else {
+            console.log('Cannot proceed with payment. Form data is empty.');
+        }
     };
 
   return (
