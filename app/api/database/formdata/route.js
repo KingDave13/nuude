@@ -19,6 +19,8 @@ export const POST = async (req) => {
         trait,
         contribution,
         mode,
+        paymentType,
+        reference,
     } = await req.json();
 
     try {
@@ -41,6 +43,8 @@ export const POST = async (req) => {
             trait,
             contribution,
             mode,
+            paymentType,
+            reference,
         });
 
         await newFormData.save();

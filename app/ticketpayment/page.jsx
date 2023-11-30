@@ -18,6 +18,7 @@ const TicketPayment = () => {
       email: formData.email || 'user@example.com',
       amount: 150000 * 100,
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+      paymentType: 'Guest Ticket',
     };
     
     const writeFormDataToDatabase = async () => {
@@ -43,6 +44,8 @@ const TicketPayment = () => {
             trait: formData.trait,
             contribution: formData.contribution,
             mode: formData.mode,
+            paymentType: config.paymentType,
+            reference: config.reference,
           }),
         });
     

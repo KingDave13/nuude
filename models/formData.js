@@ -65,6 +65,15 @@ const FormDataSchema = new Schema(
             type: String,
             required: true,
         },
+        paymentType: {
+            type: String,
+            enum: ['Guest Ticket', 'Membership'],
+            required: true,
+        },
+        reference: {
+            type: String,
+            required: true,
+        },
     },
 
     { timestamps: true }
