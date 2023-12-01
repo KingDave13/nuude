@@ -1,35 +1,105 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { useRouter } from "next/navigation";
 import { PaystackButton } from "react-paystack";
 
+const Modal = ({ onClose }) => {
+
+  const router = useRouter();
+  const modalRef = useRef(null);
+
+  const enableScroll = () => {
+    document.body.style.overflow = 'auto';
+    document.body.style.top = '0';
+  };
+
+  const handleClick = () => {
+      router.push('/ticketapplication');
+      onClose();
+      enableScroll();
+  };
+
+  return (
+      <AnimatePresence>
+          <motion.div 
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          className="fixed inset-0 flex items-center justify-center
+          bg-black bg-opacity-80 z-50">
+              <motion.div 
+              initial={{ y: 0, opacity: 0.7 }}
+              animate={{ y: 0, opacity: 1 }}
+              exit={{ y: 10, opacity: 0 }}
+              transition={{ duration: 0.1 }}
+              ref={modalRef} 
+              className="bg-primaryalt md:p-14 ss:p-10 p-6 rounded-md shadow-xl 
+              flex flex-col justify-center w-auto h-auto font-manierRegular
+              items-center">
+                  <div className='flex flex-col w-full justify-center 
+                  items-center'>
+                      <h1 className='text-white md:text-[42px] ss:text-[35px]
+                      text-[25px] text-center font-manierMedium md:leading-[55px]
+                      ss:leading-[47px] leading-[33px] md:mb-6 ss:mb-6 mb-5'>
+                          Please Fill Out the One-Time Ticket Application 
+                          Form First
+                      </h1>
+
+                      <button
+                      onClick={handleClick}
+                      className='grow4 bg-secondary border-none w-full
+                      md:text-[16px] ss:text-[15px] text-[13px] md:py-4
+                      ss:py-4 py-3 md:px-8 ss:px-7 px-5 text-primary 
+                      md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
+                      font-manierMedium cursor-pointer md:mb-3 ss:mb-3 
+                      mb-2'
+                      >
+                          OK
+                      </button>
+                  </div>
+              </motion.div>
+          </motion.div>
+      </AnimatePresence>
+  );
+};
+
 const TicketPayment = () => {
+
     const router = useRouter();
     const [formData, setFormData] = useState({});
+    const [modalOpen, setModalOpen] = useState(false);
+    const [scrollPosition, setScrollPosition] = useState(0);
+
+    const disableScroll = () => {
+      setScrollPosition(window.pageYOffset);
+      document.body.style.overflow = 'hidden';
+      document.body.style.top = `-${scrollPosition}px`;
+    };
 
     useEffect(() => {
-        const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
-        setFormData(storedFormData);
+      const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+      setFormData(storedFormData);
 
-        const checkSession = async () => {
-          try {
-            const response = await fetch('/api/check-session', {
-              method: 'POST',
-              body: JSON.stringify(storedFormData),
-            });
-            
-            if (!response.ok) {
-              console.log('Invalid session. Redirecting...');
-              alert('Please fill the ticket application form first');
-              router.push("/ticketapplication");
-            }
-          } catch (error) {
-            console.error('Error during API call:', error);
+      const checkSession = async () => {
+        try {
+          const response = await fetch('/api/check-session', {
+            method: 'POST',
+            body: JSON.stringify(storedFormData),
+          });
+          
+          if (!response.ok) {
+            console.log('Invalid session. Redirecting...');
+            alert('Please fill the ticket application form first');
+            router.push("/ticketapplication");
           }
-        };
-    
-        checkSession();
+        } catch (error) {
+          console.error('Error during API call:', error);
+        }
+      };
+  
+      checkSession();
     }, []);
 
     const isFormDataEmpty = Object.keys(formData).length === 0;
@@ -99,6 +169,9 @@ const TicketPayment = () => {
   return (
     <section className="relative w-full">
       <div className="flex hero1 sm:px-16 px-6">
+        {modalOpen && (
+            <Modal onClose={() => setModalOpen(false)} />
+        )}
         <div className='md:items-center ss:items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20 font-manierRegular
           fade-in-from-bottom' 
@@ -146,10 +219,9 @@ const TicketPayment = () => {
                   md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                   cursor-pointer'
                   onClick={() => {
-                    router.push("/ticketapplication");
-                    alert('Please Fill Out the One-Time Ticket Application Form First');
-                    }
-                  }
+                    setModalOpen(true);
+                    disableScroll();
+                  }}
                 >
                   Pay Now
                 </button>
