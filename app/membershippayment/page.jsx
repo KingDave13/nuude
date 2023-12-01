@@ -1,52 +1,175 @@
 'use client';
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from 'react';
-import axios from "axios";
+import { useEffect, useState, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { PaystackButton } from "react-paystack";
+
+const Modal = ({ onClose }) => {
+
+  const router = useRouter();
+  const modalRef = useRef(null);
+
+  const enableScroll = () => {
+    document.body.style.overflow = 'auto';
+    document.body.style.top = '0';
+  };
+
+  const handleClick = () => {
+      router.push('/membershipapplication');
+      onClose();
+      enableScroll();
+  };
+
+  return (
+      <AnimatePresence>
+        <motion.div 
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        className="fixed inset-0 flex items-center justify-center
+        bg-black bg-opacity-80 z-50">
+            <motion.div 
+            initial={{ y: 0, opacity: 0.7 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ y: 10, opacity: 0 }}
+            transition={{ duration: 0.1 }}
+            ref={modalRef} 
+            className="bg-primaryalt md:p-10 ss:p-10 p-6 rounded-md shadow-xl 
+            flex flex-col justify-center w-auto h-auto font-manierRegular
+            items-center">
+                <div className='flex flex-col w-full justify-center 
+                items-center'>
+                    <h1 className='text-white md:text-[20px] ss:text-[20px]
+                    text-[17px] text-center md:mb-6 ss:mb-6 mb-5'>
+                        Please fill out the membership <br></br>
+                        application form first
+                    </h1>
+
+                    <button
+                    onClick={handleClick}
+                    className='grow4 bg-secondary border-none w-full
+                    md:text-[16px] ss:text-[15px] text-[13px] md:py-4
+                    ss:py-4 py-3 md:px-20 ss:px-7 px-5 text-primary 
+                    md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
+                    font-manierMedium cursor-pointer'
+                    >
+                        OK
+                    </button>
+                </div>
+            </motion.div>
+        </motion.div>
+    </AnimatePresence>
+  );
+};
 
 const MembershipPayment = () => {
 
   const router = useRouter();
   const [formData, setFormData] = useState({});
+  const [modalOpen, setModalOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
-  useEffect(() => {
-      const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
-      setFormData(storedFormData);
-  }, []);
-
-  const handleClick = () => {
-    router.push('/membershipapplication');
+  const disableScroll = () => {
+    setScrollPosition(window.pageYOffset);
+    document.body.style.overflow = 'hidden';
+    document.body.style.top = `-${scrollPosition}px`;
   };
 
-  const handlePayment = async () => {
-    try {
-      const response = await axios.post('api/payments/confirmmembership', {
-        reference: new Date().getTime().toString(),
-        email: formData.email || 'customer@email.com',
-        amount: 1000000 * 100,
-        paymentType: 'Membership',
-      });
+  useEffect(() => {
+    const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
+    setFormData(storedFormData);
 
-      if (response.ok) {
-        const responseData = await response.json();
-
-        if (responseData.status && responseData.data && responseData.data.authorization_url) {
-          // Redirect the user to the Paystack authorization URL
-          window.location.href = responseData.data.authorization_url;
-        } else {
-          console.error('Error: Unable to retrieve Paystack authorization URL');
+    const checkSession = async () => {
+      try {
+        const response = await fetch('/api/check-session', {
+          method: 'POST',
+          body: JSON.stringify(storedFormData),
+        });
+        
+        if (!response.ok) {
+          console.log('Invalid session. Redirecting...');
+          setModalOpen(true);
+          router.push("/membershipapplication");
         }
+      } catch (error) {
+        console.error('Error during API call:', error);
+      }
+    };
+
+    checkSession();
+  }, []);
+
+  const isFormDataEmpty = Object.keys(formData).length === 0;
+
+  const config = {
+    reference: new Date().getTime().toString(),
+    email: formData.email || 'user@example.com',
+    amount: 1000000 * 100,
+    publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
+    paymentType: 'Membership',
+  };
+  
+  const writeFormDataToDatabase = async () => {
+    try {
+      const response = await fetch('api/database/formdata', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          firstName: formData.firstname,
+          lastName: formData.lastname,
+          email: formData.email,
+          phone: formData.phone,
+          birthdate: formData.birthdate,
+          gender: formData.gender,
+          employer: formData.employer,
+          occupation: formData.occupation,
+          instagram: formData.instagram,
+          twitter: formData.twitter,
+          facebook: formData.facebook,
+          turnons: formData.turnons,
+          trait: formData.trait,
+          contribution: formData.contribution,
+          mode: formData.mode,
+          paymentType: config.paymentType,
+          reference: config.reference,
+        }),
+      });
+  
+      if (response.ok) {
+        console.log('Form data written successfully')
+        localStorage.removeItem('formData');
+
       } else {
-        console.error('Error: Paystack initialization failed');
+        console.error('Failed to write form data to the database');
       }
     } catch (error) {
-      console.error('Error during Paystack API call:', error);
+      console.error('Error during API call:', error);
     }
+  };
+
+  const onSuccess = () => {
+    writeFormDataToDatabase();
+    router.push('/membership-payment-confirmation-success');
+  };
+  
+  const onClose = () => {
+    localStorage.removeItem('formData');
+    router.push('/membership-payment-unsuccessful');
+  };
+
+  const handleCloseClick = () => {
+    router.push('/membershipapplication');
   };
 
   return (
     <section className="relative w-full">
       <div className="flex hero1 sm:px-16 px-6">
+        {modalOpen && (
+            <Modal onClose={() => setModalOpen(false)} />
+        )}
         <div className='md:items-center ss:items-center justify-center w-full mx-auto
           max-w-[95rem] flex flex-col md:pt-16 ss:pt-20 pt-20 font-manierRegular' 
           >
@@ -85,16 +208,33 @@ const MembershipPayment = () => {
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
             gap-3 items-center font-manierRegular buttonfull'>
-              <button
-                className='grow4 bg-secondary border-none buttonhalf
-                md:text-[17px] ss:text-[17px] text-[14px] md:py-4
-                ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
-                md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
-                cursor-pointer'
-                onClick={handlePayment}
-              >
-                Pay Now
-              </button>
+              {isFormDataEmpty ? (
+                <button
+                  className='grow4 bg-secondary border-none buttonhalf
+                  md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                  ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
+                  md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                  cursor-pointer'
+                  onClick={() => {
+                    setModalOpen(true);
+                    disableScroll();
+                  }}
+                >
+                  Pay Now
+                </button>
+              ) : (
+                <PaystackButton
+                  className='grow4 bg-secondary border-none buttonhalf
+                  md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                  ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
+                  md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                  cursor-pointer'
+                  text="Pay Now"
+                  {...config}
+                  onSuccess={onSuccess}
+                  onClose={onClose}
+                />
+              )}
 
               <button
                 className='border-[1px] grow2 border-secondary 
@@ -102,7 +242,7 @@ const MembershipPayment = () => {
                 ss:py-3 py-3 md:px-20 ss:px-16 px-6 text-secondary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 bg-transparent cursor-pointer buttonhalf'
-                onClick={handleClick}
+                onClick={handleCloseClick}
               >
                 Go Back
               </button>
