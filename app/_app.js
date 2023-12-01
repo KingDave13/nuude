@@ -1,19 +1,6 @@
-import RootLayout from '@app/layout';
-import AdminLayout from '@app/AdminLayout';
-
-function MyApp({ Component, pageProps, router }) {
+export default function MyApp({ Component, pageProps }) {
+  // Use the layout defined at the page level, if available
+  const getLayout = Component.getLayout || ((page) => page)
  
-  const isAdminPage = router.pathname.startsWith('/admin');
-
-  const getLayout = (page) => {
-    if (isAdminPage) {
-      return <AdminLayout>{page}</AdminLayout>;
-    }
-
-    return <RootLayout>{page}</RootLayout>;
-  };
-
-  return getLayout(<Component {...pageProps} />);
+  return getLayout(<Component {...pageProps} />)
 }
-
-export default MyApp;
