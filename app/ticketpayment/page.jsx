@@ -11,7 +11,28 @@ const TicketPayment = () => {
     useEffect(() => {
         const storedFormData = JSON.parse(localStorage.getItem('formData')) || {};
         setFormData(storedFormData);
+
+        const checkSession = async () => {
+          try {
+            const response = await fetch('/api/check-session', {
+              method: 'POST',
+              body: JSON.stringify(storedFormData),
+            });
+            
+            if (!response.ok) {
+              console.log('Invalid session. Redirecting...');
+              alert('Please fill the ticket application form first');
+              router.push("/ticketapplication");
+            }
+          } catch (error) {
+            console.error('Error during API call:', error);
+          }
+        };
+    
+        checkSession();
     }, []);
+
+    const isFormDataEmpty = Object.keys(formData).length === 0;
 
     const config = {
       reference: new Date().getTime().toString(),
@@ -71,7 +92,7 @@ const TicketPayment = () => {
       router.push('/ticket-payment-unsuccessful');
     };
 
-    const handleClick = () => {
+    const handleCloseClick = () => {
       router.push('/ticketapplication');
     };
 
@@ -117,25 +138,42 @@ const TicketPayment = () => {
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
             gap-3 items-center font-manierRegular buttonfull'>
-              <PaystackButton
-                className='grow4 bg-secondary border-none buttonhalf
-                md:text-[17px] ss:text-[17px] text-[14px] md:py-4
-                ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
-                md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
-                cursor-pointer'
-                text="Pay Now"
-                {...config}
-                onSuccess={onSuccess}
-                onClose={onClose}
-              />
-
+              {isFormDataEmpty ? (
+                <button
+                  className='grow4 bg-secondary border-none buttonhalf
+                  md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                  ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
+                  md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                  cursor-pointer'
+                  onClick={() => {
+                    router.push("/ticketapplication");
+                    alert('Please Fill Out the One-Time Ticket Application Form First');
+                    }
+                  }
+                >
+                  Pay Now
+                </button>
+              ) : (
+                <PaystackButton
+                  className='grow4 bg-secondary border-none buttonhalf
+                  md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                  ss:py-3 py-3 md:px-20 ss:px-16 px-3 text-primary 
+                  md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
+                  cursor-pointer'
+                  text="Pay Now"
+                  {...config}
+                  onSuccess={onSuccess}
+                  onClose={onClose}
+                />
+              )}
+              
               <button
                 className='border-[1px] grow2 border-secondary 
                 md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
                 ss:py-3 py-3 md:px-20 ss:px-16 px-6 text-secondary 
                 md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                 bg-transparent cursor-pointer buttonhalf'
-                onClick={handleClick}
+                onClick={handleCloseClick}
               >
                 Go Back
               </button>
