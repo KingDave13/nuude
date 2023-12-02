@@ -43,7 +43,7 @@ const handleSideItemClick = (link) => {
     >
       <div className="w-full flex justify-between items-center mx-auto">
         <div className="flex flex-col items-center justify-center w-full 
-        hidden md:flex">
+        h-screenhidden md:flex">
           <Image
             src={logoalt}
             alt="logo"
@@ -77,37 +77,29 @@ const handleSideItemClick = (link) => {
 
         {/* FOR MOBILE */}
         
-        {/* <div className="md:hidden flex justify-between flex-1 items-center
+        <div className="md:hidden flex justify-between flex-1 items-center
         mt-3">
-          <Link href="/" 
-            onClick={() => { setActive(''); 
-            window.scrollTo({ 
-              top: 0, left: 0, 
-              behavior: 'smooth' }); 
-          }}
-          >
             <Image
-              src={isScrolled ? logo : logoalt}
+              src={logoalt}
               alt="logo"
               width={130}
               height="auto"
               className="object-contain"
             />
-          </Link>
 
           <div className="flex items-center z-20">
             {toggle ? (
               <BsX
                 size={40}
                 className="object-contain cursor-pointer"
-                style={{ color: isScrolled ? '#000' : '#fff' }}
+                style={ '#fff' }
                 onClick={() => setToggle(!toggle)}
               />
             ) : (
               <HiOutlineMenuAlt3
                 size={40}
                 className="object-contain cursor-pointer"
-                style={{ color: isScrolled ? '#000' : '#fff' }}
+                style={'#fff' }
                 onClick={() => setToggle(!toggle)}
               />
             )}
@@ -122,7 +114,7 @@ const handleSideItemClick = (link) => {
           >
             <ul className="list-none flex justify-end 
             flex-col">
-              {navLinks.map((link, index) => (
+              {sideLinks.map((link, index) => (
                 <li
                   key={link.id}
                   className={`${
@@ -131,7 +123,7 @@ const handleSideItemClick = (link) => {
                       : 'text-primary'
                   } font-medium cursor-pointer ss:text-[20px] text-[16px] 
                   w-full
-                  ${index !== navLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
+                  ${index !== sideLinks.length - 1 ? 'border-b-[1px] pb-1.5 pt-1.5' : 'pt-1.5'}`}
                   onClick={() => {
                     setToggle(!toggle);
                     handleNavItemClick(link);
@@ -142,7 +134,7 @@ const handleSideItemClick = (link) => {
               ))}
             </ul>
           </div>
-        </div> */}
+        </div>
       </div>
     </nav>
   );
