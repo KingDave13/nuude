@@ -1,6 +1,6 @@
 import AdminLayout from "@app/AdminLayout";
 
-const Requests = () => {
+const LoginPage = () => {
   return (
       <div className="text-white">
         ADMIN PAGE
@@ -8,4 +8,4 @@ const Requests = () => {
   );
 };
 
-export default Requests;
+export default LoginPage;

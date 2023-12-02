@@ -11,7 +11,7 @@ import { logoalt, logo } from '@public/assets';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {
-  const [active, setActive] = useState('Home');
+  const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
   const menuRef = useRef(null);
   const [isScrolled, setIsScrolled] = useState(false);
