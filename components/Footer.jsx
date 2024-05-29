@@ -27,7 +27,7 @@ const Footer = () => {
                     className='md:w-[300px] ss:w-[200px] w-[170px] h-auto' 
                 />
 
-                <p className='text-maintext md:text-[22px] ss:text-[16px] 
+                <p className='text-maintext md:text-[20px] ss:text-[16px] 
                 text-[14px] md:mt-10 ss:mt-8 mt-5 md:leading-[25px] 
                 ss:leading-[23px] leading-[20px] text-center'>
                     Nuude! is an exclusively private social and <br></br>
@@ -41,9 +41,9 @@ const Footer = () => {
                 ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[5px]
                 text-maintext' />
 
-                <p className='md:text-[17px] ss:text-[16px] text-[14px] 
+                <p className='md:text-[16px] ss:text-[16px] text-[14px] 
                 text-maintext mt-1'>
-                    2023. All Rights Reserved.
+                    2024. All Rights Reserved.
                 </p>
             </motion.div>
 
