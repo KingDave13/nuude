@@ -4,7 +4,7 @@ import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '@utils/motion';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
@@ -106,14 +106,14 @@ const Contact = () => {
                 <Modal />
             )}
 
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-10 ss:mb-5
             mb-4">
                 <h1 className="text-white font-manierMedium md:text-[55px]
                 ss:text-[45px] text-[35px] md:mr-14 ss:mr-6 mr-6">
                     Contact Us
                 </h1>
-                <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+                <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-white w-full h-[1px]' />
                 </motion.div>
@@ -131,7 +131,7 @@ const Contact = () => {
                 </p>
             </motion.div>
 
-            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+            <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}
             className='w-full'>
                 <div className='md:bg-primary ss:bg-primary md:p-12 
                 ss:p-6 md:w-1/2'>
@@ -271,10 +271,10 @@ const Contact = () => {
                         <button
                         type="submit"
                         className="bg-secondary grow2 w-fit shadow-md 
-                        md:text-[16px] ss:text-[14px] text-[14px] md:py-4 
+                        md:text-[16px] ss:text-[14px] text-[14px] md:py-3.5 
                         ss:py-3 py-3 md:px-20 ss:px-16 px-14
-                        text-primary md:rounded-[3px] ss:rounded-[3px] 
-                        rounded-[3px] border-none cursor-pointer"
+                        text-primary rounded-md border-none 
+                        cursor-pointer"
                         >
                             {Loading ? 'Submitting...' : 'Submit'}
                         </button>

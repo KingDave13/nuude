@@ -83,12 +83,12 @@ const Membership = () => {
                     by Nuude!.
                 </p>
 
-                <div className='flex md:mt-12 ss:mt-10 mt-6 md:gap-8 ss:gap-5 
+                <div className='flex md:mt-12 ss:mt-10 mt-6 md:gap-6 ss:gap-5 
                     gap-3 items-center font-manierRegular buttonfull
                     justify-center'>
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
-                            md:text-[17px] ss:text-[15px] text-[14px] md:py-4
+                            md:text-[17px] ss:text-[15px] text-[14px] md:py-3.5
                             ss:py-3 py-3 md:px-10 ss:px-5 px-2 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
@@ -99,7 +99,7 @@ const Membership = () => {
 
                         <button
                             className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[15px] text-[14px] md:py-4 
+                            md:text-[17px] ss:text-[15px] text-[14px] md:py-3.5 
                             ss:py-3 py-3 md:px-20 ss:px-16 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
