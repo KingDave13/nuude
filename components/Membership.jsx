@@ -2,7 +2,7 @@
 
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { fadeIn, slideIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '@utils/motion';
 import scrollToSection from '@constants/scrollToSection';
 import { useRouter } from 'next/navigation';
 
@@ -18,7 +18,7 @@ const Membership = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular md:pb-10 md:mb-0 ss:mb-0 mb-8'>
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex justify-between items-center w-full md:gap-12
             ss:gap-8 gap-5 md:mb-10 ss:mb-8 mb-6">
                 <div className="flex-grow">

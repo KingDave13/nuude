@@ -2,7 +2,7 @@
 
 import SectionWrapper from "@hoc/SectionWrapper";
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '@utils/motion';
 import { layout } from "@styles/styles";
 
 import scrollToSection from "@constants/scrollToSection";
@@ -13,7 +13,7 @@ const Luxury = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex flex-row items-center w-full md:mb-20 ss:mb-8
             mb-8">
                 <h1 className="text-white font-manierMedium md:text-[55px]
@@ -22,14 +22,14 @@ const Luxury = () => {
                     Unparalled Luxury <br className="ss:flex hidden"></br>
                     for the Select
                 </h1>
-                <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+                <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
                 className="flex-1 relative items-center justify-center">
                     <div className='bg-white md:w-full ss:w-full
                         w-[95px] h-[1px]' />
                 </motion.div>
             </motion.div>
             
-            <motion.div variants={slideIn('down', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('down', 'tween', 0.2, 0.5)}
             className="flex md:flex-row ss:flex-row flex-col md:gap-10 
             ss:gap-10 gap-12 w-full">
                 <motion.div variants={textVariant()}
@@ -60,11 +60,11 @@ const Luxury = () => {
                         sensuality and freedom.
                     </p>    
 
-                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-8 ss:gap-5 
+                    <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
                     gap-3 items-center font-manierRegular buttonfull'>
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
-                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4
+                            md:text-[17px] ss:text-[17px] text-[14px] md:py-3.5
                             ss:py-3 py-3 md:px-12 ss:px-7 px-3 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
@@ -75,7 +75,7 @@ const Luxury = () => {
 
                         <button
                             className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[17px] text-[14px] md:py-4 
+                            md:text-[17px] ss:text-[17px] text-[14px] md:py-3.5 
                             ss:py-3 py-3 md:px-20 ss:px-14 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer
