@@ -20,7 +20,25 @@ const ConfirmMembership = () => {
     }, []);
 
     const formik = useFormik({
-        initialValues: formData,
+        initialValues: {
+            firstname: formData.firstname || '',
+            lastname: formData.lastname || '',
+            email: formData.email || '',
+            phone: formData.phone || '',
+            birthdate: formData.birthdate || '',
+            gender: formData.gender || '',
+            employer: formData.employer || '',
+            occupation: formData.occupation || '',
+            instagram: formData.instagram || '',
+            twitter: formData.twitter || '',
+            facebook: formData.facebook || '',
+            turnons: formData.turnons || '',
+            trait: formData.trait || '',
+            contribution: formData.contribution || '',
+            mode: formData.mode || '',
+            age: formData.age || false,
+            terms: formData.terms || false,
+        },
         enableReinitialize: true,
         validationSchema: Yup.object({
             firstname: Yup.string().required('First Name is required.'),
@@ -41,13 +59,15 @@ const ConfirmMembership = () => {
             age: Yup.boolean().oneOf([true], 'Required.'),
             terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
-        onSubmit: async (values) => {
+        onSubmit: async (values, e) => {
+            e.preventDefault();
             localStorage.setItem('formData', JSON.stringify(values));
             setIsEditable(false);
         },
     });
 
-    const handleEdit = () => {
+    const handleEdit = (e) => {
+        e.preventDefault();
         setIsEditable(true);
     };
 
@@ -188,16 +208,21 @@ const ConfirmMembership = () => {
                                 Gender
                             </label>
                             <select
-                            readOnly
-                            type="text"
                             name="gender"
-                            value={formData.gender || ''}
+                            value={formik.values.gender}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            disabled={!isEditable}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px] 
                             ss:rounded-[3px] rounded-[3px]
                             cursor-pointer bg-primaryalt"
                             >
-                               <option>{formData.gender}</option>
+                                <option value="" disabled hidden>Select a gender</option>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>I prefer not to say</option>
+                                <option>Other</option>
                             </select>
                         </div>
 
@@ -351,16 +376,20 @@ const ConfirmMembership = () => {
                                 And finally, how did you find us?
                             </label>
                             <select
-                            readOnly
-                            type="text"
                             name="mode"
-                            value={formData.mode || ''}
+                            value={formik.values.mode}
+                            onChange={formik.handleChange}
+                            onBlur={formik.handleBlur}
+                            disabled={!isEditable}
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-textalt md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px] cursor-pointer 
                             bg-primaryalt"
                             >
-                                <option>{formData.mode || ''}</option>
+                                <option value="" disabled hidden>Select an option</option>
+                                <option>Social Media</option>
+                                <option>From a friend</option>
+                                <option>Other</option>
                             </select>
                         </div>
 
