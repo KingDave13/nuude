@@ -161,6 +161,7 @@ const TicketPayment = () => {
     };
 
     const handleCloseClick = () => {
+      localStorage.removeItem('formData');
       router.push('/ticketapplication');
     };
 

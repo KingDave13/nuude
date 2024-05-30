@@ -42,8 +42,8 @@ const Modal = ({ onClose }) => {
                 items-center'>
                     <h1 className='text-white md:text-[20px] ss:text-[20px]
                     text-[17px] text-center md:mb-6 ss:mb-6 mb-5'>
-                        Please fill out the membership <br></br>
-                        application form first
+                      Please fill out the membership <br></br>
+                      application form first
                     </h1>
 
                     <button
@@ -161,6 +161,7 @@ const MembershipPayment = () => {
   };
 
   const handleCloseClick = () => {
+    localStorage.removeItem('formData');
     router.push('/membershipapplication');
   };
 

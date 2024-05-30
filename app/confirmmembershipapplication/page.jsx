@@ -5,10 +5,13 @@ import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '@utils/motion';
+import { useFormik } from "formik";
+import * as Yup from 'yup';
 
 
 const ConfirmMembership = () => {
     const router = useRouter();
+    const [isEditable, setIsEditable] = useState(false);
     const [formData, setFormData] = useState({});
 
     useEffect(() => {
@@ -16,19 +19,43 @@ const ConfirmMembership = () => {
         setFormData(storedFormData);
     }, []);
 
-    const handleEdit = (e) => {
-        e.preventDefault();
-        console.log('Retrieved form data for edit:', formData);
-        if (Object.keys(formData).length > 0) {
-            router.replace("/membershipapplication?edit=true");
-        } else {
-            console.log('Cannot edit. Form data is empty.');
-        }
+    const formik = useFormik({
+        initialValues: formData,
+        enableReinitialize: true,
+        validationSchema: Yup.object({
+            firstname: Yup.string().required('First Name is required.'),
+            lastname: Yup.string().required('Last Name is required.'),
+            email: Yup.string().email('Invalid email address.').required('Email is required.'),
+            phone: Yup.string().required('Phone number is required.'),
+            birthdate: Yup.string().required('Birth date is required.'),
+            gender: Yup.string().required('Gender is required.'),
+            employer: Yup.string().required('Employer is required.'),
+            occupation: Yup.string().required('Occupation is required.'),
+            instagram: Yup.string().required('Instagram is required.'),
+            twitter: Yup.string().required('Twitter is required.'),
+            facebook: Yup.string().required('Facebook is required.'),
+            turnons: Yup.string().required('This is required.'),
+            trait: Yup.string().required('This is required.'),
+            contribution: Yup.string().required('This is required.'),
+            mode: Yup.string().required('This is required.'),
+            age: Yup.boolean().oneOf([true], 'Required.'),
+            terms: Yup.boolean().oneOf([true], 'Required.'),
+        }),
+        onSubmit: async (values) => {
+            localStorage.setItem('formData', JSON.stringify(values));
+            router.push("/membershippayment");
+        },
+    });
+
+    const handleEdit = () => {
+        setIsEditable(true);
     };
 
     const handlePayment = (e) => {
         e.preventDefault();
-        if (Object.keys(formData).length > 0) {
+        if (isEditable) {
+            formik.handleSubmit();
+        } else if (Object.keys(formData).length > 0) {
             router.push("/membershippayment");
         } else {
             console.log('Cannot proceed with payment. Form data is empty.');
