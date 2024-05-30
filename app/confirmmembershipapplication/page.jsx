@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '@utils/motion';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
@@ -43,7 +43,7 @@ const ConfirmMembership = () => {
         }),
         onSubmit: async (values) => {
             localStorage.setItem('formData', JSON.stringify(values));
-            router.push("/membershippayment");
+            setIsEditable(false);
         },
     });
 
@@ -53,9 +53,7 @@ const ConfirmMembership = () => {
 
     const handlePayment = (e) => {
         e.preventDefault();
-        if (isEditable) {
-            formik.handleSubmit();
-        } else if (Object.keys(formData).length > 0) {
+        if (Object.keys(formData).length > 0) {
             router.push("/membershippayment");
         } else {
             console.log('Cannot proceed with payment. Form data is empty.');
@@ -67,7 +65,7 @@ const ConfirmMembership = () => {
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
@@ -86,7 +84,7 @@ const ConfirmMembership = () => {
                 </p>
             </motion.div>
 
-            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+            <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}
             className="w-full">
             <form
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10

@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '@utils/motion';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { useFormik } from "formik";
@@ -66,7 +66,7 @@ const MembershipApplication = () => {
     mx-auto flex items-center">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
@@ -87,7 +87,7 @@ const MembershipApplication = () => {
                 </p>
             </motion.div>
 
-            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}>
+            <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}>
             <form onSubmit={formik.handleSubmit} 
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-20
             ss:gap-8 gap-12'>
