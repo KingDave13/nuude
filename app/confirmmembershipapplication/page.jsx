@@ -99,14 +99,16 @@ const ConfirmMembership = () => {
                                 First Name
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="firstname"
-                            value={formData.firstname || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px]
-                            focus:outline-none bg-primaryalt"
+                                type="text"
+                                name="firstname"
+                                value={formik.values.firstname || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px]
+                                focus:outline-none bg-primaryalt"
                             />
                         </div>
 
@@ -116,13 +118,15 @@ const ConfirmMembership = () => {
                                 Last Name
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="lastname"
-                            value={formData.lastname || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="lastname"
+                                value={formik.values.lastname || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -132,13 +136,15 @@ const ConfirmMembership = () => {
                                 Email Address
                             </label>
                             <input
-                            readOnly
-                            type="email"
-                            name="email"
-                            value={formData.email || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="email"
+                                name="email"
+                                value={formik.values.email || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -165,14 +171,16 @@ const ConfirmMembership = () => {
                                 Date of Birth
                             </label>
                             <input
-                            readOnly
-                            type="date"
-                            name="birthdate"
-                            value={formData.birthdate || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px]
-                            bg-primaryalt"
+                                type="date"
+                                name="birthdate"
+                                value={formik.values.birthdate || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px]
+                                bg-primaryalt"
                             />
                         </div>
 
@@ -201,13 +209,15 @@ const ConfirmMembership = () => {
                                 Employer
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="employer"
-                            value={formData.employer || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="employer"
+                                value={formik.values.employer || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -217,13 +227,15 @@ const ConfirmMembership = () => {
                                 Occupation
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="occupation"
-                            value={formData.occupation || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="occupation"
+                                value={formik.values.occupation || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -233,13 +245,15 @@ const ConfirmMembership = () => {
                                 Instagram Handle
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="instagram"
-                            value={formData.instagram || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="instagram"
+                                value={formik.values.instagram || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -249,13 +263,15 @@ const ConfirmMembership = () => {
                                 Twitter Handle
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="twitter"
-                            value={formData.twitter || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="twitter"
+                                value={formik.values.twitter || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -265,13 +281,15 @@ const ConfirmMembership = () => {
                                 Facebook Username
                             </label>
                             <input
-                            readOnly
-                            type="text"
-                            name="facebook"
-                            value={formData.facebook || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                type="text"
+                                name="facebook"
+                                value={formik.values.facebook || ''}
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                readOnly={!isEditable}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -281,13 +299,15 @@ const ConfirmMembership = () => {
                                 What turns you on the most?
                             </label>
                             <textarea
-                            readOnly
-                            rows="4"
-                            name="turnons"
-                            value={formData.turnons || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                readOnly={!isEditable}
+                                rows="4"
+                                name="turnons"
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.turnons || ''}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -297,13 +317,15 @@ const ConfirmMembership = () => {
                                 If you could amplify an erotic trait within yourself, what would it be?
                             </label>
                             <textarea
-                            readOnly
-                            rows="4"
-                            name="trait"
-                            value={formData.trait || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                readOnly={!isEditable}
+                                rows="4"
+                                name="trait"
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.trait || ''}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -313,13 +335,15 @@ const ConfirmMembership = () => {
                                 What would you contribute to the Nuude! community?
                             </label>
                             <textarea
-                            readOnly
-                            rows="4"
-                            name="contribution"
-                            value={formData.contribution || ''}
-                            className="md:py-3 ss:py-2 py-2 px-4 border-none 
-                            outline-none text-textalt md:rounded-[3px]
-                            ss:rounded-[3px] rounded-[3px] bg-primaryalt"
+                                readOnly={!isEditable}
+                                rows="4"
+                                name="contribution"
+                                onChange={formik.handleChange}
+                                onBlur={formik.handleBlur}
+                                value={formik.values.contribution || ''}
+                                className="md:py-3 ss:py-2 py-2 px-4 border-none 
+                                outline-none text-textalt md:rounded-[3px]
+                                ss:rounded-[3px] rounded-[3px] bg-primaryalt"
                             />
                         </div>
 
@@ -344,17 +368,37 @@ const ConfirmMembership = () => {
 
                         <div className="col-span-2 md:mt-8 ss:mt-8 mt-5
                         flex md:gap-8 ss:gap-5 gap-4 buttonfull">
-                            <button
-                            onClick={handleEdit}
-                            className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[17px] ss:text-[14px] text-[12px] 
-                            md:py-4 ss:py-4 py-3 md:px-20 ss:px-16 px-10
-                            text-secondary md:rounded-[6px] ss:rounded-[3px] 
-                            rounded-[3px] border-[1px] border-secondary
-                            cursor-pointer bg-transparent buttonhalf"
-                            > 
-                                Edit Details
-                            </button>
+                            {!isEditable ? (
+                                <button
+                                    onClick={handleEdit}
+                                    className="bg-secondary grow2 w-fit 
+                                    shadow-md md:text-[17px] 
+                                    ss:text-[14px] text-[12px] md:py-4 
+                                    ss:py-4 py-3 md:px-20 ss:px-16 px-10 
+                                    text-secondary md:rounded-[6px] 
+                                    ss:rounded-[3px] rounded-[3px] 
+                                    border-[1px] border-secondary 
+                                    cursor-pointer bg-transparent
+                                    buttonhalf"
+                                >
+                                    Edit Details
+                                </button>
+                            ) : (
+                                <button
+                                    type="submit"
+                                    className="bg-secondary grow2 w-fit 
+                                    shadow-md md:text-[17px] 
+                                    ss:text-[14px] text-[12px] md:py-4 
+                                    ss:py-4 py-3 md:px-20 ss:px-16 px-10 
+                                    text-secondary md:rounded-[6px] 
+                                    ss:rounded-[3px] rounded-[3px] 
+                                    border-[1px] border-secondary 
+                                    cursor-pointer bg-transparent 
+                                    buttonhalf"
+                                >
+                                    Save Changes
+                                </button>
+                            )}
 
                             <button
                             onClick={handlePayment}
