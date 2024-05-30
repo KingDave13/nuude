@@ -12,7 +12,7 @@ const MembershipPaymentUnsuccessful = () => {
     };
 
     const handlePayment = () => {
-      // router.push('/');
+      router.push('/membershipapplication');
     }
 
   return (

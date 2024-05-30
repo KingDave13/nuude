@@ -71,9 +71,9 @@ const Home = () => {
         <Luxury />
       </div>
       
-      <div className="bg-primary">
+      {/* <div className="bg-primary">
         <Events />
-      </div>
+      </div> */}
 
       <div className="membership">
         <Membership />

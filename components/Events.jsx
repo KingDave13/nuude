@@ -61,7 +61,7 @@ const Modal = ({ onClose }) => {
                 exit={{ y: 10, opacity: 0 }}
                 transition={{ duration: 0.1 }}
                 ref={modalRef} 
-                className="bg-primaryalt md:p-14 ss:p-10 p-6 rounded-md shadow-xl 
+                className="bg-primaryalt md:p-14 ss:p-10 p-4 rounded-md shadow-xl 
                 flex flex-col justify-center w-auto h-auto font-manierRegular
                 items-center">
                     <Image 
