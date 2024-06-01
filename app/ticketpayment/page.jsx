@@ -42,8 +42,8 @@ const Modal = ({ onClose }) => {
                 items-center'>
                     <h1 className='text-white md:text-[20px] ss:text-[20px]
                     text-[17px] text-center md:mb-6 ss:mb-6 mb-5'>
-                        Please fill out the one-time ticket <br></br>
-                        application form first
+                      Please fill out the one-time ticket <br></br>
+                      application form first
                     </h1>
 
                     <button
@@ -54,7 +54,7 @@ const Modal = ({ onClose }) => {
                     md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
                     font-manierMedium cursor-pointer'
                     >
-                        OK
+                      OK
                     </button>
                 </div>
             </motion.div>

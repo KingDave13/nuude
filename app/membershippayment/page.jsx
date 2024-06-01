@@ -29,37 +29,37 @@ const Modal = ({ onClose }) => {
         exit={{ opacity: 0 }}
         className="fixed inset-0 flex items-center justify-center
         bg-black bg-opacity-80 z-50">
-            <motion.div 
-            initial={{ y: 0, opacity: 0.7 }}
-            animate={{ y: 0, opacity: 1 }}
-            exit={{ y: 10, opacity: 0 }}
-            transition={{ duration: 0.1 }}
-            ref={modalRef} 
-            className="bg-primaryalt md:p-10 ss:p-10 p-6 rounded-md shadow-xl 
-            flex flex-col justify-center w-auto h-auto font-manierRegular
-            items-center">
-                <div className='flex flex-col w-full justify-center 
-                items-center'>
-                    <h1 className='text-white md:text-[20px] ss:text-[20px]
-                    text-[17px] text-center md:mb-6 ss:mb-6 mb-5'>
-                      Please fill out the membership <br></br>
-                      application form first
-                    </h1>
+          <motion.div 
+          initial={{ y: 0, opacity: 0.7 }}
+          animate={{ y: 0, opacity: 1 }}
+          exit={{ y: 10, opacity: 0 }}
+          transition={{ duration: 0.1 }}
+          ref={modalRef} 
+          className="bg-primaryalt md:p-10 ss:p-10 p-6 rounded-md shadow-xl 
+          flex flex-col justify-center w-auto h-auto font-manierRegular
+          items-center">
+            <div className='flex flex-col w-full justify-center 
+            items-center'>
+              <h1 className='text-white md:text-[20px] ss:text-[20px]
+              text-[17px] text-center md:mb-6 ss:mb-6 mb-5'>
+                Please fill out the membership <br></br>
+                application form first
+              </h1>
 
-                    <button
-                    onClick={handleClick}
-                    className='grow4 bg-secondary border-none w-full
-                    md:text-[16px] ss:text-[15px] text-[13px] md:py-4
-                    ss:py-4 py-3 md:px-20 ss:px-7 px-5 text-primary 
-                    md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
-                    font-manierMedium cursor-pointer'
-                    >
-                        OK
-                    </button>
-                </div>
-            </motion.div>
+              <button
+              onClick={handleClick}
+              className='grow4 bg-secondary border-none w-full
+              md:text-[16px] ss:text-[15px] text-[13px] md:py-4
+              ss:py-4 py-3 md:px-20 ss:px-7 px-5 text-primary 
+              md:rounded-[3px] ss:rounded-[3px] rounded-[3px] 
+              font-manierMedium cursor-pointer'
+              >
+                OK
+              </button>
+            </div>
+          </motion.div>
         </motion.div>
-    </AnimatePresence>
+      </AnimatePresence>
   );
 };
 
