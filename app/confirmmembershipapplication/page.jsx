@@ -59,11 +59,13 @@ const ConfirmMembership = () => {
             age: Yup.boolean().oneOf([true], 'Required.'),
             terms: Yup.boolean().oneOf([true], 'Required.'),
         }),
-        onSubmit: async (values, e) => {
+        onSubmit: async (e, values) => {
             e.preventDefault();
             localStorage.setItem('formData', JSON.stringify(values));
+            setFormData(values);
+            formik.resetForm({ values });
             setIsEditable(false);
-        },
+        },        
     });
 
     const handleEdit = (e) => {
