@@ -1,10 +1,8 @@
 'use client';
 
-import SectionWrapper from "@hoc/SectionWrapper";
 import { useRouter } from "next/navigation";
 
 const MembershipPaymentUnsuccessful = () => {
-
     const router = useRouter();
 
     const handleClick = () => {
@@ -24,25 +22,25 @@ const MembershipPaymentUnsuccessful = () => {
             <h1 className='text-secondary md:text-[52px] font-manierMedium
             ss:text-[47px] text-[35px] md:text-center ss:text-center
             md:leading-[20px] ss:leading-[20px] leading-[45px]'>
-                Payment Unsuccessful!
+              Payment Unsuccessful!
             </h1>
 
             <p className='md:mt-14 ss:mt-12 mt-6 md:text-[18px] ss:text-[18px]
             text-[15px] text-white md:text-center ss:text-center 
             md:leading-[25px] ss:leading-[25px] leading-[22px] 
             md:max-w-[700px] ss:max-w-[700px] max-w-[350px]'>
-             Looks like there was a bit of a hiccup while attempting to
-             receive your payment. Not to worry! If you were debited, the
-             transaction will be reversed within 48hrs.
+              Looks like there was a bit of a hiccup while attempting to
+              receive your payment. Not to worry! If you were debited, the
+              transaction will be reversed within 48hrs.
             </p>
 
             <p className='md:mt-6 ss:mt-6 mt-4 md:text-[18px] ss:text-[18px]
             text-[15px] text-white md:text-center ss:text-center 
             md:leading-[25px] ss:leading-[25px] leading-[22px] 
             md:max-w-[700px] ss:max-w-[700px] max-w-[350px]'>
-             If you were not refunded, please do contact us using the 
-             button below. You can also attempt the transaction again if
-             it was a network issue from your end.
+              If you were not refunded, please do contact us using the 
+              button below. You can also attempt the transaction again if
+              it was a network issue from your end.
             </p>
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
