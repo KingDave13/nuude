@@ -108,7 +108,7 @@ const ConfirmMembership = () => {
 
             <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}
             className="w-full">
-            <form onSubmit={formik.handleSubmit} 
+            <form onSubmit={formik.handleSubmit}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
             ss:gap-8 gap-12'>
                 <div className='md:w-1/2 w-full'>
