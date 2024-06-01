@@ -4,11 +4,14 @@ import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { slideIn, textVariant } from '@utils/motion';
-
+import { fadeIn, textVariant } from '@utils/motion';
+import PhoneInput from 'react-phone-number-input';
+import { useFormik } from "formik";
+import * as Yup from 'yup';
 
 const ConfirmTicket = () => {
     const router = useRouter();
+    const [isEditable, setIsEditable] = useState(false);
     const [formData, setFormData] = useState({});
 
     useEffect(() => {
@@ -16,14 +19,57 @@ const ConfirmTicket = () => {
         setFormData(storedFormData);
     }, []);
 
+    const formik = useFormik({
+        initialValues: {
+            firstname: formData.firstname || '',
+            lastname: formData.lastname || '',
+            email: formData.email || '',
+            phone: formData.phone || '',
+            birthdate: formData.birthdate || '',
+            gender: formData.gender || '',
+            employer: formData.employer || '',
+            occupation: formData.occupation || '',
+            instagram: formData.instagram || '',
+            twitter: formData.twitter || '',
+            facebook: formData.facebook || '',
+            turnons: formData.turnons || '',
+            trait: formData.trait || '',
+            contribution: formData.contribution || '',
+            mode: formData.mode || '',
+            age: formData.age || false,
+            terms: formData.terms || false,
+        },
+        enableReinitialize: true,
+        validationSchema: Yup.object({
+            firstname: Yup.string().required('First Name is required.'),
+            lastname: Yup.string().required('Last Name is required.'),
+            email: Yup.string().email('Invalid email address.').required('Email is required.'),
+            phone: Yup.string().required('Phone number is required.'),
+            birthdate: Yup.string().required('Birth date is required.'),
+            gender: Yup.string().required('Gender is required.'),
+            employer: Yup.string().required('Employer is required.'),
+            occupation: Yup.string().required('Occupation is required.'),
+            instagram: Yup.string().required('Instagram is required.'),
+            twitter: Yup.string().required('Twitter is required.'),
+            facebook: Yup.string().required('Facebook is required.'),
+            turnons: Yup.string().required('This is required.'),
+            trait: Yup.string().required('This is required.'),
+            contribution: Yup.string().required('This is required.'),
+            mode: Yup.string().required('This is required.'),
+            age: Yup.boolean().oneOf([true], 'Required.'),
+            terms: Yup.boolean().oneOf([true], 'Required.'),
+        }),
+        onSubmit: async (values) => {
+            localStorage.setItem('formData', JSON.stringify(values));
+            setFormData(values);
+            formik.resetForm({ values });
+            setIsEditable(false);
+        },        
+    });
+
     const handleEdit = (e) => {
         e.preventDefault();
-        console.log('Retrieved form data for edit:', formData);
-        if (Object.keys(formData).length > 0) {
-            router.replace("/ticketapplication?edit=true");
-        } else {
-            console.log('Cannot edit. Form data is empty.');
-        }
+        setIsEditable(true);
     };
 
     const handlePayment = (e) => {
@@ -40,7 +86,7 @@ const ConfirmTicket = () => {
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
-            <motion.div variants={slideIn('up', 'tween', 0.2, 0.5)}
+            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
             className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
@@ -59,7 +105,7 @@ const ConfirmTicket = () => {
                 </p>
             </motion.div>
 
-            <motion.div variants={slideIn('down', 'tween', 0.2, 1)}
+            <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}
             className="w-full">
             <form
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
@@ -317,17 +363,37 @@ const ConfirmTicket = () => {
 
                         <div className="col-span-2 md:mt-8 ss:mt-8 mt-5
                         flex md:gap-8 ss:gap-5 gap-4 buttonfull">
-                            <button
-                            onClick={handleEdit}
-                            className="bg-secondary grow2 w-fit shadow-md 
-                            md:text-[17px] ss:text-[14px] text-[12px] 
-                            md:py-4 ss:py-4 py-3 md:px-20 ss:px-16 px-10
-                            text-secondary md:rounded-[6px] ss:rounded-[3px] 
-                            rounded-[3px] border-[1px] border-secondary
-                            cursor-pointer bg-transparent buttonhalf"
-                            > 
-                                Edit Details
-                            </button>
+                             {!isEditable ? (
+                                <button
+                                    onClick={handleEdit}
+                                    className="bg-secondary grow2 w-fit 
+                                    shadow-md md:text-[17px] 
+                                    ss:text-[14px] text-[12px] md:py-4 
+                                    ss:py-4 py-3 md:px-20 ss:px-16 px-10 
+                                    text-secondary md:rounded-[6px] 
+                                    ss:rounded-[3px] rounded-[3px] 
+                                    border-[1px] border-secondary 
+                                    cursor-pointer bg-transparent
+                                    buttonhalf"
+                                >
+                                    Edit Details
+                                </button>
+                            ) : (
+                                <button
+                                    type="submit"
+                                    className="bg-secondary grow2 w-fit 
+                                    shadow-md md:text-[17px] 
+                                    ss:text-[14px] text-[12px] md:py-4 
+                                    ss:py-4 py-3 md:px-20 ss:px-16 px-10 
+                                    text-secondary md:rounded-[6px] 
+                                    ss:rounded-[3px] rounded-[3px] 
+                                    border-[1px] border-secondary 
+                                    cursor-pointer bg-transparent 
+                                    buttonhalf"
+                                >
+                                    Save Changes
+                                </button>
+                            )}
 
                             <button
                             onClick={handlePayment}
