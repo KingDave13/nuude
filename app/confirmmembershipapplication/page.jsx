@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import SectionWrapper from '@hoc/SectionWrapper';
 import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '@utils/motion';
+import PhoneInput from 'react-phone-number-input';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
@@ -172,15 +173,29 @@ const ConfirmMembership = () => {
                             md:text-[16px] ss:text-[15px] text-[13px]">
                                 Phone Number
                             </label>
-                            <input
-                            readOnly
-                            type="text"
-                            name="phone"
-                            value={formData.phone || ''}
-                            className="md:py-3 ss:py-3 py-3 px-4 
-                            border-none outline-none md:rounded-[3px] 
-                            ss:rounded-[3px] rounded-[3px] text-textalt 
-                            bg-primaryalt"
+                            <PhoneInput
+                                type="text"
+                                name="phone"
+                                defaultCountry="NG"
+                                value={formik.values.phone}
+                                onChange={(value) => {
+                                    const numericValue = value?.replace(/[^0-9]/g, '') ?? '';
+                                    if (numericValue.length <= 13) {
+                                        formik.handleChange({
+                                            target: {
+                                                name: 'phone',
+                                                value: numericValue,
+                                            },
+                                        });
+                                    }
+                                }}
+                                onBlur={formik.handleBlur}
+                                placeholder="Enter your phone number"
+                                disabled={!isEditable}
+                                className="md:py-3 ss:py-3 py-3 px-4 
+                                border-none outline-none md:rounded-[3px] 
+                                ss:rounded-[3px] rounded-[3px] text-white 
+                                bg-primaryalt"
                             />
                         </div>
 
