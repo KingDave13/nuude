@@ -298,7 +298,7 @@ const ConfirmTicket = () => {
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[15px] text-[13px]">
-                                Twitter Handle
+                                X (Twitter) Handle
                             </label>
                             <input
                                 type="text"

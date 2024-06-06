@@ -348,7 +348,7 @@ const TicketApplication = () => {
                         <div className="col-span-2 flex flex-col">
                             <label className="text-white md:mb-3 ss:mb-2 mb-2 
                             md:text-[16px] ss:text-[15px] text-[13px]">
-                                Twitter Handle
+                                X (Twitter) Handle
                             </label>
                             <input
                             type="text"
@@ -356,7 +356,7 @@ const TicketApplication = () => {
                             value={formik.values.twitter}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            placeholder="www.twitter.com/your username"
+                            placeholder="www.x.com/your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px]
