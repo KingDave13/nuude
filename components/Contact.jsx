@@ -61,8 +61,8 @@ const Contact = () => {
             setLoading(true);
 
             emailjs.send(
-                process.env.EMAIL_SERVICE,
-                process.env.EMAIL_TEMPLATE,
+                process.env.NEXT_PUBLIC_EMAIL_SERVICE,
+                process.env.NEXT_PUBLIC_EMAIL_TEMPLATE,
                 {
                   from_name: `${values.firstname} ${values.lastname}`,
                   to_name: 'Nuude Club',
@@ -71,7 +71,7 @@ const Contact = () => {
                   subject: values.subject,
                   message: values.message,
                 },
-                process.env.EMAIL_KEY,
+                process.env.NEXT_PUBLIC_EMAIL_KEY,
               )
               .then(
                 () => {
