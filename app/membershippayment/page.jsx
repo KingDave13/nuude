@@ -207,6 +207,15 @@ const MembershipPayment = () => {
              for the Nuude! annual membership
             </p>
 
+            <p className='md:mt-12 ss:mt-12 mt-6 md:text-[18px] ss:text-[18px]
+            text-[15px] text-white md:text-center ss:text-center 
+            md:leading-[25px] ss:leading-[25px] leading-[22px] 
+            md:max-w-[700px] ss:max-w-[700px] max-w-[350px]'>
+             <span className="text-secondary">Please note </span>that 
+             payment services are offered by Plugg Resources and 
+             Technologies via Paystack
+            </p>
+
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
             gap-3 items-center font-manierRegular buttonfull'>
               {isFormDataEmpty ? (
