@@ -189,7 +189,7 @@ const Events = () => {
 
                     <h1 className='text-white md:text-[40px] ss:text-[25px] 
                     text-[23px] font-manierMedium'>
-                        Saturday, 16th December, 2023.
+                        Saturday, 10th August, 2024.
                     </h1>
 
                     <p className='text-white md:text-[16px] ss:text-[14px] 
