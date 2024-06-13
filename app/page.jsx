@@ -25,7 +25,7 @@ const Home = () => {
             </h1>
 
             <p className='md:mt-6 ss:mt-5 mt-6 md:text-[18px] ss:text-[18px]
-            text-[16px] text-white md:text-center ss:text-center 
+            text-[15px] text-white md:text-center ss:text-center 
             md:leading-[25px] ss:leading-[25px] leading-[20px] fade-in-from-bottom
             md:font-manierRegular ss:font-manierRegular font-manierLight'
             style={{ opacity: 0, animationDelay: '0.5s', animationFillMode: 'forwards' }}>

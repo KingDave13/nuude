@@ -172,7 +172,7 @@ const Events = () => {
 
                     <p className='text-white md:text-[18px] ss:text-[15px] 
                     text-[14px] md:max-w-[700px] md:leading-[22px] 
-                    ss:leading-[20px] md:mb-5 ss:mb-3 mb-3'>
+                    ss:leading-[20px] leading-[20px]  md:mb-5 ss:mb-3 mb-3'>
                         Step into a world of fine dining, intrigue and 
                         sensuality where we hand you the key to your dreams.
                     </p>
@@ -188,13 +188,13 @@ const Events = () => {
                     </div>
 
                     <h1 className='text-white md:text-[40px] ss:text-[25px] 
-                    text-[23px] font-manierMedium'>
+                    text-[22px] font-manierMedium'>
                         Saturday, 10th August, 2024.
                     </h1>
 
                     <p className='text-white md:text-[16px] ss:text-[14px] 
                     text-[14px] max-w-[750px] md:mt-5 md:leading-[22px]
-                    ss:leading-[20px] ss:mt-3 mt-3'>
+                    ss:leading-[20px] leading-[20px] ss:mt-3 mt-3'>
                         Other details including time and venue will be 
                         communicated privately via email after successful 
                         screening and approval.
