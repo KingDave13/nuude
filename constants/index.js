@@ -37,18 +37,13 @@ export const navLinks = [
     {
       id: "instagram",
       Icon: instagram,
-      link: ""
+      link: "https://instagram.com/nuudevip"
     },
     {
       id: "facebook",
       Icon: facebook,
       link: ""
     },
-    {
-      id: "linkedin",
-      Icon: linkedin,
-      link: ""
-    }
   ];
 
   export const footerLinks =[

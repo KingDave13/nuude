@@ -329,7 +329,7 @@ const TicketApplication = () => {
                             value={formik.values.instagram}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            placeholder="www.instagram.com/your username"
+                            placeholder="your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px]
@@ -356,7 +356,7 @@ const TicketApplication = () => {
                             value={formik.values.twitter}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            placeholder="www.x.com/your username"
+                            placeholder="your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px]
@@ -383,7 +383,7 @@ const TicketApplication = () => {
                             value={formik.values.facebook}
                             onChange={formik.handleChange}
                             onBlur={formik.handleBlur}
-                            placeholder="www.facebook.com/your username"
+                            placeholder="your username"
                             className="md:py-3 ss:py-2 py-2 px-4 border-none 
                             outline-none text-white md:rounded-[3px]
                             ss:rounded-[3px] rounded-[3px]
