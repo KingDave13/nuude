@@ -213,7 +213,7 @@ const MembershipPayment = () => {
             md:max-w-[700px] ss:max-w-[700px] max-w-[350px]'>
              <span className="text-secondary">Please note </span>that 
              payment services are offered by Plugg Resources and 
-             Technologies via Paystack
+             Technologies via Paystack.
             </p>
 
             <div className='flex md:mt-8 ss:mt-8 mt-6 md:gap-6 ss:gap-5 
