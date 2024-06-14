@@ -44,6 +44,11 @@ export const navLinks = [
       Icon: facebook,
       link: ""
     },
+    {
+      id: "linkedin",
+      Icon: linkedin,
+      link: ""
+    }
   ];
 
   export const footerLinks =[
