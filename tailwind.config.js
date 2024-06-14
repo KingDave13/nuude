@@ -15,7 +15,9 @@ module.exports = {
         mainRed: "#E30613",
         primaryalt: "#434343",
         textalt: "#898989",
-        maintext: "#575656"
+        maintext: "#575656",
+        mail: "#F5F5F5",
+        mailtext: "#AAAAAA"
       },
       fontFamily: {
         manierRegular: "manier-regular",

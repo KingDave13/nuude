@@ -12,7 +12,7 @@ const MailTemplate = () => {
   return (
     <section className='flex items-center bg-white sm:px-16 px-6'>
         <div className='flex mx-auto items-center w-full relative 
-        flex-col justify-center font-manierRegular max-w-[95rem]'>
+        flex-col justify-center max-w-[95rem]'>
             <div className='flex flex-col items-center justify-center
             md:gap-8 ss:gap-8 gap-6'>
                 <Image 
@@ -50,32 +50,28 @@ const MailTemplate = () => {
                 </p>
             </div>
 
-            <div className='bg-textalt md:p-8 ss:p-8 p-6 flex md:gap-8
-            ss:gap-8 gap-5'>
+            <div className='bg-mail flex flex-col items-center md:p-8 
+            ss:p-8 p-6 flex md:gap-8 ss:gap-8 gap-6 text-mailtext'>
                 <div className='flex items-center'>
-                    <BiCopyright className='sm:mr-1 mr-1 md:text-[16px] 
-                    ss:text-[18px] text-[15px] md:mt-1 ss:mt-1 mt-[5px]
-                    text-maintext' />
+                    <BiCopyright className='sm:mr-1 mr-1 md:text-[15px] 
+                    ss:text-[15px] text-[13px]' />
 
-                    <p className='md:text-[16px] ss:text-[16px] text-[14px] 
-                    text-maintext mt-1'>
+                    <p className='md:text-[14px] ss:text-[14px] text-[12px]'>
                         2024 Nuude! Private Members' Club. All Rights Reserved.
                     </p>
                 </div>
 
                 <div className='flex items-center md:gap-6 ss:gap-6 gap-4'>
                     <Link href='https://nuude.club/about'>
-                        <p className='md:text-[16px] ss:text-[16px] grow2
-                        text-[14px] text-maintext hover:text-secondary 
-                        cursor-pointer'>
+                        <p className='md:text-[14px] ss:text-[14px] grow2
+                        text-[12px] cursor-pointer'>
                             About Us
                         </p>
                     </Link>
 
                     <Link href='https://nuude.club/contact'>
-                        <p className='md:text-[16px] ss:text-[16px] grow2
-                        text-[14px] text-maintext hover:text-secondary 
-                        cursor-pointer'>
+                        <p className='md:text-[14px] ss:text-[14px] grow2
+                        text-[12px] cursor-pointer'>
                             Contact Us
                         </p>
                     </Link>
@@ -92,7 +88,7 @@ const MailTemplate = () => {
                             <Image
                             src={social.Icon}
                             alt={social.id}
-                            className={`md:w-[30px] ss:w-[26px] w-[25px] 
+                            className={`md:w-[20px] ss:w-[20px] w-[18px] 
                             h-auto object-contain cursor-pointer grow2 
                             ${index !== socialMedia.length - 1 ? 'mr-3' : 'mr-0' }`}
                             />

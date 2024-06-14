@@ -15,7 +15,7 @@ const RootLayout = ({ children }) => {
         <body>
             <main className='bg-primary'>
                 <Navbar />
-                {children}
+                  {children}
                 <Footer />
             </main>
         </body>
