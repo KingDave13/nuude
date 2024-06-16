@@ -7,7 +7,6 @@ import {
 
 export const navLinks = [
     {
-      
       id: "about",
       title: "About the club",
       route: "/about",
