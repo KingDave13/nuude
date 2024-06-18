@@ -88,7 +88,7 @@ const Membership = () => {
                     justify-center'>
                         <button
                             className='grow4 bg-secondary border-none buttonhalf
-                            md:text-[17px] ss:text-[15px] text-[14px] md:py-3.5
+                            md:text-[17px] ss:text-[15px] text-[13px] md:py-3.5
                             ss:py-3 py-3 md:px-10 ss:px-5 px-2 text-primary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium font-manier cursor-pointer'
@@ -99,7 +99,7 @@ const Membership = () => {
 
                         <button
                             className='border-[1px] grow2 border-secondary 
-                            md:text-[17px] ss:text-[15px] text-[14px] md:py-3.5 
+                            md:text-[17px] ss:text-[15px] text-[13px] md:py-3.5 
                             ss:py-3 py-3 md:px-20 ss:px-16 px-6 text-secondary 
                             md:rounded-[6px] ss:rounded-[3px] rounded-[3px] 
                             font-medium bg-transparent font-manier cursor-pointer

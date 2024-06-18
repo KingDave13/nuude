@@ -65,7 +65,8 @@ const MembershipApplication = () => {
         font-manierRegular'>
             <div className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
-                md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
+                md:text-[50px] ss:text-[40px] text-[33px] md:mr-14
+                md:leading-[60px] ss:leading-[30px] leading-[42px]">
                     Membership Application
                 </h1>
             </div>
