@@ -3,8 +3,6 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
 import SectionWrapper from '../../hoc/SectionWrapper';
-import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '../../utils/motion';
 import PhoneInput from 'react-phone-number-input';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
@@ -87,16 +85,14 @@ const ConfirmMembership = () => {
     mx-auto flex items-center bg-primary">
         <div className='items-center w-full mx-auto flex flex-col 
         font-manierRegular'>
-            <motion.div variants={fadeIn('up', 'tween', 0.2, 0.5)}
-            className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
+            <div className="flex items-center w-full md:mb-10 ss:mb-8 mb-5">
                 <h1 className="text-secondary font-manierMedium 
                 md:text-[50px] ss:text-[40px] text-[33px] md:mr-14">
                     Are you sure?
                 </h1>
-            </motion.div>
+            </div>
         
-            <motion.div variants={textVariant()}
-            className='flex items-start w-full md:mb-10 ss:mb-8 mb-8'>
+            <div className='flex items-start w-full md:mb-10 ss:mb-8 mb-8'>
                 <p className='text-white md:text-[17px] ss:text-[15px] 
                 text-[14px] md:max-w-[750px] ss:max-w-[600px] 
                 md:leading-[22px]'>
@@ -104,10 +100,9 @@ const ConfirmMembership = () => {
                     Make sure the provided information is correct before 
                     proceeding with payment for membership.
                 </p>
-            </motion.div>
+            </div>
 
-            <motion.div variants={fadeIn('down', 'tween', 0.2, 1)}
-            className="w-full">
+            <div className="w-full">
             <form onSubmit={formik.handleSubmit}
             className='flex md:flex-row flex-col w-full md:mt-12 md:gap-10
             ss:gap-8 gap-12'>
@@ -466,7 +461,7 @@ const ConfirmMembership = () => {
                     </h1>
                 </div>
             </form>
-            </motion.div>
+            </div>
         </div>
     </section>
   );
