@@ -9,7 +9,7 @@ import Image from "next/image";
 
 import scrollToSection from "../constants/scrollToSection";
 
-const About = () => {
+const AboutPage = () => {
   return (
     <section className="md:min-h-[800px] ss:min-h-[600px] min-h-[850px] 
     mx-auto flex items-center relative">
@@ -96,4 +96,4 @@ const About = () => {
   )
 };
 
-export default SectionWrapper(About, 'about');
+export default SectionWrapper(AboutPage, 'about');

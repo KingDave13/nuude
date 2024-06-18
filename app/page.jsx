@@ -1,6 +1,6 @@
 'use client';
 
-import About from "../components/About";
+import AboutPage from "../components/AboutPage";
 import Luxury from "../components/Luxury";
 import Events from "../components/Events";
 import Membership from "../components/Membership";
@@ -64,7 +64,7 @@ const Home = () => {
       </div>
       
       <div className="bg-primary">
-        <About />
+        <AboutPage />
       </div>
 
       <div className="luxury">
