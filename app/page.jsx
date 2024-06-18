@@ -63,9 +63,9 @@ const Home = () => {
         </div>
       </div>
       
-      <div className="bg-primary">
+      {/* <div className="bg-primary">
         <About />
-      </div>
+      </div> */}
 
       <div className="luxury">
         <Luxury />
