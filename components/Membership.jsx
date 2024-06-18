@@ -1,9 +1,9 @@
 'use client';
 
-import SectionWrapper from '@hoc/SectionWrapper';
+import SectionWrapper from '../hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
-import scrollToSection from '@constants/scrollToSection';
+import { fadeIn, textVariant } from '../utils/motion';
+import scrollToSection from '../constants/scrollToSection';
 import { useRouter } from 'next/navigation';
 
 const Membership = () => {

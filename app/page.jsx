@@ -1,12 +1,12 @@
 'use client';
 
-import About from "@components/About";
-import Luxury from "@components/Luxury";
-import Events from "@components/Events";
-import Membership from "@components/Membership";
-import Contact from "@components/Contact";
+import About from "../components/About";
+import Luxury from "../components/Luxury";
+import Events from "../components/Events";
+import Membership from "../components/Membership";
+import Contact from "../components/Contact";
 
-import scrollToSection from "@constants/scrollToSection";
+import scrollToSection from "../constants/scrollToSection";
 
 const Home = () => {
 

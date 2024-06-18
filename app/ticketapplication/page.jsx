@@ -1,9 +1,9 @@
 'use client';
 
 import { useRouter } from "next/navigation";
-import SectionWrapper from '@hoc/SectionWrapper';
+import SectionWrapper from '../../hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '../../utils/motion';
 import PhoneInput from 'react-phone-number-input';
 import 'react-phone-number-input/style.css';
 import { useFormik } from "formik";

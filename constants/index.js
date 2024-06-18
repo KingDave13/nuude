@@ -3,7 +3,7 @@ import {
   instagram, 
   facebook, 
   linkedin, 
-} from "@public/assets";
+} from "../public/assets";
 
 export const navLinks = [
     {

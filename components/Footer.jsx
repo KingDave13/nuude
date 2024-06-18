@@ -1,11 +1,11 @@
 'use client';
 
-import SectionWrapperAlt from '@hoc/SectionWrapperAlt';
+import SectionWrapperAlt from '../hoc/SectionWrapperAlt';
 import { motion } from 'framer-motion';
-import { textVariant, fadeIn } from '@utils/motion';
+import { textVariant, fadeIn } from '../utils/motion';
 import { BiCopyright } from 'react-icons/bi';
-import { footerLinks, socialMedia } from '@constants/index';
-import { logo } from '@public/assets';
+import { footerLinks, socialMedia } from '../constants/index';
+import { logo } from '../public/assets';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';

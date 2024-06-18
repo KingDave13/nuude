@@ -1,5 +1,5 @@
-import { connectToDb } from "@utils/database";
-import FormData from "@models/formData";
+import { connectToDb } from "../../../../utils/database";
+import FormData from "../../../../models/formData";
 
 export const POST = async (req) => {
     const {

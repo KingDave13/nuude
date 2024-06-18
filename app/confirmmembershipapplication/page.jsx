@@ -2,9 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import { useRouter } from "next/navigation";
-import SectionWrapper from '@hoc/SectionWrapper';
+import SectionWrapper from '../../hoc/SectionWrapper';
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '../../utils/motion';
 import PhoneInput from 'react-phone-number-input';
 import { useFormik } from "formik";
 import * as Yup from 'yup';

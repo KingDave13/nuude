@@ -1,15 +1,15 @@
 'use client';
 
 import { useState, useEffect, useRef } from 'react';
-import SectionWrapper from '@hoc/SectionWrapper';
+import SectionWrapper from '../hoc/SectionWrapper';
 import { motion, AnimatePresence } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
-import { event } from "@public/assets";
+import { fadeIn, textVariant } from '../utils/motion';
+import { event } from "../public/assets";
 import Image from "next/image";
 import { useRouter } from 'next/navigation';
-import { warning } from '@public/assets';
+import { warning } from '../public/assets';
 
-import scrollToSection from '@constants/scrollToSection';
+import scrollToSection from '../constants/scrollToSection';
 
 const Modal = ({ onClose }) => {
     const router = useRouter();

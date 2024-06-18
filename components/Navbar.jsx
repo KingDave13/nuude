@@ -2,12 +2,12 @@
 
 import { useState, useEffect, useRef } from 'react';
 import { BsX } from 'react-icons/bs';
-import styles from '@styles/styles';
+import styles from '../styles/styles';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
-import { navLinks } from '@constants/index';
-import { logoalt, logo } from '@public/assets';
+import { navLinks } from '../constants/index';
+import { logoalt, logo } from '../public/assets';
 import { useRouter } from 'next/navigation';
 
 const Navbar = () => {

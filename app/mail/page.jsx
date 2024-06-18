@@ -1,8 +1,8 @@
 'use client';
 
 import { BiCopyright } from 'react-icons/bi';
-import { socialMedia } from '@constants/index';
-import { contact, logo } from '@public/assets';
+import { socialMedia } from '../../constants/index';
+import { contact, logo } from '../../public/assets';
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';

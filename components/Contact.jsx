@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import emailjs from '@emailjs/browser';
-import SectionWrapper from "@hoc/SectionWrapper";
+import SectionWrapper from "../hoc/SectionWrapper";
 import { motion } from 'framer-motion';
-import { fadeIn, textVariant } from '@utils/motion';
+import { fadeIn, textVariant } from '../utils/motion';
 import { useFormik } from "formik";
 import * as Yup from 'yup';
 
