@@ -6,7 +6,7 @@ import styles from '@styles/styles';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
 import Image from 'next/image';
 import Link from 'next/link';
-import { navLinks } from '@constants';
+import { navLinks } from '@constants/index';
 import { logoalt, logo } from '@public/assets';
 import { useRouter } from 'next/navigation';
 
