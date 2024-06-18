@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { fadeIn, textVariant } from '../utils/motion';
 import { layout } from "../styles/styles";
 
-import scrollToSection from "@constants/scrollToSection";
+import scrollToSection from "../constants/scrollToSection";
 
 const Luxury = () => {
   return (
