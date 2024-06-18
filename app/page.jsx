@@ -1,6 +1,6 @@
 'use client';
 
-import About from "components/About";
+import About from "../components/About";
 import Luxury from "../components/Luxury";
 import Events from "../components/Events";
 import Membership from "../components/Membership";
