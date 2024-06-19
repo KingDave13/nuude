@@ -105,7 +105,7 @@ const TicketPayment = () => {
     const config = {
       reference: new Date().getTime().toString(),
       email: formData.email || 'user@example.com',
-      amount: 1 * 100,
+      amount: 150000 * 100,
       publicKey: process.env.NEXT_PUBLIC_PAYSTACK_PUBLIC_KEY,
       paymentType: 'Guest Ticket',
     };
